@@ -48,7 +48,8 @@ READ FIRST, in this order (use the Read tool; use Glob to list ${SOURCE_DRAFTS_D
 ${PROFILE_FILES.map(f => ' - ' + f).join('\n')}
  - every file in ${SOURCE_DRAFTS_DIR}/ (existing CPRA, Vector, DSI, CIRTA drafts and emails — reuse their strongest sentences and never contradict them)
 
-OPPORTUNITY (registry entry): ${JSON.stringify(o, null, 1)}
+OPPORTUNITY (registry entry, possibly abbreviated): ${JSON.stringify(o, null, 1)}
+If the entry above is abbreviated (only a slug and a few fields), look up the full record by its "slug" in funding/registry/opportunities.json (Grep for the slug, then Read the surrounding record) — it contains the verified deadline, eligibility flags, evidence quotes, required documents and next actions you must use.
 
 Then use WebSearch (load with ToolSearch("select:WebSearch"); WebFetch and curl are blocked by network policy) to find the funder's required components, headings, page/character limits and review criteria for the current cycle; record what you found and its URLs in the README under "Format and criteria (verify on the official page)".
 
@@ -70,7 +71,7 @@ function criticPrompt(o) {
 
 Read funding/applications/${o.slug}/ (every file), the profile files below, and the registry entry.
 ${PROFILE_FILES.slice(0, 3).map(f => ' - ' + f).join('\n')}
-Registry entry: ${JSON.stringify({ name: o.name, funder: o.funder, url: o.url, deadline: o.deadline, amount: o.amount, duration: o.duration, eligibility_summary: o.eligibility_summary, eligibility_flags: o.eligibility_flags, required_documents: o.required_documents, tier: o.tier, fit_score: o.fit_score, next_actions: o.next_actions }, null, 1)}
+Registry entry (abbreviated; look up the full record by slug "${o.slug}" in funding/registry/opportunities.json): ${JSON.stringify({ name: o.name, funder: o.funder, url: o.url, deadline: o.deadline, tier: o.tier, fit_score: o.fit_score }, null, 1)}
 
 1. Reconstruct the funder's review criteria and weights (use WebSearch via ToolSearch("select:WebSearch") if the README does not state them; WebFetch/curl are blocked). Score each criterion 1–5 as a tough reviewer would, and write the concrete reasons a panel would reject or down-rank this package: vague objectives, claims without evidence, missing required components, page/character-limit or format violations, weak fit with the mandate, unaddressed eligibility risks, a plan indistinguishable from the supervisor's programs, missing HQP/training or EDI content where required, missing budget justification.
 2. Cross-check every number, date, title, award, affiliation and name against funding/profile/applicant_profile.md and the source drafts. Any fact not traceable to those files must be put in [brackets] or removed. List what you found under invented_facts_found.
