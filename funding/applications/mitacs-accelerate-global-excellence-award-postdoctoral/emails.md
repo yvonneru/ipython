@@ -10,10 +10,11 @@ Dear [name],
 I am a University of Toronto PhD graduate (Information Engineering, MIE, requirements completed March 2025), currently a postdoctoral researcher at Harvard Medical School, and I would like to apply for the Mitacs Accelerate Global Excellence Award to be held at U of T under Prof. Michael Grüninger (MIE), starting May 2027 or later. I understand the 2026–27 intake closed on 11 September. Could you tell me:
 
 1. Whether a further intake is planned, when it opens and closes, and whether awards are capped;
-2. The current partner cash contribution (I have CAD 42,500 + tax per year from a secondary source) and whether the partner must operate in Canada;
+2. Whether the partner cash contribution stated on the program page (CAD 42,500 + tax per year, year one invoiced on approval) applies to the next intake, and whether the partner must operate in Canada;
 3. How Mitacs treats a partner in which the fellow has an ownership interest — I founded a robotics-data company, AXIOMALITY, which I do not propose as the partner but will disclose;
 4. Whether the GEA can be held alongside a tri-agency postdoctoral award (I have applied for the Canada Postdoctoral Research Award, NSERC stream), given the note that the GEA is a standalone call;
-5. The pre-review process and the forms, so that I can prepare the proposal in the required structure.
+5. Whether a researcher who completed the PhD in Canada and now resides abroad is within the award's intended group ("international researchers and Canadians abroad"), and whether the AI sector focus carries any weighting;
+6. The pre-review process and the forms, so that I can prepare the proposal in the required structure.
 
 The project — a verified ontology of object parts used to audit and align the part-level datasets robot-learning models are trained on, with a toolkit delivered to the partner — is summarized in the attached two pages. I am shortlisting partner candidates now and would welcome any suggestions from Mitacs's Ontario network.
 
@@ -63,7 +64,7 @@ Subject: Mitacs GEA — letter of commitment, interaction plan and IP terms
 Dear [name],
 
 Thank you for agreeing in principle. For the Mitacs pre-review and the application we need from [Partner]:
-1. A letter of commitment on letterhead stating the cash contribution [CAD 42,500 + tax per year, two years — verify] and the intended start [May 2027];
+1. A letter of commitment on letterhead stating the cash contribution (CAD 42,500 + tax per year for two years [verify on the form]; Mitacs invoices the full first-year amount on project approval), the intended start [May 2027], and the intended use of the toolkit (internal QA, supplier acceptance or a service to your customers);
 2. A named technical contact for monthly steering meetings and two on-site sprints per year;
 3. Confirmation of the data to be audited and the access arrangement (the audit runs in your environment);
 4. Agreement on IP: ontology, mappings and toolkit core open-licensed; partner adapters, partner data and the audit report on partner data remain the partner's [U of T and Mitacs standard terms to confirm].

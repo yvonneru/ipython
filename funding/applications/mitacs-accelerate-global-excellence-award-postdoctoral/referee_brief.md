@@ -11,7 +11,7 @@ Mitacs Accelerate Global Excellence Award: a two-year postdoctoral award (CAD 17
 - From U of T: institutional signature via Research Services / the Mitacs Advisor [confirm route].
 
 ## What reviewers evaluate
-Mitacs reviewers evaluate the problem addressed, the objectives, the methodology, the expected deliverables, and the benefits to the intern; for the GEA the benefits to the partner and to Canada and the qualifications of the fellow and team also matter. Weights are not published [ask the Advisor].
+Mitacs reviewers evaluate the problem addressed, the objectives, the methodology, the expected deliverables, and the benefits to the intern; for the GEA the benefits to the partner and to Canada, the qualifications of the fellow and team, and the commercialization potential in a priority sector (AI, quantum, clean technology, advanced materials and manufacturing, defence, cybersecurity, agri-tech, health and life sciences — per the university research-office pages) also matter. Weights are not published [ask the Advisor].
 
 ## The four points that would help most
 1. **The theory is real and it is mine.** The material-constitution and mereological-pluralism results (two Synthese submissions, first author) answer the question the datasets pose — when are two part decompositions of the same object compatible — and they were established with automated provers, not by argument alone.
