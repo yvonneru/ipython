@@ -84,11 +84,19 @@ Return the structured output.`
 const opps = args.opportunities
 log(`drafting ${opps.length} package(s)`)
 
+// args.critique_only = true skips drafting (packages already exist on disk) and runs only the critic.
+// args.draft_only = true skips the critic (useful when the critic must run later under a fresh budget).
+const critiqueOnly = !!(args && args.critique_only)
+const draftOnly = !!(args && args.draft_only)
+
 const results = await pipeline(
   opps,
-  o => agent(draftPrompt(o), { label: `draft:${o.slug}`, phase: 'Draft', schema: DRAFT_SCHEMA, effort: 'high' }),
+  o => critiqueOnly
+    ? Promise.resolve({ slug: o.slug, files_written: [], open_items: [], summary: 'existing package (critique-only run)' })
+    : agent(draftPrompt(o), { label: `draft:${o.slug}`, phase: 'Draft', schema: DRAFT_SCHEMA, effort: 'high' }),
   (drafted, o) => {
     if (!drafted) { log(`${o.slug}: draft failed`); return null }
+    if (draftOnly) return { slug: o.slug, name: o.name, draft: drafted, critique: null }
     return agent(criticPrompt(o), { label: `critique:${o.slug}`, phase: 'Critique', schema: CRITIC_SCHEMA, effort: 'high' })
       .then(c => ({ slug: o.slug, name: o.name, draft: drafted, critique: c }))
   }
