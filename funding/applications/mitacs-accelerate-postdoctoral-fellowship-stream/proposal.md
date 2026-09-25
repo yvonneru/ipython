@@ -1,0 +1,116 @@
+# Mitacs Accelerate proposal — postdoctoral internship (six units, 24 months)
+
+**Project title:** Verified part-level data for physical AI: an ontology-based audit and alignment service for robot-learning datasets
+**Intern:** Dr. Yi Ru (postdoctoral fellow, Department of Mechanical and Industrial Engineering, University of Toronto, from [April 2027])
+**Academic supervisor:** Prof. Michael Grüninger, Semantic Technologies Laboratory, MIE, University of Toronto
+**Partner organization:** [Partner name — route A third-party partner; or AXIOMALITY under the Accelerate Entrepreneur route] · **Partner contact:** [name, title]
+**Keywords:** formal ontology; mereology; knowledge representation; automated theorem proving; physical AI; robot manipulation; articulated objects; dataset alignment; neuro-symbolic learning; ISO/IEC 21838; data quality; verification
+
+*Format note. Mitacs supplies a proposal template with per-section boxes; the sources available to this draft do not reproduce the current headings or word limits. The sections below follow the conventional Accelerate section set and are kept to roughly 250–450 words each so they can be pasted box by box. Re-fit to the live template before submission. Where the template asks for fewer sections, fold §2 into §1 and §8–§9 into §7.*
+
+---
+
+## 1. Project overview
+
+An ontology is a computer-interpretable specification that declares what terms a system uses and what the terms mean. Robot-learning datasets — PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World, Open X-Embodiment, DROID [1–7] — annotate objects as hierarchies of parts with kinematic, functional and visual labels, and manipulation policies are trained on them. Each dataset defines "part" operationally; no dataset or learned model is required to satisfy the axioms of parthood; there is no principled way to map labels across datasets; and pooled training silently mixes incompatible part vocabularies. The consequences — poor transfer across part vocabularies, brittle generalization to new object categories — are observed but have never been measured, because there has been no formal specification to measure against.
+
+This internship supplies that specification and turns it into a service the partner can use. I will (O1) axiomatize and verify a modular first-order ontology of physical object parts as an extension of the ISO/IEC 21838-4 top-level ontology TUpper [8], integrated with the Process Specification Language for state change under manipulation [9]; (O2) build a two-tier audit pipeline that checks annotation hierarchies against the ontology at dataset scale and produces provably meaning-preserving cross-dataset label mappings; and (O3) measure whether ontology-aligned data and ontology-constrained training improve the generalization of part-aware manipulation policies. The partner's own datasets are audited in every unit, and each unit ends with a deliverable the partner can use: an audit report, a corrected annotation release, a mapping to the public corpora, or a toolkit release.
+
+The project is organized as six internship units of four months each over 24 months. Units 1–2 produce the ontology and the first audit of the partner's data; units 3–4 release the audit toolkit and the ontology-aligned corpus and run the pooled-data experiments; units 5–6 deliver the constrained-training methods and the verification-in-the-loop evaluation protocol. Every axiom, mapping, corrected annotation and script is released under an open licence, with the partner's proprietary data and audit results excluded under the terms in §7.
+
+## 2. Background
+
+**Prior work of the intern.** My research has focused on the axiomatization of ontologies as theories in first-order logic and on carrying that formal work into standards and production systems. I am a core contributor to ISO/IEC 21838-4:2023, the international standard for the TUpper top-level ontology [8] [confirm exact role wording]. With Prof. Grüninger I developed a theory of material constitution as a parthood-preserving mapping between mereologies, and a validation of mereological pluralism; both are first-order theories whose consistency and key properties are established by automated reasoning, and both are under review at Synthese [10, 11]. They give a precise answer to when two part decompositions of the same object are compatible — exactly the question posed by robot datasets, where kinematic, functional and visual decompositions of the same object co-exist without any statement of how they relate. My doctoral thesis at the University of Toronto developed an architecture for AI knowledge systems in which a verified ontology governs the data model, the learned models and the simulation layer; elements of it contributed to the standard [thesis title]. Industrially, I designed and shipped ontology-governed data-integration and recommendation systems at two companies I co-founded, built structured 3D physical-world datasets and ontology-based representations of objects, indoor environments and spatial relationships for embodied AI, and hold patents in 3D recognition, indoor modelling and automatic reconstruction [reconcile patent count].
+
+**Prior work of the supervisor.** Prof. Grüninger's laboratory maintains COLORE, an open repository of more than 2,580 first-order ontologies specified in Common Logic (ISO 24707) [12]; developed the ontology lifecycle methodology and the verification standard used here (characterizing the models of an ontology up to isomorphism and comparing them with the intended models) [13]; authored the Process Specification Language ontology [9]; and integrated the PRAxIS ontologies for perception, reasoning and action into TUpper, now ISO/IEC 21838-4 [8]. His NSERC programs on the Physical Turing Test and on commonsense cobotics posed the question "What mereotopologies are implicit in the parthood decompositions of the ShapeNet and PartNet datasets?" and identified the ontological analysis of AI benchmark datasets as an open problem [14].
+
+**Why this partner.** [Route A: one paragraph on the partner's datasets, robots or products, the part-level annotations they hold or consume, and the decision they need the audit to support — e.g., which suppliers' data to buy, whether pooled data can be used for a product, or how to evidence training-data quality for customers and regulators.] [Route B: AXIOMALITY builds a verification layer for embodied-AI data — an offline Engine (ingestion → scene graph → SMT check) and a data Passport (a reproducible per-release evidence pack) — on a knowledge kernel of axioms aligned with ISO/IEC 21838-4; the verified parts ontology and the audit pipeline are the scientific core its first commercial unit depends on.]
+
+## 3. Objectives
+
+The long-term challenge that motivates the project is: *Can the part-level representations that robot-learning systems learn be shown to satisfy the axioms of parthood that humans use, and does enforcing those axioms improve generalization?* The internship has three research objectives and three partner objectives.
+
+**Research objectives.**
+1. **Ontology as specification (O1).** Axiomatize and verify a modular first-order ontology of physical object parts — rigid, articulated, functional and assembly parthood — as an extension of TUpper integrated with PSL for state change under manipulation. Verification means consistency, non-triviality, the relationships between modules, and representation theorems that relate the ontology to the annotation schemas of the public datasets and of the partner's data, so that cross-dataset mappings are meaning-preserving by proof.
+2. **Ontology as audit (O2).** Build a two-tier pipeline — Datalog/SMT rules for the bulk of the data, first-order theorem proving for residual hard cases — that translates annotation hierarchies into ontology instances and checks them. Produce the first quantitative measurement of parthood consistency in robot datasets, corrected annotations, a merged ontology-aligned corpus, and a reusable audit toolkit.
+3. **Ontology as inductive bias (O3).** Develop and test training methods that use the ontology to shape part-aware manipulation policies: differentiable relaxations of parthood constraints as auxiliary losses; constraint-guided data augmentation for underrepresented categories; and a verification-in-the-loop evaluation protocol that reports ontology-violation rate alongside task success.
+
+**Partner objectives.**
+1. A per-release audit of the partner's own part-level datasets against a verified specification, with a violation report the partner can act on [and, route B, that the Passport can carry].
+2. Provably meaning-preserving mappings from the partner's part vocabulary to the public corpora, so the partner can pool or purchase data without silent schema conflicts.
+3. A toolkit and evaluation protocol the partner can run internally on future data and policies, together with evidence usable for customers and for the EU AI Act Annex I (machinery and robots, from 2 August 2028) and NIST AI RMF [15, 16].
+
+## 4. Methodology
+
+The ontologies are designed using the ontology lifecycle methodology of the Semantic Technologies Laboratory [13] and verified to its standard: for each module we characterize the models of the axioms up to isomorphism and determine whether they are equivalent to the intended models. Consistency and non-triviality are established with Prover9 and Mace4; module relationships (extension, conservative extension, definable equivalence) are established by translation definitions and checked against COLORE [12]. Competency questions come from the application: the questions the partner needs answered about its data ("is this part decomposition consistent?", "is label X in dataset A the same part as label Y in dataset B?", "which annotations changed meaning between releases?") are the semantic requirements the ontology must satisfy. The work is organized in three themes.
+
+**Theme 1 — Parts (O1).** *Problem: kinematic, functional and visual part decompositions of the same object co-exist in current datasets without any statement of how they relate.*
+- *Project 1.1, Mereologies of physical parts.* Axiomatize rigid parthood (mereotopology of self-connected solid objects), articulated parthood (links and joints as parts related by permitted motion), functional parthood (parts individuated by the activities they participate in, using PSL) and assembly parthood (parts individuated by the process that composed them). Each is a module; the relationships between modules are theorems. Open questions: Do the four parthood relations require distinct axiomatizations, or are some definable from others? Is material constitution, as a parthood-preserving mapping [10], the right relation between the visual and the kinematic decompositions of an articulated object? (Unit 1 milestone.)
+- *Project 1.2, Representation theorems for annotation schemas.* For each public dataset and for the partner's schema, specify a translation definition into the ontology and prove what it preserves. Open questions: Which schemas are faithfully interpretable in the ontology, and which require repair? What is the residue — annotations with no meaning-preserving translation — and how large is it? (Unit 2 milestone.)
+
+**Theme 2 — Audit (O2).** *Problem: no one has measured how often part annotations violate the axioms of parthood, within or across datasets.*
+- *Project 2.1, Two-tier audit pipeline.* Translate annotation hierarchies into ontology instances. Check the bulk (millions of part instances) with Datalog/SMT compilations of the axioms; send residual cases (cycles in the part order, overlapping-but-disjoint parts, articulated parts with no kinematic parent) to first-order proving. UNKNOWN and timeout are first-class outputs. Adapters for LeRobot, RLDS, ROS 2/MCAP, OpenUSD/USDZ, PLY and JSON [partner formats to add]. Open questions: What fraction of violations are detectable by the Datalog/SMT tier alone? Does the violation profile differ systematically by annotation source? (Units 2–3.)
+- *Project 2.2, Alignment and release.* Apply the proven mappings to produce a merged, ontology-aligned corpus from the public datasets, and a private aligned release of the partner's data. Release corrected annotations, mappings, and the toolkit. Open questions: Which cross-dataset label pairs are provably synonymous, which are provably distinct, and which are undetermined by the data? (Units 3–4.)
+
+**Theme 3 — Learning (O3).** *Problem: enforcing the axioms during training has never been tested, because the axioms were never available in usable form.*
+- *Project 3.1, Pooled-data and augmentation experiments.* Train part-aware manipulation policies on pooled data with and without ontology alignment; add constraint-guided augmentation that synthesizes ontology-consistent part configurations (from Mace4 model output) for underrepresented categories. Hypotheses: aligned pooling transfers across part vocabularies; augmentation improves generalization to unseen PartNet-Mobility categories. Experiments in SAPIEN [17] and [second simulator], matched comparisons over held-out categories with confidence intervals, ablations by axiom family. (Units 4–5.)
+- *Project 3.2, Constrained training and verification-in-the-loop evaluation.* Differentiable relaxations of the parthood axioms as auxiliary losses on inferred part relations; an evaluation protocol that reports ontology-violation rate alongside task success. Hypothesis: violation rate predicts task failure and serves as an interpretable failure signal. (Units 5–6.)
+
+**Validation versus verification.** Verification (do the models of the axioms match the intended models?) is done by the methods above. Validation (are the intended models the right ones for the partner's application?) is done by competency questions drawn from the partner's use cases and reviewed with the partner at the end of each unit.
+
+## 5. Expected deliverables, per unit
+
+| Unit | Months | Research deliverable | Partner deliverable |
+|---|---|---|---|
+| 1 | 1–4 | Parts ontology v0.1 (four modules), verified for consistency and non-triviality; competency questions agreed with the partner | Schema analysis of the partner's part-level data; competency-question document |
+| 2 | 5–8 | Representation theorems for the public schemas and the partner schema; audit pipeline v0.1 (Datalog/SMT tier); first audit of PartNet and PartNet-Mobility | First audit report on [one partner dataset]: violation rate and profile, corrected annotations |
+| 3 | 9–12 | Audit pipeline v1 (both tiers; adapters); audit of all five public datasets; audit/data paper submitted [venue] | Toolkit v1 installed at the partner; audit of [second partner dataset]; mappings partner ↔ public corpora |
+| 4 | 13–16 | Merged ontology-aligned public corpus released; pooled-data experiments; ontology contributed to COLORE and proposed to ISO/IEC JTC 1/SC 42 | Private aligned release of the partner's data; pooled-training results on the partner's use case |
+| 5 | 17–20 | Constraint-guided augmentation; constrained-training method; methods paper submitted [ML venue] | Augmentation and training recipe for the partner's underrepresented categories |
+| 6 | 21–24 | Verification-in-the-loop evaluation protocol; robotics-venue paper; toolkit v2 and final open release | Evaluation protocol and evidence pack the partner can run on future data and policies [route B: Passport integration] |
+
+## 6. Timeline
+
+Units run consecutively from [1 April 2027]: unit 1 April–July 2027; unit 2 August–November 2027; unit 3 December 2027–March 2028; unit 4 April–July 2028; unit 5 August–November 2028; unit 6 December 2028–March 2029. Themes overlap as in the research program's 24-month template: ontology, verification and first audit in months 1–8; data release, pooled-data experiments and augmentation in months 6–16; constrained training, verification-in-the-loop evaluation and papers in months 12–24. Each unit closes with a written report to the partner and to Mitacs [confirm reporting cadence]. A Gantt table with the same rows is in budget_and_timeline.md.
+
+## 7. Interaction with the partner organization
+
+I will spend [confirm Mitacs's current expectation; conventionally about 25%] of each unit at the partner's site or working directly with the partner's team: in units 1–2 to analyse the partner's data schema and elicit competency questions; in units 3–4 to install the toolkit, run audits on the partner's data and transfer the mappings; in units 5–6 to run the evaluation protocol on the partner's policies. The partner's project contact [name] and I meet [biweekly]; Prof. Grüninger, the partner contact and I hold a review at the end of each unit at which the partner deliverable is accepted and the competency questions for the next unit are fixed.
+
+**Data and IP.** The partner supplies [datasets, formats, volumes] under [a data-access agreement to be drafted]; audit results on the partner's data are confidential to the partner. The ontology, the audit toolkit, the mappings to public corpora and the aligned public corpus are released under an open licence [licence] and contributed to COLORE and to ISO/IEC JTC 1/SC 42 [confirm the U of T inventor-owned IP policy and the partner's expectations; route B: the U of T–AXIOMALITY IP arrangement must be settled before submission].
+
+[Route B addition: AXIOMALITY is owned and actively managed by the intern; the conflict of interest is declared on the Mitacs form; Prof. Grüninger holds no interest in the company; the company is housed at [approved incubator] for the project's duration.]
+
+## 8. Benefits to the intern
+
+The internship gives me three things a purely academic postdoctoral position would not. First, an industrial data regime: real part-level data at product scale, with the formats, volumes and messiness that the audit pipeline must survive to be useful. Second, a partner whose engineers will judge the formal methods by whether they work, which is the discipline that produced the production systems in my record and that I want to keep. Third, standards engagement with a sponsor behind it: contributing the parts ontology to ISO/IEC JTC 1/SC 42 with an industrial user is a stronger position than contributing it alone. I will also gain experience in supervising [number] graduate students in the Semantic Technologies Laboratory on the ontology and audit components, and in translating verification results into evidence that regulators and customers can read. My long-term goal is a faculty position in knowledge representation for engineering systems; a research program that is my own, executed with an industrial partner and a standards outcome, is the step that goal requires.
+
+## 9. Benefits to the partner organization
+
+The partner receives, per unit, something it can use: an audit of its own data against a verified specification; corrected annotations; provably meaning-preserving mappings to the public corpora it may want to pool with or buy; a toolkit it can run on future releases; and an evaluation protocol that reports an interpretable failure signal for its policies. Beyond the project, the partner gains machine-checkable evidence about its training data of the kind the EU AI Act Annex I (from 2 August 2028) and the NIST AI RMF will make valuable [15, 16], a relationship with the laboratory that maintains the standard the evidence refers to, and early access to a corpus and toolkit the field will use. [Route A: one sentence on the partner's specific commercial decision the project supports.] [Route B: the verified ontology and audit pipeline are the scientific core of AXIOMALITY's first commercial unit — the offline Engine and the data Passport — and unit 6's evidence pack is what the company needs recognized by an assessment body or standards organization.]
+
+## 10. Budget
+
+Six units × CAD 20,000 = CAD 120,000, of which the partner contributes CAD 10,000 per unit (CAD 60,000 in total) and Mitacs the remainder [confirm current unit value, partner share, whether the partner share is taxed, and the reduced start-up rate under route B]. Of each unit, [CAD amount — at or above the Mitacs minimum intern stipend] is paid to me as stipend/salary through the University of Toronto and [CAD amount] covers research costs: compute for O3 [source: partner, Vector Institute, or U of T; estimate to be sized], dataset storage, open-access publication fees, and travel to the partner's site and to one SC 42 meeting. Justification and the year-by-year table are in budget_and_timeline.md.
+
+## 11. References
+
+[Bibliographic details for [1]–[7], [12]–[17] to be verified against the original publications before submission; [10] and [11] are the applicant's submitted papers.]
+
+1. PartNet: a large-scale benchmark for fine-grained and hierarchical part-level 3D object understanding. Mo et al., CVPR 2019.
+2. PartNet-Mobility, released with SAPIEN (see [17]).
+3. GAPartNet: cross-category domain-generalizable object perception and manipulation via generalizable and actionable parts. Geng et al., CVPR 2023.
+4. PartNet-Ensembled [complete citation].
+5. AgiBot World [complete citation].
+6. Open X-Embodiment: robotic learning datasets and RT-X models. Open X-Embodiment Collaboration, ICRA 2024.
+7. DROID: a large-scale in-the-wild robot manipulation dataset. Khazatsky et al., RSS 2024.
+8. ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 42.
+9. Grüninger, M. Using the PSL Ontology. In: Handbook on Ontologies, Springer, 2009 [verify].
+10. Ru, Y., and Grüninger, M. (2026, submitted). Material Constitution as a Parthood-Preserving Mapping between Mereologies. Synthese.
+11. Ru, Y., and Grüninger, M. (2026, submitted). [Exact title — mereological pluralism validation]. Synthese.
+12. COLORE — Common Logic Ontology Repository, colore.oor.net; Common Logic, ISO/IEC 24707:2018.
+13. Grüninger, M., and Fox, M. S. Methodology for the design and evaluation of ontologies. IJCAI-95 Workshop on Basic Ontological Issues in Knowledge Sharing, 1995 [verify]; and Grüninger et al., ontology verification via repositories [verify].
+14. Grüninger, M. Ontologies for the Physical Turing Test; Commonsense Cobotics. NSERC Discovery Grant proposals (supervisor's programs).
+15. Regulation (EU) 2024/1689 (Artificial Intelligence Act), Annex I — machinery and robots, applicable from 2 August 2028.
+16. NIST AI Risk Management Framework (AI RMF 1.0), 2023.
+17. SAPIEN: a simulated part-based interactive environment. Xiang et al., CVPR 2020.

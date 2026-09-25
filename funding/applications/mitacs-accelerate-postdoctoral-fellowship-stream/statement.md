@@ -1,0 +1,38 @@
+# Statement — intern statement and cover note
+
+Mitacs Accelerate does not ask for a personal statement in the way a fellowship competition does; the application carries the proposal, the CVs and the partner and supervisor endorsements. Two short texts are still needed: (A) a cover note that accompanies the draft to the Mitacs Business Development representative and to the partner, and (B) an intern statement of experience, training goals and outside interests that can be pasted where the template asks for "intern background", "benefits to the intern" or the conflict-of-interest narrative. [Re-fit to the live template.]
+
+---
+
+## A. Cover note (to the Mitacs BD representative and the partner; adapt the salutation)
+
+[Date]
+
+Dear [name],
+
+Please find attached a draft Mitacs Accelerate proposal for a six-unit postdoctoral internship at the University of Toronto, supervised by Prof. Michael Grüninger (Mechanical and Industrial Engineering), with [partner organization] as partner, for a start on [1 April 2027].
+
+The project builds a verified ontology of physical object parts as an extension of the ISO/IEC 21838-4 top-level ontology and uses it to audit and align the part-level datasets that robot-learning models are trained on — datasets that no one has yet checked against any formal specification. Every unit ends with something the partner can use: an audit of its own data, corrected annotations, provably meaning-preserving mappings to the public corpora, a toolkit, and an evaluation protocol. The scientific outputs — the ontology, the first quantitative audit of parthood consistency in robot datasets, and training methods that use the ontology as an inductive bias — are released openly and contributed to the COLORE repository and to ISO/IEC JTC 1/SC 42.
+
+I completed my PhD in Information Engineering at the University of Toronto in 2025 and am currently a postdoctoral researcher at Harvard Medical School. I am a core contributor to ISO/IEC 21838-4:2023; I co-authored, with Prof. Grüninger, a formal theory of material constitution and a validation of mereological pluralism, both under review at Synthese; and I have built and shipped production data-integration systems as a founder of two technology companies. I also founded AXIOMALITY, a robotics-data verification company, which I disclose as an outside interest [route A: it takes no role in this project; route B: it is the partner under the Accelerate Entrepreneur route and the conflict-of-interest declaration is attached].
+
+I would welcome your comments on the unit structure, the budget and the partner-interaction plan before we submit.
+
+Sincerely,
+Yi Ru
+
+---
+
+## B. Intern statement
+
+**Research experience.** I completed my PhD in Information Engineering at the University of Toronto in March 2025 [confirm the date all requirements were met], following a BASc in Industrial Engineering at the same university. My doctoral work sat at the intersection of formal ontology, knowledge-system architecture and machine-learning-based simulation, supervised by [name]; it developed an architecture in which a verified ontology governs the data model, the learned models and the simulation layer, and elements of it contributed to ISO/IEC 21838-4:2023. During the PhD I became a core contributor to that standard and, with Prof. Grüninger, began the line of work on mereology and material constitution that has now produced two journal submissions. Since [month year] I have been a postdoctoral researcher at Harvard Medical School, in [laboratory/department], working on [one sentence]. That appointment has given me a second research environment, a different data regime and an applied community that judges formal methods by whether they work.
+
+**Industrial experience.** Before and during my doctorate I founded or co-founded technology companies in which I was responsible for the algorithmic systems and their data architecture. At MICAS I led a 100+ person technology and operations team, built CRM, ERP and WMS systems and machine-learning-driven marketing systems, and the platform reached annual revenue above USD 50 million with more than USD 5 million in angel investment. At Uing Technologies I built structured 3D physical-world datasets and ontology-based representations of objects, indoor environments, spatial relationships and interactions for embodied AI, AR and robotics, launched one of the first AR pet-interaction applications on the Apple Vision Pro App Store, and led nine invention patent applications in 3D recognition, indoor modelling, automatic reconstruction, emotion sensing and adaptive feedback. At YourTable Inc. I founded and led a personalized recommendation system, incubated by the University of Toronto, the Schulich School of Business and Imperial College London. This experience is the source of the applied-engineering discipline in the proposal — versioned axioms, regression tests on inferences, reproducible pipelines — and of my interest in making formal methods usable by people who are not logicians.
+
+**Why an industrial internship, and why this one.** The proposed research requires three things to be in one place: a verified-ontology methodology with tool support (the Semantic Technologies Laboratory at MIE), part-level data at product scale with the decisions that depend on it (the partner), and a researcher who has done both formal theory and production data integration. Mitacs Accelerate is the mechanism that puts them together. The two Synthese papers provide the theory; the physical-AI datasets released over the past three years provide, for the first time, data at a scale where the theory can be tested; and the partner provides the use case that makes the audit's competency questions real.
+
+**Training goals.** During the internship I intend to (i) run a verification pipeline at industrial data scale and learn what breaks; (ii) practise translating formal results into evidence that engineers, customers and regulators can act on; (iii) supervise [number] graduate students on the ontology and audit components; and (iv) represent the laboratory and the partner at ISO/IEC JTC 1/SC 42 meetings. My longer-term goal is a faculty position in knowledge representation for engineering systems.
+
+**Outside interests and conflict of interest.** I am Founder/CEO of AXIOMALITY, a company building a verification and evidence layer for embodied-AI data [and Co-Founder/CEO of Uing Technologies — confirm whether these are the same legal entity]. [Route A: AXIOMALITY is not the partner, receives no Mitacs funds and no partner data, and I will keep the internship's open releases and the company's products separate under the terms agreed with U of T and the partner.] [Route B: AXIOMALITY is the partner under the Accelerate Entrepreneur route; I own and actively manage it; the completed Mitacs conflict-of-interest declaration and the incubator confirmation are attached.]
+
+**Leadership and service.** Vice President, Graduate Students Association of Mechanical and Industrial Engineering; MIE Representative, U of T Graduate Student Union; Steward and Representative, CUPE 3902; Session Chair, IISE Annual Conference 2017; Teaching Assistant in Engineering Economics and Accounting, Database Systems, Knowledge Modeling and Management, and Resource and Production Modeling.

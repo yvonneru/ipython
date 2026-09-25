@@ -1,0 +1,24 @@
+# Brief for referees — Eric and Wendy Schmidt AI in Science Postdoctoral Fellowship (University of Toronto)
+
+Send with the reference request (emails.md, email 3). [Brackets] to confirm on the DSI page before sending.
+
+**What the fellowship is.** A two-year postdoctoral fellowship funded by Schmidt Sciences and administered at the University of Toronto by the Data Sciences Institute with the Acceleration Consortium: CAD 85,000 per year salary plus benefits, a start between 1 May 2027 and 1 January 2028, and a cohort AI-training programme. It is aimed at researchers in the natural sciences and engineering who will apply AI methods to their own domain; prior AI expertise is not required, but a demonstrated desire to learn AI methods is. I would hold it in the Department of Mechanical and Industrial Engineering under Prof. Michael Grüninger, with [co-supervisor name] for the machine-learning component. Official page: https://datasciences.utoronto.ca/schmidt-fellows/
+
+**Deadline for your letter.** The application deadline is 5 October 2026 [confirm]. I would be grateful for your letter by **3 October 2026** so that I can submit before the weekend. [Route: letters are sent by the referee directly to DSI at [address] / uploaded via [link] — confirm; if the form asks me to upload, I will send you a reminder with the exact instructions.]
+
+**What the form asks.** [Verify: a letter in PDF, on letterhead, no stated length limit — assume 1–2 pages.] The letter should address the applicant's research ability and potential, the quality and feasibility of the proposed project, and the applicant's suitability for a programme whose purpose is to train domain scientists and engineers in AI methods.
+
+**What reviewers score (as far as is public — verify).** Excellence and potential of the applicant; quality, originality and feasibility of the proposed AI-in-science research; the degree to which AI methods advance the domain; commitment to AI training and to the cohort; the supervisory environment. The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction — and state plainly where I stand relative to other postdoctoral researchers you have known.
+
+**The proposed project in three sentences.** Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, AgiBot World and others) annotate objects as hierarchies of parts, but each defines "part" operationally and no dataset or learned model is required to satisfy the axioms of parthood. I will axiomatize and verify an ontology of physical object parts as an extension of ISO/IEC 21838-4 (TUpper) integrated with the Process Specification Language; audit and align the major datasets against it, producing the first quantitative measurement of parthood consistency in robot data; and use the ontology as an inductive bias — constraint losses, constraint-guided augmentation, verification-in-the-loop evaluation — inside the training of part-aware manipulation policies, measuring the effect on generalization to unseen object categories in simulation. The third part is where the fellowship's AI training is essential.
+
+**Four points that would help, if you can speak to them.**
+1. The theoretical work on material constitution and mereological pluralism (two papers submitted to *Synthese* with Prof. Grüninger, 2026) and why a machine-checkable theory of "when are two part decompositions compatible" matters for AI systems that learn from part-level data.
+2. The ISO/IEC 21838-4 contribution and what it shows about rigour, persistence and the ability to work in a standards body.
+3. The move from theory to deployed systems — production data-integration and machine-learning systems at MICAS and Uing Technologies, patents, the Apple Vision Pro application — and why that predicts I will actually deliver the audit and the training methods rather than only the theory.
+4. Suitability for an AI-training fellowship: that I have used machine learning as a practitioner, have not been formally trained in deep robot learning, and learn new methods quickly and by building. For the Harvard letter: [one sentence on the current work and on how I have taken up new methods there].
+5. (For Prof. Grüninger, if he is both supervisor and referee [verify whether permitted]) Independence: the proposed program is my own, complementary to but distinct from his NSERC programs on the Physical Turing Test and Commonsense Cobotics.
+
+**Attached.** Research proposal (proposal.md as PDF), statement of AI training needs, current CV.
+
+**Referees planned.** Prof. Michael Grüninger (proposed supervisor) [verify whether a supervisor may also be a referee; if not, his letter of support serves and the referees are the two below plus one more]; Harvard Medical School postdoctoral supervisor [name]; one external expert in applied ontology or robot learning [name]. The program asks for 2–3 letters.

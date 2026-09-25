@@ -1,0 +1,139 @@
+# Verification Engine v1 and Data Passport: machine-checkable evidence for robot-learning data
+
+**NRC IRAP project proposal — AXIOMALITY [legal name; business number]** · Project length 12 months from the contribution-agreement start date · Prepared by Dr. Yi Ru, Founder/CEO · Draft 2026-09-25
+
+*Format note: IRAP publishes no template or page limit; the assigned ITA supplies both. This draft is about six pages plus a one-page bibliography, in the sections IRAP proposals conventionally contain, so that each section can be pasted into the ITA's template. Citations are numbered; the bibliography is on the last page. Items in [brackets] are unconfirmed and must be supplied before the proposal goes to the ITA.*
+
+## 1. Company and technical background
+
+AXIOMALITY builds the verification and evaluation layer for embodied-AI data: a versioned evidence loop — Collect, Ground, Verify, Augment, Deliver, Learn — that every data-generation route (teleoperation, world models, simulation) and every robot deployment can use. Our first commercial unit is the offline **Engine** (ingestion → scene graph → formal check) and the data **Passport**, a reproducible per-release evidence pack. The company is [incorporated in — country/province, date; relationship to Uing Technologies, founded Aug 2022, to state in one sentence], with [N] full-time equivalents, R&D based in [Toronto / city].
+
+An ontology is a computer-interpretable specification that an application uses to declare what terms it uses and what the terms mean. My research, and the company's technical core, is the axiomatization of such specifications as theories in first-order logic and their verification by automated reasoning. The background we bring to this project:
+
+- **A verified knowledge kernel.** Four ontology layers — TUpper (ISO/IEC 21838-4:2023 [1]) as foundation; a physical-world layer (parts, shape, measurement, materials, change, process); a robotics layer (embodiment, kinematic chains, contextual affordances, contacts, task phases, bounded safety conditions); and a dataset-instance layer (episodes, frames, sensors, transformations). The kernel's axioms are written as Common Logic modules (ISO/IEC 24707 [2]); theorem obligations are checked with Prover9 and counter-models searched with Mace4 [3]; approved constraints are compiled into a supported SMT subset checked with Z3 [4]. The axioms have been machine-proven consistent. I was a core contributor to the ISO/IEC 21838-4 standard itself [1], and, with Prof. M. Grüninger (University of Toronto), developed the theory of material constitution as a parthood-preserving mapping between mereologies that fixes when two part decompositions of the same object are compatible [5], [6].
+- **Measured spatial data at scale.** 100,000 measured 3D asset packages (JPG, USDZ, PLY, JSON oriented boxes: centroid, dimensions, rotation in metres and radians) from room-level reconstruction and object-level annotation; a consumer spatial-capture application live on the Apple Vision Pro App Store; 13 granted patents and nine invention applications in 3D recognition, indoor modelling and automatic reconstruction [inventory and assignee to confirm].
+- **Adapters and the evidence loop in progress.** A minimum verification Engine (ingestion → scene graph → SMT check → Passport) is scheduled for internal test in Q4 2026, with a kernel v1 for home scenes and connectors for LeRobot [7], RLDS [8] and OpenUSD. An international law firm has mapped regulatory clauses to evidence fields and a Big Four accounting firm has reviewed the audit-pack design [firms to name if they consent].
+- **Execution record.** The founding team has previously raised over USD 5 million (including Accel Partners) and built a cross-border platform exceeding USD 50 million in annual revenue with a 100+ person team (MICAS), and incubated a recommendation-system venture at the University of Toronto and Imperial College London (YourTable). The CTO holds a McMaster University AI doctorate; the robotics lead a doctorate in mechanical/electronic engineering with autonomous-system perception experience; the senior 3D asset lead has more than ten years of production experience.
+
+Everything above is background. This proposal funds the work that turns the internal Engine into a product whose checks run on customer data, whose results a third party can reproduce, and whose value against simpler alternatives has been measured.
+
+## 2. Project objectives
+
+Real-robot interaction data is scarce (about 500,000 hours worldwide against an industry estimate of roughly 10 million hours needed), costs USD 50–200 per hour to collect with no learning curve, and is bound to the embodiment that collected it. As raw hours approach zero price, value migrates to semantics, verification and certification: vendors price passported data at two to three times raw hours, and from 2 August 2028 the EU AI Act's Annex I obligations apply to AI embedded in machinery and robots [9], requiring traceable, auditable training data that none of today's evidence forms — documents, log sampling, one-off audit reports, self-reported benchmarks — can supply record by record. Buyers in the United States and Canada already gate their own data through acceptance and regression workflows and reference NIST AI RMF [10] and ANSI/A3 R15.06/R15.08. The project is motivated by the following long-term challenge:
+
+*Can the physical and logical consistency of a robot-learning dataset be checked record by record against a machine-proven specification, at dataset scale, so that a training or release decision carries evidence that a customer, an assessor or a regulator can reproduce?*
+
+To address this challenge, the project has four objectives, each tied to a dated milestone:
+
+1. **Kernel v1 as a verified, compiled specification.** Complete and verify the physical-world and robotics modules of the kernel as extensions of TUpper integrated with the Process Specification Language for state change under manipulation, and compile the approved constraints into the SMT subset with regression tests (milestone M3).
+2. **Engine v1 running on customer data.** Extend adapters (LeRobot, RLDS, ROS 2/MCAP, OpenUSD/USDZ, PLY, JSON), grounding with abstention, and the two-tier checker so that 10,000 episodes from partner and open datasets are verified with localized findings, unknowns and review decisions (M6).
+3. **Passport v1 recognized.** Ship the portable evidence manifest — identity and rights, scope and method, findings and reproducibility, issuer and integrity — and obtain a written evaluation from one assessment body or standards organization (M9).
+4. **Measured value and the expansion gates.** Run the pre-registered experiments (detection, ablation, second robot, feedback cycles, robustness) with independent baselines on [two] design-partner datasets, and decide on the evidence whether physics residuals, calibrated uncertainty and augmentation enter the product (M12).
+
+## 3. State of the art and technological uncertainty
+
+Robot-learning datasets — Open X-Embodiment (1M+ trajectories, 22 embodiments) [11], DROID [12], AgiBot World [13], and the part-level corpora PartNet [14], PartNet-Mobility/SAPIEN [15] and GAPartNet [16] — annotate objects, parts, contacts and tasks with formats and vocabularies designed independently. Scale is counted in episodes rather than hours; embodiments and formats are mutually incompatible; video corpora carry no actions, forces or success criteria. No dataset or learned model is required to satisfy the axioms of parthood, contact or task ordering, and there is no principled way to map labels across datasets, so pooled training silently mixes incompatible vocabularies. The consequences — brittle transfer across part vocabularies, silent errors when datasets are pooled — are observed but have never been measured, because there has been no formal specification to measure against. Lin et al. [17] show that generalization is set by the number of environment–object pairs covered, not by hours at one site, which makes targeted collection and provenance, rather than volume, the binding constraint.
+
+Existing tooling divides into collection vendors, simulation and world-model vendors, and inspection or labelling tools (Foxglove, Rerun, Roboto, Encord, Scale). Runtime safety filters (3Laws) and safety-case tools (reasonX SafetyScope) sit beside them; NVIDIA's data-factory blueprint and Halos for Robotics address production and functional safety. None applies an axiom set that has been machine-proven consistent to per-record data, and none produces evidence that re-verifies offline. Research ontologies for robotics such as KnowRob [18] provide vocabularies without the verification standard of ISO/IEC 21838-4, and neuro-symbolic training interfaces — Logic Tensor Networks [19], DeepProbLog [20] — supply soft constraints whose relationship to hard logical satisfaction is not established.
+
+The technological uncertainties that this project must resolve, and that make it R&D rather than engineering, are these. (a) General quantified first-order logic is not decidable: "no contradiction found" is not a consistency proof, so the compiled SMT subset must be shown to preserve the meaning of the approved first-order constraints, and UNKNOWN, timeout, unsupported construct and missing input must be first-class outputs rather than silent passes. (b) A physical residual such as r_t = ‖M(q)q̈ + C(q,q̇) + g(q) − τ − Jᵀf‖ needs synchronized states, torque and contact signals, calibration and declared units; whether the cheapest model that meets a measured task requirement can be selected automatically, and whether PINN or neural-operator proxies [21] reduce cost without hiding out-of-domain error, is untested. (c) Conformal prediction [22] gives population coverage under stated assumptions, not a safety probability for one trajectory; the right target, grouping by episode, and the abstention policy are open. (d) A generator and its checker may share blind spots, so augmentation must be validated on held-out real views, measured contacts and unseen layouts. (e) Whether semantic checks detect error classes that simple rules miss at equal cost, and whether task mappings transfer across accounts without redesign, are commercial questions that only pre-registered experiments can answer. The project keeps these as falsifiers: a negative result narrows scope before further capital is committed.
+
+## 4. Work plan
+
+The kernel modules are designed with the ontology lifecycle methodology of Grüninger and Fox [23] and the COLORE repository techniques [24]: competency questions come from the checks customers need; every module is verified — its models characterized and compared with the intended models — before it is compiled. Verification (do the axioms have the intended models?) is kept distinct from validation (are the intended models the right ones for the customer's task?). The work is organized in three themes, each with numbered projects and open technical questions tagged to the role that owns them: **CEO** (founder, ontology and product), **CTO** (AI and engineering), **RL** (robotics lead), **AL** (3D asset lead), **ENG1** [new Canadian hire: ontology/robotics software engineer], **UofT** [Semantic Technologies Laboratory as contractor under a research agreement — to confirm].
+
+### Theme 1 — Kernel: the specification (months 1–4)
+
+*Given a robot episode, which assertions about objects, parts, contacts and task phases must hold, and which axioms decide it?*
+
+**Project 1.1 Parts and articulation module.** Axiomatize rigid, articulated, functional and assembly parts as a modular extension of TUpper's mereotopology, with PSL [25] fluents for state change under manipulation (open, close, grasp, place). Verify consistency and non-triviality with Prover9/Mace4; prove representation theorems relating the module to the annotation schemas of PartNet, PartNet-Mobility and GAPartNet so that cross-dataset label mappings are meaning-preserving by proof, using the constitution-mapping result of [5].
+- Open question: Which parthood relations are implicit in PartNet-style decompositions, and do they require distinct axiomatizations (mereological pluralism [6])? **CEO, UofT** — M3.
+- Open question: Does the axiomatization of articulated objects require the process module, or can it be stated in a static mereotopology? **CEO** — M3.
+
+**Project 1.2 Robotics domain module.** Embodiment, kinematic chains, contextual affordances (a graspability claim depends on gripper, pose, load and environment), contact events and bounded safety conditions, with declared units, frames, handedness and rotation order bound before any spatial relation is derived.
+- Open question: Which affordance claims are definable from geometry plus embodiment alone, and which need observed contact evidence? **RL** — M3.
+
+**Project 1.3 Compilation and regression.** Compile approved constraints to the SMT subset; validate translation and combined modules; regression-test changed conclusions on prior datasets; save exact inputs, outputs, tool versions and resource limits with every run.
+- Open question: For which constraint families is the compiled check complete with respect to the first-order module, and where must UNKNOWN be returned? **CTO, ENG1** — M3 (kernel v1 tagged and frozen).
+
+### Theme 2 — Engine: checking at dataset scale (months 3–8)
+
+*Can 10,000 heterogeneous episodes be grounded and checked with localized findings, unknowns and review decisions, without inventing a physical fact where evidence is missing?*
+
+**Project 2.1 Adapters and the episode contract.** Extend the connectors (LeRobot, RLDS, ROS 2/MCAP, OpenUSD/USDZ, PLY, JSON) to a common episode contract — episode_id, asset_ids, robot configuration, sensor references, timestamps, frame tree, calibration, state/action schema, task phases, contact events, outcome, interventions, rights, real/synthetic lineage. Original recordings stay immutable; conversion is an explicit, versioned operation; support is reported by adapter version. **CTO, ENG1, AL** — M4.
+
+**Project 2.2 Grounding with abstention.** Vision-language and graph models propose identities, affordances and relations with per-candidate confidence; type, timing, geometry and task checks constrain them; a contradiction creates a localized finding and missing friction or contact evidence produces an unknown. Confirmed corrections become regression cases; coverage, mapping accuracy and task utility are measured separately.
+- Open question: What fraction of frames can be grounded automatically at a fixed audited accuracy, and which unknown types dominate the residual? **CTO** — M6.
+
+**Project 2.3 Two-tier checking and dispositions.** Bulk checks in the compiled subset; residual hard cases to first-order proving. Every record receives a disposition — valid success, valid failure (retained with its failure phase), correctable defect (new derived version, original retained), unresolved (review with exact missing evidence), unsupported synthetic (excluded from the approved split) — and a repair records method, reason, magnitude, reviewer and effect on labels. A sample of passed records is audited as well as the review queue.
+- Open question: What is the parthood- and contact-consistency violation rate in the open corpora and in partner data, by dataset and by axiom family? **CEO, ENG1** — M6 (10,000 verified episodes).
+
+**Project 2.4 Physics residuals (expansion gate).** Implement the observation contract and layered checks (geometry: scale, extent, penetration, transforms, reachability; kinematics: position, velocity, acceleration, timing; dynamics where torque and contact signals exist), calibrate tolerances on held-out measurements, and report proxy error and out-of-domain behaviour.
+- Open question: Does a calibrated surrogate reduce checking cost at the same false-accept rate as the analytic residual? **RL** — M8.
+
+### Theme 3 — Passport, validation and feedback (months 6–12)
+
+*Can a conclusion travel with the data, method, version and review history so that a recipient reruns the check, and does the loop lower the cost of the next batch?*
+
+**Project 3.1 Passport v1.** Identity and rights (dataset/episode IDs, source type, permitted use, content hashes, versions); scope and method (robot, task, calibration context, kernel, software, thresholds, limitations); findings and reproducibility (per-check results, evidence pointers, repairs, reviewer decisions, runnable specifications or proof/model artifacts); issuer and integrity (signature, signing policy, package hash). Every percentage carries a denominator, record counts and calibration provenance. Submit Passport v1 to [assessment body / standards organization] for written evaluation. **CEO, CTO** — M9.
+
+**Project 3.2 Pre-registered validation experiments.** With [two] design partners, and against customer scripts, simple rules, VLM-plus-rules and the existing stack at matched model, compute and data budget: detection (false accepts/rejects, review time); ablation (remove ontology, physics, uncertainty separately); training (raw, conventional filter, Engine, Engine plus augmentation → real success, interventions, failures); second robot (all adaptation hours recorded, retained performance); robustness (shift, missing fields, corruption, timeout → coverage and correct abstention). Rooms, objects, sessions and time are held out before tuning; confidence intervals are reported; negative results are preserved.
+- Open question: Which error classes do semantic checks detect that simple rules miss, and at what cost? **CTO, RL** — M12.
+- Open question: Does a second embodiment reuse task mappings with materially fewer adaptation hours? **RL** — M12.
+
+**Project 3.3 Feedback, augmentation and the training interface.** Classify confirmed findings (observation error, missing metadata, task-definition error, model limit, real robot failure) and route each to an adapter fix, calibration, rule, concept or measurement request; generate controlled variants around coverage gaps (lighting, viewpoint, pose, calibrated material/contact, task order and failures) with generator version, seed and real/synthetic proportion recorded, validated on independent real evidence; expose the kernel's named vocabulary through a soft-constraint interface L = L_task + λ·L_logic and validate the soft/hard bridge separately.
+- Open question: Does later-batch detection improve at a fixed error tolerance, net of rule-maintenance cost? **CEO, ENG1** — M12.
+- Open question: Does ontology-consistent augmentation improve generalization to unseen object categories in SAPIEN [15] [and a second simulator] under a fixed budget? **CTO** — M12 (research option; enters the product only on measured benefit).
+
+### Milestones
+
+| Milestone | Month | Deliverable and acceptance |
+|---|---|---|
+| M3 | 3 | Kernel v1 frozen: verified modules, compiled subset, regression suite; vertical slice on one supported task and connector with a blind baseline and a reproducible evidence package |
+| M6 | 6 | Engine v1: 10,000 verified episodes across [partner] data and open datasets; audit report with violation rates by dataset and axiom family; adapters for [four] formats |
+| M9 | 9 | Passport v1 shipped; written evaluation from [assessment body / standards organization]; physics-residual gate decision |
+| M12 | 12 | Validation experiments reported; [two] design-partner acceptances against independent baselines; augmentation and uncertainty gate decisions; product roadmap for months 13–18 |
+
+## 5. Team and management capability
+
+The funded team is [N] people in [Toronto / province]: the founder/CEO (ontology, product, standards; [Canadian presence from — date]), the CTO (McMaster AI doctorate; applied AI leadership), the robotics lead (mechanical/electronic engineering doctorate; autonomous-system perception), the senior 3D asset lead (10+ years production), and ENG1 [to hire in Canada; the IRAP Youth Employment Program may co-fund if the hire is eligible]. The Semantic Technologies Laboratory at the University of Toronto (Prof. M. Grüninger; COLORE, PSL, TUpper) is proposed as contractor for kernel verification under a research agreement [to confirm]. Management practice follows the deck's decision rule: pre-register comparisons, preserve negative results, and prefer the simpler method that achieves the customer outcome. Cash discipline is a monthly model of headcount, contractors, cloud/inference, working capital and minimum reserve, with financing sized to the 18-month plan [financial statements and cash position attached]. Data stays in the customer's environment under role-based, logged access; releases are signed with a dependency inventory and rollback; the rights boundary separates customer datasets and confidential findings from reusable adapters, task schemas and background technology.
+
+## 6. Commercial potential, commercialization plan and benefits to Canada
+
+**Buyers and offer.** First buyers own a recurring data decision: model developers (robot-learning lead: batch acceptance and diagnostics), robot OEMs (autonomy/quality lead: failure-linked regression evidence), data suppliers (data operations: repeatable customer acceptance) and industrial integrators (engineering/quality: application-specific test evidence). Qualified entry requires a named task family, a next training or release date, recurring batches and a measurable review bottleneck. The commercial offer is a pilot at USD 25–50k for 8–12 weeks on one task family with fixed data and acceptance, converting to an annual deployment at USD 120–240k with supported integrations, recurring checks and support. A sizing cohort of ten pilots and four annual conversions implies USD 250–500k in pilot bookings and USD 480–960k in annual recurring fees before credits. Customer ROI is stated conservatively: an illustrative 600 review-hours-per-month baseline at USD 150/hour with a hypothesized 40% reduction releases USD 432k of annual capacity against a USD 180k first-year purchase, before the customer's own integration and compute costs.
+
+**Market.** Counting eligible purchasing organizations rather than robot shipments, a focused pool of 80–200 US and Canadian organizations at USD 150–300k gives USD 12–60M annually, with platform paths to USD 100M ARR (500 customers at USD 200k or 200 at USD 500k). External budgets are committed: the data-annotation and training-data market is forecast to grow from USD 4.9B (2025) to USD 17.1B (2030); world-model companies and deployments (π0.5-style heterogeneous mixtures, NVIDIA's data factory, the Agility/GXO logistics deployment) each add streams of data that nobody has verified for physical and logical consistency.
+
+**Plan and gates.** Months 0–3: vertical slice, two paid validation engagements. Months 4–9: repeat delivery, three cumulative paying customers, positive delivery contribution on two. Months 10–18: second task or embodiment, reusable mappings, five cumulative customers and two renewals or expansions. Dated targets already set: three co-development partners signed and 10,000 verified episodes by Q1 2027; Passport v1 recognized by one assessment body or standards organization by Q2 2027. Runtime semantic guardrails remain a separately gated product requiring a qualified partner, target hardware and latency and fallback tests. Positioning is complementary to collection, simulation and tooling vendors; the wedge is cross-stack task semantics, localized check results and reproducible evidence inside the buyer's existing workflow, defended by accumulating validated task mappings, failure taxonomies, adapters and regression cases rather than by public standards or solvers alone.
+
+**Benefits to Canada.** The project creates [N] R&D positions in [Toronto / province], including ENG1, and places the company's core IP development (kernel, adapters, evidence schema) in Canada. Canadian robotics and manufacturing companies — the deck cites Sanctuary/Magna and Vention as deployment contexts — are first-tier buyers, and Canadian data suppliers gain a repeatable acceptance product to sell into US and EU markets ahead of the Annex I date. The kernel's ISO/IEC 21838-4 lineage, and the founder's standing in ISO/IEC JTC 1/SC 42 [Canadian mirror committee participation to confirm], give Canada a seat in the standardization of evidence formats for robot data, where the evidence format becomes the unit of measurement and of trade. Verified modules will be contributed to the open COLORE repository, and the audit methodology generalizes to medical-image part labels, CAD assemblies and building information models — sectors where the company already holds relationships with multinational medical-device and pharmaceutical companies, national standards bodies and a large hospital network.
+
+---
+
+## Bibliography
+
+[1] ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 42.
+[2] ISO/IEC 24707:2018. Information technology — Common Logic (CL): a framework for a family of logic-based languages.
+[3] W. McCune. Prover9 and Mace4. Software and documentation, 2005–2010.
+[4] L. de Moura and N. Bjørner. Z3: An efficient SMT solver. TACAS 2008.
+[5] Y. Ru and M. Grüninger. Material constitution as a parthood-preserving mapping between mereologies. Submitted to Synthese, 2026.
+[6] Y. Ru and M. Grüninger. [Exact title — mereological pluralism validation]. Submitted to Synthese, 2026.
+[7] LeRobot dataset format v3. Hugging Face, documentation.
+[8] RLDS: Reinforcement Learning Datasets. Google DeepMind, documentation.
+[9] Regulation (EU) 2024/1689 (Artificial Intelligence Act), as amended by Regulation (EU) 2026/1744; Annex I obligations for AI in machinery and other regulated products apply from 2 August 2028.
+[10] NIST. Artificial Intelligence Risk Management Framework (AI RMF 1.0), January 2023.
+[11] Open X-Embodiment Collaboration. Open X-Embodiment: Robotic learning datasets and RT-X models. 2023.
+[12] A. Khazatsky et al. DROID: A large-scale in-the-wild robot manipulation dataset. 2024.
+[13] AgiBot World Colosseo: A large-scale manipulation platform for scalable and intelligent embodied systems. 2025.
+[14] K. Mo et al. PartNet: A large-scale benchmark for fine-grained and hierarchical part-level 3D object understanding. CVPR 2019.
+[15] F. Xiang et al. SAPIEN: A simulated part-based interactive environment. CVPR 2020.
+[16] H. Geng et al. GAPartNet: Cross-category domain-generalizable object perception and manipulation via generalizable and actionable parts. CVPR 2023.
+[17] F. Lin et al. Data scaling laws in imitation learning for robotic manipulation. 2024.
+[18] M. Beetz et al. KnowRob 2.0 — A 2nd generation knowledge processing framework for cognition-enabled robotic agents. ICRA 2018.
+[19] S. Badreddine, A. d'Avila Garcez, L. Serafini, M. Spranger. Logic Tensor Networks. Artificial Intelligence 303, 2022.
+[20] R. Manhaeve et al. DeepProbLog: Neural probabilistic logic programming. NeurIPS 2018.
+[21] Z. Li et al. Fourier neural operator for parametric partial differential equations. arXiv:2010.08895, 2020.
+[22] A. N. Angelopoulos and S. Bates. A gentle introduction to conformal prediction and distribution-free uncertainty quantification. arXiv:2107.07511, 2021.
+[23] M. Grüninger and M. S. Fox. Methodology for the design and evaluation of ontologies. IJCAI-95 Workshop on Basic Ontological Issues in Knowledge Sharing, 1995.
+[24] M. Grüninger, T. Hahmann, A. Hashemi, D. Ong, A. Özgövde. Modular first-order ontologies via repositories. Applied Ontology 7(2), 2012.
+[25] ISO 18629 (parts 1, 11–14, 41–44). Industrial automation systems and integration — Process specification language.

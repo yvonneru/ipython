@@ -105,7 +105,9 @@ def coalesce(reg, threshold=0.6):
             ta, tb = _tokens(ra), _tokens(rb)
             if not ta or not tb: continue
             j = len(ta & tb) / len(ta | tb)
-            if j < threshold: continue
+            ua, ub = (ra.get("url") or "").lower().rstrip("/").replace("http://", "https://").replace("www.", ""), (rb.get("url") or "").lower().rstrip("/").replace("http://", "https://").replace("www.", "")
+            same_url = bool(ua) and ua == ub and len(ua) > 25
+            if j < threshold and not (same_url and j >= 0.25): continue
             def rank(r): return (VERDICT_RANK.get(r.get("verdict"), 0), CONF_RANK.get(r.get("deadline_confidence"), 0), r.get("fit_score") or 0)
             keep, drop = (ra, rb) if rank(ra) >= rank(rb) else (rb, ra)
             keep_id, drop_id = (a, b) if keep is ra else (b, a)
@@ -127,10 +129,13 @@ def coalesce(reg, threshold=0.6):
 
 def parse_date(d):
     if not d: return None
-    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", d)
-    if m: return datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
-    m = re.search(r"(\d{4})-(\d{2})", d)
-    if m: return datetime.date(int(m.group(1)), int(m.group(2)), 28)
+    for pat, day in ((r"(20\d{2})-(\d{2})-(\d{2})", None), (r"(20\d{2})-(\d{2})(?!\d)", 28)):
+        for m in re.finditer(pat, d):
+            y, mo = int(m.group(1)), int(m.group(2))
+            dd = int(m.group(3)) if day is None else day
+            if 1 <= mo <= 12 and 1 <= dd <= 31:
+                try: return datetime.date(y, mo, dd)
+                except ValueError: continue
     return None
 
 def sort_key(rec):
