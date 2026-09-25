@@ -1,6 +1,6 @@
 # Emails — Amazon Research Awards, Fall 2026
 
-Send 1, 2 and 5 on 2 October 2026 (email 1 alongside the CPRA follow-up already planned for that date); 3 and 4 once Prof. Grüninger has agreed. [Brackets] to fill.
+Send 1, 2 and 5 on 2 October 2026 (email 1 alongside the CPRA follow-up already planned for that date); 3 and 4 once Prof. Grüninger has agreed. [Brackets] to fill. Email 4 presupposes the Harvard Medical School appointment, which the profile marks [confirm]; do not send it unless that appointment is real and current.
 
 ---
 
@@ -14,7 +14,7 @@ Alongside the CPRA draft, one more ask that needs a faculty PI. Amazon Research 
 
 The proposal is the same program as the CPRA outline, cut to Amazon's three-page template: the verified parts ontology as a TUpper/PSL extension; the two-tier SMT-plus-prover audit of PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and AgiBot World, run on AWS; and the ontology-as-inductive-bias experiments in SAPIEN. It is written in your voice for the laboratory's prior work and I would not submit a sentence of that without your sign-off. Draft, budget skeleton and a brief are attached.
 
-If you are willing, four things by 24 October: your agreement in principle by 10 October; a one-page CV with your five or six most relevant papers (the template asks for exactly that); the exact citations for FOUnt and the mereotopology and TAMP papers, which I have left bracketed; and the name of someone at the Robotics Institute who could advise on the policy backbone and GPU sizing — the same person could be my second CPRA referee. I will handle Research Services and the budget with MIE finance.
+If you are willing, four things by 24 October: your agreement in principle by 10 October; a one-page CV with your five or six most relevant papers (the template asks for exactly that); the exact citations for FOUnt and the mereotopology and TAMP papers, which I have left bracketed; and the name of someone at the Robotics Institute who could advise on the policy backbone and GPU sizing — the same person could be my second CPRA referee. One point I want you to see before anything else: §1 of the draft distinguishes this proposal from your Discovery program (Discovery asks which mereotopologies ShapeNet and PartNet presuppose; this funds the audit at data scale and the learning experiments on AWS). If you would rather draw that line differently, I will rewrite it. I will handle Research Services and the budget with MIE finance.
 
 Best,
 Yi

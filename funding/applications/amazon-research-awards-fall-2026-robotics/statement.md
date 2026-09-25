@@ -1,20 +1,20 @@
 # Statements and CVs — Amazon Research Awards, Fall 2026
 
-ARA takes no personal statement or cover letter. The template requires a **one-page PI CV** (professional title, experience, and only the 5–6 most relevant papers) appended to the proposal; a named-researcher CV is optional [confirm whether the Fall 2026 portal accepts a second CV]. Part A is the PI CV skeleton for Prof. Grüninger to complete and approve; Part B is Dr. Ru's one-page named-researcher CV; Part C is a short "role of the named researcher" paragraph for any free-text team field in the portal. [Brackets] to confirm.
+ARA takes no personal statement or cover letter. Amazon's stated criteria include *readiness to deliver* and *real-world impact at scale* (Spring 2026 call text [verify on the Fall 2026 page]), so the PI CV should read as evidence of delivery: standards published, repository maintained, students graduated. The template requires a **one-page PI CV** (professional title, experience, and only the 5–6 most relevant papers) appended to the proposal; a named-researcher CV is optional [confirm whether the Fall 2026 portal accepts a second CV]. Part A is the PI CV skeleton for Prof. Grüninger to complete and approve; Part B is Dr. Ru's one-page named-researcher CV; Part C is a short "role of the named researcher" paragraph for any free-text team field in the portal. [Brackets] to confirm.
 
 ---
 
 ## Part A — One-page CV, Principal Investigator (for Prof. Grüninger to complete)
 
-**Michael Grüninger.** Professor [confirm rank], Department of Mechanical and Industrial Engineering, University of Toronto; Director, Semantic Technologies Laboratory. NSERC PIN 103297. [Email; ORCID.]
+**Michael Grüninger.** Professor [confirm rank], Department of Mechanical and Industrial Engineering, University of Toronto; [Director — confirm title], Semantic Technologies Laboratory. NSERC PIN 103297. [Email; ORCID.]
 
 **Research.** Axiomatization of ontologies as theories in first-order logic; techniques for their design and verification; ontology repositories; process and spatial ontologies; ontological analysis of AI benchmark datasets and of robotic task and motion planning.
 
 **Experience.** [Appointments, most recent first — Professor, University of Toronto, [years]; prior positions [e.g., NIST, University of Toronto Enterprise Integration Laboratory — confirm].]
 
 **Principal artefacts and standards.**
-- TUpper, the upper ontology published as ISO/IEC 21838-4:2023 (ISO/IEC JTC 1/SC 42); every module verified. [Role: editor / lead author — confirm.]
-- COLORE (Common Logic Ontology Repository), colore.oor.net: 2,580 verified first-order ontologies in Common Logic (ISO/IEC 24707), organized into hierarchies.
+- TUpper, the upper ontology published as ISO/IEC 21838-4:2023 (ISO/IEC JTC 1/SC 42), incorporating the PI's mereotopology, time, location and units-of-measure ontologies. [Role: editor / lead author — confirm.]
+- COLORE (Common Logic Ontology Repository), colore.oor.net: 2,580 first-order ontologies in Common Logic (ISO/IEC 24707), organized into hierarchies.
 - Process Specification Language (PSL) ontology [ISO 18629 — confirm].
 - FOUnt, ontologies for units of measure — Distinguished Paper Award, FOIS 2018 [confirm citation].
 
@@ -34,7 +34,7 @@ ARA takes no personal statement or cover letter. The template requires a **one-p
 
 ## Part B — One-page CV, named postdoctoral researcher
 
-**Yi Ru (茹意).** Postdoctoral Researcher, Harvard Medical School, [laboratory/department], since [month year]; incoming Postdoctoral Researcher, Semantic Technologies Laboratory, MIE, University of Toronto, from [April 2027 or later — confirm]. yi.ru@alumni.utoronto.ca. ORCID [id].
+**Yi Ru (茹意).** [Postdoctoral Researcher, Harvard Medical School, [laboratory/department], since [month year] — confirm the appointment; it is not on the CV]; incoming Postdoctoral Researcher, Semantic Technologies Laboratory, MIE, University of Toronto, from [April 2027 or later — confirm]. yi.ru@alumni.utoronto.ca. ORCID [id].
 
 **Education.** PhD, Information Engineering, University of Toronto (Department of Mechanical and Industrial Engineering), all requirements completed March 2025 (Fast Track PhD). Thesis: [title] — an architecture for AI knowledge systems in which a verified formal ontology governs the data model, the learned models and the simulation layer; elements contributed to ISO/IEC 21838-4:2023. BASc, Industrial Engineering (Minor: Engineering Business), University of Toronto, 2015; President Scholarship; Dean's Honours List.
 
@@ -58,4 +58,4 @@ Distinctions: Distinguished Paper Award, FOIS 2018 [confirm role]; invited AAAI 
 
 ## Part C — Role of the named researcher (for a free-text team field, ≤150 words)
 
-Dr. Yi Ru will lead the three themes of the proposal as a full-time postdoctoral researcher in the PI's laboratory from [April 2027 or later]. Dr. Ru developed, with the PI, the theory of material constitution as a parthood-preserving mapping between mereologies on which Theme 1 rests (two papers submitted to Synthese, 2026), is a core contributor to ISO/IEC 21838-4:2023, and has built ontology-governed data-integration systems in production at two companies — the combination of verified theory and shipped pipelines that Theme 2 requires. The PI supplies the verification methodology, the COLORE and PSL infrastructure and the graduate student; [Prof. name, U of T Robotics Institute] advises on the manipulation-policy backbone and simulator for Theme 3.
+Dr. Yi Ru will lead the three themes of the proposal as a full-time postdoctoral researcher in the PI's laboratory from [April 2027 or later]. Dr. Ru developed, with the PI, the theory of material constitution as a parthood-preserving mapping between mereologies on which Theme 1 rests (two papers submitted to Synthese, 2026 [under review — confirm status at submission]), is a core contributor to ISO/IEC 21838-4:2023 [confirm role wording], and as co-founder of Uing Technologies built ontology-based representations of objects and indoor environments for embodied AI in a shipped product — the combination of verified theory and production data pipelines that Theme 2 requires. The PI supplies the verification methodology, the COLORE and PSL infrastructure and the graduate student; [Prof. name, U of T Robotics Institute] advises on the manipulation-policy backbone and simulator for Theme 3.

@@ -37,7 +37,7 @@ I am a prospective postdoctoral candidate in the Department of Mechanical and In
 3. Whether the candidate or the supervisor submits, and whether MIE conducts an internal ranking with an earlier departmental deadline.
 4. How reference letters are submitted (by the applicant, by email from the referee, or through a link), how many are required, and whether the supervisor may also serve as a referee.
 5. The review criteria and their weights, if published.
-6. The rule on holding the fellowship concurrently with, or deferring it in favour of, an external award such as the NSERC Canada Postdoctoral Research Award or the Vector Institute fellowship, and the start-date window for the 2027 round.
+6. The rule on holding the fellowship concurrently with, or deferring it in favour of, an external award such as the NSERC Canada Postdoctoral Research Award or the Vector Institute fellowship, and the start-date window for this round.
 7. The allowable uses of the CAD 10,000 per year independent research funds.
 8. Whether a candidate who completed the PhD at the University of Toronto (March 2025), under a supervisor other than the proposed REPFP supervisor, is eligible without restriction; and how the "no more than one previous postdoctoral appointment" rule treats a current first postdoctoral appointment held elsewhere.
 9. Whether the supervisor's 40% contribution stated on the FASE page must come from a specific grant type (e.g., tri-agency), and whether it must be confirmed at nomination.
