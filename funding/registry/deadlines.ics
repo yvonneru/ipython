@@ -7,7 +7,7 @@ UID:72a2c0e5fef9@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:DEADLINE: Branco Weiss Fellowship - Society in Science (2027 round) (The Branco Weiss Fellowship - Society in Science (administered by ETH Zurich))
-DESCRIPTION:Tier B | conf medium | Conflicting records: official eligibility page recorded by a sibling scout says 'up to CHF 600,000 over up to 5 years' (salary plus research costs, flexible use); older material and the scout candidate say 'CHF 100,000 per year'. Confirm the exact 2027 figure on the official page. | https://brancoweissfellowship.org/
+DESCRIPTION:Tier B | conf high | Maximum CHF 600,000 for up to five years (confirmed on the official eligibility page; the "CHF 100,000 per year" figure was a per-year approximation of the same cap) | https://brancoweissfellowship.org/
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -19,7 +19,7 @@ UID:b2539d70aa33@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261017
 SUMMARY:DEADLINE: Canada Postdoctoral Research Award (CPRA) - NSERC stream, 2026 competition (NSERC / CIHR / SSHRC (tri-agency, Canada Research Training Awards Suite))
-DESCRIPTION:Tier A | conf medium | CAD 70,000 per year (taxable) | https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program
+DESCRIPTION:Tier A | conf high | CAD 70,000 per year (confirmed) | https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -31,7 +31,7 @@ UID:ba66a23a8600@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261125
 SUMMARY:DEADLINE: NSERC Alliance International Collaboration grant (U of T x Harvard/US robotics group) (NSERC)
-DESCRIPTION:Tier B | conf low | Recalled (unverified): Collaboration grants CAD 20,000-100,000 per year (older documents cite a CAD 30,000 minimum); no partner cash required; funds cover the Canadian side (HQP stipends/salaries, travel, exchange visits, materials). Catalyst grants: up to CAD 25,000 for 1 year (status in 2026 unconfirmed). | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
+DESCRIPTION:Tier B | conf high | Collaboration grants: up to CAD 100,000 per year for up to three years (ceiling confirmed; floor of CAD 20,000 not re-verified). Catalyst grants: general availability unconfirmed (programme was paused; only a G7 quantum-themed Catalyst call is visible). | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -39,35 +39,11 @@ DESCRIPTION:14 days to NSERC Alliance International Collaboration grant (U of T 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:124f8f262fec@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261128
-SUMMARY:DEADLINE: Microsoft Accelerate Foundation Models Research (AFMR) (Microsoft Research)
-DESCRIPTION:Tier B | conf low | Azure and Azure OpenAI credits (in-kind); no cash (historical; unconfirmed) | https://www.microsoft.com/en-us/research/collaboration/accelerating-foundation-models-research/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Microsoft Accelerate Foundation Models Research (AFMR)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ff0a44d17221@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261228
-SUMMARY:DEADLINE: University of Toronto MIE — Assistant Professor, Industrial Engineering / Information Engineering (2027 tenure-stream search) (University of Toronto, Faculty of Applied Science & Engineering, Dept. of Mechanical & Industrial Engineering)
-DESCRIPTION:Tier A | conf low | Tenure-stream salary (undisclosed; U of T assistant-professor range roughly C$130-170k) plus start-up package; NSERC Discovery and CFI JELF eligibility on appointment | https://jobs.utoronto.ca/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to University of Toronto MIE — Assistant Professor, Industrial Engineering / Information Engineering (2027 tenure-stream search)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:79c07cb9f901@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261015
 SUMMARY:DEADLINE: Cornell Klarman Fellowships (College of Arts & Sciences postdoctoral fellowship) (Cornell University, College of Arts & Sciences)
-DESCRIPTION:Tier B | conf medium | Approx. US$80,000/yr stipend plus benefits and US$12,000/yr research funds (per the scout's live-searched job-board listing; not re-verified - Klarman has raised the stipend in recent cycles, so confirm the 2027 figure) | https://as.cornell.edu/research/klarman-fellowships
+DESCRIPTION:Tier B | conf high | USD 80,000/yr stipend plus Cornell benefits and USD 12,000/yr research expenses (confirmed for the 2027 cycle) | https://as.cornell.edu/research/klarman-fellowships
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -111,18 +87,6 @@ DESCRIPTION:14 days to U of T Data Sciences Institute (DSI) Postdoctoral Fellows
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:5d96a8bc5303@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270728
-SUMMARY:DEADLINE: Creative Destruction Lab - Toronto, Artificial Intelligence stream (2027/28 cohort) (Creative Destruction Lab, Rotman School of Management, University of Toronto)
-DESCRIPTION:Tier B | conf low | No fee and no equity for participation; access to mentor/investor network; CDL mentors and associates may invest at their discretion. Unconfirmed for the 2027/28 cycle. | https://creativedestructionlab.com/streams/ai/cdl-toronto-artificial-intelligence/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Creative Destruction Lab - Toronto, Artificial Intelligence stream (2027/28 cohort)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:86eb3392f37c@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20260331
@@ -132,6 +96,42 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to CRA Trustworthy AI Research Fellowship for Early Career Scholars (2027-2028 cohort)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3f6543c405bd@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20270728
+SUMMARY:DEADLINE: Creative Destruction Lab — Toronto (AI / Robotics-Physical AI streams) (Creative Destruction Lab (Rotman School of Management, U of T))
+DESCRIPTION:Tier B | conf medium | No cash, no equity taken by CDL; 9-month objectives-based mentorship; mentors/affiliated funds often invest; cloud credits | https://creativedestructionlab.com/streams/ai/cdl-toronto-artificial-intelligence/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Creative Destruction Lab — Toronto (AI / Robotics-Physical AI streams)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cdfa71958c38@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:DEADLINE: Branco Weiss Fellowship - Society in Science (ETH Zurich (Branco Weiss Fellowship))
+DESCRIPTION:Tier A | conf high | Approx. CHF 100,000 per year (salary and/or staff/equipment, allocated by the fellow) | https://brancoweissfellowship.org/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Branco Weiss Fellowship - Society in Science
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:21426014eede@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20270328
+SUMMARY:DEADLINE: Newton International Fellowships (2027 round, Royal Society stream: natural sciences and engineering) (Royal Society (scheme run jointly with the British Academy))
+DESCRIPTION:Tier B | conf medium | Core award: subsistence about GBP 33,000 per year, research expenses up to GBP 8,000 per year, a one-off relocation allowance (~GBP 3,500) and a contribution to visa and Immigration Health Surcharge costs - roughly GBP 90,000-100,000 over two years. Separately, Newton alumni follow-on funding of up to GBP 6,000 per year for up to 10 years for fellows who return to their home country. Confirm exact 2027 figures in the scheme notes. | https://royalsociety.org/grants/newton-international-fellowships/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Newton International Fellowships (2027 round, Royal Society stream: natural sciences and engineering)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -147,11 +147,23 @@ DESCRIPTION:14 days to Vector Institute Distinguished Postdoctoral Fellowship (S
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ad5d3faa76b0@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261030
+SUMMARY:DEADLINE: Activate Fellowship 2027 (Boston / Berkeley / New York / Anywhere) (Activate Global)
+DESCRIPTION:Tier A | conf high | USD 100,000/yr living stipend for 2 years plus USD 100,000 R&D/company support, host-lab access, health benefits; equity-free | https://activate.org/apply
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Activate Fellowship 2027 (Boston / Berkeley / New York / Anywhere)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:319e85c7189f@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261125
 SUMMARY:DEADLINE: NSERC Alliance International Collaboration grants (and Catalyst grants, if still offered) - Prof. Grüninger as applicant, Dr. Ru named as HQP (Natural Sciences and Engineering Research Council of Canada (NSERC))
-DESCRIPTION:Tier B | conf medium | Collaboration: CAD 20,000 to 100,000 per year (scout's CAD 30,000 floor was wrong). Catalyst: up to CAD 25,000, one-time (if still offered). | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
+DESCRIPTION:Tier B | conf high | Collaboration: up to CAD 100,000 per year for up to three years (confirmed). Catalyst stream: general availability unconfirmed - the programme was paused in 2025-26; a themed G7 Alliance International Catalyst Quantum call exists separately. | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -159,23 +171,11 @@ DESCRIPTION:14 days to NSERC Alliance International Collaboration grants (and Ca
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:bbca1bb67bc6@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270228
-SUMMARY:DEADLINE: Mitacs Accelerate, postdoctoral stream (successor to Mitacs Elevate, which was discontinued 31 March 2025); Accelerate Entrepreneur variant if AXIOMALITY is the partner (Mitacs)
-DESCRIPTION:Tier B | conf medium | Accelerate postdoc units: about CAD 20,000 per 4 to 6 month unit, up to 3 units (about CAD 60,000) per year and up to 9 units (3 years); partner contributes roughly half per unit (about CAD 10,000), Mitacs the rest; a reduced partner share applies to eligible start-ups under Accelerate Entrepreneur. The Elevate figure (CAD 60k/yr for 2 years with a separate training component) no longer applies. Confirm unit values on the Mitacs page. | https://www.mitacs.ca/our-programs/accelerate/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Mitacs Accelerate, postdoctoral stream (successor to Mitacs Elevate, which was discontinued 31 March 2025); Accelerate Entrepreneur variant if AXIOMALITY is the partner
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:e1dfb65e5146@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261103
 SUMMARY:DEADLINE: Digital Research Alliance of Canada - Resource Allocation Competition (RAC) 2027, Resources for Research Groups (RRG) stream, incl. AI compute (PAICE / Killarney) and Trillium GPU at SciNet (Digital Research Alliance of Canada (national systems hosted by SciNet/Compute Ontario, Vector-hosted Killarney, etc.))
-DESCRIPTION:Tier B | conf medium | In-kind only: GPU allocations expressed in reference GPU units (RGU) on H100-class systems (Killarney, Trillium-GPU, Fir, Rorqual, Nibi), CPU core-years, storage and cloud; no cash. First-year RRG GPU requests without prior RAC history are routinely scaled back. | https://alliancecan.ca/en/services/advanced-research-computing/accessing-resources/resource-allocation-competition
+DESCRIPTION:Tier B | conf high | In-kind only: GPU allocations expressed in reference GPU units (RGU) on H100-class systems (Killarney, Trillium-GPU, Fir, Rorqual, Nibi), CPU core-years, storage and cloud; no cash. First-year RRG GPU requests without prior RAC history are routinely scaled back. | https://alliancecan.ca/en/services/advanced-research-computing/accessing-resources/resource-allocation-competition
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
