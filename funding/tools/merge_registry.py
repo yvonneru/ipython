@@ -81,6 +81,50 @@ def merge(reg, scratch):
     print(f"merged {n_scout} new scouted, {n_ver} verified records; registry now has {len(entries)} entries")
     return reg
 
+
+CONF_RANK = {"high": 3, "medium": 2, "low": 1, None: 0, "": 0}
+VERDICT_RANK = {"confirmed": 4, "corrected": 4, "closed_for_cycle": 3, "ineligible": 3, "discontinued": 3, "unverifiable": 2, "scouted": 1, None: 0}
+
+def _tokens(rec):
+    return set(norm(rec.get("name")).split())
+
+def coalesce(reg, threshold=0.6):
+    """Merge near-duplicate entries (same funder tokens overlap and name Jaccard >= threshold).
+    The record with the stronger verdict / deadline confidence survives; sources are unioned;
+    the surviving slug is the one that already has a package directory, if any."""
+    entries = reg["entries"]
+    ids = list(entries.keys())
+    dropped = set()
+    for i, a in enumerate(ids):
+        if a in dropped: continue
+        for b in ids[i+1:]:
+            if b in dropped: continue
+            ra, rb = entries[a], entries[b]
+            fa, fb = set(norm(ra.get("funder")).split()), set(norm(rb.get("funder")).split())
+            if fa and fb and not (fa & fb): continue
+            ta, tb = _tokens(ra), _tokens(rb)
+            if not ta or not tb: continue
+            j = len(ta & tb) / len(ta | tb)
+            if j < threshold: continue
+            def rank(r): return (VERDICT_RANK.get(r.get("verdict"), 0), CONF_RANK.get(r.get("deadline_confidence"), 0), r.get("fit_score") or 0)
+            keep, drop = (ra, rb) if rank(ra) >= rank(rb) else (rb, ra)
+            keep_id, drop_id = (a, b) if keep is ra else (b, a)
+            app_dir = os.path.join(REG, "..", "applications")
+            if os.path.isdir(os.path.join(app_dir, drop["slug"])) and not os.path.isdir(os.path.join(app_dir, keep["slug"])):
+                keep["slug"] = drop["slug"]
+            keep["sources"] = sorted(set((keep.get("sources") or []) + (drop.get("sources") or [])))
+            for f, v in drop.items():
+                if f not in keep or keep[f] in (None, "", [], "unknown"):
+                    keep[f] = v
+            alt = drop.get("deadline")
+            if alt and alt != keep.get("deadline"):
+                keep["cycle_note"] = ((keep.get("cycle_note") or "") + f" | alternative deadline seen: {alt} ({drop.get('deadline_confidence')})").strip(" |")
+            keep.setdefault("merged_from", []).append(drop.get("name"))
+            dropped.add(drop_id)
+    for d in dropped: del entries[d]
+    if dropped: print(f"coalesced {len(dropped)} near-duplicate entries")
+    return reg
+
 def parse_date(d):
     if not d: return None
     m = re.match(r"(\d{4})-(\d{2})-(\d{2})", d)
@@ -134,6 +178,7 @@ if __name__ == "__main__":
     reg = load_registry()
     if a.scratch:
         reg = merge(reg, a.scratch)
+        reg = coalesce(reg)
         with open(OPP, "w") as f:
             json.dump(reg, f, indent=1, ensure_ascii=False)
         print(f"wrote {OPP}")
