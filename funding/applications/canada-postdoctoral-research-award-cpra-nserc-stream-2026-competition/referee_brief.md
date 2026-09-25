@@ -13,13 +13,13 @@ The Canada Postdoctoral Research Award is the tri-agency program that succeeded 
 
 ## What the system asks
 
-Two text boxes with character limits (roughly half a page and three-quarters of a page) [verify the current limits when the NSERC email arrives]. There is no attachment; text only. Please write in the boxes rather than pasting a letter that will be truncated.
+Two text boxes with character limits — the first about half a page, the second about three-quarters of a page (NSERC's instructions for completing a reference letter, form 201; the exact character counts appear on screen). There is no attachment; text only. Please write in the boxes rather than pasting a letter that will be truncated.
 1. **Research ability and potential** — originality, independence, judgement, productivity relative to career stage.
 2. **Relevant skills and experience** — communication, collaboration, leadership, initiative, and the ability to see a program through.
 
 ## What reviewers score
 
-Research ability and potential (50%) and quality of the proposed research (50%) [weights as recorded in the applicant's draft; verify on the NSERC program page]. The most useful letters give one or two concrete examples — a result you saw the applicant obtain, a problem they solved without direction, a piece of work you would not have expected at their stage — and state plainly where the applicant stands relative to other postdoctoral researchers you have known.
+NSERC's review committee guide for the CGRS-Doctoral and CPRA programs: 50% the research potential and experience of the applicant; 50% the quality of the proposed research program, which includes how equity, diversity and inclusion are integrated in the research design. Contributions are assessed on quality and impact, not on number. The most useful letters give one or two concrete examples — a result you saw the applicant obtain, a problem they solved without direction, a piece of work you would not have expected at their stage — and state plainly where the applicant stands relative to other postdoctoral researchers you have known.
 
 ## The proposed program in three sentences
 
@@ -30,11 +30,11 @@ Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, AgiBot World) ann
 1. **The theoretical work on material constitution and mereological pluralism** (two papers submitted to Synthese, 2026, with M. Grüninger), and why a machine-checkable account of when two part decompositions are compatible matters for knowledge representation and for robot data.
 2. **The ISO/IEC 21838-4 contribution** — what it shows about rigour (every claim a theorem or a counter-model) and about the ability to work in an international standards body.
 3. **The move from theory to deployed systems** — patents, production data-integration and 3D-dataset work at companies I co-founded — and why that predicts success with the audit (Theme 2) and learning (Theme 3) components, which are engineering at dataset scale.
-4. **Independence** — the proposed program is my own, complementary to but distinct from my supervisor's NSERC programs on the Physical Turing Test and commonsense cobotics; nothing in it appears in my thesis.
+4. **Independence** — the proposed program is my own. Prof. Grüninger's NSERC programs (Physical Turing Test; Commonsense Cobotics) analyse the static part decompositions of vision benchmarks such as ShapeNet and PartNet; this program addresses manipulation datasets with articulated, functional and assembly parthood and parthood change, audit at dataset scale, provable cross-dataset alignment, and learned policies. Nothing in it appears in my thesis. A sentence from a referee who knows both programs saying this in their own words is worth more than my saying it.
 
 ## Who is being asked
 
-- Referee 1: Prof. Michael Grüninger (proposed supervisor; co-author of the Synthese submissions). [Confirm that NSERC permits the proposed supervisor to act as a referee for this program; if not, substitute an external expert in applied ontology.]
+- Referee 1: Prof. Michael Grüninger (proposed supervisor; co-author of the Synthese submissions). [Read NSERC's form 201 reference-letter instructions for who may report: confirm that the proposed supervisor is permitted and whether the doctoral supervisor is expected. If Prof. Grüninger was also the doctoral supervisor, or if the instructions exclude the proposed supervisor, at least one referee must come from outside his laboratory — the Harvard supervisor or an external applied-ontology expert — so that the panel has an independent view of the applicant.]
 - Referee 2: [Harvard Medical School postdoctoral supervisor — name], or [a University of Toronto Robotics Institute faculty member suggested by Prof. Grüninger], or [an external expert in applied ontology or robot learning — name].
 
 ## Attached

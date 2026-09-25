@@ -21,6 +21,7 @@ Four questions, if you are open to this:
 2. Which research subject code would you put it under — Computing Sciences or Civil and Industrial Engineering? The code decides the committee.
 3. Could the current verification pipeline handle the audit at dataset scale, or would you scope Objective 2 differently?
 4. Is there someone at the Robotics Institute you would suggest for the simulation component? They could also serve as my second referee.
+5. NSERC's reference instructions say who may report; I will check whether the proposed supervisor is permitted. If so, would you be one of my two referees? If not, I will ask [the Harvard supervisor / an external applied-ontology expert] instead.
 
 Separately: do you hold an active tri-agency grant with payments in 2025-26 or 2026-27? The Canada Impact+ Research Training Awards require a nominator holding one, and that program looks likely to run again for 2027.
 

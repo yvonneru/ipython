@@ -1,7 +1,7 @@
 # Budget and timeline — Eric and Wendy Schmidt AI in Science Postdoctoral Fellowship (U of T)
 
 ## Budget
-The fellowship's financial terms are fixed by the program and no budget is requested from the applicant: CAD 85,000 per year salary plus about CAD 11,000 per year in benefits/levy, for two years, paid through the University of Toronto [verify whether the amount is fixed or whether the supervisor tops up; verify whether a research/travel allowance exists and its amount]. Research costs are therefore covered as follows (all to confirm with Prof. Grüninger and the co-supervisor):
+The fellowship's financial terms are fixed by the program and no budget is requested from the applicant: CAD 85,000 per year salary, plus a fixed CAD 11,000 per year paid towards the standard benefit rate and postdoctoral levy incurred by the supervisor's unit, for two years (confirmed from the DSI page via search on 2026-09-25) [verify whether the supervisor may top up; verify whether a research/travel allowance exists and its amount — none is mentioned in the snippet]. Research costs are therefore covered as follows (all to confirm with Prof. Grüninger and the co-supervisor):
 
 | Item | Source | Note |
 |---|---|---|
@@ -30,4 +30,6 @@ Nothing in this package commits any dollar figure beyond the program's own terms
 ## Dependencies and risks
 - Theme 3 depends on a co-supervisor with a part-aware manipulation pipeline; if none is secured by M2, fall back to the open SAPIEN/ManiSkill-style baselines [verify names] and Vector collaborators.
 - If the SMT tier cannot cover most obligations at dataset scale (Theme 2 first open question), the audit is reported on stratified samples with theorem-proving verification, and the full-scale run moves to Y2.
-- If DSI confirms that candidates with AI-adjacent doctorates are not the intended cohort, this package is redirected: the proposal and timeline are reused unchanged for the DSI Postdoctoral Fellowship (January 2027) and the NSERC CPRA (17 October 2026).
+- If the apply page requires two co-supervisors and none is secured by 1 October, the application cannot be submitted as drafted; the proposal and timeline are then reused unchanged for the NSERC CPRA (17 October 2026) and the DSI Postdoctoral Fellowship (January 2027), which also needs a second co-supervisor.
+- If DSI confirms that candidates with AI-adjacent doctorates are not the intended cohort, the same redirection applies.
+- Timeline assumes a 1 May 2027 start; the milestones are relative to the start month and shift with it.
