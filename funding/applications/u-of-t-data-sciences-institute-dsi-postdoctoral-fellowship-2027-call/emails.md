@@ -8,15 +8,15 @@ Subject: DSI Postdoctoral Fellowship (January 2027) — co-supervision, and a se
 
 Dear Michael,
 
-Following on from the CPRA application: I would also like to apply to the Data Sciences Institute Postdoctoral Fellowship in the January 2027 call, with you as one of two co-supervisors. The fellowship is CAD 60,000 per year plus benefits for up to two years and is aimed at multidisciplinary data-science research; the applicant deadline is expected around 22 January, with co-supervisor letters due about a week later. It cannot be held together with the CPRA or Vector, so it is the fallback that keeps the Toronto plan alive if those fail.
+Following on from the CPRA application: I would also like to apply to the Data Sciences Institute Postdoctoral Fellowship in the January 2027 call, with you as one of two co-supervisors. The fellowship is CAD 60,000 per year plus benefits for up to two years and is aimed at multidisciplinary data-science research; the applicant deadline has fallen between 12 and 23 January in recent calls, with co-supervisors' structured forms due about a week later, and the fellowship would start on 1 May 2027 or later. It cannot be held together with the CPRA or Vector, so it is the fallback that keeps the Toronto plan alive if those fail.
 
 The proposal is the same program, framed for DSI: the verified parts ontology as a TUpper extension with PSL; a general, scalable method for auditing hierarchical annotations against a formal specification, applied to PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and AgiBot World; provably meaning-preserving cross-dataset mappings and a merged corpus; and a statistically designed evaluation of whether alignment and constraints change what policies learn. Draft attached.
 
 Two things I need:
-1. Would you co-supervise, and could you write the DSI co-supervisor letter in late January?
-2. DSI requires the two co-supervisors to be from complementary disciplines, at least one with a track record in developing statistical or computational methods. Is there someone at the Robotics Institute, Computer Science or Statistical Sciences you would suggest — ideally someone with a part-aware manipulation pipeline and a simulation setup who would take the evaluation design? I would approach them with the attached note, or with an introduction from you if you prefer.
+1. Would you co-supervise, and could you complete the DSI co-supervisor form (short structured comments on research potential and on research & training) in mid-to-late January?
+2. DSI requires the two co-supervisors to be from complementary disciplines, at least one with a track record in developing novel statistical or computational tools; they may be from the same department if the disciplines differ. Is there someone at the Robotics Institute, Computer Science, Statistical Sciences or within MIE you would suggest — ideally someone with a part-aware manipulation pipeline and a simulation setup who would take the evaluation design? I would approach them with the attached note, or with an introduction from you if you prefer.
 
-I plan to attend the DSI information session in early December and will send you the form's exact requirements then. Thank you.
+I am writing to DSI this month about the exact deadline and form, and will attend the December information session; I will send you the requirements as soon as I have them. Thank you.
 
 Best,
 Yi
@@ -27,11 +27,11 @@ Subject: DSI Postdoctoral Fellowship — would you consider co-supervising a dat
 
 Dear Prof. [name],
 
-Prof. Michael Grüninger suggested I write to you [or: I am writing because of your work on [topic — cite one specific paper or system]]. I am a University of Toronto PhD (Information Engineering, 2025), currently a postdoctoral researcher at Harvard Medical School, and I am preparing an application to the Data Sciences Institute Postdoctoral Fellowship for the January 2027 call. The fellowship requires two U of T co-supervisors from complementary disciplines, at least one with a track record in developing statistical or computational methods; Prof. Grüninger has agreed to be one, and I would like to ask whether you would consider being the other.
+Prof. Michael Grüninger suggested I write to you [or: I am writing because of your work on [topic — cite one specific paper or system]]. I am a University of Toronto PhD (Information Engineering, 2025), currently a postdoctoral researcher at Harvard Medical School, and I am preparing an application to the Data Sciences Institute Postdoctoral Fellowship for the January 2027 call. The fellowship requires two U of T co-supervisors from complementary disciplines (the same department is permitted), at least one with a track record in developing novel statistical or computational tools; Prof. Grüninger has agreed to be one, and I would like to ask whether you would consider being the other.
 
 The project is a data-quality and data-integration problem in physical AI. The part-level datasets that manipulation policies are trained on (PartNet, PartNet-Mobility, GAPartNet, AgiBot World) define "part" independently and are pooled freely, and no one has checked them against any formal specification of parthood. I propose a verified ontology of object parts (Prof. Grüninger's side), a scalable audit pipeline that measures parthood consistency and derives cross-dataset mappings that are meaning-preserving by proof, and then a statistically designed evaluation of whether ontology-aligned data pools without loss and whether ontology constraints improve generalization to unseen object categories in SAPIEN — the part I would hope to do with you. A 2–3 page proposal is attached.
 
-What I would ask of you: agreement to co-supervise; a short letter to DSI by the co-supervisor deadline (about a week after the late-January applicant deadline); access to a part-aware manipulation pipeline and simulation environment for the evaluation component; and roughly monthly meetings. What you would get: a verified, released parts ontology and audit toolkit usable in your own work, co-authorship on the audit and methods papers, and a fellow who has built production data systems. I would be glad to meet for twenty minutes, in person or online, at any time that suits you, and to send the audit-pipeline design before we talk.
+What I would ask of you: agreement to co-supervise; a short structured form for DSI by the co-supervisor deadline (about a week after the January applicant deadline); access to a part-aware manipulation pipeline and simulation environment for the evaluation component; and roughly monthly meetings. What you would get: a verified, released parts ontology and audit toolkit usable in your own work, co-authorship on the audit and methods papers, and a fellow who has built production data systems. I would be glad to meet for twenty minutes, in person or online, at any time that suits you, and to send the audit-pipeline design before we talk.
 
 Thank you for considering it.
 
@@ -39,9 +39,9 @@ Best regards,
 Yi Ru
 [email] · [ORCID] · [link to CV]
 
-## 3. To each referee — send by 8 January 2027, once both co-supervisors are confirmed
+## 3. To each additional referee (only if the form requires referees beyond the co-supervisors) — send by 15 December 2026, once both co-supervisors are confirmed
 
-Subject: Reference for the U of T Data Sciences Institute Postdoctoral Fellowship — by 20 January
+Subject: Reference for the U of T Data Sciences Institute Postdoctoral Fellowship — by 6 January
 
 Dear [name],
 

@@ -17,7 +17,7 @@ Activate selects fellows, not only technologies: the person's ability to lead th
 ## Points that would help (choose the ones you can speak to)
 
 1. Rigour that reached a standard. The ISO/IEC 21838-4 contribution and the material-constitution / mereological-pluralism theory (two Synthese submissions, 2026): that the axioms are machine-checked, and what it took to carry them through an ISO committee. (Prof. Grüninger.)
-2. Theory that became product. That I have designed and shipped ontology-governed data systems at production scale — MICAS (CRM/ERP/WMS; >USD 50M revenue in year one), Uing Technologies (structured 3D datasets; Apple Vision Pro app), 13 granted patents — and that this predicts I can turn the verification kernel into an Engine customers pay for. (Co-founders, CTO, former investors or partners.)
+2. Theory that became product. That I have built and shipped data systems at production scale — MICAS (CRM/ERP/WMS; >USD 50M annual revenue within a year), Uing Technologies (ontology-based 3D datasets; Apple Vision Pro app), 13 granted patents [confirm counts] — and that this predicts I can turn the verification kernel into an Engine customers pay for. (Co-founders, CTO, former investors or partners.)
 3. Leadership under real conditions. Leading a 100+ person team; leading nine patent filings; leading the company's standards and customer conversations now. (Anyone who worked in or with those companies.)
 4. Independence and judgement. That AXIOMALITY's program is mine — the parts theory, the audit idea, the Passport — and that I choose problems well and finish them. (Prof. Grüninger; the Harvard supervisor.)
 

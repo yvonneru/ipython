@@ -1,0 +1,61 @@
+# Research proposal — Newton International Fellowship 2027 (Royal Society stream)
+
+**Applicant:** Dr. Yi Ru · **Proposed UK host:** [host organisation and department — confirm] · **UK sponsor:** [name — confirm] · **Home-country collaborator:** Prof. Michael Grüninger, Semantic Technologies Laboratory, University of Toronto.
+
+**Format note.** The Flexi-Grant research-proposal field for this scheme is limited to **1,500 words** (Manchester scheme page; confirm in the 2027 scheme notes whether references count toward the limit and whether the field accepts headings). The body below is written to that limit; the reference list is kept separate so it can be dropped into the "References" field if one exists, or trimmed if it must fit inside the 1,500 words. The scheme notes ask the proposal to explain why I have chosen this subject area, what about the proposed research I find particularly important, its potential impact or wider benefits to society, and any fieldwork outside the UK (none is proposed).
+
+---
+
+## Title
+
+Verified mereological ontologies for object–part representation in physical AI
+
+## Why this subject, and why it matters now
+
+An ontology is a computer-interpretable specification of what the terms used by an agent or dataset mean. Robot-learning datasets — PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World, Open X-Embodiment and DROID — annotate objects as hierarchies of parts with kinematic, functional and visual labels [1–4]. Manipulation policies are trained on these hierarchies, yet each dataset defines "part" operationally, no dataset or learned model is required to satisfy the axioms of parthood, and there is no principled way to map labels across datasets. Pooled training silently mixes incompatible part vocabularies. The consequences — poor transfer across part vocabularies and brittle generalisation to new object categories — are observed but have never been measured, because there has been no formal specification to measure against.
+
+I have chosen this problem because it sits exactly where my two lines of work meet. As a core contributor to ISO/IEC 21838-4:2023 (the TUpper top-level ontology) I learned to give an ontology the rigour of a mathematical theory: every claim a theorem or a counter-model [5, 6]. With Prof. Grüninger I then developed a theory of material constitution as a parthood-preserving mapping between mereologies, and a validation of mereological pluralism, both under review at *Synthese* [7, 8]. That theory says precisely when two part decompositions of the same object are compatible — which is the question robot datasets pose and leave unanswered. What I find most important is that the answer can now be tested at scale: the physical-AI datasets released in the past three years provide, for the first time, data on which the theory can be checked, and a two-year fellowship matches the sequence of work required.
+
+## Objectives
+
+*Long-term challenge: can the part-level representations that robot-learning systems learn be shown to satisfy the axioms of parthood that humans use, and does enforcing those axioms improve generalisation?*
+
+1. **Ontology as specification.** Axiomatise and verify a modular first-order ontology of physical object parts (rigid, articulated, functional, assembly) as an extension of TUpper integrated with the Process Specification Language (PSL) for state change under manipulation.
+2. **Ontology as audit.** Build a pipeline that checks part annotations against the ontology, producing the first quantitative measurement of parthood consistency in robot datasets and provably meaning-preserving cross-dataset label mappings.
+3. **Ontology as inductive bias.** Use the verified ontology to constrain part-aware manipulation policies and measure the effect on generalisation to unseen object categories.
+
+## Programme of work
+
+**Work package 1 — Specification (months 1–8).** The parts ontology will be designed using the ontology lifecycle methodology of the COLORE repository [9] and verified in the standard sense: consistency, non-triviality and the relationships between modules established with Prover9 and Mace4, and representation theorems that characterise the models of each module up to isomorphism. Competency questions come from the datasets themselves — for example, whether a movable link in PartNet-Mobility, a segmentation label in PartNet and an actionable region in GAPartNet can denote the same part. Milestone M8: verified ontology released under an open licence and submitted to COLORE. *Open questions:* Do the kinematic, functional and visual decompositions of a single object require distinct parthood relations, each with its own axiomatisation? Is a single mereology sufficient once material constitution is treated as a mapping between mereologies?
+
+**Work package 2 — Audit (months 4–16).** Annotation hierarchies are translated into ontology instances and checked by a two-tier pipeline: Datalog/SMT rules for the bulk of the data (millions of part instances) and first-order theorem proving for residual hard cases, with UNKNOWN and timeout treated as first-class outputs rather than silently discarded. Output per dataset: the rate and pattern of parthood-axiom violations; across datasets: the label mappings that are provably meaning-preserving; and a merged, ontology-aligned corpus. Milestone M12: audit of five datasets published with corrected annotations; M16: audit toolkit packaged for reuse on other hierarchical annotations (CAD assemblies, building information models, part labels in medical imaging). *Open questions:* What proportion of violations are annotation errors versus genuine ambiguity in the schema? Which axiom families are violated most often, and do violations cluster by object category?
+
+**Work package 3 — Learning (months 12–24).** With the host group's robot-learning pipeline [confirm: the sponsor's simulation and policy-training infrastructure], I will develop (a) differentiable relaxations of parthood constraints as auxiliary losses on inferred part relations, (b) constraint-guided data augmentation that synthesises ontology-consistent part configurations for underrepresented categories, and (c) a verification-in-the-loop evaluation protocol that reports, alongside task success, the rate at which a policy's inferred object structure violates the ontology. Hypotheses: ontology-consistent training improves generalisation to unseen PartNet-Mobility categories; violation rate predicts task failure and serves as an interpretable failure signal; pooled, ontology-aligned data trains policies that transfer across part vocabularies. Experiments in SAPIEN [and a second simulator available at the host — confirm], with matched comparisons across held-out categories and ablations by axiom family. Milestone M24: methods paper and evaluation protocol released.
+
+## Fit with the host and mutual benefit
+
+The verified-ontology methodology with tool support was developed in Prof. Grüninger's laboratory in Toronto, and I bring it with me; what the fellowship adds is a UK host that produces and consumes part-level robot data and can scrutinise claims about generalisation. [Host group — confirm] provides [the sponsor's expertise in knowledge-based robotics / robot learning / Datalog-based reasoning — tailor once the sponsor is confirmed], the simulation and compute infrastructure for work package 3, and a community of applied-ontology and formal-verification researchers [confirm the specific UK groups: e.g., Oxford Robotics Institute, Edinburgh Centre for Robotics, Bristol Robotics Laboratory, Manchester's ontology group, Leeds qualitative-spatial-reasoning group]. In return the host receives a verified parts ontology and audit toolkit usable in its own work, an interpretable failure signal for its manipulation policies, and public data. Prof. Grüninger remains the home-country collaborator: the ontology enters the COLORE repository, the theory papers continue jointly, and the standardisation route through ISO/IEC JTC 1/SC 42 — where the UK national body participates [confirm the BSI mirror committee] — becomes a UK–Canada link that outlasts the fellowship.
+
+## Impact and wider benefits
+
+Near term, the audit is a study of what the field's manipulation policies are actually trained on; corrected annotations and provable label mappings raise the quality of public benchmarks for everyone who uses them. The evaluation protocol gives regulators and assurance bodies a machine-checkable property of training data and of policies — the kind of evidence that AI-in-machinery rules (EU AI Act Annex I from 2 August 2028; the NIST AI Risk Management Framework; [the UK AI assurance programme — confirm current name]) will require. Longer term, the ontology contributes to an open knowledge network of verified theories about the physical world and to the ISO/IEC 21838 family of standards. The audit toolkit generalises beyond robotics to any hierarchical annotation problem, including medical imaging, which connects to my current work at Harvard Medical School [confirm one sentence on the Harvard project]. No fieldwork outside the UK is proposed; collaboration visits to Toronto will be short and within the scheme's limits.
+
+## Career development
+
+The fellowship gives me a second research environment after Toronto and Harvard, independence on a programme that is my own, and the UK network needed for a faculty position in knowledge representation for engineering systems. Through the alumni follow-on funding I intend to keep the UK host as a standing collaborator after I return to North America.
+
+---
+
+## References
+
+[1] Mo, K., et al. PartNet: A large-scale benchmark for fine-grained and hierarchical part-level 3D object understanding. CVPR 2019.
+[2] Xiang, F., et al. SAPIEN: A simulated part-based interactive environment (PartNet-Mobility). CVPR 2020.
+[3] Geng, H., et al. GAPartNet: Cross-category domain-generalizable object perception and manipulation via generalizable and actionable parts. CVPR 2023.
+[4] [AgiBot World / Open X-Embodiment / DROID dataset papers — insert the exact citations used in the CPRA bibliography].
+[5] ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper.
+[6] [Ru, Y. Doctoral thesis title. University of Toronto, 2025 — insert].
+[7] Ru, Y., and Grüninger, M. (2026, submitted). Material Constitution as a Parthood-Preserving Mapping between Mereologies. *Synthese*.
+[8] Ru, Y., and Grüninger, M. (2026, submitted). [Exact title of the mereological-pluralism validation paper]. *Synthese*.
+[9] Grüninger, M., et al. COLORE: Common Logic Ontology Repository (colore.oor.net) — [insert the standard COLORE citation used in Prof. Grüninger's proposals].
+[10] Grüninger, M. Process Specification Language (PSL) ontology — [insert the standard PSL citation, ISO 18629].
+[11] [Any published ML/robotics paper by the applicant — insert if available.]

@@ -2,19 +2,19 @@
 
 ## Budget
 
-No budget is requested or submitted. The fellowship is a fixed-value award: CAD 60,000 per year plus benefits, for up to two years, paid through the University of Toronto [confirm on the 2027 page whether the value has changed, whether a research or travel allowance is included, and whether the co-supervisors are expected to top up the salary or cover benefits]. Costs not covered by the fellowship and how they are met:
+No budget is requested or submitted. The fellowship is a fixed-value award: CAD 60,000 per year plus benefits (registry figure, not re-verified), for up to two years [confirm on the 2027 page the value, the payment route, whether a research or travel allowance is included, and whether the co-supervisors are expected to top up the salary or cover benefits]. Costs not covered by the fellowship and how they are met:
 
 | Need | Source | Note |
 |---|---|---|
 | Verification infrastructure (COLORE, Prover9/Mace4, Common Logic tooling) | Semantic Technologies Laboratory (Prof. Grüninger) | in place |
 | Compute for the audit pipeline (Datalog/SMT over millions of part instances) | Laboratory workstation / [U of T or Compute Ontario allocation — confirm] | Y1 |
-| Compute for policy training and simulation (Theme 3; SAPIEN and [second simulator]) | [Second co-supervisor's allocation / Vector Institute affiliation — confirm] | Y2-heavy |
+| Compute for policy training and simulation (Theme 3; SAPIEN and [second simulator]) | [Second co-supervisor's allocation / Vector Institute affiliation — confirm]. Fallback if unavailable: audit already-released policies for violation rate (no training) | Y2-heavy |
 | Conference travel (one AI/ML or robotics venue per year) | [Fellowship allowance if any / co-supervisors' grants / DSI travel support — confirm] | [amount] |
 | Data hosting for the released corpus and toolkit | [U of T Dataverse / GitHub / Zenodo — free tiers] | Y1–Y2 |
 
 ## Award window and concurrency
 
-- Start: [verify the permitted window; the applicant's earliest Toronto start is April 2027]. Decisions: [verify; previous calls decided in the spring].
+- Start: between 1 May and 1 December of the award year (DSI page, per search summary; verify for 2027). Planned start 1 May 2027 (the applicant's earliest Toronto start is April 2027). Decisions: [verify; previous calls decided in the spring].
 - May not be held concurrently with another major fellowship (Vector Distinguished Postdoctoral Fellowship, Schmidt AI in Science; NSERC CPRA [verify]). If more than one succeeds, the applicant chooses at offer stage; see README.md.
 
 ## Milestone timeline (24 months; Y1 is a complete 12-month program on its own)
@@ -37,14 +37,15 @@ Throughout: monthly meetings with both co-supervisors; DSI community events, sem
 | Date | Action | Owner |
 |---|---|---|
 | 30 Sep 2026 | Send DSI-specific request to Prof. Grüninger (email 1); ask him to propose the second co-supervisor | Applicant |
+| by 10 Oct 2026 | Send deadline/label/format/reference/concurrency questions to DSI (email 5, awards.dsi@utoronto.ca) | Applicant |
 | by 15 Oct 2026 | First contact with prospective second co-supervisor(s) (email 2); send proposal and co-supervisor note | Applicant |
-| by 15 Nov 2026 | Second co-supervisor confirmed; concurrency position agreed with both | Applicant / co-supervisors |
-| Nov 2026 | Watch the DSI page for the 2027 call; register for the information session | Applicant |
-| early Dec 2026 | Attend information session; send format/concurrency questions to DSI (email 5) | Applicant |
-| by 20 Dec 2026 | Re-fit proposal and statement to the posted form; update CV; PhD-completion evidence in hand | Applicant |
-| 8 Jan 2027 | Full draft to both co-supervisors and referees (emails 3, 4) | Applicant |
-| 12 Jan 2027 | Co-supervisor comments incorporated | Applicant |
-| 19–20 Jan 2027 | Submit; referees' letters confirmed | Applicant / referees |
-| ~22 Jan 2027 | Applicant deadline [confirm] | — |
-| ~29 Jan 2027 | Co-supervisor letters due [confirm] | Prof. Grüninger / second co-supervisor |
+| by 1 Nov 2026 | Second co-supervisor confirmed; concurrency position agreed with both | Applicant / co-supervisors |
+| Oct–Nov 2026 | Watch the DSI page for the next call; register for the information session | Applicant |
+| early Dec 2026 | Attend information session | Applicant |
+| by 15 Dec 2026 | Re-fit proposal and statement to the posted form; update CV; PhD-completion evidence in hand; full draft to both co-supervisors and any referees (emails 3, 4) | Applicant |
+| 4 Jan 2027 | Co-supervisor comments incorporated | Applicant |
+| 6 Jan 2027 | Additional references, if required, confirmed | Referees |
+| 8 Jan 2027 | Submit | Applicant |
+| 12 Jan 2027 (plan) – ~22 Jan | Applicant deadline [confirm; SGS listing shows 12 Jan, the 2026 call closed 23 Jan] | — |
+| ~1 week later | Co-supervisor structured forms due [confirm] | Prof. Grüninger / second co-supervisor |
 | [spring 2027] | Decisions [confirm] | DSI |

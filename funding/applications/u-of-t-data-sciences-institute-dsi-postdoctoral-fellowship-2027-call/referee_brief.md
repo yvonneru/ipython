@@ -1,23 +1,23 @@
 # Brief for referees — DSI Postdoctoral Fellowship, University of Toronto (2027 call)
 
-Send this page with the reference request, together with the research proposal (2–3 pp), the applicant statement and a current CV. [Verify on the 2027 form how references are submitted — uploaded by the applicant, emailed by the referee to DSI, or requested by DSI through a link — and how many are required; two is assumed.] The two **co-supervisors** write separate letters on a different schedule (about a week after the applicant deadline); this brief is for the **referees**, who are not the co-supervisors.
+Send this page with the reference request, together with the research proposal (2–3 pp), the applicant statement and a current CV. [Verify on the 2027 form whether any referees beyond the two co-supervisors are required at all: the DSI site hosts a "Postdoctoral Fellowship Structured Reference Form Guide", and the SGS listing describes the co-supervisors' input as word-limited comments on "research potential" and "research & training", so the co-supervisor forms may be the only references. If further referees are required, verify how many and the route — applicant upload, referee email, or DSI link.] The two **co-supervisors** complete their structured forms on a different schedule (about a week after the applicant deadline); this brief is for any **additional referees**, and its "Points that would help" section doubles as the brief for the co-supervisors' forms.
 
 ## What the fellowship is
 
-The Data Sciences Institute (DSI) Postdoctoral Fellowship at the University of Toronto funds multidisciplinary data-science research carried out under two U of T co-supervisors from complementary disciplines, at least one with a track record in developing statistical or computational methods. Value CAD 60,000 per year plus benefits, for up to two years. I propose to hold it in the Department of Mechanical and Industrial Engineering under Prof. Michael Grüninger (formal ontology, automated reasoning, verification) and Prof. [name] ([unit]; learning-based manipulation and statistical evaluation of learned policies), starting [April 2027 or later — verify the permitted window].
+The Data Sciences Institute (DSI) Postdoctoral Fellowship at the University of Toronto funds multidisciplinary data-science research carried out under two U of T co-supervisors from complementary disciplines, at least one with a track record in developing statistical or computational methods. Value CAD 60,000 per year plus benefits, for up to two years. I propose to hold it in the Department of Mechanical and Industrial Engineering under Prof. Michael Grüninger (formal ontology, automated reasoning, verification) and Prof. [name] ([unit]; learning-based manipulation and statistical evaluation of learned policies), starting 1 May 2027 [confirm; the permitted window is 1 May – 1 December of the award year].
 
 ## Deadlines
 
-- Applicant deadline: **expected 22 January 2027** [confirm once the 2027 call is posted; the 2026 call closed 23 January 2026].
-- **Please submit your letter by 20 January 2027** [or the date the form specifies]. If that is difficult, tell me and I will adjust.
+- Applicant deadline: **expected 12–23 January 2027; I am planning for 12 January** [confirm once the call is posted; an SGS listing shows 12 January, the 2026 call closed 23 January 2026].
+- **Please submit your reference by 6 January 2027** [or the date the form specifies]. If that is difficult, tell me and I will adjust.
 
 ## What the form asks
 
-[Verify: a free-form letter (PDF) is assumed, with no prescribed headings or length; if DSI uses a form with text boxes and character limits, I will send the limits as soon as I have them.] The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
+[Verify: DSI appears to use a structured reference form with word-limited fields — for co-supervisors, comments on "research potential" and on "research & training". I will send the exact fields and limits as soon as I have them; until then assume roughly 300–500 words per field.] The most useful references give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
 
 ## What reviewers weigh
 
-[The 2027 criteria and weights were not published when this brief was drafted; verify and replace.] The criteria this application is written against: excellence and potential of the applicant; quality, originality and feasibility of the research; data-science content (development or novel application of statistical or computational methods); multidisciplinarity and the complementarity of the two co-supervisors; reproducibility and open science; fit with DSI's mandate; equity, diversity and inclusion.
+[Weights are not published; verify and replace if the call gives a rubric.] DSI's stated requirements are a project with "a data sciences focus, through the development of novel methodology or the innovative application of existing approaches" and two co-supervisors "from complementary disciplinary backgrounds", at least one with a track record in developing novel statistical or computational tools; its co-supervisor form asks about "research potential" and "research & training". The application is therefore written against: data-science methodology; interdisciplinarity and complementarity; the applicant's research potential; the research and training plan and its feasibility; reproducibility and engagement with the DSI community.
 
 ## The proposed program in three sentences
 
@@ -34,7 +34,7 @@ Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, AgiBot World) ann
 
 - Referee 1: [Harvard Medical School postdoctoral supervisor — name].
 - Referee 2: [an external expert in applied ontology or robot learning — name], or [a University of Toronto Robotics Institute faculty member suggested by Prof. Grüninger who is not the second co-supervisor].
-- Not referees: Prof. Grüninger and Prof. [second co-supervisor], who submit co-supervisor letters. [Verify whether DSI also accepts a reference from a co-supervisor; assume not.]
+- Not additional referees: Prof. Grüninger and Prof. [second co-supervisor], who complete the co-supervisor forms. [Verify whether additional referees are required at all.]
 
 ## Attached
 
