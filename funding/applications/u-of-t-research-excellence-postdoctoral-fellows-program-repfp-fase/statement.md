@@ -1,6 +1,6 @@
 # Statement of Career Goals — REPFP, Faculty of Applied Science & Engineering (2027 round)
 
-**Format (verify on the 2027 FASE form):** the registry lists a "statement of career goals" as a required component; no length was established. Written to about 700 words, which fits one page at 11–12 pt. If a cover note or free-text field is also required, the short cover note at the end of this file serves. [Brackets] to confirm.
+**Format (verify on the 2027 FASE form):** the registry lists a "statement of career goals" as a required component; no length was established. Written to about 800 words, which fits one page at 11 pt single-spaced; if the limit is tighter, cut the paragraph "What I have done outside the university" first, then the last two sentences of "Development during the fellowship". If a cover note or free-text field is also required, the short cover note at the end of this file serves. [Brackets] to confirm.
 
 ---
 

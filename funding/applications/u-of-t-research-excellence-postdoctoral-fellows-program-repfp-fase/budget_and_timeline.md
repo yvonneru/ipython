@@ -1,0 +1,32 @@
+# Budget and timeline — REPFP, Faculty of Applied Science & Engineering (2027 round)
+
+## Funding requested
+The fellowship's salary (CAD 80,000 per year plus employer costs, two years) is set by the program and is not itemized by the applicant. The **independent research funds of CAD 10,000 per year** are the applicant's to direct; the plan below shows how they will be used. [Confirm on the 2027 FASE guidelines which categories are allowable, whether unspent funds carry over between years, whether equipment and travel are eligible, and whether the funds are administered through the supervisor's departmental account.] All figures are in CAD and are planning estimates, not quotations.
+
+| Category | Year 1 | Year 2 | Justification |
+|---|---|---|---|
+| Compute — theorem proving and SMT (cloud CPU hours; Prover9/Mace4 batches for verification and for the residual hard cases of the audit; Z3 at dataset scale) | 2,000 | 1,000 | Theme 1 verification and Theme 2 audit across five datasets (millions of part instances). Year 2 falls as the ontology stabilizes |
+| Compute — simulation and policy training (GPU hours for SAPIEN and [second simulator] experiments; repeated seeds and category splits) | 1,500 | 3,500 | Theme 3 experiments concentrate in Year 2; Vector Institute compute [confirm affiliation and allocation] is used first and these funds cover overflow |
+| Open data hosting and DOIs for the audit results, corrected annotations, merged corpus and toolkit releases | 500 | 500 | Public release is a deliverable of Objective 2; institutional repository first, paid hosting only for volumes above its limit [confirm U of T repository limits] |
+| Conference travel — one machine-learning or robotics venue per year to present the audit paper (Y1) and the methods/policy paper (Y2) | 3,000 | 3,000 | Dissemination at the venues the proposal targets; figures assume North American travel [adjust if the venue is overseas] |
+| ISO/IEC JTC 1/SC 42 participation (one plenary or working-group meeting per year, or remote participation fees) | 1,500 | 1,000 | Contribution of the parts ontology back to the standard is a stated deliverable; Prof. Grüninger's laboratory is represented through the fellow |
+| Publication charges (open-access fees where the venue charges them) and software licences | 1,000 | 1,000 | Three papers over 24 months; open access is consistent with the open-release commitment |
+| Undergraduate research assistant stipend top-up [only if allowable] | 500 | 0 | Supports the mentoring commitment in the career statement [confirm eligibility; otherwise reallocate to compute] |
+| **Total** | **10,000** | **10,000** | |
+
+Salary and benefits: paid by the program. No other funds are requested. If Vector Institute compute or a co-mentor's laboratory covers the GPU experiments, the corresponding lines are reallocated to travel and SC 42 participation.
+
+## Milestone timeline (24 months from [start, 1 April 2027 or later])
+
+| Quarter | Theme 1 — Parts | Theme 2 — Audit | Theme 3 — Learning | Outputs |
+|---|---|---|---|---|
+| Q1 (M1–3) | Signature and module structure for rigid, articulated, functional and assembly parthood; first consistency and non-triviality proofs | Adapters for PartNet and PartNet-Mobility; competency questions extracted from annotation patterns | Co-mentor agreement; simulation environment set up | Verified module drafts in COLORE (private branch) |
+| Q2 (M4–6) | Representation theorems; constitution mappings between decompositions; PSL integration for parthood change | Datalog/SMT compilation of the axiom fragment; first audit of two datasets | Baseline part-aware policy trained on unaligned data | Internal technical report; SC 42 liaison contact opened |
+| Q3 (M7–9) | Verification complete for all four modules; open-licence release v1 | Adapters for GAPartNet, PartNet-Ensembled, AgiBot World; theorem-proving tier for residual cases; coverage reporting | Pooled aligned-vs-unaligned experiment design frozen | Ontology v1 released; audit paper drafted |
+| Q4 (M10–12) | Ontology contributed to COLORE; SC 42 contribution prepared | First quantitative audit across five datasets; corrected annotations and mappings released | Pooling experiment results | **Audit/data paper submitted** (ML or robotics venue); Year-1 report to FASE |
+| Q5 (M13–15) | Revisions from external review; DROID and Open X-Embodiment mappings | Merged ontology-aligned corpus v1; toolkit packaged | Differentiable parthood-constraint losses implemented; augmentation method | Toolkit release |
+| Q6 (M16–18) | — | Cross-dataset partial-mapping analysis (which axioms block alignment) | Constraint-based training experiments on held-out PartNet-Mobility categories | Methods paper drafted |
+| Q7 (M19–21) | SC 42 contribution submitted [confirm process] | Toolkit applied to one non-robotics hierarchical annotation domain (CAD assemblies or BIM) as a generality check | Verification-in-the-loop evaluation; violation-rate vs. task-failure analysis | **Methods paper submitted** |
+| Q8 (M22–24) | Final ontology release v2 | Final corpus release; documentation | Ablations by axiom family; transfer across part vocabularies | **Policy/robotics paper submitted**; final report; faculty applications prepared |
+
+Milestone mapping to open research questions: Y1 questions (Theme 1 all; Theme 2 Q1 and first half of Q2) close by M12; Y2 questions (Theme 2 remainder; Theme 3 all) close by M24. The Y1 deliverables form a complete 12-month program if the fellowship's second year cannot be held because another award is accepted [see concurrency rule in README].

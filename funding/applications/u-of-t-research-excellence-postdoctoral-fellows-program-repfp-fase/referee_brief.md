@@ -1,0 +1,21 @@
+# Brief for referees — U of T Research Excellence Postdoctoral Fellows Program (FASE round, 2027)
+
+Send with the reference request, together with the proposal, the career-goals statement and the current CV. [Brackets] to confirm before sending.
+
+**What the program is.** The Research Excellence Postdoctoral Fellows Program is a University of Toronto internal award, administered for engineering by the Faculty of Applied Science & Engineering: two years, CAD 80,000 per year salary plus employer costs, and CAD 10,000 per year of independent research funds. It is open to domestic and international candidates within five years of the PhD who do not hold a faculty position, nominated by a U of T supervisor. I would hold it in the Department of Mechanical and Industrial Engineering under Prof. Michael Grüninger (Semantic Technologies Laboratory), with Prof. [name] as co-mentor for the learning component, starting [1 April 2027 or later].
+
+**Deadlines.** The FASE application deadline for the 2027 round is expected in early February 2027 [the 2026 deadline was 4 February; confirm]. I have asked referees for **25 January 2027** so that the nomination package can be assembled and submitted early. [Route: confirm whether letters are uploaded by the applicant, emailed to FASE Graduate Studies, or submitted by the referee through a link.]
+
+**What the form asks.** [Confirm on the 2027 form.] The registry lists two to three reference letters as a required component; no template or length was established. Assume a letter of one to two pages on letterhead, addressed to the REPFP Selection Committee, Faculty of Applied Science & Engineering, University of Toronto, covering the candidate's research ability and potential, the quality and feasibility of the proposed program, and the candidate's readiness for an independent academic career.
+
+**What reviewers score.** [Criteria and weights not established — confirm.] The criteria U of T's internal postdoctoral excellence competitions state publicly are: research excellence and potential of the candidate relative to career stage; quality, originality and feasibility of the proposed research; fit with the division's strengths and the supervisor's program; the supervisory and mentoring environment; the candidate's career plan; and contribution to equity, diversity and inclusion. The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
+
+**Points that would help.**
+1. The theoretical work on material constitution and mereological pluralism (two first-author papers submitted to Synthese with Prof. Grüninger), and why a machine-checkable theory of when two part decompositions of one object are compatible matters for knowledge representation and for robot data.
+2. The ISO/IEC 21838-4:2023 (TUpper) contribution: what it shows about rigour, and about the ability to work within a standards body — the same body (ISO/IEC JTC 1/SC 42) to which the proposed parts ontology will be contributed.
+3. The move from theory to deployed systems (patents as first inventor; production ontology-governed data-integration systems at companies I co-founded), and why that predicts delivery of the audit pipeline, public data release and simulation experiments.
+4. Independence: the proposed program is my own, complementary to but distinct from Prof. Grüninger's NSERC programs; my thesis addressed knowledge-system architecture and top-level ontology, not robot datasets or learned policies. Reviewers may weigh the fact that I return to the university where I completed my PhD; a sentence on why the Semantic Technologies Laboratory is the only place with the verification methodology and tool support the program needs would help.
+
+**For the Harvard referee in particular.** A sentence on the work I have done in your laboratory [describe], on how I operate in a second research environment and data regime, and on my readiness to run an independent program.
+
+**Attached.** Research proposal (3 pp + bibliography), statement of career goals (1 p), budget and timeline, current CV.
