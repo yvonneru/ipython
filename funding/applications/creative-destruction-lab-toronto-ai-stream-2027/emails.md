@@ -12,7 +12,7 @@ I am the founder and CEO of AXIOMALITY, a [Canadian / US — confirm] company bu
 
 Three questions so that I plan correctly:
 1. When do applications for 2027/28 open and close, and is review rolling?
-2. Is CDL-Toronto Artificial Intelligence the right stream for an AI-for-robotics data company, and is a single application triaged across CDL sites and streams, or should I choose one?
+2. The CDL-Toronto AI page describes the stream as applying AI to transform scientific discovery. Is it the right stream for an AI-for-robotics data-verification company, and is a single application triaged across CDL sites and streams, or should I choose one?
 3. Are the fee and equity terms for 2027/28 unchanged (no fee, no equity), and are the five session dates for Toronto set?
 
 Thank you — I will apply early in the window.
@@ -38,6 +38,7 @@ I am preparing our application to the Creative Destruction Lab's Toronto AI stre
 6. Your bio (≤150 words) and the robotics and 3D leads' bios.
 7. For the Engine internal test in Q4 2026: a one-paragraph write-up with date, versions, known limits, and a slide.
 8. By 31 Mar 2027: the co-development partners signed, the verified-episode count, and the Passport v1 recognition status.
+9. By 15 Jun 2027: a product demo video of at most three minutes (JSON record → scene graph → check result on samples 109/429), which CDL's application is reported to require.
 
 Draft form answers are in the shared folder [link]; please mark anything you disagree with. If you can attend the interview (mid–late August 2027) with me, that helps for the technical questions.
 

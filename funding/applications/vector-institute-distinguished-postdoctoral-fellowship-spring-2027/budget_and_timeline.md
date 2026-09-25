@@ -2,14 +2,14 @@
 
 ## Budget
 
-No budget is requested from the applicant. The fellowship pays the fellow's salary and benefits (amount set by Vector; third-party listings show roughly CAD 49–65k base [confirm on the live posting]) and provides Vector compute and a research environment. The only resource statements the application may need are the compute and data-access notes below, to be sized with the sponsor.
+No budget is requested from the applicant. The fellowship pays the fellow's salary and benefits (amount set by Vector; third-party listings and Glassdoor show roughly CAD 49–65k base [confirm on the live posting]) and provides Vector compute and a research environment. The standard term is 1–2 years with a possible extension to 3 (Vector posting, checked 2026-09-25); the plan below is written for 24 months and does not assume the extension. The only resource statements the application may need are the compute and data-access notes below, to be sized with the sponsor.
 
 | Resource | Need | Source | Status |
 |---|---|---|---|
 | Theorem proving and model finding (Prover9, Mace4, SMT) for Themes 1–2 | CPU-bound; modest | Semantic Technologies Laboratory (MIE) workstations; Vector CPU nodes | Available [confirm access to the STL verification pipeline from spring 2027] |
 | Bulk audit of five part-level datasets (millions of part instances) | Storage for PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World; CPU for Datalog/SMT | Vector storage and CPU; public dataset licences | [Confirm dataset licences permit release of corrected annotations and a merged corpus] |
 | Policy training and evaluation in SAPIEN and [second simulator] (Theme 3) | GPU-hours [estimate to be sized with the sponsor — do not guess in the application] | Vector GPU cluster | [Sponsor to advise] |
-| Open release (ontology, mappings, corpus, toolkit) | Repository hosting; COLORE contribution | COLORE (colore.oor.net); GitHub | Available |
+| Open release (ontology, mappings, corpus, toolkit) | Repository hosting; COLORE contribution | COLORE [confirm current repository URL]; GitHub | Available |
 
 ## Pre-award timeline (2026–27)
 
@@ -22,7 +22,7 @@ No budget is requested from the applicant. The fellowship pays the fellow's sala
 | 31 Jan 2027 | Full draft to sponsor, co-sponsor and referees (email 6) |
 | 14 Feb 2027 | Reference letters in hand (or sent to Vector) |
 | 21 Feb 2027 | Single PDF assembled and submitted |
-| 28 Feb 2027 | Vector deadline |
+| 28 Feb 2027, 23:59 EST | Vector deadline — application and all three letters received in full; late applications roll to the Autumn cohort |
 | March 2027 | Committee review; [decision date unknown] |
 | 31 Aug 2027 | Fallback: Autumn 2027 cohort |
 

@@ -14,7 +14,7 @@ No U of T, Harvard or AXIOMALITY funds are involved. [AXIOMALITY: confirm that t
 | 1 Nov 2026 | Doctoral certificate / conferral confirmation in hand; publication list with review status; ≤5 key publications chosen | Applicant |
 | mid-Nov 2026 | Host confirmed; outline revised with the host; reviewers asked (doctoral supervisor mandatory + one further) | Applicant, host |
 | 15 Dec 2026 | Host statement, facilities confirmation and mentoring agreement received; two expert reviews received | Host, reviewers |
-| [early Nov 2026 is the registry's target for the March 2027 committee; if the host cannot deliver by then, the realistic target is the July 2027 committee with submission by ~January 2027] | Submit on the portal | Applicant |
+| mid-Jan 2027 (July 2027 committee; the Foundation asks for 4–7 months' lead). Stretch: early Nov 2026 for the March 2027 committee, only if the host statement and both reviews are in hand by then | Submit on the portal | Applicant |
 | Mar 2027 or Jul 2027 | Committee decision (4–8 months after receipt) | Foundation |
 | within ~12 months of award [confirm] | Take up the fellowship in Germany | Applicant |
 

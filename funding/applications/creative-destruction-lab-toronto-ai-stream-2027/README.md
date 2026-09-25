@@ -1,6 +1,6 @@
 # Creative Destruction Lab – Toronto, Artificial Intelligence stream (2027/28 cohort) — application brief for AXIOMALITY
 
-**Applicant entity:** AXIOMALITY [legal name, incorporation country/province, incorporation date — confirm] · **Founder submitting:** Dr. Yi Ru, Founder/CEO · **Stream:** CDL-Toronto, Artificial Intelligence [confirm this is the intended stream; CDL also runs AI at other sites] · **Registry:** tier B, fit 74, applicant_entity = company · package drafted 2026-09-25
+**Applicant entity:** AXIOMALITY [legal name, incorporation country/province, incorporation date — confirm] · **Founder submitting:** Dr. Yi Ru, Founder/CEO · **Stream:** CDL-Toronto, Artificial Intelligence [confirm this is the intended stream; CDL also runs AI at other sites] · **Registry:** tier B, fit 74, applicant_entity = company; stored as id 3f6543c405bd, slug `creative-destruction-lab-toronto-ai-robotics-physical-ai-streams` (the slug in this folder name is the merged-from name) · package drafted 2026-09-25; reviewed 2026-09-25
 
 ## Program
 
@@ -10,7 +10,7 @@ This package positions AXIOMALITY — the verification and evidence layer for ro
 
 ## Deadlines
 
-All CDL dates for the 2027/28 cohort are **unconfirmed** (registry deadline_confidence: low). The pattern below is the last two cycles (2025/26 closed 25 Jul 2025; 2026/27 closed 24 Jul 2026 — from search results, not verified on the live page).
+All CDL dates for the 2027/28 cohort are **unconfirmed** (registry deadline_confidence: medium; the cycle notes rate the Jan–Feb opening and rolling review as low). The pattern below is the last two cycles (2025/26 closed 25 Jul 2025 [search snippet]; 2026/27 closed 24 Jul 2026, 11:59 PM ET — confirmed 2026-09-25 from a third-party listing, not the CDL page).
 
 | Date | What | Owner |
 |---|---|---|
@@ -19,7 +19,7 @@ All CDL dates for the 2027/28 cohort are **unconfirmed** (registry deadline_conf
 | **1 Mar 2027** | Check that the 2027/28 application has opened (registry note: applications expected Jan–Feb 2027 with rolling review, final deadline mid/late Jul 2027 — unverified). Read the live form and re-fit proposal.md to its fields and character limits | Applicant |
 | 31 Mar 2027 | Traction evidence assembled: Engine test result; co-development partners signed (deck target Q1 2027: three); verified episodes (target 10,000); Passport v1 recognition status (target Q2 2027) | Applicant, CTO |
 | 30 Apr 2027 | Referral to a CDL mentor or from U of T faculty obtained (email 4); founder participation in CDL disclosed to MIE / U of T Postdoctoral Office if a postdoc offer is in hand (email 5) | Applicant, Prof. Grüninger |
-| 15 Jun 2027 | Internal draft freeze: form answers, pitch deck (deck of Sept 2026 refreshed with 2027 traction), founder bios, video if requested | Applicant, CTO |
+| 15 Jun 2027 | Internal draft freeze: form answers, pitch deck (deck of Sept 2026 refreshed with 2027 traction), founder bios, product demo video ≤3 min (the registry lists it as a required document [confirm on the live form]) | Applicant, CTO |
 | **~1 Jul 2027 (target)** | Submit — at least three weeks before the expected deadline; rolling review rewards early submission [confirm rolling review on the live page] | Applicant |
 | **~late Jul 2027 [UNCONFIRMED]** | Application deadline (est. from 24–25 Jul in the two prior cycles) | — |
 | Mid-Aug 2027 | Shortlist notification (search result: "informed by mid-August") | CDL |
@@ -41,7 +41,8 @@ All CDL dates for the 2027/28 cohort are **unconfirmed** (registry deadline_conf
 | Founder availability for five in-person Toronto sessions, Oct 2027–Jun 2028 | Likely OK — the applicant plans to be in Toronto (U of T MIE) from spring 2027. [Confirm; and confirm the postdoc outside-activity disclosure.] |
 | No citizenship requirement | OK per the registry. |
 | Fee / equity terms for 2027/28 | Historically none. [Confirm on the live Apply page for 2027/28.] |
-| Stream triage | [Confirm whether one application is triaged across CDL sites and streams; the registry suggests CDL-Montreal AI or CDL Defence as fallbacks if Toronto AI is oversubscribed.] |
+| Stream triage and fit | **Risk.** The CDL-Toronto AI site page (search snippet, 2026-09-25) describes the stream as founders "applying AI to transform scientific discovery"; the general AI-stream page lists robotic control and lab automation. proposal.md §14 answers this; email 1 asks admissions. [Confirm whether one application is triaged across CDL sites and streams; the registry suggests CDL-Montreal AI or CDL Defence as fallbacks if Toronto AI is oversubscribed.] |
+| Founder commitment | **Risk.** The founder holds a research appointment now (Harvard Medical School [confirm]) and is applying for U of T postdoctoral awards from spring 2027; CDL selects on the team's ability to drive the venture. proposal.md §9 and statement.md now state the time split and the CTO's status as [brackets] that must be filled honestly. |
 
 ## Format and criteria (verify on the official page)
 
@@ -59,7 +60,7 @@ Sources used:
 Recorded format:
 - **Submission is an online application form** (registry: team, technology, traction, IP), with a **pitch deck** and **founder bios**; a referral from a CDL mentor or U of T faculty is optional but helps at triage. **The exact field list and character limits are not published** and change by cycle. proposal.md is therefore written as answers to the fields the FAQ and third-party guides say the form covers, each kept to 150–350 words so that it fits typical form boxes; when the live form opens, map each answer to the matching field and trim to the stated limit.
 - **No page limit for the deck is published.** The September 2026 deck is 46 slides and is a technical deep dive; CDL reviewers read hundreds of applications, so a **10–15-slide reviewer version** should be cut from it (README checklist).
-- **Review criteria (from the FAQ; no weights published):** (i) technology that is novel, defensible and scalable, with "exciting potential"; (ii) a team well positioned to drive the technology's success — founders with technical expertise; (iii) a problem of significant magnitude; (iv) seed-fundability within 12 months. Application guidance: explain why you are passionate about the problem; be honest about the venture's challenges; do not oversell business experience; do not undersell excellence in any domain.
+- **Review criteria (FAQ, re-checked 2026-09-25; no weights published):** (i) technology that is novel, defensible and scalable, with "exciting potential"; (ii) a team well positioned to drive the technology's success; (iii) an "unfair advantage" — the FAQ's examples are a patent, a world leader on the founding team, or unique access to a kind of data; (iv) momentum or upward trajectory. Items recorded earlier but **not** re-found in the FAQ snippet and therefore [verify]: the US$500K–5M seed sweet spot within 12 months, the "most ventures have 2+ co-founders" remark, and the "significant problem" wording. Application guidance (FAQ): explain why you are passionate about the problem; be honest about the venture's challenges; try to meet someone from CDL or a past participant — "references from past participants or mentors are an important data point"; do not oversell business experience; do not undersell excellence in any domain. The registry's required-documents list includes a **product demo video** in addition to the form, deck and bios.
 - **Selection stages:** triage on the form → interview (15-minute rotating tables, late August) → site selection committee (early September).
 
 ## Who does what, by when
@@ -74,7 +75,7 @@ Recorded format:
 | Co-development partner(s) [names] | Agree to be named as traction and, if asked at interview, to take a reference call; optionally a one-paragraph statement of the pilot scope | 31 May 2027 |
 | U of T Postdoctoral Office / MIE [if postdoc appointment exists] | Outside-activity disclosure acknowledged | Before Oct 2027 |
 | Institution | Not applicable (company application). | — |
-| Referees | Not applicable; CDL takes no reference letters. Referrals and customer references replace them. | — |
+| Referees | Not applicable as far as known: no reference-letter field is reported [confirm on the live form]. Referrals from CDL mentors, alumni or U of T faculty and customer references replace them. | — |
 
 ## Submission checklist
 
@@ -86,6 +87,8 @@ Recorded format:
 - [ ] proposal.md answers mapped to the live form fields and trimmed to character limits
 - [ ] Reviewer deck (10–15 slides) cut from the September 2026 deck and refreshed with 2027 traction; full deck kept as an appendix/link
 - [ ] Founder bios (statement.md): CEO; CTO; robotics lead; 3D asset lead — each ≤150 words with the excellence items CDL asks not to undersell
+- [ ] Product demo video ≤3 min (Engine on samples 109/429) recorded and linked [confirm the form requires or accepts one]
+- [ ] Founder commitment stated honestly in proposal.md §9 and statement.md: full-time date, time split with the research appointment, CTO status; research host informed in writing
 - [ ] Referral in hand (CDL mentor or U of T faculty) or a decision recorded that none is available
 - [ ] Postdoc outside-activity disclosure filed, if applicable
 - [ ] Interview preparation: three CDL-style objectives (proposal.md §13), the honest-challenges answer, the seed-round ask, and a two-minute demo of the Engine on sample 109/429
@@ -102,7 +105,9 @@ Recorded format:
 | Team positioned to win | proposal.md §9, statement.md | Founder: U of T AI doctorate, ISO/IEC 21838-4, 21 papers, FOIS 2018 Distinguished Paper, founding team of MICAS (US$5M incl. Accel; >US$50M revenue; 100+ team) and YourTable; CTO (McMaster AI doctorate); robotics lead (doctorate, autonomous-system perception); senior 3D asset lead (10+ years). |
 | Seed-fundable within 12 months | proposal.md §10, budget_and_timeline.md | 18-month operating plan with observable gates; financing sized to it [amount to confirm]; CDL mentors and Toronto robotics/AI investors are the intended lead sources. |
 | Honesty about challenges | proposal.md §12 | The deck's own falsifiers (slide 30): simple rules may match the kernel; grounding may be factually wrong; augmentation may not transfer; runtime may fail acceptance; independent customer validation is still ahead. |
-| AI-stream fit | proposal.md §14 | The Engine is an AI system that autonomously checks, learns from and directs data collection for robotic control — the stream's stated scope. |
+| AI-stream fit | proposal.md §14 | The Engine is an AI system that autonomously checks, learns from and directs data collection for robotic control — the general AI-stream scope; §14 also answers the Toronto page's "scientific discovery" framing (pre-registered experiments, falsifiers, contribution back to the standard). |
+| Unfair advantage (FAQ) | proposal.md §9, §11 | Founding team member who co-wrote ISO/IEC 21838-4; 100,000 measured 3D packages; granted patents [count to reconcile]. |
+| Momentum (FAQ) | proposal.md §6, §12 | Dated targets Q4 2026 → Q2 2027 with [update] slots; honest statement that as of Sep 2026 there is no revenue or paying customer. The score here depends entirely on what is achieved by Jul 2027. |
 
 ## Open items — every [bracketed] item the applicant must supply
 
@@ -127,3 +132,51 @@ Recorded format:
 19. [Patent counts reconciled: deck says 13 granted + 9 applications; profile drafts say 3 Chinese invention patents + 9–10 German utility patents; state which are assigned to the company]
 20. [Reviewer deck: which 10–15 slides; refreshed numbers]
 21. [Fallback stream decision: CDL-Montreal AI / CDL Defence]
+22. [Product demo video: whether the 2027/28 form requires one; length limit; recorded and linked]
+23. [Founder's title/role on the MICAS founding team, and whether the US$50M revenue and 100+ team figures may be cited publicly]
+24. [Founder full-time status and date; current weekly time split; CTO full-time status; written acknowledgement from the research host]
+25. [Stream fit: admissions' answer to whether Toronto AI ("AI to transform scientific discovery") or another AI/robotics site is the right home]
+
+## Review log
+
+**Skeptical panel review, 2026-09-25.** Criteria reconstructed from CDL's FAQ (two of the shared web searches were spent: one on the FAQ's selection wording, one on the 2026/27 close date). CDL publishes no weights, no field list and no character limits; the form is scored at triage, then a 15-minute interview, then a site selection committee. Scores are 1–5 as a tough reviewer would give them, "after" assuming only the edits in this pass and none of the applicant-only [brackets].
+
+| Criterion (CDL FAQ) | Weight | Before | After | Why |
+|---|---|---|---|---|
+| Technology: novel, defensible, scalable, "exciting potential" | unpublished; primary | 4 | 4 | Strong and traceable to the deck (verified kernel, per-record formal checks, UNKNOWN as first-class output, closed-loop unit economics). Defensibility still rests on a patent count that differs across the deck (13 granted + 9 applications), the CV (nine applications) and the drafts (3 Chinese + 9–10 German); a reviewer who asks "which are assigned to the company?" gets a bracket. IP provenance relative to the U of T laboratory methodology and a future university postdoc was unaddressed and is now stated in §11. |
+| Team well positioned to drive the technology | unpublished; primary | 2 | 3 | Three of four team members are unnamed with no co-founder status; the founder holds a Harvard appointment and is applying for U of T postdocs — i.e. not full-time — and the package hid this in one bracket. "Scaled a venture from zero to nine figures of revenue" was wrong (>US$50M is eight figures) and oversold, against the FAQ's explicit warning. §9 now has a founder-commitment paragraph, the MICAS role is bracketed as [title] ("founding team" is the CV wording; no title exists), and the revenue claim is corrected. Cannot rise further until names, roles and full-time status are real. |
+| Unfair advantage (patent, world leader on the team, unique data) | unpublished | 3 | 4 | Present in the material but never framed as CDL frames it; §9 and the criteria table now name the three: ISO standard co-authorship, 100,000 measured 3D packages, granted patents [count]. |
+| Momentum / upward trajectory; stage (prototype, beyond concept) | unpublished | 2 | 2 | As of today: no revenue, no paying customer, no Engine test result, no named partner; every traction line is a future target with an [update] slot. The package is honest about this now (§12, statement) but honesty does not create momentum. Score depends entirely on Q4 2026–Q2 2027 actuals. |
+| Seed-fundability within 12 months | unpublished; the sweet spot itself is [verify] | 2 | 3 | No round size, instrument or timing anywhere; §14 said "we are not applying for capital", which reads to an investor-mentor panel as not fundable. §10 now carries an explicit bracketed ask inside the 12-month window; §14 reworded. Still a bracket until the company fixes the figure. |
+| Passion, honesty about challenges (FAQ guidance) | unpublished | 3 | 4 | The deck's falsifiers were already used well; the honest section omitted the two things a panel would notice first (no revenue; founder not full-time). Both added in §12 and the statement. |
+| Stream fit (Toronto AI: "AI to transform scientific discovery") | gate at triage | 3 | 3 | Newly found risk: the Toronto site page's framing is scientific discovery, not robotics data. §14 now addresses it and email 1 asks admissions; unresolved until they answer. Fallbacks (Montreal AI, Defence) remain in the checklist. |
+| Format and completeness (gate) | — | 2 | 3 | proposal.md is ~4,100 words plus a 1,400-word NSERC-style appendix; the header now forbids pasting the appendix into any field. Registry lists a product demo video as required — package treated it as "if requested"; now a checklist item, a budget line, an email item and a cover-note bracket. Registry pointer corrected (record is stored under a different slug and id; confidence medium, not low). Section lengths after edits: §4 (~400 words) and §9 (~390 words) exceed the self-imposed 350-word box target and must be trimmed to the live limits. |
+
+**What changed in this pass**
+- proposal.md: header (appendix not for form fields; overlap with the academic program; momentum instruction); §2 app description corrected; §9 MICAS role bracketed, revenue claim corrected, founder-commitment paragraph and unfair-advantage sentence added; §10 explicit bracketed round ask; §11 IP-provenance sentence; §12 no-revenue/no-customer and patent-reconciliation admissions; §14 stream-fit answer and capital sentence reworded, Sanctuary/Vention claim narrowed; A1 MICAS wording bracketed.
+- statement.md: "ten years" removed (untraceable); MICAS role bracketed; honest paragraph now states no revenue and the full-time status; "Teaching at U of T" corrected to teaching assistant; cover note gains the demo-video bracket.
+- referee_brief.md: "no reference letters" softened to [confirm]; FAQ criteria updated (unfair advantage, momentum, references from past participants); "CDL contacts a customer directly" bracketed as unconfirmed.
+- budget_and_timeline.md: demo video and founder-status added to the internal line and the application gate.
+- emails.md: email 1 Q2 cites the "scientific discovery" framing; email 2 gains item 9 (demo video).
+- README.md: registry id/slug and confidence corrected; 24 Jul 2026 close confirmed as a third-party date; eligibility rows for stream fit and founder commitment; criteria block rewritten to the re-checked FAQ with [verify] flags on items not re-found; referee row; two checklist items; two criteria-mapping rows; open items 22–25.
+
+**Invented or untraceable facts found and handled**
+- "scaled a venture from zero to nine figures of revenue" (proposal §9) — the CV and deck say >US$50M, which is eight figures; corrected.
+- "consumer spatial-capture app" (proposal §2) — deck says "consumer spatial app", CV says AR pet-interaction app; corrected.
+- "I have spent ten years on one question" (statement) — no source gives a start date; removed.
+- "Teaching at U of T in database systems and knowledge modelling" (bio) — CV says teaching assistant; corrected.
+- "CDL takes no reference letters" (README, referee brief) and "occasionally CDL contacts a customer directly" (referee brief) — not in any source; bracketed as [confirm]/unconfirmed.
+- "registry deadline_confidence: low" (README) — record says medium; corrected. README also cited the wrong registry slug.
+- "Sanctuary/Magna and Vention ... in our first-buyer list" (§14) — deck uses them as workflow illustrations, not named buyers; narrowed.
+- "at MICAS the CRM/ERP and allocation systems ran on ontology-governed data models" (A1) — CV says CRM/ERP/WMS; "ontology-governed" and "allocation" come only from the applicant's own Vector/CIRTA drafts; kept with a [state plainly] bracket.
+- US$500K–5M seed sweet spot, "most ventures have 2+ co-founders", "significant problem" — recorded from earlier snippets, not re-found in the FAQ this session; flagged [verify] rather than removed.
+- Checked and traceable (kept): 500k vs 10M hours; US$50–200/h; Lin et al. 1,600 demos / 32 pairs / ~90%; "a thousand hours at one site"; 2–3× premium; Annex I 2 Aug 2028; US$4.9B→17.1B, US$4.4B→23.1B, ≈€430B (PwC Strategy&); 80–200 orgs, US$12–60M, US$100M ARR paths; 10 pilots × US$40k, 4 × US$180k less US$20k credits, US$1.04M; 600 h × US$150 = US$1.08M, 40% = US$432k, US$180k; "consumer capture flywheel"; "every percentage needs a denominator"; all competitor names; "first ... with a complete first-order axiomatization" (CPRA draft); FOIS 2018 Distinguished Paper (CV wording; deck says "outstanding-paper"); 21 papers, invited AAAI, monograph (deck only; bracketed); samples 109/429; 46-slide deck.
+
+**Remaining risks (cannot be fixed without the applicant)**
+1. Timing: a July 2027 application is judged on what exists then. If the Q4 2026 Engine test, one named partner and a verified-episode count are not real by then, the momentum criterion fails and CDL's own advice ("don't apply too early") applies.
+2. Founder commitment: a founder who is simultaneously a Harvard postdoc, a U of T postdoc candidate and CEO will be asked at interview which one is the job. The package now asks the question honestly; the answer has to be a real full-time plan or a full-time CTO co-founder.
+3. Team facts: CTO, robotics lead and 3D lead are unnamed, and their co-founder/equity status is unknown; CDL's typical admitted venture has 2+ committed co-founders [verify].
+4. Patents: three inconsistent counts across sources; citing "13 granted" without reconciled numbers and company assignment is the most probable place for a reviewer to catch an overclaim.
+5. Stream fit: the Toronto AI page's "scientific discovery" framing may route this application to triage elsewhere; admissions' answer (email 1) decides whether Toronto AI, Montreal AI or Defence is the target.
+6. Form unknowns: field list, character limits, demo-video requirement, referral field and 2027/28 dates are all unverified; §4 and §9 already exceed the self-imposed 350-word target and every answer will need cutting to the live limits.
+7. Financing: no round size exists; every fundability statement is a bracket, and mentors are investors.

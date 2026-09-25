@@ -9,7 +9,7 @@
 | Founder time: five day-long sessions plus preparation and objective work (est. 3–4 days per session cycle) | Oct 2027–Jun 2028 | Founder time; no cash [if the founder is a U of T postdoc, disclosed as an outside activity] |
 | Travel and accommodation | Sessions are in Toronto; founder expected to be Toronto-based from spring 2027 [confirm] | [nil / amount if travelling from elsewhere] |
 | Second founder or CTO attendance at sessions (optional but useful for technical objectives) | [CTO location] | [amount] |
-| Reviewer deck, demo environment (Engine on samples 109/429), legal review of anything disclosed | Internal | [amount] |
+| Reviewer deck, product demo video (≤3 min), demo environment (Engine on samples 109/429), legal review of anything disclosed | Internal | [amount] |
 | Legal and financing costs if a mentor investment or seed round follows | Standard seed-round costs | [amount; part of the round] |
 
 **The financing round CDL expects to see.** CDL's sweet spot is a seed round of approximately US$500K–5M within 12 months of applying. The deck sizes financing to the 18-month operating plan with a buffer for delayed collection, but states no figure. Before submission the company must fix: [round size in USD], [instrument: SAFE / priced], [timing relative to the Q1–Q2 2027 gates], [target lead investor type], and a use-of-funds split across the plan's four buckets — core product; independent validation; commercial execution; cash reserve — [percentages]. Cohort economics for the model: ten pilots at US$40k (US$400k bookings) and four annual deployments at US$180k less US$20k first-year credits (US$640k net software commitment), US$1.04M combined bookings in the first contracted year; pilot US$25–50k, annual US$120–240k.
@@ -38,7 +38,7 @@ Two clocks run in parallel: the CDL application and program clock (dates unconfi
 
 | Gate | Evidence we will show |
 |---|---|
-| Application (Jul 2027) | Engine test result with exact versions and known limits; at least one named co-development partner "achieved"; verified-episode count; Passport v1 recognition status; round size and timing |
+| Application (Jul 2027) | Engine test result with exact versions and known limits; at least one named co-development partner "achieved"; verified-episode count; Passport v1 recognition status; round size and timing; demo video; founder full-time status stated |
 | Interview (Aug 2027) | Two-minute demo on samples 109/429: JSON record → scene graph → check result with a localized finding and an UNKNOWN; the honest-challenges answer; the three objectives |
 | Session 1 (Oct 2027) | Objectives 1–3 as in proposal.md §13, each with a number and a date |
 | Sessions 2–4 | Paid engagements accepted against blinded baselines; signed recurring commitment; second task/embodiment adaptation hours recorded |

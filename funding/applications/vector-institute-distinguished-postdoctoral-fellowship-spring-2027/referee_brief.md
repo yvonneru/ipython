@@ -8,7 +8,7 @@ The Vector Institute's Distinguished Postdoctoral Fellowship is a two-year, sala
 
 ## Deadlines
 
-- Vector's deadline: **28 February 2027** — the application and all reference letters must be complete by then.
+- Vector's deadline: **28 February 2027, 23:59 EST** — the application and all reference letters must be received in full by then; anything later rolls to the Autumn cohort.
 - **Please send your letter by 14 February 2027.** The submission is a single PDF that includes the letters, so I need to receive it [or: Vector's office needs to receive it directly — I will confirm the route with Vector and tell you] before I assemble the file. If that date is difficult, tell me and I will adjust; the absolute limit is 28 February.
 
 ## What the letter should look like
@@ -17,7 +17,7 @@ Vector publishes no template or length in the sources I have [verify]. A signed 
 
 ## What reviewers weigh (as far as it is published)
 
-Vector does not publish scored criteria. From the program description, the committee looks for research excellence and potential relative to career stage, the depth and originality of the machine-learning contribution, fit with the sponsor's group and with Vector's strategic priorities (physical AI, robotics, safe and trustworthy AI), and feasibility of the plan within two years. The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
+Vector does not publish scored criteria. Its posting asks for "cutting-edge fundamental research in machine learning and deep learning algorithms and their applications" and "an excellent publication record in machine learning", with fellows working primarily with one or two Vector faculty. From that, the committee will weigh research excellence and potential relative to career stage, the depth and originality of the machine-learning contribution, fit with the sponsor's group and with Vector's research directions (safe and trustworthy AI; physical AI and robotics), and feasibility of the plan within two years. My publication record is in knowledge-representation venues rather than machine-learning venues, so a referee who can speak to my machine-learning competence from direct observation addresses the committee's most likely reservation. The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
 
 ## Points that would help
 

@@ -1,7 +1,7 @@
 # Description of Proposed Research — Klarman Fellowships, 2027 cohort (Cornell University, College of Arts & Sciences)
 
 **Applicant:** Yi Ru  **Proposed faculty host:** [name, department — a tenure-track or tenured faculty member with a current, primary appointment in the College of Arts & Sciences; see README]  **Requested start:** [1 July – 1 September 2027; agree the exact date with the host]
-**Format (confirmed 2026-09-25 from the official page via web search; re-check the portal on export):** "Description of proposed research — maximum 2 pages, single spaced, 12 point font, 1 inch margins, PDF format." Whether the reference list counts toward the two pages is not stated; this draft is written so that body **and** the short-form reference list fit on two pages together (about 1,050 words of body text plus a 150-word reference list; at 12 pt Times New Roman this sits at the two-page limit, so export and count pages before anything else). No headings are prescribed. If the export runs over, follow the cut order at the end of this file.
+**Format (confirmed 2026-09-25 from the official page via web search; re-check the portal on export):** "Description of proposed research — maximum 2 pages, single spaced, 12 point font, 1 inch margins, PDF format." Whether the reference list counts toward the two pages is not stated; this draft is written so that body **and** the short-form reference list fit on two pages together (about 1,130 words of body text plus a 150-word reference list; at 12 pt Times New Roman this sits at the two-page limit, so export and count pages before anything else). No headings are prescribed. If the export runs over, follow the cut order at the end of this file.
 
 ---
 

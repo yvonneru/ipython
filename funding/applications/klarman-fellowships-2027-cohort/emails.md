@@ -13,32 +13,32 @@ Dear Klarman Fellowships Program,
 
 I am preparing an application for the 2027 cohort with a proposed host in [department]. Before I ask a faculty member to sponsor me, I would like to confirm one eligibility point.
 
-I completed all requirements for my PhD (Information Engineering, University of Toronto) on [date, March 2025]; the degree was conferred at convocation on [date, June 2025 — confirm from transcript]. The eligibility rule for the 2027 cohort refers to a doctorate received no earlier than [1 May 2025 — quote the exact wording from the page]. Could you confirm which date the program uses — the date all requirements were met or the date of conferral — and therefore whether I am eligible to apply?
+I completed all requirements for my PhD (Information Engineering, University of Toronto) on [date, March 2025]; the degree was conferred at convocation on [date, June 2025 — confirm from transcript]. The eligibility rule for the 2027 cohort states that awardees "must have earned the doctoral degree within two years of beginning the Klarman Fellowship (i.e., for 2027 recipients, no earlier than 1 May 2025)". Could you confirm which date the program uses — the date all requirements were met or the date of conferral — and therefore whether I am eligible to apply?
 
 I can supply the official transcript and a letter from the University of Toronto's School of Graduate Studies stating both dates.
 
 Thank you very much.
 
 Yi Ru
-Postdoctoral Researcher, Harvard Medical School
+[Postdoctoral Researcher — confirm exact title], Harvard Medical School
 yi.ru@alumni.utoronto.ca
 
 ---
 
 ## 2. To a prospective faculty host at Cornell — send today to each candidate (one at a time, or two in parallel with disclosure)
 
-**To:** [Prof. name, department — primary appointment in the College of Arts & Sciences]
+**To:** [Prof. name, department — tenure-track or tenured, with a current primary appointment in the College of Arts & Sciences; check the Cornell directory first]
 **Subject:** Klarman Fellowship 2027 — would you consider hosting a proposal on verified part ontologies for robot-learning data?
 
 Dear Professor [name],
 
-I am a postdoctoral researcher at Harvard Medical School and completed my PhD in Information Engineering at the University of Toronto in 2025. I am writing to ask whether you would consider serving as faculty host for an application to Cornell's Klarman Fellowships (deadline 15 October; up to three years, fully funded by the College of Arts & Sciences, with the host's role being mentorship and a sponsorship form rather than funding).
+I am a postdoctoral researcher at Harvard Medical School and completed my PhD in Information Engineering at the University of Toronto in 2025. I am writing to ask whether you would consider serving as faculty host for an application to Cornell's Klarman Fellowships (deadline 15 October, 11:59 pm EDT; up to three years, fully funded by the College of Arts & Sciences, with the host's role being mentorship and a sponsorship form submitted by the same deadline rather than funding).
 
 The proposed program applies verified formal ontologies to the part-level datasets on which robot manipulation policies are trained. Datasets such as PartNet, PartNet-Mobility, GAPartNet, AgiBot World, Open X-Embodiment and DROID annotate objects as hierarchies of parts with kinematic, functional and visual labels, but no dataset or learned model is required to satisfy the axioms of parthood, and nobody has checked them against any formal specification. I propose to (1) axiomatize and machine-verify an ontology of object parts as an extension of ISO/IEC 21838-4, on which I was a core contributor; (2) audit those datasets automatically, producing the first quantitative measurement of parthood consistency in robot data and provably meaning-preserving cross-dataset mappings, released publicly; and (3) use the ontology as an inductive bias and as an evaluation signal — ontology-violation rate alongside task success — for part-aware manipulation policies, measuring the effect on generalization to unseen object categories. [One sentence on why this connects to the host's work — e.g., their part-aware manipulation, articulated-object, or 3D-perception research — confirm before sending.]
 
-My background is in formal knowledge representation (ISO/IEC 21838-4; a theory of material constitution as a parthood-preserving mapping between mereologies, with Michael Grüninger, under review at Synthese) and in building production data systems as a founder of technology companies. What I would ask of a host: agreement to host, the sponsorship form by [date the portal states], and roughly fortnightly meetings; access to a simulation and, in year three, a robot platform for the evaluation component. What the host's group would get: a verified, released parts ontology and audit toolkit usable in its own work, a public aligned corpus, co-authorship on the audit and learning papers, and a fellow who has built data pipelines at production scale.
+My background is in formal knowledge representation (ISO/IEC 21838-4; a theory of material constitution as a parthood-preserving mapping between mereologies, with Michael Grüninger, under review at Synthese) and in building production data systems as a founder of technology companies. What I would ask of a host: agreement to host, the sponsorship form by 15 October (I would aim for 9 October), and roughly fortnightly meetings; access to a simulation and, in year three, a robot platform for the evaluation component. What the host's group would get: a verified, released parts ontology and audit toolkit usable in its own work, a public aligned corpus, co-authorship on the audit and learning papers, and a fellow who has built data pipelines at production scale.
 
-I attach the three-page proposal, a statement of research interests and my CV. I would be glad to talk by video at any time this week or next. [If writing to two candidates in parallel: I should say that I am also approaching one other Cornell faculty member about hosting; I will make the choice, if both are open to it, in consultation with both of you.]
+I attach the two-page description of proposed research, a short background statement and my CV. I would be glad to talk by video at any time this week or next. [If writing to two candidates in parallel: I should say that I am also approaching one other Cornell faculty member about hosting; I will make the choice, if both are open to it, in consultation with both of you.]
 
 With best regards,
 Yi Ru
@@ -54,7 +54,7 @@ Dear Michael,
 
 Alongside the CPRA application, I am applying to Cornell's Klarman Fellowships in the College of Arts & Sciences — a three-year, college-wide postdoctoral fellowship — with [host name] in [department] as proposed faculty host. The program is the same one you have seen in the CPRA outline: the verified parts ontology as a TUpper extension with PSL, the audit of the part-level robot datasets, and the ontology as inductive bias for manipulation policies. The proposal names you as co-author on the ontology component, which I hope is agreeable; please tell me if you would rather I phrase that differently.
 
-Would you be willing to write one of the three reference letters? [Verify: the portal will email you a link once I enter your name / letters are emailed to the program.] The deadline is October 15; I have asked referees for October 9. A one-page brief on what the committee weighs is attached, with the proposal, statement and CV.
+Would you be willing to write one of the three reference letters? The program asks that one of the three be the applicant's primary doctoral advisor [confirm: that is you / that is (name), whom I am asking separately]. Once I enter your name, the portal emails you a link and you upload the letter as a PDF; the deadline is October 15, 11:59 pm EDT, and I have asked referees for October 9. A one-page brief on what the committee weighs is attached, with the two-page description and CV.
 
 One consistency point. The CPRA justification for location of tenure says the verification methodology is practised with tool support only in your laboratory. For Cornell I have written that the tools are open, that I carry the methodology, and that you continue as co-author — so please, in the Cornell letter, do not say the work can only be done in Toronto. If you think either framing is wrong I would rather fix it now.
 
@@ -73,7 +73,7 @@ Yi
 
 Dear [name],
 
-I wanted to let you know that, in addition to the Canadian postdoctoral award I mentioned, I am applying for Cornell's Klarman Fellowship in the College of Arts & Sciences — a three-year independent fellowship starting between July and September 2027 — with [host name] as faculty host, on the verified-ontology program for robot-learning data that I described to you [one sentence linking it to the current lab's work, if applicable]. The deadline is October 15, and I would be very grateful if you would serve as one of my three referees; [the portal will email you a link / letters go to the program by email — verify], and I have asked referees for October 9. The brief, proposal, statement and CV are attached. Nothing changes here before summer 2027, and I would like to plan the transition, if it happens, so that it is useful to the lab.
+I wanted to let you know that, in addition to the Canadian postdoctoral award I mentioned, I am applying for Cornell's Klarman Fellowship in the College of Arts & Sciences — a three-year independent fellowship starting between July and September 2027 — with [host name] as faculty host, on the verified-ontology program for robot-learning data that I described to you [one sentence linking it to the current lab's work, if applicable]. The deadline is October 15 (11:59 pm EDT), and I would be very grateful if you would serve as one of my three referees; once I enter your name the portal emails you a link and you upload the letter as a PDF, and I have asked referees for October 9. The brief, the two-page description and CV are attached. Nothing changes here before summer 2027, and I would like to plan the transition, if it happens, so that it is useful to the lab.
 
 Thank you,
 Yi
@@ -87,7 +87,7 @@ Yi
 
 Dear [name],
 
-I am applying for Cornell University's Klarman Fellowship, a three-year postdoctoral fellowship in the College of Arts & Sciences, to work with [host name] on verified mereological ontologies for object–part representation in physical AI. The selection committee is college-wide and asks referees to speak to scholarly promise, creativity, independence and leadership potential in terms that scholars from other fields can weigh. Would you be willing to serve as one of my three referees? [The portal will email you a link / letters are emailed to the program — verify]; the program deadline is October 15 and I have asked for October 9. I attach a one-page brief, the proposal, the statement and my CV. If the timing is difficult, please tell me and I will adjust.
+I am applying for Cornell University's Klarman Fellowship, a three-year postdoctoral fellowship in the College of Arts & Sciences, to work with [host name] on verified mereological ontologies for object–part representation in physical AI. The selection committee is college-wide and asks referees who know the work in detail to speak to the importance of the proposed research and to the qualities — original thought, rigor, discipline — that will let me complete it, in terms that scholars from other fields can weigh. Would you be willing to serve as one of my three referees? Once I enter your name the portal emails you a link and you upload the letter as a PDF; the program deadline is October 15, 11:59 pm EDT, and I have asked for October 9. I attach a one-page brief, the two-page description and my CV. If the timing is difficult, please tell me and I will adjust.
 
 Thank you for considering it.
 

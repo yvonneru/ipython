@@ -45,10 +45,10 @@ Yi Ru
 Dear [Vector Research Talent / Postdoctoral Program team],
 
 I am preparing an application to the Distinguished Postdoctoral Fellowship for the Spring 2027 cohort (28 February 2027 deadline), with a University of Toronto co-sponsor and a Vector faculty sponsor being confirmed. Could you please confirm the following so that I prepare the package correctly?
-1. Are there page or word limits for the cover letter, research statement or CV?
+1. Are there page or word limits for the cover letter, research statement or CV? (The program page lists the components of the single PDF but no limits.)
 2. Should the three reference letters be included in the applicant's single PDF, or sent by the referees directly to Vector? Is there a template? Does the sponsoring faculty member's letter count as one of the three?
-3. Where is the application submitted — the ADP job posting, or an email address — and what is the deadline time and time zone?
-4. Is there a limit on years since the PhD (mine was completed in March 2025)?
+3. Is the application submitted through the ADP job posting or by email? (I have the deadline as 28 February, 23:59 EST.)
+4. The posting asks for a PhD in computer science, statistics, electrical engineering or a closely related field, completed within three years of the deadline. Mine is a PhD in Information Engineering (Department of Mechanical and Industrial Engineering, University of Toronto; research in artificial intelligence and knowledge representation), all requirements completed March 2025. Could you confirm this is treated as a closely related field?
 5. May a fellow hold the fellowship together with an external postdoctoral award (for example an NSERC Canada Postdoctoral Research Award or a University of Toronto Data Sciences Institute fellowship), with approval?
 6. What is the expected start window for the Spring 2027 cohort? My earliest start is April 2027. [If not a Canadian citizen or permanent resident: does Vector support the work-permit application?]
 7. May a co-sponsor who is not a Vector faculty member be named alongside the Vector sponsor?
