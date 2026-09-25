@@ -45,9 +45,9 @@ Subject: Reference for the U of T Data Sciences Institute Postdoctoral Fellowshi
 
 Dear [name],
 
-I am applying for the Data Sciences Institute Postdoctoral Fellowship at the University of Toronto, to be held under Prof. Michael Grüninger and Prof. [second co-supervisor] from [April 2027 or later], on a program that applies verified mereological ontologies to auditing and aligning the part-level datasets robot learning is built on. Would you be willing to serve as one of my [two] referees?
+I am applying for the Data Sciences Institute Postdoctoral Fellowship at the University of Toronto, to be held under Prof. Michael Grüninger and Prof. [second co-supervisor] from 1 May 2027 [or later], on a program that applies verified mereological ontologies to auditing and aligning the part-level datasets robot learning is built on. Would you be willing to serve as one of my [number] referees?
 
-[Verify and state the route: "DSI will email you a link once I enter your name" / "please email your letter to [address]" / "please send the letter to me as a PDF and I will upload it".] The applicant deadline is expected to be 22 January; I have asked referees for 20 January so I can submit with everything in hand. I attach a one-page brief on what the fellowship is and what reviewers weigh, together with the proposal, my statement and my CV.
+[Verify and state the route: "DSI will email you a link to a structured form once I enter your name" / "please email your letter to [address]" / "please send the letter to me as a PDF and I will upload it".] The applicant deadline is expected in mid-January [state the confirmed date]; I have asked referees for 6 January so I can submit with everything in hand. I attach a one-page brief on what the fellowship is and what reviewers weigh, together with the proposal, my statement and my CV.
 
 Thank you for considering it — please let me know if the timing is difficult and I will adjust.
 
@@ -60,7 +60,7 @@ Subject: Toronto fellowship applications — one more reference, and timing
 
 Dear [name],
 
-In addition to the NSERC award I mentioned, I am applying to the University of Toronto Data Sciences Institute Postdoctoral Fellowship (deadline expected 22 January 2027), a two-year, two-co-supervisor fellowship for multidisciplinary data-science research, on the same program: verified ontologies used to audit and align the part-level datasets robot learning is built on [one sentence linking to the current lab's interests, if applicable — e.g., the audit method applies directly to hierarchical part labels in medical imaging]. I would be grateful if you would serve as a referee again; the brief and the proposal are attached, and the letter would be due by 20 January [route to verify]. Nothing changes here before spring 2027, and I would like to discuss how to make the transition, if it happens, useful to the lab — including whether the audit toolkit could be applied to [a dataset the lab works with].
+In addition to the NSERC award I mentioned, I am applying to the University of Toronto Data Sciences Institute Postdoctoral Fellowship (deadline expected in mid-January 2027), a two-year, two-co-supervisor fellowship for multidisciplinary data-science research, on the same program: verified ontologies used to audit and align the part-level datasets robot learning is built on [one sentence linking to the current lab's interests, if applicable — e.g., the audit method applies directly to hierarchical part labels in medical imaging]. [If the form requires referees beyond the co-supervisors:] I would be grateful if you would serve as a referee again; the brief and the proposal are attached, and the reference would be due by 6 January [route to verify]. Nothing changes here before spring 2027, and I would like to discuss how to make the transition, if it happens, useful to the lab — including whether the audit toolkit could be applied to [a dataset the lab works with].
 
 Thank you,
 Yi
