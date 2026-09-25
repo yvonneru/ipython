@@ -3,7 +3,7 @@
 Applicant: Dr. Yi Ru. Prepared 2026-09-25. Items in [brackets] must be confirmed or supplied by the applicant before anything is sent.
 
 ## Program in one paragraph
-A two-year Mitacs postdoctoral award that brings researchers currently living outside Canada to a Canadian institution to work on a project co-designed with an academic supervisor and a partner organization. Value CAD 170,000 over two years (CAD 85,000 per year: at least CAD 70,000 stipend, up to CAD 15,000 for relocation or research expenses), jointly funded by Mitacs and the partner. The partner's share is recorded in the registry as CAD 42,500 + tax per year [verify with the Mitacs Advisor; not re-read this session]. Partners may be for-profit or not-for-profit corporations, hospitals or municipalities. The proposed project: a partner-facing version of Objective O2 of my program (specification-based audit and alignment of part-level robot datasets), founded on O1 and extending into O3 in year two, supervised by Prof. Michael Grüninger (MIE, University of Toronto).
+A two-year Mitacs postdoctoral award that brings researchers currently living outside Canada to a Canadian institution to work on a project co-designed with an academic supervisor and a partner organization. Value CAD 170,000 over two years (CAD 85,000 per year: at least CAD 70,000 stipend, up to CAD 15,000 for relocation or research expenses), jointly funded by Mitacs and the partner. The partner's share is CAD 42,500 + tax per year, with the full first-year contribution invoiced on project approval (program page and university research-office pages via search snippets, 25 Sept 2026) [verify on the GEA form]. GEA projects "focus on commercialization of leading-edge science and technology" in sectors including AI, quantum, clean technology, advanced materials and manufacturing, defence, cybersecurity, agri-tech, and health and life sciences; this project is filed under AI. Partners may be for-profit or not-for-profit corporations, hospitals or municipalities. The proposed project: a partner-facing version of Objective O2 of my program (specification-based audit and alignment of part-level robot datasets), founded on O1 and extending into O3 in year two, supervised by Prof. Michael Grüninger (MIE, University of Toronto).
 
 ## Deadlines — READ FIRST
 | Item | Date | Status |
@@ -25,8 +25,10 @@ Internal deadlines I am setting (assuming a 2027 intake opens in [Q1 2027 — co
 ## Eligibility conditions
 | Condition | Source | Status for this applicant |
 |---|---|---|
-| Within five years of PhD completion | Mitacs GEA page (via search) | Met: PhD requirements completed March 2025; window to ~March 2030 |
-| Currently residing outside Canada (Canadians who did a PhD abroad and international researchers both qualify) | Mitacs GEA page | Met now (postdoctoral researcher, Harvard Medical School) — lost after relocating; [keep proof of US residence: lease / HMS appointment letter] |
+| Within five years of PhD completion (extensions for parental leave, military service, etc.) | Mitacs GEA page (via search) | Met: PhD requirements completed March 2025; window to ~March 2030 |
+| Currently residing outside Canada ("international researchers and Canadians abroad") | Mitacs GEA page | Met now (postdoctoral researcher, Harvard Medical School [confirm — the appointment is in the CPRA/Vector drafts but not on the CV]) — lost after relocating; [keep proof of US residence: lease / HMS appointment letter] |
+| Intended group: does a researcher who did the PhD in Canada and left ~1.5 years ago count as talent "brought to Canada"? | Not stated on any page found | [Unaddressed risk — ask the Mitacs Advisor in writing (emails.md, message 1, question 5). If the answer is no, this package is moot.] |
+| Priority sector | University research-office pages (via search) | Met: AI (primary); advanced manufacturing / health and life sciences via Project 2.3 |
 | Willing to relocate to Canada and hold postdoctoral status at an eligible Canadian institution | Mitacs GEA page | Met in intent; [U of T postdoctoral appointment offer from MIE needed] |
 | Academic supervisor at a Mitacs-eligible institution | Mitacs GEA page | [Pending — Prof. Grüninger has been asked in principle for CPRA; ask specifically for GEA] |
 | Partner organization that co-funds | Mitacs GEA page / registry | **Not met — no partner secured.** See "Partner strategy" |
@@ -49,9 +51,10 @@ What the search snippets established (25 Sept 2026):
 - Deadline: extended to 11 September 2026; 50 awards for 2026–27; decisions early 2027 — https://research.ucalgary.ca/opportunity/2026-2026-mitacs-accelerate-global-excellence-award-gea ; https://research.mcmaster.ca/funding/mitacs-accelerate-global-excellence-award-phase-2/ ; https://research-tools.mun.ca/funding/opportunities/mitacs-accelerate-global-excellence-award-phase-2-launch/ ; https://research.carleton.ca/2026/mitacs-accelerate-global-excellence-award/ ; https://www.uoguelph.ca/research/alerts/content/mitacs-accelerate-global-excellence-award
 - Launch announcements: https://www.mitacs.ca/news/mitacs-announces-new-postdoctoral-fellowship-to-bring-top-global-talent-to-canada/ ; https://www.mitacs.ca/news/attracting-top-international-talent-through-new-mitacs-accelerate-global-excellence-award-call-for-applications-now-open/
 - Proposal form (standard Accelerate proposal, which the GEA form is expected to follow — [verify against the GEA form once released by the Advisor]): Research abstract, section 2.1, maximum 200 words; no length limit on the rest of the form ("use the space necessary"); required sections: research proposal summary, description of proposed research (background, objectives, methodology, expected deliverables), qualifications of participants, budget and timeline; reviewers evaluate the problem addressed, objectives, methodology, expected deliverables and benefits to the intern — https://www.mitacs.ca/wp-content/uploads/2026/04/Mitacs_Accelerate_Guide_to_Writing_your_Proposal_EN.pdf ; https://www.mitacs.ca/en/programs/accelerate/proposal ; https://www.mitacs.ca/programs-resources/
-- Not found this session: GEA-specific scoring weights, any priority-sector list, whether the partner must operate in Canada, the exact partner cash figure, and whether a fellow statement or reference letters are requested. [Ask the Mitacs Advisor.]
+- Found in review (25 Sept 2026, search snippets from the UCalgary / McMaster / MUN / Carleton / Guelph pages): priority sectors (AI, quantum, clean technology, advanced materials and manufacturing, defence, cybersecurity, agri-tech, health and life sciences) with a stated focus on commercialization; partner share CAD 42,500 + tax per year, year one invoiced on approval; eligibility extensions for parental leave and military service.
+- Not found: GEA-specific scoring weights, whether the partner must operate in Canada, whether a PhD earned in Canada affects the "talent brought to Canada" intent, and whether a fellow statement or reference letters are requested. [Ask the Mitacs Advisor.]
 
-Review criteria used in this package (Accelerate standard; weights not published): problem addressed; objectives; methodology; expected deliverables; benefits to the intern (professional development); benefits to the partner and to Canada; qualifications of the team; feasibility of the interaction plan and budget.
+Review criteria used in this package (Accelerate standard plus the GEA mandate; weights not published): problem addressed; objectives; methodology; expected deliverables; benefits to the intern (professional development, integration into Canada); benefits to the partner, commercialization potential and priority-sector fit; qualifications of the team; feasibility of the interaction plan and budget.
 
 ## What is submitted, where, in what format
 | Component | Format | Where | Owner |
@@ -91,9 +94,49 @@ Review criteria used in this package (Accelerate standard; weights not published
 | Methodology | proposal.md, Methodology | Themes → projects → open research questions answerable by theorem or counter-model; COLORE lifecycle methodology; Prover9/Mace4/SMT two-tier pipeline |
 | Expected deliverables | proposal.md, Deliverables; budget_and_timeline.md | Verified ontology (open licence, COLORE, SC 42), first quantitative audit, aligned corpus, audit toolkit, partner data report, papers |
 | Benefits to the intern | statement.md; proposal.md, Benefits | Industry-embedded postdoctoral training, standards participation, path to faculty position in KR for engineering systems |
-| Benefits to the partner and Canada | proposal.md, Benefits; Impact | Audited data with machine-checkable evidence; compliance clock (EU AI Act Annex I from 2 Aug 2028; NIST AI RMF); talent repatriated to Canada |
+| Benefits to the partner and Canada | proposal.md, Benefits; Impact | Audited data with machine-checkable evidence; compliance clock (EU AI Act Annex I [date to confirm: 2027 in the published Article 113 vs 2028 in the company deck]; NIST AI RMF); talent repatriated to Canada |
+| Commercialization and sector fit (GEA mandate) | proposal.md, Benefits "Commercialization path"; Project information | AI sector; open core + partner-owned adapters/reports; readiness milestones M8 / M16 / M21; partner states intended use in its letter |
+| Independence from the supervisor's programs | proposal.md, Objectives ("Relationship to the supervisor's programs") | Supervisor's programs supply method and infrastructure, not objectives; thesis did not cover these datasets or experiments |
+| Conflict of interest | proposal.md, Interaction plan; statement.md | AXIOMALITY disclosed, not the partner, no rights in outputs, no project data |
 | Qualifications | statement.md; proposal.md, Team | ISO/IEC 21838-4 core contributor; two Synthese submissions; production data systems; Grüninger's laboratory |
 | Feasibility / interaction plan | budget_and_timeline.md | Quarterly milestones; partner-site time; monthly steering |
 
 ## Open items requiring the applicant
 See open_items in the structured output; every [bracketed] item across the six files is listed there.
+
+## Review log
+
+Reviewed 2026-09-25 by a skeptical panel pass (criteria reconstructed from the Mitacs Accelerate proposal guide and the GEA pages surfaced by search; Mitacs publishes no weights, so the weights below are the reviewer's estimate of what carries the decision).
+
+| Criterion (est. weight) | Before | After | What changed |
+|---|---|---|---|
+| Problem addressed / gap (15%) | 4 | 4 | Unchanged; the gap statement is specific and cites the corpora. Ref [2] (the supervisor's unpublished NSERC proposals, with PIN) was replaced by a bracketed placeholder for published work — reviewers cannot consult grant proposals. |
+| Objectives (15%) | 4 | 4 | Three numbered objectives with a long-term challenge already; added an explicit "Relationship to the supervisor's programs and to the fellow's thesis" paragraph so the plan cannot be read as a slice of Physical Turing Test / Commonsense Cobotics. |
+| Methodology and feasibility (20%) | 4 | 4 | Themes → projects → open research questions, each with a year marker. Fixed the D6/D7 ordering and the M22 milestone that fell outside Q7 (now D6 at M21, D7 at M24, mirrored in the timeline and budget). |
+| Expected deliverables (10%) | 4 | 4 | Table of seven deliverables with recipients; hand-over documentation folded into D7. |
+| Benefits to the fellow / integration into Canada (10%) | 3 | 4 | "Supervision" of graduate students by a postdoc changed to co-supervision; training/equity sentence added (open release, coverage reporting, one bracketed mentoring commitment). |
+| Benefits to partner, commercialization, sector fit (15%) | 2 | 4 | The GEA mandate ("commercialization of leading-edge science and technology" in listed sectors) was absent from the package. Added the sector line in Project information, a "Commercialization path" paragraph with readiness milestones, a request that the partner state its intended use in the letter, and the sector framing in statement.md and referee_brief.md. |
+| Qualifications (10%) | 3 | 3 | Strong on paper but several claims still rest on the company deck rather than the CV (Harvard appointment, 21 papers, AAAI, patent counts); all now bracketed. Cannot rise until the applicant supplies the list. |
+| Eligibility and completeness (5%) | 1 | 2 | No partner, no supervisor confirmation, intake closed; nothing in the text can fix that. Added the unaddressed risk that a Canadian-PhD holder may fall outside the "talent brought to Canada" intent, the parental-leave extension, and the year-one invoicing rule so the partner is not surprised. |
+
+Weighted score: about 3.3/5 before, 3.7/5 after. The text is now competitive; the package is not submittable until a partner, the supervisor and an open intake exist.
+
+Invented or untraceable facts found and handled:
+- Harvard Medical School postdoctoral appointment: stated as fact in the proposal, statement, emails and the README eligibility table, but it is only in the earlier drafts and not on the CV. Now bracketed as "confirm" in the proposal, statement and README (kept unbracketed in the outgoing emails, which the applicant signs).
+- "In 2026 I founded AXIOMALITY": profile says "(2026)" but flags that the entity, date and relationship to Uing Technologies are unknown. Bracketed.
+- Ref [2]: the supervisor's unpublished NSERC proposals (with NSERC PIN) cited as literature. Removed; bracketed placeholder for published work.
+- EU AI Act Annex I "from 2 August 2028": traceable to the company deck only; the published Article 113 date for Annex I high-risk obligations is 2 August 2027. Bracket expanded to force a decision; the README criteria table now carries the same flag.
+- "21 papers disclosed", "invited AAAI presentation", patent counts (13 granted + 9 applications vs 3 Chinese + 9–10 German): from the deck, contradicting the drafts; already bracketed, wording tightened.
+- Partner share CAD 42,500 + tax and "Mitacs contribution" were marked unverified/derived; the search snippets this session confirm the partner figure (and the year-one invoicing rule), so brackets were replaced with a "verify on the form" note.
+- Deliverable D7 at "M22" inside Q7 (months 19–21): arithmetic inconsistency, fixed.
+- Abstract checked: 198 words (limit 200) — do not add a word.
+
+Remaining risks after this pass:
+1. No partner organization exists; the letter of commitment (CAD 42,500 + tax per year, year one invoiced on approval) is the gating item and the partner must pass Mitacs pre-review.
+2. The 2026–27 intake closed on 11 September 2026; no next intake is announced. The package waits on the Advisor's answer.
+3. Prof. Grüninger has not agreed to be lead researcher for the GEA; the MIE postdoctoral appointment route is unconfirmed.
+4. The applicant did the PhD in Canada and left about 18 months ago; whether Mitacs counts this as talent "brought to Canada" is unverified and could be disqualifying.
+5. Conflict-of-interest perception: the project title and benefits echo AXIOMALITY's "evidence layer" positioning; the disclosure now states no rights and no data flow, but Mitacs may still ask for a formal COI form and the partner may ask why the fellow's company is not the customer.
+6. Standalone-call rule: whether GEA can be held with CPRA is unknown; the applicant may have to choose.
+7. Reference placeholders [2], [5], [11], [16] and the EU AI Act date must be resolved before the form is filled; the 25% partner-time figure is a guess.
+8. Qualification claims from the company deck (publication count, AAAI, patents) are unverified; a reviewer who checks Google Scholar against "21 papers" and finds fewer will discount the whole section.

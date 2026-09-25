@@ -10,7 +10,7 @@ Dear Michael,
 
 Following my note about the CPRA: a second opportunity has a deadline six days out, and I would like to apply to it in parallel. The Kempner Institute at Harvard runs a three-year independent research fellowship (salary, research support, compute and engineering support) starting September 2027, for work on natural and artificial intelligence. The same program — the verified parts ontology, the dataset audit, and the ontology as an inductive bias for part-aware policies — fits, with the learning experiments and a human-comparison study at the centre and the ontology as the instrument.
 
-Two requests. First, may I name you as external collaborator for the COLORE verification methodology and the contribution back to SC 42? The fellowship requires Harvard-based mentors, so your role would be collaborator rather than mentor. Second, would you write a reference letter? Letters are uploaded through the Institute's portal; I have asked referees for September 30 [confirm the portal's referee date]. The draft proposal and personal statement are attached, with a one-page brief on what reviewers weigh; the proposal reuses the CPRA outline, so the reading is short.
+Two requests. First, may I name you as external collaborator for the COLORE verification methodology and the contribution back to SC 42? The fellowship requires Harvard-based mentors, so your role would be collaborator rather than mentor. Second, may I give your email as one of the three referees? The official page asks for the emails of three people who can describe my work; [confirm whether the Institute contacts referees directly after the deadline or whether letters are due by October 1] — to be safe I am asking referees to be ready with a letter by September 30. The draft proposal and personal statement are attached, with a one-page brief on what reviewers weigh; the proposal reuses the CPRA outline, so the reading is short.
 
 One more small thing: could you send me the reference list from the Physical Turing Test and Cobotics proposals for the mereotopology verification and vision-benchmark analysis papers? I cite them as [16] and want the published versions.
 
@@ -27,7 +27,7 @@ Dear [name],
 
 I would like to apply for the Kempner Institute Research Fellowship for the 2027 cohort (start September 2027, up to three years), on the program I described to you — verified ontologies of object parts as specification, audit and inductive bias for robot learning, with a human-comparison study. The deadline is October 1.
 
-Two things. Would you be willing to write a reference letter, uploaded through the Institute's portal by September 30 [confirm date]? I attach the draft proposal, personal statement and a one-page brief. And do you know of any rule or expectation about current Harvard postdocs applying — I am asking the program office as well, but I would rather hear it from you first. Nothing changes in the lab before September 2027, and if this happens I would like to plan the transition so it is useful to the group.
+Two things. May I give your email as one of the three referees the application asks for? [Confirm whether the Institute contacts referees after the deadline or whether letters are due by October 1]; to be safe I am asking referees to be ready with a letter by September 30. I attach the draft proposal, personal statement and a one-page brief. And do you know of any rule or expectation about current Harvard postdocs applying — I am asking the program office as well, but I would rather hear it from you first. Nothing changes in the lab before September 2027, and if this happens I would like to plan the transition so it is useful to the group.
 
 Thank you,
 Yi
@@ -38,7 +38,7 @@ Yi
 
 Dear Prof. [name],
 
-I am a postdoctoral researcher at Harvard Medical School, and a knowledge-representation researcher by training (PhD, University of Toronto, 2025; core contributor to ISO/IEC 21838-4, the TUpper top-level ontology standard). I am applying to the Kempner Institute Research Fellowship for the 2027 cohort and am writing to ask whether you would consider being one of my proposed mentors.
+I am a postdoctoral researcher at Harvard Medical School, and a knowledge-representation researcher by training (PhD, University of Toronto, 2025; core contributor to ISO/IEC 21838-4, the TUpper top-level ontology standard). I am applying to the Kempner Institute Research Fellowship for the 2027 cohort and am writing to ask whether you would consider being one of my proposed mentors. [Check before sending that the recipient is on the Institute's current faculty list or works on ML/AI/computational neurobiology at Harvard — the official definition of an eligible mentor.]
 
 The proposal asks what learned manipulation policies represent about parts and wholes. I build a verified first-order ontology of object parts, audit the part-level datasets the field trains on (PartNet, PartNet-Mobility, GAPartNet, AgiBot World, Open X-Embodiment, DROID) against it — nobody has yet checked them against any specification — and then use the ontology as an inductive bias: differentiable relaxations of parthood constraints as auxiliary losses, constraint-guided augmentation, and an evaluation protocol that reports ontology-violation rate beside task success, in SAPIEN on held-out PartNet-Mobility categories. Your group's work on [one sentence on the mentor's relevant work — confirm] is exactly the policy-learning setting I would want to run these experiments in, and what I would bring is a verified ontology, an audit toolkit and a public, ontology-aligned corpus.
 
@@ -85,8 +85,8 @@ Dear Kempner Institute fellowship team,
 
 I am preparing an application for the Research Fellowship (2027 cohort) before the October 1 deadline and have three questions the page does not answer for my case.
 
-1. I am currently a postdoctoral researcher at Harvard Medical School. Are current Harvard postdoctoral researchers eligible, and is a change of laboratory expected?
-2. Reference letters: how many are required, how are they submitted, and is the referee deadline the same as the applicant deadline (October 1, 6 pm ET)?
+1. I am currently a postdoctoral researcher at Harvard Medical School. Are current Harvard postdoctoral researchers eligible, is a change of laboratory expected, and may a current supervisor be one of the proposed mentors?
+2. References: the application asks for the emails of three individuals. Does the Institute contact them directly after the deadline, or must letters be received by October 1, 6 pm ET? Is one of the three expected to be the current supervisor?
 3. I am a founder of a small company outside my research role. Does the fellowship's outside-activity policy permit a concurrent founder role with appropriate disclosure?
 
 Thank you very much.
@@ -103,7 +103,7 @@ Dear [name],
 
 Thank you for agreeing to write for me. The final proposal, personal statement and CV are attached, together with a one-page brief on what the fellowship is and what reviewers weigh. My proposed mentors are [Mentor 1], [Mentor 2] and [Mentor 3, if named].
 
-The portal link will come from the Kempner Institute once I enter your name; letters are uploaded there [confirm mechanism]. The application closes October 1 at 6 pm ET; I have asked for letters by September 30 so I can submit a day early. Please tell me if the timing is difficult and I will adjust.
+The application asks for referees' emails; [the Institute will contact you directly / letters are due by October 1 at 6 pm ET — confirm with the program office before sending this]. To be safe, please have the letter ready by September 30. Please tell me if the timing is difficult and I will adjust.
 
 With thanks,
 Yi Ru
