@@ -4,7 +4,7 @@
 
 ## What the program is
 
-Mitacs Accelerate funds research internships in which a postdoctoral fellow at a Canadian university works on a project defined jointly with a partner organization. Units are 4–6 months at CAD 20,000 each; the partner contributes about half in cash and Mitacs the rest [confirm current figures]. Intake is continuous; peer review takes 6–8 weeks; Mitacs recommends applying about 16 weeks before the intended start. The intern must be within five years of the PhD and not previously employed full-time by the partner. This application proposes six units over 24 months from [1 April 2027] on *"Verified part-level data for physical AI: an ontology-based audit and alignment service for robot-learning datasets."*
+Mitacs Accelerate funds research internships in which a postdoctoral fellow at a Canadian university works on a project defined jointly with a partner organization. Under the postdoctoral funding model, units are 4–6 months; the partner contributes CAD 10,000 per unit in cash and the research award is CAD 20,000 per unit, all of it paid to the intern as stipend (Mitacs FAQ and U of T Mississauga postdoc-programs page, 25 Sept 2026 [verify with the Mitacs BD representative]). Intake is continuous; peer review takes 6–8 weeks; Mitacs recommends applying about 16 weeks before the intended start. The intern must be within five years of the PhD and not previously employed full-time by the partner. This application proposes six units over 24 months from [1 April 2027] on *"Verified part-level data for physical AI: an ontology-based audit and alignment service for robot-learning datasets."*
 
 ## What the form asks of you
 
@@ -14,7 +14,7 @@ Mitacs Accelerate funds research internships in which a postdoctoral fellow at a
 
 ## What reviewers score
 
-Mitacs peer review has conventionally scored five things [weights not published — verify]: research design and methodology; the expertise and relevance of the intern and supervisor; the depth of partner involvement and the benefit to the partner; the benefit to the intern (training); and the budget. Reviewers are drawn from the discipline and read the proposal against those headings; the partner's letter is read for whether the partner's role is real (data, time on site, a use case) rather than nominal.
+The Mitacs "Accelerate Guide: Writing your Proposal" (2026) states that reviewers evaluate the problem addressed, the objectives, the methodology, the expected deliverables and the benefits to the intern; weights are not published. Mitacs also checks that the work is research rather than routine service to the partner, that the interaction plan with the partner is real (data, time on site, a use case), and that the internship is an appropriate development opportunity for a postdoctoral intern. Every project must deliver a Final Report and Survey.
 
 ## The points that would help most
 

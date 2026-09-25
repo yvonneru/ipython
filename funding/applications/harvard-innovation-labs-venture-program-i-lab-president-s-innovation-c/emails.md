@@ -44,7 +44,7 @@ Three things I would ask of you:
 2. The Venture Program runs about twelve weeks in spring 2027 and asks the Team Lead to be at the i-lab and to meet a staff advisor regularly — a few hours a week. The lab's work would not be affected, and I would arrange the time around it; I would like your agreement before I commit to it.
 3. If HMS or the Office for Postdoctoral Fellows requires an outside-activity or conflict-of-interest disclosure for a postdoc who is also a company's CEO, I would rather file it now; could you tell me what the lab's practice is?
 
-Separately, as I mentioned, I am applying for postdoctoral awards in Canada with an earliest start of April 2027. If the Harvard programs go ahead I would set that start after the spring cohort and the May finals, which the Canadian awards allow. Nothing changes here before then.
+Separately, I should tell you [if not already discussed] that I am applying for postdoctoral awards in Canada with an earliest start of April 2027. If the Harvard programs go ahead I would set that start after the spring cohort and the May finals, which the Canadian awards allow. Nothing changes here before then.
 
 If the form has a field for an advisor, would you be willing to be listed? That is entirely optional.
 
@@ -85,7 +85,7 @@ First, the application describes the company's knowledge kernel as a verified ex
 
 Second, the form may allow a scientific advisor to be named. If you would be willing to be listed, I would be glad; if a listing would sit awkwardly with the postdoctoral appointment we are planning, or with MIE's conflict-of-interest rules, I would rather not, and I would like your view.
 
-Third, a disclosure so that nothing surprises anyone later: if the Harvard programs go ahead, the Venture Program cohort runs roughly January–April 2027 and the PIC finals are in April–May 2027, so I would set the U of T start at May–June 2027 rather than April. The CPRA, Vector and DSI applications all say "April 2027 or later", so nothing in them changes; I would rather you heard the reason from me now. I intend to keep the company and the postdoctoral work strictly separate and to put a written arrangement in place with the department, as we discussed for the IRAP proposal.
+Third, a disclosure so that nothing surprises anyone later: if the Harvard programs go ahead, the Venture Program cohort runs roughly January–April 2027 and the PIC finals are in April–May 2027, so I would set the U of T start at May–June 2027 rather than April. The CPRA, Vector and DSI applications all say "April 2027 or later", so nothing in them changes; I would rather you heard the reason from me now. I intend to keep the company and the postdoctoral work strictly separate and to put a written conflict-of-interest arrangement in place with the department [as set out in my IRAP note to you, if that has been sent].
 
 With thanks, as always,
 Yi

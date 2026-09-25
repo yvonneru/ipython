@@ -8,9 +8,10 @@ All dollar figures are placeholders in [brackets]: the profile, the deck and the
 |---|---|
 | Project length | 12 months from agreement start [target 1 April 2027; earlier on signature if FY 2026-27 funds are available] |
 | Target total project cost | [CAD — sum of Tables 2–4] |
-| Requested IRAP contribution | [CAD — 0.8 × eligible salaries + 0.5 × eligible contractor costs, capped at the amount the ITA indicates; registry range for early projects CAD 50k–500k] |
+| Requested IRAP contribution | [CAD — 0.8 × eligible salaries + 0.5 × eligible contractor costs, capped at the amount the ITA indicates; registry range for early projects CAD 50k–500k, and first-time clients are typically funded at CAD 75–200k per the registry's third-party guides — size the first request to that band unless the ITA indicates otherwise, and phase the remainder as a follow-on project] |
 | Company share | [CAD — total project cost minus IRAP contribution; includes all non-eligible costs] |
 | Source of company share | [cash on hand / committed financing / pilot revenue — reference the financial statements] |
+| Other government assistance on the same costs | [SR&ED — claimed net of IRAP; Mitacs Accelerate (if pursued) — no cost claimed under both; IRAP YEP for ENG1 — if used, ENG1's salary is claimed once]. The registry records a stacking ceiling of about 75% of project costs across all government sources [confirm with the ITA] |
 
 ## 2. Eligible R&D salaries (IRAP up to 80%)
 

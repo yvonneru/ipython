@@ -33,7 +33,7 @@ The planning budget below is for the applicant and the host only; it is not an a
 | M12–M16 | Public release of the audit, aligned corpus, toolkit v1; audit/data paper submitted | O2 | Release DOI; paper submission |
 | M16–M24 | Pooled-data and augmentation experiments in SAPIEN; methods paper; SC 42 contribution drafted | O2, O3, O4 | Experimental results with confidence intervals; SC 42 document number |
 | **~M24** | **Site visit and end-of-pioneer-phase review** | all | Ontology in COLORE; public audit of five datasets; toolkit; two papers; SC 42 draft |
-| M24–M36 | Extension to real-robot corpora (AgiBot World, Open X-Embodiment, DROID slices); second workshop (public/policy audience) ahead of 2 Aug 2028 | O2, O4 | Evidence packs for real-robot data; policy brief |
+| M24–M36 | Extension to real-robot corpora (AgiBot World, Open X-Embodiment, DROID slices); second workshop (public/policy audience) ahead of the EU AI Act machinery provisions [2 Aug 2028 per the company deck — verify against Art. 113; README open item 27] | O2, O4 | Evidence packs for real-robot data; policy brief |
 | M30–M48 | Ontology-constrained training; verification-in-the-loop evaluation; robotics-venue paper | O3 | Ablations by axiom family; violation-rate-vs-failure analysis |
 | M42–M54 | Evidence format aligned with conformity-assessment practice; SC 42 technical specification or standard proposal | O4 | Working draft in SC 42 |
 | M48–M60 | Second application domain for the toolkit [medical image part labels or CAD assemblies — choose with host]; synthesis publication; third-party funding for continuation | O2, O4 | Toolkit v2; grant application(s) submitted |

@@ -20,7 +20,7 @@ Source for all three rows: the official application page (brancoweissfellowship.
 
 **The four points that would help most.**
 1. That the verified-ontology methodology with working tool support (COLORE, Prover9/Mace4 pipelines, PSL, TUpper) exists in the Semantic Technologies Laboratory and is what Objectives O1–O2 require.
-2. That the project is my own and is distinct from both my thesis and your NSERC programmes ("Ontologies for the Physical Turing Test"; "Commonsense Cobotics"): it audits manipulation data at dataset scale and publishes the results as public evidence; yours propose ontological analysis of vision and reasoning benchmarks.
+2. That the project is my own and is distinct from both my thesis and your NSERC programmes ("Ontologies for the Physical Turing Test"; "Commonsense Cobotics"): it audits manipulation data at dataset scale and publishes the results as public evidence; yours propose ontological analysis of vision and reasoning benchmarks. Please also say, in your own words, why this is not a project NSERC would fund as it stands — the Fellowship's FAQ states that it does not fund projects that could be funded by other scientific organizations, and the same lab, tools and supervisor as the PhD will make reviewers look for exactly this.
 3. That the host will provide independence: my own project budget, freedom to publish and release openly, ability to co-supervise students on the ontology and audit components, and links to the U of T Robotics Institute and the Vector Institute for the learning component.
 4. That the department will administer the grant under the three-way contract and accepts the management-fee cap [confirm with the MIE research office / U of T Research Services].
 
@@ -48,7 +48,7 @@ Candidates: [name 1 — applied ontology], [name 2 — applied ontology / mereol
 **Points that would help.**
 1. The theoretical work on material constitution and mereological pluralism (two Synthese submissions), and why a machine-checkable theory of multiple parthood relations is new.
 2. The ISO/IEC 21838-4 contribution: what it shows about rigour and about working in a standards body — the route by which the audit becomes public evidence.
-3. The move from theory to deployed systems (patents, production data integration, the Vision Pro application) and why that predicts delivery of a dataset-scale audit.
+3. The move from theory to deployed systems (patents, data integration at MICAS/YourTable, the Vision Pro application at Uing) and why that predicts delivery of a dataset-scale audit. [If the FOIS 2018 Distinguished Paper Award is the applicant's own first-author work, name it.]
 4. Independence and departure: the project is the applicant's own; the thesis was on knowledge-system architecture, not on parts, datasets or policies.
 
 **Deadline.** Set by the Fellowship when it requests the letters [expected within weeks of the May 2027 shortlist notification]. I will send the final proposal, motivation letter and CV with the request.

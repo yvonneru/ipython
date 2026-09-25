@@ -57,15 +57,16 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 - **Manchester scheme page:** https://www.se.manchester.ac.uk/research/fellowships/royal-society-newton-international-fellowship/ — **research proposal max. 1,500 words**: explain why you chose the subject area, what you find particularly important, potential impact or wider benefits to society, and any fieldwork outside the UK (location, duration, justification); **Statement of UK sponsor support: max. 1 page**, on suitability for the project and intentions for career development.
 - **British Academy scheme page (humanities/social-science stream; same rules):** https://www.thebritishacademy.ac.uk/funding/schemes/newton-international-fellowships/ and its FAQ.
 - **Oxford Physics summary:** https://www.physics.ox.ac.uk/research/research-funding-support/fellowship-applications/postdoctoral-level-fellowships/royal-1.
-- **Assessment process (2026 scheme notes):** after eligibility checks, **Part A** is reviewed by two committee members with the closest expertise for longlisting; longlisted **Parts A and B** are reviewed for shortlisting; shortlisted applications are discussed at a committee meeting that recommends funding. **Criteria and weights are not published in the search summaries** [confirm in the 2027 scheme notes]; by precedent the committee assesses (i) the applicant's track record and potential, (ii) the quality and feasibility of the proposed research, (iii) the suitability of the host and sponsor and the mutual benefit, and (iv) the prospect of long-term links between the UK and the applicant's home research base.
+- **Assessment process (2026 scheme notes; re-checked by web search on 2026-09-25, summaries only):** after eligibility checks, **Part A** is reviewed by two members of the (extended) committee with the closest expertise for longlisting; longlisted **Parts A and B** are reviewed for shortlisting; shortlisted applications are discussed at a committee meeting that recommends funding. The scheme notes refer to "Assessment Criteria" but the search summaries do not reproduce them or any weights [confirm in the 2027 scheme notes]. What the notes and scheme page do state as what is looked for: a **clearly defined and mutually beneficial research proposal agreed with the UK host researcher**; **access to appropriate expertise, equipment, facilities, resources and space** during the award; the **suitability of the host organisation for the applicant's career development, including an appropriate level of support and training**; and the scheme objective of **long-term links between the fellow and the UK research base** (alumni programme). The sponsor develops the proposal with the applicant and provides mentoring and career guidance; the fellowship is personal to the applicant, and the sponsor is described as not a principal investigator [some university pages call the sponsor the "UK co-applicant" — confirm the 2027 terminology and use it consistently in Flexi-Grant].
+- **Lay summary:** max. **250 words** (2024 scheme notes; confirm 2027), for a lay reader.
 - Contact for scheme questions: info@newtonfellowships.org (Manchester page).
 
 **Components and where they live in this package**
 
 | Component (2026 round; re-check 2027) | Limit | File |
 |---|---|---|
-| Part A: applicant details, career summary, publications/track record fields, lay summary | [field limits — confirm] | `statement.md` §1–§3; CV from the master CV |
-| Research proposal | 1,500 words | `proposal.md` (1,217 words body + references) |
+| Part A: applicant details, career summary, publications/track record fields, lay summary | Lay summary max. 250 words (2024 scheme notes; confirm 2027); other field limits [confirm] | `statement.md` §1–§3 (lay summary ≈240 words); CV and **publication list** from the master CV — **no publication list exists yet in this repository** |
+| Research proposal | 1,500 words | `proposal.md` (1,473 words body incl. bracketed notes, 1,375 once brackets are resolved — counted 2026-09-25; references separate; re-count after the sponsor text is inserted) |
 | Career development / benefits statements (why the UK, why this host, post-fellowship plans, home-country links) | [confirm fields and limits] | `statement.md` §4–§6 |
 | Statement of UK sponsor support | 1 page | Sponsor writes; brief in `referee_brief.md` §B |
 | Head of Department statement (host commitments) | [confirm] | HoD writes; brief in `referee_brief.md` §C |
@@ -102,13 +103,13 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 
 ## How this proposal meets the criteria
 
-| Criterion (by precedent; weights unpublished) | Where it is met |
+| Criterion (reconstructed; weights are this package's estimate, none are published) | Where it is met |
 |---|---|
-| Applicant's track record and potential | ISO/IEC 21838-4:2023 core contribution; two *Synthese* submissions (first author); 21 papers [list to confirm]; FOIS 2018 Distinguished Paper [role to confirm]; patents; production systems at two companies — `statement.md` §2 |
-| Quality and feasibility of the research | Three objectives with milestones M8/M12/M16/M24, named datasets (PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World), named tools (Prover9, Mace4, Datalog/SMT, SAPIEN), falsifiable hypotheses — `proposal.md` |
-| Suitability of host and mutual benefit | Applicant brings a verification methodology the UK host does not have; host supplies robot-learning pipeline, compute and scrutiny; host receives ontology, toolkit and failure signal — `proposal.md` "Fit with the host" (to be rewritten with the confirmed sponsor) |
-| Long-term UK–home links | Grüninger as continuing collaborator (COLORE, SC 42 standardisation, joint papers); alumni follow-on funding plan — `proposal.md` "Career development", `statement.md` §6 |
-| Wider benefits to society | Benchmark quality, machine-checkable assurance evidence for AI-in-machinery regulation, open releases, cross-domain toolkit — `proposal.md` "Impact" |
+| Applicant's track record and potential (~30%) | ISO/IEC 21838-4:2023 core contribution; two *Synthese* submissions (first author); 21 papers [list to confirm — a publication list must be built before the form opens]; FOIS 2018 Distinguished Paper [role to confirm]; patents [counts to reconcile]; production systems at MICAS, YourTable and Uing — `statement.md` §2. Weakness stated openly: no robot-learning publication (`proposal.md` "Risks"; referee brief point 3) |
+| Clearly defined, feasible, mutually beneficial research (~30%) | Three objectives with milestones M8/M12/M16/M24, five named audit datasets, named tools (Prover9, Mace4, Datalog/SMT, SAPIEN), hypotheses each with a matched baseline, a month-3 pilot audit with go/no-go, and a risks-and-mitigation paragraph — `proposal.md`. Distinctness from Prof. Grüninger's NSERC programmes stated in "Fit with the host" |
+| Host suitability: expertise, facilities, support and training (~20%) | Host supplies the robot-learning pipeline, compute and experimental practice the applicant lacks; named training asks (WP3 collaborator, seminar, co-supervision, researcher development, grant-writing support) — `proposal.md` "Career development", `statement.md` §5. **All host content is bracketed until a sponsor is confirmed** |
+| Mutual benefit and long-term UK links (~20%) | Host receives ontology, corrected data, toolkit and failure signal, and co-maintains the releases; Grüninger as continuing home-base collaborator (COLORE, SC 42, joint papers); alumni follow-on funding — `proposal.md` "Fit with the host", `statement.md` §6 |
+| Wider benefits to society (within the proposal criterion) | Benchmark quality, machine-checkable assurance evidence for AI-in-machinery regulation, open releases, cross-domain toolkit — `proposal.md` "Impact" |
 
 ## Open items for the applicant
 
@@ -124,10 +125,48 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 - [Harvard supervisor name, laboratory and a one-sentence description of the current work]
 - [Thesis title and supervisor name]
 - [Exact ISO/IEC 21838-4 role wording and SC 42 working-group designation; UK (BSI) mirror committee]
-- [Publication list (21 papers claimed); FOIS 2018 award role; AAAI invited talk; monograph title]
+- [Publication list (21 papers claimed) — the form asks for one and none exists in this repository; FOIS 2018 award role; AAAI invited talk; monograph title]
+- [PhD supervisor's name — the registry notes one referee is normally the PhD supervisor; confirm whether that is Prof. Grüninger]
+- [Any robot-learning or ML publication by the applicant — if none, the referee brief and proposal now say so rather than leave a gap]
+- [Whether any MICAS/YourTable data model was ontology-governed — the CV does not say so; the claim is bracketed in `statement.md` §2]
+- [Post-fellowship location preference (UK vs North America) — must be the same in `proposal.md` and `statement.md` §6, and matters for the alumni follow-on funding, which the registry describes as for fellows who return to their home country]
 - [Patent counts reconciled (deck: 13 granted + 9 applications; drafts: 3 Chinese + 9–10 German)]
 - [Second simulator available at the host]
 - [Exact title of the second Synthese paper]
 - [AXIOMALITY CEO role during a full-time fellowship — disclosure and delegation decision]
 - [Current name of the UK AI assurance programme to cite in the impact paragraph]
 - [ORCID]
+
+## Review log
+
+Critic pass, 2026-09-25 (skeptical panel reviewer). Criteria reconstructed from the 2026 scheme notes and the Royal Society / British Academy scheme pages via three WebSearches (summaries only; the PDFs were not fetched): the notes say applications are assessed against "Assessment Criteria" by two committee members for longlisting, then Parts A and B for shortlisting, but the criteria text and weights are not reproduced in any summary. The weights below are therefore this reviewer's estimate from what the notes state is looked for (clearly defined, mutually beneficial proposal agreed with the host; access to expertise, facilities and space; host suitability for career development, including support and training; long-term links with the UK research base). Scores are 1–5 as a tough reviewer would give them, before → after this pass.
+
+| Criterion (est. weight) | Before | After | Why |
+|---|---|---|---|
+| Applicant's track record and potential (30%) | 3 | 3 | The real assets (ISO/IEC 21838-4 core contribution, two first-author *Synthese* submissions, FOIS 2018 award, patents, shipped products) are there, but the form asks for a publication list and none exists in the repository; the 21 papers, AAAI talk, monograph and FOIS role are all unconfirmed; the applicant has no robot-learning publication for a proposal whose WP3 is robot learning. Three untraceable or contested claims were removed or bracketed (see below). The score does not rise until the publication list is built. |
+| Clearly defined, feasible, mutually beneficial research (30%) | 3 | 4 | Objectives and milestones were already concrete, but the intro named seven datasets and the audit five without saying why; "datasets released in the past three years" was wrong for PartNet (2019); there was no risk paragraph, no pilot step, no explicit baseline for the hypotheses, and no statement of how the programme differs from Prof. Grüninger's NSERC programmes. All five fixed: seven vs five reconciled (two as extension targets), month-3 pilot audit with go/no-go, matched baselines and confidence intervals, a risks-and-mitigation paragraph that names the robot-learning gap, and one sentence on distinctness. Body is 1,473 words including bracket notes (1,375 without) against the 1,500 limit. |
+| Host suitability: expertise, facilities, support and training (20%) | 2 | 2 | No sponsor, no host, every host sentence bracketed. The criterion explicitly asks about support and training, and the package said nothing specific; §5 of `statement.md` and the proposal's Career development now name the training the applicant needs (robot-learning experimental practice, a WP3 collaborator, co-supervision, researcher development, grant-writing support). The score cannot move until a sponsor is confirmed and writes the one-page statement. |
+| Mutual benefit and long-term UK links (20%) | 3 | 3 | The Grüninger/COLORE/SC 42 channel is real and the host-side benefit (ontology, corrected data, toolkit, failure signal, co-maintenance) is stated. Two inconsistencies remain flagged rather than fixed: the proposal said "after I return to North America" while §6 said "UK or North America" (now aligned to a bracket the applicant must fill), and the alumni follow-on funding is described in the registry as for fellows who return to their home country, while the applicant's home country is unknown (citizenship UNKNOWN). |
+
+Weighted: 2.8 → 3.2. Not submittable as it stands; the decisive gaps (sponsor, citizenship, publication list, track decision) are outside the text.
+
+Invented, untraceable or contested facts found and corrected:
+- "Before this standard no top-level ontology with a complete first-order axiomatisation and machine-checked verification had been adopted internationally" (`statement.md` §2; copied from the CPRA draft, not from the CV or profile) — a KR committee member will know ISO/IEC 21838-2 (BFO) has a first-order axiomatisation; replaced with a bracketed instruction to state TUpper's distinguishing feature in the applicant's own words.
+- "I developed the theory and the proofs and wrote both papers" (`statement.md` §2) — the profile supports "first author; developed the theory and proofs" only; "wrote both papers" removed and Prof. Grüninger's contribution bracketed.
+- "production recommendation, CRM/ERP and data-integration systems whose data models were ontology-governed" at MICAS/YourTable (`statement.md` §2) — the CV lists CRM/ERP/WMS and ML marketing at MICAS and a recommendation system at YourTable, nothing ontology-governed and nothing called data integration; rewritten to the CV wording with a bracket.
+- "two companies I co-founded" (`emails.md` §2) — the CV lists MICAS as "Founding Team", not co-founder; rewritten as "co-founded or helped found" with the three systems named.
+- "physical-AI datasets released in the past three years" (`proposal.md`) — PartNet is CVPR 2019; changed to "over the past several years".
+- "production data-integration work" (`referee_brief.md` point 3) — same CV issue; replaced with the CV's system names.
+- README stated the proposal body at 1,217 words; it was 1,232 before this pass and is 1,473 after.
+Left in [brackets] because only the applicant can confirm: citizenship; Harvard laboratory, supervisor and start date; thesis title and PhD supervisor (which also decides who the first referee should be); 21 papers / FOIS role / AAAI / monograph; patent counts (13 granted + 9 applications vs 3 Chinese + 9–10 German utility); second simulator; second *Synthese* title; SC 42 working-group designation and BSI mirror committee; the UK AI assurance programme's current name; AXIOMALITY role during the fellowship; ORCID.
+
+Format check: proposal 1,473 words including bracketed notes (limit 1,500; re-count after sponsor text replaces brackets — the current headroom is 27 words, so the sponsor paragraph must replace, not add to, the bracketed sentences); lay summary 240 words (2024 limit 250; confirm 2027); statement fields have no known limits yet; all supporting statements in English via Flexi-Grant; no fieldwork; no EDI or HQP statement is required by this scheme. References are outside the 1,500 words on the assumption of a separate field — if there is none, cut to bare citations (≈60 words) and trim the Impact paragraph.
+
+Remaining risks, in order:
+1. No UK sponsor or host. Every host, training and facilities sentence is a placeholder, and the internal EoI windows close Dec 2026 – Jan 2027. Nothing in the text can compensate; the 15 Oct 2026 decision and the 15 Nov 2026 sponsor target are the whole game.
+2. Citizenship UNKNOWN. UK citizenship is disqualifying; also determines the "home country" for the alumni follow-on funding narrative.
+3. Publication list absent. The committee reads Part A (career summary, publications) first for longlisting; "21 papers [list to confirm]" is not a Part A.
+4. Robot-learning credibility. WP3 is the host's domain, not the applicant's, and there is no ML/robotics publication to cite. The package now says so openly and leans on the host's pipeline, but a sponsor from a robot-learning group is needed to make this credible; an ontology-only sponsor would leave WP3 unsupported.
+5. Track conflict and founder load. The fellowship is incompatible with the U of T postdoc and a full-time CEO role; the CPRA/Vector/DSI drafts describe a Toronto future with the same deliverables. Referees (Grüninger, Harvard supervisor) will see both stories; the track decision must precede the referee requests.
+6. Scheme drift. Amount, experience cap, sponsor terminology ("sponsor" vs "UK co-applicant") and field limits all changed between the 2024 and 2026 notes; every limit in this README must be re-read against the 2027 notes in Dec 2026 / Jan 2027.
+

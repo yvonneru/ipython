@@ -9,7 +9,7 @@ Send order: 1 (HDSI program office) and 2 (HMS supervisor) by 3 Oct; 3 and 4 (pr
 
 Dear HDSI team,
 
-I am a postdoctoral researcher at Harvard Medical School ([laboratory/department]) and intend to apply to the Postdoctoral Fellows Program for the coming cycle. Before I approach faculty, could you confirm a few points?
+I am a postdoctoral researcher at Harvard Medical School ([laboratory/department — confirm title]) and intend to apply to the Postdoctoral Fellows Program for the coming cycle. Before I approach faculty, could you confirm a few points?
 
 1. Is the 2026-27 call open or expected to open, and what is the application deadline?
 2. Are current Harvard postdoctoral researchers eligible, and must the faculty we name be outside our current laboratory?
@@ -43,9 +43,9 @@ Yi
 
 Dear Prof. [name],
 
-I am a postdoctoral researcher at Harvard Medical School, with a PhD in Information Engineering from the University of Toronto (2025), and I am preparing an application to the HDSI Postdoctoral Fellows Program. Applicants name at least two Harvard faculty with whom they would like to work; I am writing to ask whether you would be willing to be one of them.
+I am a postdoctoral researcher at Harvard Medical School [confirm title], with a PhD in Information Engineering from the University of Toronto (requirements met March 2025), and I am preparing an application to the HDSI Postdoctoral Fellows Program. Applicants name at least two Harvard faculty with whom they would like to work; I am writing to ask whether you would be willing to be one of them.
 
-The program is a data-quality method for hierarchically annotated data. Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, AgiBot World, Open X-Embodiment, DROID) annotate objects as hierarchies of parts under independently designed schemas, and no one has checked them against any formal specification of parthood. I build that specification as a verified first-order ontology (I am a core contributor to ISO/IEC 21838-4, and co-author of a formal theory of when two part decompositions are compatible, under review at Synthese), compile its decidable fragment to Datalog/SMT for a bulk audit with theorem proving for residual cases, and release corrected annotations and provably meaning-preserving cross-dataset mappings. The component I would hope to work on with you is the measurement design: violation rates by axiom family with bootstrap intervals, stratified by category and depth, with annotators and source laboratories as random effects so that disagreement is estimated rather than averaged away [adjust to the faculty member's methods]. A two-page summary is attached.
+The program is a data-quality method for hierarchically annotated data. Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, AgiBot World, Open X-Embodiment, DROID) annotate objects as hierarchies of parts under independently designed schemas, and no one has checked them against any formal specification of parthood. I build that specification as a verified first-order ontology (I am a core contributor to ISO/IEC 21838-4, and first author of a formal theory of when two part decompositions are compatible, submitted to Synthese), compile its decidable fragment to Datalog/SMT for a bulk audit with theorem proving for residual cases, and release corrected annotations and provably meaning-preserving cross-dataset mappings. The component I would hope to work on with you is the measurement design: violation rates by axiom family with bootstrap intervals, stratified by category and depth, with annotators and source laboratories as random effects so that disagreement is estimated rather than averaged away [adjust to the faculty member's methods]. A two-page summary is attached.
 
 What I would ask: agreement to be named, roughly monthly meetings if the fellowship is awarded, and a short confirmation if the portal requests one [verify]. What you would get: an ontology-aligned corpus and audit toolkit usable in your own work and co-authorship on the audit paper. I would be glad to meet at your convenience.
 

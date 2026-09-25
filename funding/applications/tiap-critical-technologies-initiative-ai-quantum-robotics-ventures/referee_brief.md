@@ -6,9 +6,9 @@ TIAP takes no referee letters. What its investment committee weighs instead, acc
 
 Toronto Innovation Acceleration Partners (TIAP) is the venture-building organization affiliated with the University of Toronto and its partner teaching hospitals. Its FedDev Ontario-supported Critical Technologies Initiative funds early-stage ventures using AI, quantum computing and/or robotics with **up to CAD 200K: a grant of up to CAD 100K plus a dilutive match** from TIAP (for ventures from member institutions) or from a third party (for others), applied to technology development and executive advisory. Intake is rolling; applicants submit a project proposal with budget and milestones; an investment committee decides; initiation is roughly 3–4 months after application [all scout-stated; verified on the official page only as search snippets — see README]. TIAP's stated focus is health-science commercialization, so the proposal carries a regulated-health design-partner track.
 
-## What the committee scores (inferred; no rubric is published)
+## What the committee scores (search snippet, 2026-09-25 — verify on tiap.ca; weights unpublished)
 
-Technology and IP strength and Ontario origin; the de-risking value of the funded milestones; commercial potential and the business plan; team; credibility of the use of funds; and the linkage or match. Weights are unknown.
+"Team's expertise and execution plan, as well as market potential, demand, viability, clinical validation, and patient impact." Eligibility: based in Ontario or technology developed in Ontario; fewer than 500 FTE; 1:1 cash match. Because clinical validation and patient impact are scored, the regulated-health design partner is the lead partner and its letter is the most valuable one in this brief.
 
 ## What I am asking of each supporter, and by when
 

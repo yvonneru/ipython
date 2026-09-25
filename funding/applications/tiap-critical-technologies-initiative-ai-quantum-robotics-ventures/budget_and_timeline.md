@@ -1,6 +1,6 @@
 # Budget and timeline — TIAP Critical Technologies Initiative, 12 months
 
-**Envelope (from the official page as surfaced by search; verify):** up to CAD 200,000 = non-dilutive grant up to CAD 100,000 + dilutive match up to CAD 100,000 from TIAP or a third party, applied to technology development and/or executive advisory support. A third-party summary states the program covers up to 50% of eligible costs [confirm the rate and the eligible-cost rules with TIAP]; if so, the full grant requires at least CAD 200,000 of eligible project cost, with the balance from the match, company cash or other non-overlapping sources.
+**Envelope (from the official page as surfaced by search; verify):** up to CAD 200,000 = non-dilutive grant up to CAD 100,000 + dilutive match up to CAD 100,000 from TIAP or a third party, applied to technology development and/or executive advisory support. A search snippet (review pass, 2026-09-25) describes the match as a "1:1 cash match required" — cash, not in-kind — and a third-party summary states the program covers up to 50% of eligible costs [confirm the rate, the cash-match rule and the eligible-cost rules with TIAP]; if so, the full grant requires at least CAD 200,000 of eligible project cost, with the balance from the match, company cash or other non-overlapping sources.
 
 All salaries, quotes and cash figures are [bracketed] placeholders: the profile, the deck and the registry give none, and this package does not invent them. Percentages in §2 are a *proposed* allocation of the grant cap, to be replaced by the real lines once salaries and quotes are known; the arithmetic then follows. Currency: CAD. No cost incurred before the agreement is signed is assumed eligible [confirm].
 
@@ -51,10 +51,10 @@ The grant is government assistance (FedDev-backed): it counts toward the overall
 | 3 | 1.3 compilation to SMT subset; regression suite | Vertical slice on one task and connector | Evidence package v0 | **M3** — kernel v1 frozen; blind-baseline vertical slice reproduced by a partner |
 | 4 | Representation theorems vs PartNet-family schemas (U of T) | 2.1 ROS 2/MCAP, OpenUSD adapters; 2.2 grounding v1 | — | Adapters for [four] formats |
 | 5 | Pluralism check; module docs | 2.3 two-tier checking at scale; dispositions and repairs | Passport schema draft | — |
-| 6 | Kernel v1.1 (fixes from audit) | 10,000 episodes verified; audit report by dataset and axiom family | — | **M6** — Engine v1; audit report; passed-sample audit |
+| 6 | Kernel v1.1 (fixes from audit) | 10,000 episodes verified under kernel v1 (partner data incl. the health partner's, added to the open/company corpus); audit report by dataset and axiom family | — | **M6** — Engine v1; audit report; passed-sample audit |
 | 7 | — | 2.4 health-partner input contract, rights and consent fields; 2.5 physics residuals: geometry and kinematics checks | 3.1 Passport v1 build; issuer signature | — |
 | 8 | — | 2.4 health-partner run under the partner's acceptance test; 2.5 dynamics residual where signals exist | Passport v1 to [assessment body] | **M8** — health-track acceptance run; physics gate decision |
-| 9 | COLORE contribution of verified modules | Robustness experiments (shift, missing fields, corruption, timeout) | Written evaluation received | **M9** — Passport v1 recognized |
+| 9 | COLORE contribution of verified modules | Robustness experiments (shift, missing fields, corruption, timeout) | Written evaluation received | **M9** — Passport v1 (with health-track evidence interface) evaluated in writing |
 | 10 | — | 3.2 detection and ablation experiments with partner baselines | 3.3 feedback classification; augmentation variants | — |
 | 11 | — | 3.2 second-robot experiment (adaptation hours recorded) | 3.3 training-interface experiment in SAPIEN [+ second simulator] | — |
 | 12 | Kernel v1.2 | Experiment report with confidence intervals | Gate decisions: uncertainty, augmentation, runtime | **M12** — two design-partner acceptances (one health); roadmap for months 13–18; final report |

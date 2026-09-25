@@ -6,14 +6,14 @@ Send in the order given. [Brackets] to complete.
 
 **Subject:** Critical Technologies Initiative — pre-screen request, AXIOMALITY (robotics/AI, University of Toronto lineage)
 
-Dear [program manager / info@tiap.ca],
+Dear [Mobeen Lalani, Manager of Technology & Venture Development, mlalani@tiap.ca — name and address per search snippet; verify on tiap.ca / or info@tiap.ca],
 
 I am the founder and CEO of AXIOMALITY, a robotics and AI venture that builds a verification and evaluation layer for embodied-AI data: an Engine that checks robot-learning episodes against a knowledge kernel whose axioms have been machine-proven consistent, and a Passport that packages reproducible per-release evidence for customers, assessors and regulators. The kernel arises from my doctorate at the University of Toronto (Mechanical and Industrial Engineering, with Prof. Michael Grüninger) and from ISO/IEC 21838-4:2023, the top-level-ontology standard to which I was a core contributor. The company holds 100,000 measured 3D asset packages, 13 granted patents and nine applications, and working relationships with medical-device and pharmaceutical companies and a large hospital network.
 
 I would like to request a pre-screen call for the Critical Technologies Initiative. To prepare properly, could you confirm:
 1. that the CTI is accepting applications for FY 2026-27 and whether the FedDev-supported envelope has an end date;
 2. the current grant cap and the match mechanics (TIAP match for member-institution ventures; third-party match otherwise; cost-share rate);
-3. whether a robotics-data venture whose first buyers include robot OEMs and model developers, with a regulated-health design-partner track, is within the stream's scope, or whether a health-sciences application must lead;
+3. whether a robotics-data venture whose lead design partner is in a regulated-health setting, and whose other buyers are robot OEMs and model developers, is within the stream's scope, and how the clinical-validation and patient-impact criteria are applied to a project that produces validation evidence rather than a clinical outcome;
 4. whether a venture founded by a U of T PhD alumnus [and prospective U of T postdoctoral fellow] qualifies as arising from a member institution, and what evidence of linkage you require (IPO disclosure; faculty letter);
 5. the application format and any page limits.
 

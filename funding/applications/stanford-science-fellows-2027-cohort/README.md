@@ -1,97 +1,143 @@
 # Stanford Science Fellows (2027 cohort), Stanford University — application brief
 
-Package drafted 2026-09-25 for Dr. Yi Ru. Registry entry: tier A, fit 62, deadline confidence medium. Everything in [brackets] must be supplied or confirmed by the applicant before submission. This brief is one page of facts; the proposal, statement, referee brief, timeline and emails are in the sibling files.
+Package drafted 2026-09-25 for Dr. Yi Ru; reviewed and revised the same day (see Review log). Registry entry: tier A, fit 62 (task) / tier B, fit 55 (registry record `05e0b74e5858`) — the program's own facts below supersede both. Everything in [brackets] must be supplied or confirmed by the applicant before submission. This brief is one page of facts; the research statement, career statement, referee brief, timeline and emails are in the sibling files.
 
-**Registry conflict to resolve first.** The task's registry entry lists this program as tier A with a deadline of 16 October 2026 (one scout, high confidence) or "already closed mid-September 2026" (another scout). The tracker row in `funding/registry/TRACKER.md` for the same program records fit 38, "expected 2027-09 (unconfirmed; the 2027-cohort deadline was expected mid-Sept 2026 and has likely passed)" and USD 85,000–95,000. The two records disagree on deadline, fit and amount. Neither could be checked against the official page this session (web-search budget exhausted; WebFetch and curl blocked). **Open https://sciencefellows.stanford.edu/ today.** If the portal is open, follow Plan A below; if closed, follow Plan B.
+**Registry conflict — resolved by web search on 2026-09-25 (three searches; WebFetch blocked, so the page itself was not read — confirm each fact on https://stanfordsciencefellows.stanford.edu/frequently-asked-questions before acting).** The cycle is **open**; the deadline is **16 October 2026, 11:59 pm EDT**; applications go through **Academic Jobs Online** (listing 32509). The "closed mid-September" record was wrong. The earlier "Plan B" (apply in 2027 for a 2028 start) is withdrawn: a 2028 start would exceed the prior-postdoc cap below.
 
 ## Program in one paragraph
-The Stanford Science Fellows program is a university-wide postdoctoral fellowship run by the Office of the Vice Provost and Dean of Research for early-career scientists in the natural sciences, engineering, mathematics and computing. Registry facts: USD 98,000/yr stipend [tracker says 85,000–95,000 — verify] plus research funds and professional development; three years; cohorts of about ten per year; the applicant must identify a Stanford faculty host; no citizenship restriction. Official page: https://sciencefellows.stanford.edu/
+A university-wide postdoctoral fellowship run by the Office of the Vice Provost and Dean of Research for exceptional early-career scientists pursuing **fundamental experimental or theoretical research in a natural science discipline**. USD 98,000/yr stipend, research funds and professional development [amounts of the research funds: confirm on FAQ]; three-year appointment; earliest start 1 July 2027; open to all nationalities; fellows must qualify for a J-1 visa (H-1B not supported). A Stanford faculty host must be identified and agree before an award is made; the host may, but need not, write a letter of support. Official page: https://stanfordsciencefellows.stanford.edu/ — FAQ: https://stanfordsciencefellows.stanford.edu/frequently-asked-questions — apply: https://stanfordsciencefellows.stanford.edu/apply
 
 ## Deadlines
 | What | When | Confidence |
 |---|---|---|
-| Application deadline (Plan A) | **16 October 2026** [verify time of day and time zone] | medium — one scout; contradicted by another |
-| Application deadline (Plan B) | closed mid-September 2026; next cycle **expected September 2027** for a 2028 start | medium — see the post-PhD window caveat below |
-| Three reference letters | [verify — assumed same as the applicant deadline; some Stanford portals give referees a few days' grace] | unconfirmed |
-| Host faculty statement | [verify who uploads it and whether it has its own date] | unconfirmed |
-| Internal (Plan A): program page and portal read; eligibility and date questions emailed | 25–26 September 2026 | self-imposed |
-| Internal (Plan A): host approached with proposal, statement, CV | 26–29 September 2026 | self-imposed |
-| Internal (Plan A): host agreed; full draft to referees | 2 October 2026 | self-imposed |
-| Internal (Plan A): letters and host statement in | 12 October 2026 | self-imposed |
-| Internal (Plan A): submit | 14 October 2026 | self-imposed |
-| Notification | [verify — prior cohorts were announced in winter/spring] | unconfirmed |
-| Start | [verify — assumed 1 September 2027 for Plan A; flexible start dates in prior cycles] | unconfirmed |
+| Application deadline | **16 October 2026, 11:59 pm EDT**; no extensions | high (FAQ via search snippet; confirm on page) |
+| Reference letters (3) | Accepted after the deadline via Academic Jobs Online, but reviewers are not obliged to read late letters | high (FAQ via search snippet) — internal target **12 October** |
+| Host letter of support | Optional; [verify whether it is uploaded by the host through AJO or attached by the applicant] | medium |
+| Internal: FAQ and AJO listing read; email 1 sent to the program office; limits recorded here | 25–26 September | self-imposed |
+| Internal: candidate hosts approached with research statement, career statement, CV (emails 3–5) | 26–29 September | self-imposed |
+| Internal: host agreed; final draft to referees (email 8) | 2 October | self-imposed |
+| Internal: letters (and host letter, if any) in | 12 October | self-imposed |
+| Internal: submit | 14 October | self-imposed |
+| Notification | [verify — not captured] | unconfirmed |
+| Start | 1 July 2027 earliest [confirm the latest permitted start; the package requests 1 July 2027] | high for the earliest date |
 
 ## Eligibility — condition by condition
-| Condition (registry) | Applicant's status |
+| Condition (program FAQ, via search snippet — confirm on page) | Applicant's status |
 |---|---|
-| Early-career scientist, PhD within about three years of the start date | **Met for a 2027 start; borderline for 2028.** All PhD requirements met March 2025; conferral probably June 2025 [confirm from transcript]. A September 2027 start is about 2.5 years post-PhD. A September 2028 start (Plan B) is about 3.5 years from requirements-met and about 3.25 from conferral — **ask the program which date counts and whether the window is measured at application or at start** (emails.md, email 1). |
-| Natural sciences, engineering, mathematics or computing | Met: knowledge representation, automated reasoning and robot learning, inside computing and engineering. The proposal is written so that a committee drawn from all the sciences can read it. |
-| A Stanford faculty host who commits in writing | **Pending — decisive.** No host identified or contacted. Candidate areas, from the registry and the drafter's general knowledge, **not contacted and not confirmed as available or willing — verify each on the Stanford directory before writing**: (a) the group that built PartNet/ShapeNet [Leonidas Guibas, CS — registry notes ShapeNet/PartNet as Stanford/Princeton/TTIC]; (b) the group that built DROID [Chelsea Finn, IRIS — registry notes DROID as Stanford IRIS]; (c) robot manipulation and learning [Jeannette Bohg; Shuran Song; Dorsa Sadigh; Jiajun Wu]; (d) formal methods and SMT [Clark Barrett — Stanford Center for AI Safety]; (e) knowledge-based systems / biomedical ontology [Mark Musen, BMIR]. A host in (a) or (b) gives the strongest fit because the proposal audits datasets those groups produced. |
-| No citizenship restriction | Met [confirm current US visa status and Stanford's sponsorship process — applicant_profile.md records citizenship as unknown]. |
-| Residence at Stanford; participation in cohort activities | Accepted; the applicant would relocate to Stanford for the start date. |
-| Current Harvard postdoc applying | No rule known [verify whether the program excludes current postdocs at other institutions — unlikely, but ask]. |
-| Concurrent awards | [verify whether the fellowship may be combined with or must be declined against NSERC CPRA (Toronto, spring 2027), Vector, DSI, Kempner, Klarman, Princeton or Schmidt if won; the applicant will accept at most one primary appointment.] |
+| Doctoral degree granted within three years of the fellowship start; PhD before 1 July 2024 is ineligible | **Met.** Requirements completed March 2025; conferral [month 2025 — confirm from transcript / SGS letter, emails.md email 7]. |
+| **No more than two years of prior postdoctoral experience at another institution when the fellowship begins** | **Decisive and unresolved.** The applicant has been a postdoc at Harvard Medical School since [month year — not on the CV; confirm]. With a 1 July 2027 start, the cap is met only if the HMS appointment began on or after 1 July 2025 (or the program counts differently). The package therefore requests the **earliest start, 1 July 2027**, and email 1 asks the program how the cap is counted. If the HMS start was before July 2025, ask whether an earlier start date can be negotiated (the FAQ says a prospective fellow may not begin at Stanford before 1 March 2027 [verify]) or whether the cap is applied at the application date. |
+| Not a current Stanford postdoc or doctoral student; must not begin any Stanford appointment before 1 March 2027 | Met. |
+| **Must qualify for a J-1 visa; H-1B applicants are not eligible** (an F-1 extension may apply in some cases) | **Unresolved.** applicant_profile.md records citizenship and current US visa status as unknown. [Confirm: citizenship; current status at Harvard (J-1, H-1B, F-1 OPT, other); whether a prior J-1 triggers the two-year home-residency requirement or the 12/24-month bar on a new J-1 research-scholar appointment — check with Stanford's Bechtel International Center.] If the applicant is currently on H-1B and cannot switch to J-1, this application is not viable. |
+| Fundamental experimental or theoretical research in a natural science discipline; primarily social-science proposals do not qualify | **Borderline — ask.** Knowledge representation, automated reasoning and robot learning are computing/engineering. The research statement is framed as a fundamental question about representation (are learned part structures models of a mereology?) tested empirically, and avoids compliance and commercial framing. Email 1 asks the program office directly. |
+| Open to all nationalities | Met. |
+| Stanford faculty host identified and agreed before award | **Pending — decisive.** No host identified or contacted. Candidate areas, from the registry and the drafter's general knowledge, **not contacted and not confirmed as available or willing — verify each on the Stanford directory before writing**: (a) the group that built PartNet/ShapeNet [Leonidas Guibas, CS — registry notes ShapeNet/PartNet as Stanford/Princeton/TTIC]; (b) the group that built DROID [Chelsea Finn, IRIS — registry notes DROID as Stanford IRIS]; (c) robot manipulation and learning [Jeannette Bohg; Shuran Song; Dorsa Sadigh; Jiajun Wu]; (d) formal methods and SMT [Clark Barrett]; (e) knowledge-based systems / biomedical ontology [Mark Musen, BMIR]. A host in (a) or (b) gives the strongest fit because the proposal audits datasets those groups produced. |
+| Concurrent awards | [verify whether the fellowship may be combined with or must be declined against NSERC CPRA (Toronto, spring 2027), Vector, DSI, Kempner, Klarman, Princeton or Schmidt if won; the applicant will accept at most one primary appointment. A July 2027 Stanford start and a spring 2027 Toronto start are mutually exclusive.] |
+| Outside activity (AXIOMALITY founder/CEO) | Disclose if the portal or Stanford's outside-activity policy asks [verify]; AXIOMALITY is not part of this application. |
 
-## Format and criteria (verify on the official page)
-The session's web-search budget (200/200) was exhausted before this package was drafted, and WebFetch and curl are blocked by network policy, so **no funder page was read this session**. What follows is (a) the registry entry, whose source is the official page, and (b) assumptions from the drafter's general knowledge of prior Stanford Science Fellows cycles, marked as such. **Open the official page and the application portal before writing a single field, and record the real limits here.**
+## Format and required components (program FAQ via search snippet — confirm on page and in the AJO listing)
+- **Research statement: maximum two pages, plus one page of references; font ≥ 11 pt; margins ≥ 3/4 inch; single or double spacing.** proposal.md is about 1,370 words of body including brackets and fits two pages single-spaced at 11 pt; a cut order is at the end of the file. Check the PDF page count before upload.
+- **Career statement** (not "personal statement"): same font and margin rules; [page limit and prompt not captured — verify]. statement.md is about 1,100 words (two pages), with one-page cuts marked *optional*.
+- **CV**: [format unrestricted — verify]. Update: Harvard position and start date; the two *Synthese* submissions; reconciled patent count; exact ISO/IEC 21838-4 role wording.
+- **Statement of proposed Stanford mentors** (registry): [verify whether this is a form field naming 1–3 faculty or a document; the research statement's "Why Stanford" paragraph names the host once confirmed].
+- **Three letters of recommendation**, one advised from the PhD advisor [confirm that Prof. Grüninger is the PhD supervisor of record — applicant_profile.md leaves the supervisor blank]; referees entered as names and emails in AJO (3–4 permitted [verify]).
+- **PhD confirmation / transcripts** (registry): transcript and SGS letter ordered (emails.md, email 7).
+- Host letter of support: optional.
+- Cover letter: not a listed component; statement.md carries one for use only if asked.
 
-- Source recorded in the registry: https://sciencefellows.stanford.edu/ (official). [Add the application-portal URL, the FAQ page and the "for faculty mentors" page, if they exist.]
-- Required documents (registry): research proposal; CV; personal statement; host faculty statement; three reference letters.
-- Page/character limits: **not established this session.** Assumptions used: research proposal ≤ 3 pages plus bibliography (proposal.md is about 1,850 words of body text including bracketed notes — three pages at 12 pt once brackets are resolved — with a cut order to two pages); personal statement ≤ 2 pages (statement.md is about 1,050 words, with a cut to one page marked); CV unrestricted. [verify all three; prior cycles have used short limits, and the portal may impose word counts rather than pages.]
-- Prescribed headings: **not established.** proposal.md uses the Grüninger structure (Recent Progress; Objectives; Literature Review; Methodology as Themes → Projects → Open Research Questions; Impact) and can be re-cut onto funder headings in under an hour.
-- Review criteria and weights: **not published as weights.** Working assumption from prior cycles [verify wording]: scientific excellence and originality; creativity and potential to open new directions; interdisciplinary reach across the sciences; independence and leadership potential; fit with the host and with Stanford; contribution to the cohort's intellectual community. The committee is drawn from across the natural sciences and engineering, so the proposal and statement are written for non-specialists.
-- Host faculty statement: [verify what it asks — typically confirmation of hosting, mentoring plan, space and resources, and any cost-sharing expected of the host's department — and who uploads it].
-- Personal statement prompt: [verify — prior cycles asked about the applicant's path into science, research vision and contribution to the scientific community; statement.md answers all three].
+## Review criteria (program's published description; no weights given) and where the package meets them
+| Criterion | Where it is met |
+|---|---|
+| Scientific excellence (strong record of achievement, clear intellectual drive) | ISO/IEC 21838-4 core contribution; two *Synthese* submissions [under review, not yet accepted — the committee will discount them]; thesis architecture; patents and production systems (research statement §1; career statement ¶2). Weakness: no peer-reviewed publication is named in the package; the CV must carry the publication list [confirm the 21 papers and FOIS award]. |
+| Originality | First formal specification, first measurement and first training signal for parthood consistency in robot data; the audit's "either a model or not" test (§2, §5) |
+| Research potential | Three-year plan with year-tagged milestones and falsifiable hypotheses (§3; budget_and_timeline.md); the null result on O3 is itself publishable (risk register) |
+| Ability to contribute to Stanford's collaborative research community | Audits datasets built [in part] at Stanford; needs three Stanford groups (robot data, SMT, biomedical ontology) (§4); reading group, workshop, student projects (career statement ¶6–7) — [host-specific sentences to be written once a host agrees] |
+| Commitment to enhancing demographic and intellectual diversity | Career statement "Diversity, in people and in ideas" paragraph: graduate representation and union stewardship, teaching, bilingualism, student projects, dataset-coverage reporting; [applicant may add personal background — nothing assumed] |
+| Reviewed by faculty across the natural sciences; interdisciplinary proposals get cross-disciplinary review | Each section opens with a sentence a non-specialist can read; the "fundamental question" is stated in italics in §2 |
 
-## Who must do what by when (Plan A; shift everything by twelve months for Plan B)
+## Who must do what by when
 | Who | What | By |
 |---|---|---|
-| Applicant | Open the program page and portal; resolve the deadline conflict; email the program on the PhD-date rule and referee deadline (emails.md, email 1); record limits in this README | 25–26 Sept |
-| Applicant | Contact 1–2 candidate hosts with proposal, statement, CV (emails.md, emails 3–4) | 26–29 Sept |
-| Applicant | Order transcript + SGS letter showing both the requirements-met and conferral dates (emails.md, email 7) | 26 Sept |
-| Host (Stanford faculty) | Agree; write and upload the host faculty statement; [department step, if any] | 12 Oct [verify] |
-| Prof. Grüninger | Reference letter; confirm co-author framing on Theme 1; supply reference [14] | 12 Oct |
-| Harvard supervisor | Reference letter | 12 Oct |
+| Applicant | Read the FAQ and AJO listing; confirm every fact in this README; email the program office (email 1) on scope, the postdoc cap and the career-statement limit; confirm visa status | 25–26 Sept |
+| Applicant | Contact 1–2 candidate hosts (emails 3–5) after checking the Stanford directory | 26–29 Sept |
+| Applicant | Order transcript + SGS letter (email 7); request HMS appointment letter (email 6) | 26 Sept |
+| Host (Stanford faculty) | Agree to host; optional letter of support [mechanism — verify] | 12 Oct |
+| Prof. Grüninger | Reference letter [as PhD advisor — confirm]; confirm collaborator framing on Theme 1; supply reference [14] | 12 Oct |
+| Harvard supervisor | Reference letter; appointment letter with start date | 12 Oct |
 | External referee [name] | Reference letter | 12 Oct |
-| Applicant | Finalize proposal, statement, CV; enter referees in portal; submit | 14 Oct |
-| Institution / company officer | Nothing — individual application; no institutional signature; AXIOMALITY is not part of this application (disclose the founder role if the portal asks about outside activities) | — |
+| Applicant | Export research statement (2 pp + 1 pp refs) and career statement at ≥ 11 pt / ≥ 3/4-inch margins; finalize CV; enter referees and proposed mentors in AJO; submit | 14 Oct |
+| Institution / company officer | Nothing — individual application; AXIOMALITY is not part of it (disclose the founder role if asked) | — |
 
 ## Submission checklist
-- [ ] Deadline conflict resolved from the official page; Plan A or Plan B chosen and this README updated
-- [ ] Ruling on the post-PhD window (which date; measured at application or at start) received in writing
-- [ ] Host confirmed; host faculty statement submitted [by whom, verify]
-- [ ] Proposal exported to PDF within the stated limit; bibliography on its own page; headings mapped to the portal if it prescribes any
-- [ ] Personal statement within the stated limit and answering the portal's prompt
-- [ ] CV updated (Harvard position, Synthese submissions, reconciled patent count, ISO role wording)
-- [ ] Three referees entered; letters confirmed received
+- [ ] FAQ and AJO listing read; every "via search snippet" fact above confirmed or corrected
+- [ ] Program office's answers on scope and the two-year postdoc cap received in writing; HMS start date confirmed and cap arithmetic done for a 1 July 2027 start
+- [ ] Visa: J-1 eligibility confirmed (or application abandoned if only H-1B is possible)
+- [ ] Host agreed; proposed mentors entered; host letter uploaded if offered
+- [ ] Research statement PDF: body ends on page 2, references on page 3, ≥ 11 pt, ≥ 3/4-inch margins; all brackets resolved
+- [ ] Career statement within the stated limit and answering the portal's prompt; diversity paragraph kept
+- [ ] CV updated (Harvard position and start date, *Synthese* submissions, reconciled patent count, ISO role wording, publication list)
+- [ ] Three referees entered (PhD advisor among them); letters confirmed received by 12 Oct
 - [ ] Transcript / SGS letter available if requested
-- [ ] Outside-activity disclosure (AXIOMALITY founder role) answered as the portal requires
-- [ ] Submitted 14 October (Plan A); confirmation email saved
-
-## How this proposal meets the criteria
-| Criterion (verify wording) | Where it is met |
-|---|---|
-| Scientific excellence and originality | First formal specification, first measurement and first training signal for parthood consistency in robot data (proposal §2–4); two Synthese submissions turning a metaphysical debate into a machine-checkable theory (§1) |
-| Creativity; opens new directions | A dataset either is or is not a model of a mereology; a policy either does or does not respect it — an evaluation that no benchmark reports today (§4 Theme 3, §5) |
-| Interdisciplinary reach | Formal logic, robot learning, standards, and the philosophy of parts, written for a committee from all the sciences (§1, §3, §5); audit toolkit reaches CAD, BIM and medical imaging (§5) |
-| Independence and leadership | Program is the applicant's own, distinct from the thesis and from collaborators' grants (statement ¶5; referee brief point 4); founder/CEO track record; standards-body work; graduate-association leadership (statement ¶3) |
-| Fit with host and Stanford | PartNet/ShapeNet and DROID — two of the corpora audited — were built at Stanford; the "Why Stanford" paragraph names the host areas (§4 end; statement ¶4) — [host-specific sentences to be written once a host agrees] |
-| Contribution to the cohort | Cross-disciplinary reading group and hands-on audit workshop proposed (statement ¶6) |
-| Use of a three-year term | Y3 milestones (real-robot replication on the host's platform, second annotation domain, SC 42 contribution) in budget_and_timeline.md |
+- [ ] Outside-activity disclosure (AXIOMALITY) answered as the portal requires
+- [ ] Submitted 14 October; AJO confirmation saved
 
 ## Items that still need the applicant
-1. [Deadline: 16 Oct 2026 vs closed mid-Sept 2026 — resolve from the official page; choose Plan A or Plan B]
-2. [Post-PhD window: which date counts (requirements-met March 2025 vs conferral [June 2025]) and whether measured at application or at start; decisive for Plan B]
-3. [Faculty host name, department, willingness; host-specific sentences in proposal §4 and statement ¶4; host's robot platform and second simulator]
-4. [Portal URL, page/word limits, prescribed headings, personal-statement prompt, referee mechanism and referee deadline, host-statement mechanics, time zone of deadline]
-5. [Stipend and research-fund amounts — registry says USD 98,000/yr; tracker says 85,000–95,000]
-6. [Exact ISO/IEC 21838-4 role wording and working-group designation]
-7. [Exact title of the second Synthese paper]
-8. [Thesis title; Harvard laboratory, start month and one-sentence description of the work]
+1. [HMS postdoc start month and year — decides whether the two-year cap is met at a 1 July 2027 start]
+2. [Citizenship and current US visa status; J-1 eligibility and any prior J-1 history]
+3. [Program office's answer on whether KR / robotics counts as a natural science discipline]
+4. [Faculty host name, department, willingness; host-specific sentences in research statement §4 and career statement ¶3; host's robot platform and second simulator]
+5. [Career-statement page limit and prompt; "proposed mentors" field format; whether 3 or 4 referees; latest permitted start date; notification date; research-fund amount]
+6. [PhD supervisor of record — is it Prof. Grüninger? (needed for the advisor letter)]
+7. [Exact ISO/IEC 21838-4 role wording and working-group designation]
+8. [Exact title of the second Synthese paper; thesis title; Harvard laboratory and one-sentence description of the work]
 9. [Reconciled patent count and numbers (3 CN invention; 9–10 DE utility; deck says 13 granted + 9 applications)]
-10. [Bibliography entries 8, 9 and 14 — obtain references from Prof. Grüninger for 14]
+10. [References 5–20 verified; entries 8, 9 and 14 completed — obtain 14 from Prof. Grüninger]
 11. [External referee name]
-12. [Concurrent-award rules vs. CPRA/Vector/DSI/Kempner/Klarman/Princeton/Schmidt; visa status and Stanford sponsorship process]
-13. [Notification date; cohort activities expected of fellows; whether teaching is optional]
-14. [Outside-activity policy for a concurrent founder role (AXIOMALITY)]
+12. [Concurrent-award rules vs. CPRA/Vector/DSI/Kempner/Klarman/Princeton/Schmidt; CPRA results date]
+13. [Outside-activity policy for a concurrent founder role (AXIOMALITY)]
+14. [Whether PartNet/ShapeNet and DROID authorship can be attributed to the specific host — the "[in part]" hedges in the package]
+
+## Review log
+
+**Reviewer:** skeptical panel member, 2026-09-25. **Method:** reconstructed the program's criteria, limits and eligibility rules from three web searches (FAQ snippets; the page itself could not be fetched), scored the package as first drafted, then fixed it in place.
+
+### Scores (1–5, tough reviewer) — before → after
+| Criterion (program wording; no weights published — treated as roughly equal, with eligibility/format as a gate) | Before | After | Why |
+|---|---|---|---|
+| Eligibility and format compliance (gate) | 1 | 3 | Before: research statement ran to three pages against a two-page limit; "personal statement" instead of career statement; a moot Plan B (2028 start) built into every file; the two-year prior-postdoc cap and the J-1 requirement — both potentially disqualifying — were absent; requested start (1 Sept 2027) made the cap harder to meet. After: statement cut to ~1,370 words (two pages at 11 pt); components renamed; Plan B removed; start moved to 1 July 2027; cap, J-1 and scope questions put to the program office (email 1). Still 3 because the HMS start date, visa status and scope answer are unknown and any one of them can end the application. |
+| Scientific excellence | 3 | 3 | Record rests on an ISO contribution and two papers *under review*; the package names no peer-reviewed publication and the CV list is unconfirmed. Wording tightened; no new evidence could be added without inventing it. |
+| Originality | 4 | 4 | The "either a model or not" audit and the violation-rate evaluation are genuinely new; unchanged. |
+| Research potential | 3 | 4 | Year-tagged milestones and falsifiable hypotheses were already there; the timeline was re-based to the July start and the risk register now covers the real risks (cap, visa, scope) instead of a phantom deadline. Still needs a named host and platform. |
+| Contribution to Stanford's collaborative community | 3 | 3 | "Why Stanford" names groups only by area; host-specific sentences cannot be written until a host agrees. Reading group / workshop / student projects retained. |
+| Commitment to demographic and intellectual diversity | 2 | 4 | Was implicit (a closing paragraph on dataset coverage). Now an explicit paragraph built only from facts on record (representation and union-steward work, teaching, bilingualism, student projects, coverage reporting), with a bracket for anything the applicant chooses to add. |
+| Fit with "fundamental research in a natural science discipline" | 2 | 3 | Removed the EU AI Act / NIST compliance framing and the "beyond robotics research" deployment sentence; the statement now leads with a fundamental question about representation. Fit remains borderline for a physical/life-sciences committee; the program office has been asked. |
+
+### What changed
+- proposal.md: renamed Research Statement; cut from 1,860 to ~1,370 words of body (two pages at 11 pt, 3/4-inch margins) by merging Literature Review into a short "State of the art", compressing the methodology preamble, trimming open questions, and dropping the compliance paragraph; header states the real limits; references flagged as one page maximum with all general-knowledge entries marked [verify]; requested start changed to [1 July 2027]; "built at Stanford" hedged to "[in part]".
+- statement.md: renamed Career Statement; explicit diversity paragraph added; untraceable claims fixed ("first years after graduation", "first-year economics … graduate knowledge modelling", "presented … in North America and Asia", "cohort of ten", "committee's coming requirements on evidence for AI training data"); cover note start date and "faculty mentor" wording aligned.
+- referee_brief.md: real deadline (16 Oct, 11:59 pm EDT), AJO mechanism, late-letter rule, real criteria, PhD-advisor advice, component names and lengths.
+- budget_and_timeline.md: start re-based to 1 July 2027; Plan B removed; risk register now leads with the postdoc cap, J-1 and scope; CPRA results date bracketed (not in the profile).
+- emails.md: email 1 rewritten around the three decisive questions (scope, cap counting, PhD date) plus career-statement limit and outside-activity disclosure; Plan B branching removed; all emails cite the confirmed deadline and AJO; email 2 asks Grüninger to confirm he is the PhD supervisor of record; email 6 asks the HMS supervisor for the appointment letter.
+- README.md: rewritten around the confirmed facts; eligibility table now includes the postdoc cap, J-1, Stanford-affiliation rule and scope; criteria table uses the program's wording.
+
+### Invented or untraceable facts found and handled
+- Conferral date "June 2025" — not in the profile; kept in brackets as [month 2025 — confirm].
+- "Cohorts of about ten" (README, statement, referee brief) — not in the registry; bracketed or removed.
+- "Presented this work to academic and industry audiences in North America and Asia" — removed.
+- "First-year economics … graduate knowledge modelling" — course levels not on record; now "engineering economics to knowledge modelling".
+- "First years after graduation building information systems" — YourTable began 2018, three years after the BASc; reworded.
+- "Bringing the committee's coming requirements on evidence for AI training data" — no such requirement is on record; reworded.
+- "PartNet and ShapeNet were built at Stanford; DROID collected there" — drafter's general knowledge; hedged with [in part] / [confirm the host's authorship].
+- "CPRA results (31 Mar 2027)" — not in the profile; bracketed.
+- Candidate host names (Guibas, Finn, Bohg, Song, Sadigh, Wu, Barrett, Musen) — drafter's general knowledge, already bracketed and marked unverified; kept as such.
+- References 5–20 — general-knowledge citations, not from the applicant's files; each marked [verify]; 8, 9 and 14 remain incomplete.
+- Stipend "85,000–95,000" (tracker) — contradicted by the program's USD 98,000; removed.
+- Program facts (deadline, limits, cap, J-1, criteria) come from search-result snippets of the FAQ, not from the page itself — every one is labelled and must be confirmed.
+
+### Remaining risks (in order)
+1. Two-year prior-postdoc cap: unknown HMS start date; a start before July 2025 likely makes the applicant ineligible even at the earliest fellowship start.
+2. J-1 requirement: citizenship and current visa status unknown; H-1B-only status ends the application.
+3. Scope: a formal-ontology / robot-data program may be judged outside "fundamental natural science" by a physical- and life-sciences committee.
+4. No host: the program will not award without one, and three weeks is little time for a cold approach.
+5. Record: the two central papers are under review, not published; the committee will weigh the CV's publication list, which the package could not verify.
+6. Career-statement limit and prompt not captured; the two-page assumption may be wrong.
+7. Twenty-plus bracketed facts (thesis title, lab, patent count, ISO wording, references) still need the applicant.

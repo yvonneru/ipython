@@ -2,7 +2,7 @@
 
 ## Budget
 
-No budget is requested or submitted. CIRTA is a fixed-value award: CAD 70,000 per year for 2 years, paid through the nominating institution. [Confirm on the SGS page whether the award carries a research or travel allowance beyond the stipend, whether U of T tops up or charges benefits, and whether the nominator's grant is expected to contribute anything; the drafts record none of this.] Compute for Theme 3 is expected through [a Vector Institute affiliation or the Semantic Technologies Laboratory — confirm with Prof. Grüninger]; no cost is claimed.
+No budget is requested or submitted. CIRTA is a fixed-value award: CAD 70,000 per year for 2 years, paid through the nominating institution. [Confirm on the SGS page whether the award carries a research or travel allowance beyond the stipend, whether U of T tops up or charges benefits, and whether the nominator's grant is expected to contribute anything; the drafts record none of this.] Compute for Theme 3 is expected through [a Vector Institute affiliation or the Semantic Technologies Laboratory — confirm with Prof. Grüninger]; no cost is claimed. **Nominator's funding commitment:** the 2026 U of T checklist required the nominator to commit to the normal departmental funding commitment for postdoctoral fellows, including beyond Year 2, with the Budgetary Chair's endorsement [confirm the 2027 wording and the source of funds with Prof. Grüninger and the MIE Chair's office].
 
 ## Award window and interaction with the CPRA
 
@@ -14,6 +14,7 @@ No budget is requested or submitted. CIRTA is a fixed-value award: CAD 70,000 pe
 | Date | Action | Owner |
 |---|---|---|
 | 25 Sept 2026 | Emails 1–3 sent (Grüninger; SGS; MIE research office) | Applicant |
+| 15 Oct 2026 | **Confirm that a 2027 cycle exists** (the SGS page calls the awards a one-time initiative); if SGS says no, close this package and note it in the registry | Applicant; SGS |
 | 9 Oct 2026 | SGS requirements-met letter and official transcript in hand (shared with the CPRA package) | SGS / Registrar; Applicant |
 | 15 Oct 2026 | Grant status, grant number and willingness to nominate confirmed | Prof. Grüninger |
 | 15 Dec 2026 | Tri-agency CV complete (≤ 10 pp), publication and patent lists reconciled; brackets in proposal.md and statement.md filled | Applicant |
@@ -35,6 +36,7 @@ No budget is requested or submitted. CIRTA is a fixed-value award: CAD 70,000 pe
 | 6–16 | 3.1 (pooled-data track) | Policies trained on ontology-aligned vs unaligned pooled data; transfer across part vocabularies measured in SAPIEN | Interim results for the Y1 report |
 | 12–18 | 3.1 Constraint-based training | Differentiable parthood-constraint losses; constraint-guided augmentation for underrepresented categories; ablations by axiom family | Methods paper draft |
 | 16–22 | 3.2 Verification-in-the-loop evaluation | Violation-rate metric integrated into evaluation; held-out PartNet-Mobility category experiments in SAPIEN and [second simulator]; violation rate vs task failure | Two ML-venue papers and one robotics-venue paper submitted (cumulative) |
+| 12 (checkpoint) | Theme 3 fallback | If compute or the Robotics Institute collaboration is not secured by month 12: 3.2 runs on existing trained policies (evaluation only) and 3.1 is scoped to one axiom family; minimum Theme 3 output is one evaluation paper. Themes 1–2 are unaffected | Decision recorded in the Y1 report |
 | 20–24 | Dissemination | Ontology contributed to ISO/IEC JTC 1/SC 42 and released under an open licence in COLORE; toolkit v2; final report | Final deliverables; faculty-application materials |
 
 Throughout: monthly supervision meetings with Prof. Grüninger; Robotics Institute seminar series; [Vector Institute affiliation for compute]; SC 42 meetings as the laboratory's representative; co-supervision of [number] graduate students on the ontology and audit components [confirm with supervisor].

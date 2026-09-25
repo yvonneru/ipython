@@ -1,6 +1,6 @@
 # Brief for referees — Canada Impact+ Research Training Award (CIRTA), postdoctoral, 2027 cycle
 
-**Read first.** CIRTA is nomination-only: the University of Toronto nominates me on an institutional form completed by Prof. Michael Grüninger. The registry records referee letters only "as required by the division"; [whether MIE / the Faculty of Applied Science & Engineering requires letters, how many, and by when is unconfirmed — see README]. Send this brief only once a letter is confirmed to be needed. If no letter is required, the referees named below are still the people I would ask to speak informally to Prof. Grüninger or the internal committee.
+**Read first.** CIRTA is nomination-only: the University of Toronto nominates me on an institutional form completed by Prof. Michael Grüninger. The registry records referee letters only "as required by the division"; [whether MIE / the Faculty of Applied Science & Engineering requires letters, how many, and by when is unconfirmed — see README]. Send this brief only once a letter is confirmed to be needed, and only once a 2027 cycle is confirmed to exist [the SGS page describes the awards as a one-time initiative; all recorded dates are from 2026 waves]. If no letter is required, the referees named below are still the people I would ask to speak informally to Prof. Grüninger or the internal committee.
 
 ## What the award is
 
@@ -17,7 +17,7 @@ A tri-agency (NSERC / CIHR / SSHRC) postdoctoral award in the Canada Research Tr
 
 ## What reviewers weigh
 
-The selection is an internal U of T competition within the university's allocation, followed by agency confirmation of eligibility. The rubric is not published in the material I have [obtain from SGS / MIE]. Expect the committee to weigh the candidate's research excellence and potential, the quality and priority-area fit of the research plan, the training environment, and the recruitment case (bringing talent into Canada). The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
+The selection is an internal U of T competition within the university's allocation; the agencies confirm eligibility only and do not re-review merit. The divisional rubric is not published in the material I have [obtain from SGS / MIE]. Expect the committee to weigh the candidate's research excellence and potential, the quality and priority-area fit of the research plan, the training environment, and the recruitment case (bringing talent into Canada). The most useful letters give one or two concrete examples — a result you saw me obtain, a problem I solved without direction, a piece of work you would not have expected at my stage — and state plainly where I stand relative to other postdoctoral researchers you have known.
 
 ## The proposed program in three sentences
 
@@ -28,7 +28,7 @@ Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled
 1. **The theoretical work on material constitution and mereological pluralism** (two papers submitted to Synthese, 2026, with M. Grüninger), and why a machine-checkable account of when two part decompositions are compatible matters for knowledge representation and for robot data.
 2. **The ISO/IEC 21838-4 contribution** — what it shows about rigour (every claim a theorem or a counter-model) and about the ability to work in an international standards body.
 3. **The move from theory to deployed systems** — patents, production data-integration and 3D-dataset work at companies I co-founded — and why that predicts success with the audit and learning themes, which are engineering at dataset scale.
-4. **The recruitment case and independence** — I am a U of T graduate now at Harvard whom the award would return to Canada; the program is my own, complementary to but distinct from Prof. Grüninger's NSERC programs on the Physical Turing Test and commonsense cobotics.
+4. **The recruitment case and independence** — I am a U of T graduate now at Harvard whom the award would return to Canada; the program is my own. Prof. Grüninger's NSERC programs ask which mereotopologies the static part decompositions of ShapeNet and PartNet presuppose; mine adds articulated, functional and assembly parthood, parthood change under manipulation, real-robot corpora, dataset-scale audit and cross-dataset alignment. If you can say from your own observation that I set this direction, say so; an internal committee will otherwise read the plan as the nominator's.
 
 ## Who is being asked
 

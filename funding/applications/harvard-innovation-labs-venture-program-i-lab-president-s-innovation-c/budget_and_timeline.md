@@ -9,7 +9,7 @@ Neither program asks for a budget form. The Venture Program gives no cash (advis
 | Application fee | 0 | Neither program charges a fee [confirm on the form]. |
 | Team time — written answers, deck, video | [person-days: founder —, CTO —] | Registry estimate: 8 preparation days in total. |
 | Video production | [0 if recorded in-house; otherwise quote] | Format and length unknown until the 2027 form opens. |
-| Travel | 0 | Founder is in Boston; the i-lab is at 125 Western Ave, Allston [confirm]. |
+| Travel | 0 | Founder is in Boston for the HMS appointment [confirm]; the i-lab is at 125 Western Ave, Allston [confirm]. |
 | Legal — confirmation that the entity may receive prize funds; HMS outside-activity disclosure | [counsel time, if billed] | See emails.md, email 7. |
 | Opportunity cost — Toronto start moved from April to [May–June] 2027 if option (a) in README is chosen | [none if the postdoctoral awards allow a later start; the CPRA/Vector/DSI drafts all state "April 2027 or later"] | Decision by 30 Oct 2026. |
 

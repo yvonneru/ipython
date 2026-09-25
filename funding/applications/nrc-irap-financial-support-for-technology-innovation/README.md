@@ -1,6 +1,6 @@
 # NRC IRAP — Financial support for technology innovation (core R&D contribution) for AXIOMALITY
 
-**Applicant entity:** AXIOMALITY [legal name, incorporation country/province, business number — all to confirm] · **Signing officer:** Dr. Yi Ru, Founder/CEO · **Program contact:** an NRC IRAP Industrial Technology Advisor (ITA) [name — assigned after first contact] · **Tier B · fit 74** · package drafted 2026-09-25
+**Applicant entity:** AXIOMALITY [legal name, incorporation country/province, business number — all to confirm] · **Signing officer:** Dr. Yi Ru, Founder/CEO · **Program contact:** an NRC IRAP Industrial Technology Advisor (ITA) [name — assigned after first contact] · **Tier B · fit 74** (workflow value; the registry holds three IRAP core-contribution entries at fit 78/B, 70/C and 62/B — the tier C verdict rests on Canadian incorporation being unconfirmed, and that governs) · package drafted 2026-09-25
 
 ## Program
 
@@ -23,7 +23,7 @@ There is no competition deadline. The dates below are the applicant's own plan, 
 | **1 Apr 2027 (target)** | Project month 1. If the ITA can fund from FY 2026-27, start on signature instead | — |
 | Quarterly | Claims (reimbursement of eligible costs incurred) and progress reports to the ITA [confirm claim cycle in the agreement] | Company officer |
 
-**Interactions with other applications.** IRAP funds the company, not the founder, so it can be held alongside a postdoctoral award. Three overlaps must be disclosed: (1) the founder may be a U of T postdoctoral fellow from April 2027 under Prof. Grüninger — any U of T work on the kernel must be either separately funded or contracted to the company under a research agreement, never claimed twice; (2) the Mitacs Accelerate Entrepreneur route (registry, fit 78) would make AXIOMALITY the Mitacs partner — Mitacs and IRAP costs must not overlap; (3) SR&ED tax credits [confirm eligibility] are claimed net of IRAP contributions. The IRAP Youth Employment Program (registry, fit 58) is a low-friction first engagement with the same ITA and can fund [ENG1] in this proposal if the hire meets the age and residency rules.
+**Interactions with other applications.** IRAP funds the company, not the founder, so it can be held alongside a postdoctoral award. Three overlaps must be disclosed: (1) the founder may be a U of T postdoctoral fellow from April 2027 under Prof. Grüninger — any U of T work on the kernel must be either separately funded or contracted to the company under a research agreement, never claimed twice; (2) the Mitacs Accelerate routes (registry: postdoctoral stream with Entrepreneur variant, fit 68; company-as-partner entry, fit 74) would make AXIOMALITY the Mitacs partner — Mitacs and IRAP costs must not overlap; (3) SR&ED tax credits [confirm eligibility] are claimed net of IRAP contributions. The IRAP Youth Employment Program (registry, fit 55) is a low-friction first engagement with the same ITA and can fund [ENG1] in this proposal if the hire meets the age and residency rules.
 
 ## Eligibility
 
@@ -31,12 +31,14 @@ There is no competition deadline. The dates below are the applicant's own plan, 
 |---|---|
 | Incorporated, for-profit, Canadian company | **[UNCONFIRMED — decisive.]** The brief does not state the country of incorporation, nor whether AXIOMALITY is Uing Technologies (Aug 2022), a rebrand, or a new entity. If not Canadian, the package is usable only after a Canadian incorporation or subsidiary is created and R&D is placed in it. |
 | 500 or fewer full-time equivalent employees | Almost certainly OK (four named team members in the deck) [confirm headcount]. |
-| R&D performed in Canada by Canadian employees or Canadian contractors | **[UNCONFIRMED.]** Founder is currently at Harvard Medical School (US). CTO holds a McMaster doctorate; residency [confirm]. Robotics lead and 3D asset lead residency [confirm]. The proposal places all funded labour in [Toronto / province] and names the founder's Canadian presence from [April 2027]. |
+| R&D performed in Canada by Canadian employees or Canadian contractors | **[UNCONFIRMED.]** [Founder currently a postdoctoral researcher at Harvard Medical School (US) — per the academic drafts, not the CV; confirm.] CTO holds a McMaster doctorate; residency [confirm]. Robotics lead and 3D asset lead residency [confirm]. The proposal places all funded labour in [Toronto / province] and names the founder's Canadian presence from [April 2027]. |
 | Financial capacity to fund the company's share (20% of labour, 50% of contractors, all non-eligible costs) and to bridge reimbursement | [UNCONFIRMED — financial statements, cash on hand, committed financing; the deck's 18-month capital plan sizes a raise but states no figure.] |
 | Technical uncertainty and an R&D project with a plan | OK — the Engine's physics/uncertainty/augmentation gates and the decidability limits of first-order checking are genuine uncertainties (proposal §3). |
 | Growth orientation and commercial potential | OK — pricing, cohort economics and 18-month gates exist in the deck (proposal §6). |
 | Not funding work already done | Note — the internal Engine test planned for Q4 2026 is background; the proposal scopes the funded work to start at the agreement date. |
 | No requirement on founder citizenship | OK per the registry (company must be Canadian; founder citizenship not required). |
+| Stacking of government assistance | [Registry (third-party guides): total government assistance normally capped at about 75% of project costs; IRAP reduces the SR&ED expenditure base. Budget §1 lists the other sources; confirm the rule with the ITA.] |
+| Program continuity | Registry flags that IRAP may move to the Canada Innovation Corporation during FY 2027-28; existing agreements are honoured. Ask the ITA whether intake practice changes for FY 2027-28 [confirm]. |
 
 ## Format and criteria (verify on the official page)
 
@@ -46,7 +48,7 @@ The WebSearch budget for this session was exhausted (200 of 200 calls) before th
 - https://grantops.ai/en/blog/irap-funding-guide-2026/ , https://grantpilot.ca/blog/irap-application-guide-2026 , https://hellodarwin.com/business-aid/programs/nrc-irap , https://grantops.ai/en/irap/ , https://grantcompass.ca/irap-funding-canada.html (third-party guides used for cross-checking cost-share rates, typical amounts and the assessment themes; not authoritative)
 
 Recorded format:
-- **There is no public application form or page limit.** IRAP proposals are prepared with the ITA, who supplies the current project-proposal template and budget spreadsheet after intake. proposal.md is therefore written in the sections IRAP proposals conventionally contain — company and technical background; project objectives; state of the art and technological uncertainty; work plan with milestones; team and management; commercial potential and benefits to Canada; budget — and kept to about five pages plus bibliography so it can be pasted into the template's boxes. Where the template differs, the Grüninger structure inside each section (Recent Progress → Objectives → Literature → Themes/Projects/Open questions → Impact) maps directly.
+- **There is no public application form or page limit.** IRAP proposals are prepared with the ITA, who supplies the current project-proposal template and budget spreadsheet after intake. proposal.md is therefore written in the sections IRAP proposals conventionally contain — company and technical background; project objectives; state of the art and technological uncertainty; work plan with milestones; team and management; commercial potential and benefits to Canada; budget — and kept to about 4,700 words (roughly eight pages) plus bibliography so it can be pasted into the template's boxes and cut to the box sizes. Where the template differs, the Grüninger structure inside each section (Recent Progress → Objectives → Literature → Themes/Projects/Open questions → Impact) maps directly.
 - **Required documents (registry):** company profile and incorporation documents; project proposal (technical objectives, milestones, budget); financial statements / capacity to co-fund; team CVs; commercialization plan; proof of incorporation and CRA business number.
 - **Cost rules (registry):** up to 80% of eligible R&D salaries; up to 50% of eligible contractor costs; no capital equipment, no overhead, no retroactive costs [verify each with the ITA and the contribution agreement]. Claims are reimbursements of costs incurred.
 - **Assessment criteria and weights: not published.** ITAs conventionally assess (i) technical merit and technological uncertainty, (ii) technical feasibility and the work plan, (iii) management and team capability, (iv) commercial potential and the business plan, (v) financial capacity, and (vi) benefits to Canada (jobs, R&D in Canada, exports). Weights [unknown — the ITA's recommendation is decisive]. The table below is organized on those six headings.
@@ -87,8 +89,8 @@ Recorded format:
 | Criterion (conventional — verify) | Where it is met | Evidence in the package |
 |---|---|---|
 | Technical merit and technological uncertainty | proposal.md §2–§3 | First-order checking of robot data is undecidable in general and must be compiled to a supported SMT subset with UNKNOWN as a first-class output; physics residuals need an observation contract; conformal coverage is not per-trajectory safety; whether semantic checks beat simple rules at equal cost is an open, falsifiable question (deck falsifiers) |
-| Technical feasibility and work plan | proposal.md §4; budget_and_timeline.md | Three themes (kernel, engine, passport/evaluation) with numbered projects, open technical questions tagged to named roles, and dated milestones M3/M6/M9/M12; background already built (100,000 3D packages, machine-proven kernel axioms, Vision Pro app, connectors in progress) |
-| Management and team capability | proposal.md §5; statement.md | Founder: U of T PhD, ISO/IEC 21838-4 core contributor, MICAS (USD 5M raised incl. Accel; >USD 50M revenue; 100+ team), YourTable; CTO McMaster AI doctorate; robotics lead; 10+-year asset lead |
+| Technical feasibility and work plan | proposal.md §4; budget_and_timeline.md | Three themes (kernel, engine, passport/evaluation) with numbered projects, open technical questions tagged to named roles, dated milestones M3/M6/M9/M12 with acceptance tests, and a risks-and-mitigations table; background already built (100,000 3D packages, machine-proven kernel axioms, Vision Pro app, connectors in progress) and explicitly separated from funded work |
+| Management and team capability | proposal.md §5; statement.md | Founder: U of T PhD, ISO/IEC 21838-4 core contributor, MICAS (USD 5M raised incl. Accel; >USD 50M revenue; 100+ team), YourTable; CTO McMaster AI doctorate and accountable technical lead; robotics lead; 10+-year asset lead; IP, academic-separation and conflict-of-interest paragraph in §5 |
 | Commercial potential and business plan | proposal.md §6 | Pilot USD 25–50k (8–12 weeks); annual deployment USD 120–240k; focused pool USD 12–60M; four buyer types; 18-month gates (3 partners Q1 2027, Passport v1 recognized Q2 2027, five customers by month 18) |
 | Financial capacity | budget_and_timeline.md; [financial statements] | [To be demonstrated: cash, financing sized to the 18-month plan] |
 | Benefits to Canada | proposal.md §6 | R&D positions in [Toronto]; Canadian robotics and manufacturing buyers (deck names Sanctuary/Magna and Vention as deployment contexts); standards participation through SC 42 [Canadian mirror committee — confirm]; an exportable compliance product ahead of the EU AI Act Annex I date (2 Aug 2028) |
@@ -107,3 +109,47 @@ Recorded format:
 10. [The second simulator and policy backbone for Theme 3 experiments; compute source and cost].
 11. [Exact title of the second Synthese paper; ISO/IEC role wording; FOIS 2018 award role; monograph title; AAAI presentation details] (for the founder CV).
 12. [Whether SR&ED will be claimed and by which entity; whether Mitacs Accelerate Entrepreneur will be pursued in parallel].
+
+## Review log
+
+Skeptical panel review, 2026-09-25 (one WebSearch used of the three allowed; the third-party guides and the official pages found confirm the six conventional assessment themes below but publish no weights — the ITA's recommendation is decisive).
+
+### Scores (1–5, tough reviewer), before → after
+
+| Criterion (weight unknown; listed in the ITA's conventional order) | Before | After | Why |
+|---|---|---|---|
+| Technical merit and technological uncertainty | 4 | 4 | Uncertainties (a)–(e) are specific and falsifiable. Unchanged: the case is strong but rests on unpublished Synthese submissions and a kernel that no outsider has inspected. |
+| Technical feasibility and work plan | 3 | 4 | Objectives now carry acceptance tests; a risks-and-mitigations table was added; the background/funded boundary is explicit; the robotics-lead tag "RL" (readable as reinforcement learning) renamed "ROB". Still 4 not 5 because M6's corpus size and partner share are placeholders. |
+| Management and team capability | 3 | 3 | Founder's record is strong, but the founder is US-based and may hold a university appointment; the package now names the CTO as accountable technical lead and adds an IP/conflict-of-interest paragraph. Team CVs, salaries and residency remain unfilled, so the score cannot rise. |
+| Commercial potential and business plan | 3 | 3 | Pricing, cohort economics and gates are traceable to the deck, but there is no named customer, no LOI and no revenue to date on file. Letters of support are the only lever (emails 4–5). |
+| Financial capacity | 1 | 1 | No financial statements, cash position or salaries exist in the source files; every figure is bracketed. The budget now also lists stacking and the typical first-project band (CAD 75–200k). An ITA cannot recommend a contribution on this file until Table 2–5 inputs exist. |
+| Benefits to Canada | 2 | 3 | Job count is [N]; Canadian presence is unproven. The relationship claims are now bracketed by entity; standards participation and Canadian buyers (Sanctuary/Magna, Vention) are cited from the deck. Rises only once headcount and location are filled. |
+| Eligibility and compliance (gate, not a scored criterion) | 1 | 2 | Canadian incorporation, Canadian payroll and founder residency remain unconfirmed; the package now records the stacking rule, the Canada Innovation Corporation transition flag and the SR&ED interaction. |
+
+### What changed
+
+- proposal.md: format note corrected (about 4,700 words, roughly eight pages — earlier note said six); patent count fully bracketed with the conflicting draft counts and the assignee question; background vs funded work stated explicitly (Q4 2026 test and any Q1 2027 company targets are background); Objective 2 rescoped so the funded M6 corpus is not the same item as the company's pre-project 10,000-episode target ([N] partner episodes not available before the project); acceptance tests added to all four objectives; "RL" tag renamed "ROB"; risks-and-mitigations table added after the milestones; §5 gains a paragraph on IP, separation from the founder's academic program, conflict of interest, CTO accountability and SR&ED netting; §6 states that the Q1/Q2 2027 dates are company dates, not project milestones; the medical-device/pharma/hospital relationship claim is bracketed by entity.
+- budget_and_timeline.md: first-project band CAD 75–200k (registry) added to the request line with a phasing note; new row listing other government assistance on the same costs (SR&ED net of IRAP, Mitacs, YEP) and the ~75% stacking ceiling to confirm.
+- statement.md: the Harvard Medical School position is bracketed in full (it appears in the academic drafts, not on the CV).
+- README.md: fit citations corrected against the registry (Mitacs 78 → 68/74; YEP 58 → 55); the three registry IRAP entries and the tier C rationale noted in the header; eligibility table gains stacking and program-continuity rows; Harvard claim bracketed; page-length statement corrected; criteria table updated.
+
+### Invented or untraceable facts found and handled
+
+- "Fit 78" for Mitacs Accelerate Entrepreneur and "fit 58" for IRAP YEP: not in the registry (68/74 and 55) — corrected.
+- Harvard Medical School postdoctoral position: present only in the academic drafts, absent from the CV — bracketed in statement.md and README.md.
+- Relationships with medical-device, pharma, standards bodies and a hospital network: in the deck, but the holding entity (AXIOMALITY or Uing Technologies) is unknown — bracketed.
+- Patent count: deck says 13 granted + 9 applications; other drafts say 3 Chinese invention patents + 9–10 German utility patents — bracketed with both counts.
+- Page-length claims ("five pages" in README, "six pages" in proposal) did not match the text (~4,700 words) — corrected.
+- All other numbers checked (500k vs 10M hours; USD 50–200/h; 2–3× premium; USD 4.9B → 17.1B; 80–200 organizations; USD 12–60M; 500 × 200k / 200 × 500k; pilot USD 25–50k; annual USD 120–240k; 10 pilots / 4 conversions → USD 250–500k and 480–960k; 600 h × USD 150 × 40% → USD 432k vs USD 180k; Open X-Embodiment 1M+ trajectories / 22 embodiments; Q1/Q2 2027 and month-18 targets; MICAS USD 5M / USD 50M / 100+ team; YourTable, IDG, FOIS 2018, ISO/IEC 21838-4; Annex I 2 Aug 2028; Regulation (EU) 2026/1744; Sanctuary/Magna, Vention, Agility/GXO; physics residual and soft-constraint formulas) trace to the deck text, the CV text or the profile files.
+
+### Remaining risks (in order)
+
+1. **Eligibility is unproven.** Canadian incorporation, Canadian payroll and the residency of every funded person are unknown. If AXIOMALITY is not a Canadian corporation, nothing in this package is usable until a Canadian entity exists and the R&D team sits in it. This is the reason the registry's verifier kept one entry at tier C.
+2. **Financial capacity is empty.** No financial statements, cash or salary figures exist; the ITA cannot assess capacity to fund the 20–50% share or bridge quarterly reimbursement. This alone blocks a recommendation.
+3. **Founder location and dual role.** A US-based CEO who may take a university appointment will be probed on "management in Canada"; the package mitigates on paper (CTO as accountable lead, COI arrangement) but the ITA will want to see the team on the ground.
+4. **No named customers or letters of support.** Commercial potential rests on deck estimates; without at least two partner letters (email 4) and one assessment-body letter (email 5) by 20 November, the commercial section is unsupported.
+5. **Milestone duplication with company targets.** If the company reaches 10,000 verified episodes on its own funds by Q1 2027, the M6 deliverable must be visibly different (partner data, frozen kernel v1, audit report); the proposal now says so, but the [N] partner-episode figure must be real.
+6. **Unpublished theory base.** Both Synthese papers are submissions; the second has no title on file. An ITA's technical reviewer may discount claims that rest on them.
+7. **Patent inventory.** Two incompatible counts exist and the assignee is unknown; an IP position that cannot be stated is a red flag in an ITA's due diligence.
+8. **Program transition.** IRAP may move to the Canada Innovation Corporation during FY 2027-28; intake practice and templates could change between first contact and agreement.
+9. **Length.** The proposal is about eight pages; ITA templates use bounded text boxes, so a further cut of 30–40% will be needed on transfer.

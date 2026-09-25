@@ -15,6 +15,7 @@ Yi Ru (茹意). Current position: Postdoctoral Researcher, [laboratory/departmen
 - Session Chair, IISE Annual Conference 2017.
 
 ## 4. Industry and entrepreneurship
+[Two roles below read "present". The award is a full-time postdoctoral appointment under U of T policy: state the time commitment to Uing Technologies and AXIOMALITY during the award, or an end date, and confirm the outside-activity rule with SGS/MIE before the CV is submitted. Reviewers will ask.]
 - Founder/CEO, AXIOMALITY, 2026–present: robotics data verification and certification ("evidence layer"); formal checking with Common Logic modules, Prover9 obligations, Mace4 counter-models and compiled SMT [confirm legal entity and relationship to Uing Technologies].
 - Co-Founder and CEO, Uing Technologies, Aug 2022–present: structured 3D physical-world datasets; ontology-based representations of objects, indoor environments, spatial relationships and interactions for embodied AI, AR and robotics; launched one of the first AR pet-interaction apps on the Apple Vision Pro App Store; led nine invention patent applications.
 - Founding Team, MICAS, Jul 2021–Aug 2022: cross-border direct-to-consumer platform; built CRM/ERP/WMS and ML-driven marketing systems; led a 100+ person team; >USD 5M angel investment (incl. Accel Partners); >USD 50M annual revenue.
@@ -36,7 +37,7 @@ ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — 
 
 ## 9. Publications
 - Submitted: Ru, Y., and Grüninger, M. (2026). Material Constitution as a Parthood-Preserving Mapping between Mereologies. Synthese. — Ru, Y., and Grüninger, M. (2026). [exact title — mereological pluralism validation]. Synthese. First author on both; developed the theory and proofs.
-- Refereed journal articles: [list — 21 papers disclosed; 20+ SCI-indexed claimed; confirm].
+- Refereed journal articles: [list — the company deck says 21 papers and earlier drafts say "20+ SCI-indexed"; the CV says only "published in multiple academic journals and conferences". State no count the list does not support.]
 - Refereed conference papers: [list — FOIS, JOWO, ICBO, IEEE/ACM venues; confirm].
 - Monograph: [title, publisher, year — confirm].
 - Technical reports, software and datasets: [COLORE contributions, released ontologies, verification scripts].
