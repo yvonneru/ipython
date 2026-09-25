@@ -72,7 +72,7 @@ def merge(reg, scratch):
             rec = dict(rec); rec["category"] = cat; rec["last_checked"] = TODAY
             if k in entries:
                 cur = entries[k]
-                cur.update({f: v for f, v in rec.items() if v not in (None, "", [])})
+                cur.update({f: v for f, v in rec.items() if v not in (None, "", []) and f not in ("category", "first_seen", "slug", "id")})
             else:
                 rec["id"] = k; rec["slug"] = slugify(rec); rec["first_seen"] = TODAY
                 entries[k] = rec
