@@ -1,0 +1,225 @@
+=== PAGE 1 ===
+Michael Gruninger NSERC Pin: 103297
+1
+Commonsense Cobotics
+1. Recent Progress
+An ontology is a computer-interpretable speciﬁcation that is used by an agent, application,
+or other information resource to declare what terms it uses, and what the terms mean.
+My
+research has focussed on the axiomatization of ontologies as theories in ﬁrst-order logic and the
+development of techniques for their design and veriﬁcation.
+• Ontologies for the Physical Turing Test
+The Physical Turing Test extends the Turing Test by specifying questions that require the
+integration of perception, reasoning, and action. My recent research has led to the design
+of new ontologies (known as the PRAxIS Ontologies, for Perception, Reasoning, and Action
+across Intelligent Systems) in ﬁrst-order logic that can address the Physical Turing Test
+by representing objects in the physical world and the activities in which these objects can
+possibly participate. Modules within these ontologies include my work on mereotopology
+[14], [26], [24], location [1], units of measure [12], and the Process Speciﬁcation Language
+ontology [10]. The questions that constitute the Physical Turing Test are the competency
+questions for the PRAxIS Ontologies. Furthermore, these ontologies have been integrated
+to support reasoning about physical objects, their behaviours (e.g. the ways in which they
+can change), and their interactions (e.g. manipulation of solid physical objects).
+• Ontology Veriﬁcation and Validation
+Ontology veriﬁcation is concerned with the relationship between the intended models of an
+ontology and the models of the axiomatization of the ontology. The work in [2] provides the
+formal foundations for the semiautomatic veriﬁcation of ontologies via ontology repositories.
+Ontology validation is the problem of determining whether the intended models of the
+ontology are indeed the correct models for the ontology. The work in [11] supports ontology
+validation by eliciting intended models from the user and evaluating these models with
+respect to user responses.
+• Upper Ontologies
+Upper ontologies specify the fundamental categories of entities shared across di↵erent do-
+mains (e.g. time, space, process, material objects, location), and which provide ﬁrst-order
+axiomatizations of the relations between these entities. The PRAxIS Ontologies have been
+integrated to form the upper ontology TUpper [15], which has been published as the Inter-
+national Standard ISO 21838-4. Each ontology module within TUpper has been veriﬁed.
+• Ontological Analysis of Robotic Task and Motion Planning
+My most recent work has addressed the problem of ontological analysis in the context of
+robotics: What is the minimal set of ontologies needed to specify reasoning problems within
+robotic task and motion planning? For example, the speciﬁcation of robot path planning
+requires ontologies for spatiotemporal regions, location, and motion activities [4]. By explic-
+itly identifying the relevant ontologies, we can combine automated theorem proving with
+existing algorithms. For example, mereotopology ontologies can be used for the automatic
+generation of spatial constraints that can prune the search space so that only topologically
+feasible paths are explored.
+
+
+=== PAGE 2 ===
+Michael Gruninger NSERC Pin: 103297
+2
+2. Objectives
+Environments that require the collaboration of humans and robots are becoming increasingly
+common. Within collaborative robotics (also known as cobotics), there is a need for a shared
+understanding of the physical world between human users and robots equipped with computer
+vision and machine learning architectures. However, machine learning systems su↵er from hal-
+lucinations, bias, and unpredictable behaviour, and consequently face challenges such as limited
+explainability and any notion of provable correctness in the face of hallucinations [20].
+Fur-
+thermore, the performance of machine learning implementations is heavily inﬂuenced by the
+ontological presuppositions that are implicit in training data, which can lead to errors. It has
+been evident since Winograd’s work with SHRDLU that to achieve e↵ective cobotics, robots and
+humans need to be able to reliably perceive and understand the same situations, reason about
+them together, and take safe, e↵ective joint actions. This research program will design, evaluate,
+and implement new ontologies that support the integration of perception, reasoning, and action
+on the part of both humans and robots. in this way, it will provide the foundation for explainable
+and provably correct neurosymbolic approaches to robotics.
+The research program in this proposal is motivated by the following long-term challenge:
+Can we valuate the correctness and completeness of the implementation of systems for percep-
+tion and action in robotic tasks with respect to the ontologies that humans use for commonsense
+reasoning in those tasks?
+To address this challenge, the proposed research program has three primary objectives:
+1. evaluation of AI benchmarking datasets (which are used to train and test current imple-
+mentations);
+2. design and veriﬁcation of new ontologies required to formalize existing benchmarking datasets;
+3. speciﬁcation of new benchmarking datasets that can be used for ontology validation.
+We cluster these objectives around the three key themes of perception, reasoning, and action.
+3. Literature Review
+A wide range of datasets exist for benchmarking AI systems, in domains that include visual
+question answering (Visual Genome [19], NLVR [23]), image segmentation (ImageNet [8]), object
+recognition (ShapeNet [3], PartNet [27]), semantic parsing (Folio [16]), and commonsense reason-
+ing (PIQA [6]). However, many of these datasets are riddled with logical and ontological errors.
+Since these datasets are manually annotated, there is also a lack of consensus not only about
+the semantics of relations that are used in these benchmarks, but even disagreement about what
+relations are used in the datasets. Furthermore, there has been no prior attempt to evaluate these
+benchmarks by providing any kind of ontological analysis.
+Within the Applied Ontology community, there has been considerable e↵ort expended on the
+development of so-called upper ontologies, which specify the fundamental categories of entities
+shared across di↵erent domains (e.g. time, space, process, material objects, location), and which
+provide ﬁrst-order axiomatizations of the relations between these entities. Particular examples of
+upper ontologies include BFO [21], DOLCE [7], and TUpper [15], which have all been standardized
+as parts of ISO 21838. Although these ontologies have been veriﬁed, there has been no research
+done on their validation – are they suﬃcient for axiomatizing speciﬁc domains?
+
+
+=== PAGE 3 ===
+Michael Gruninger NSERC Pin: 103297
+3
+4. Methodology
+The ontologies within this research program will extend upper ontologies; they will be designed
+using my widely accepted ontology lifecycle methodology from [17] and [18], together with the
+new techniques described in Recent Progress.
+All ontologies will be veriﬁed, that is, we will
+characterize the models of an ontology up to isomorphism and determine whether or not these
+models are equivalent to the intended models of the ontology. We will leverage the semiautomatic
+ontology generation techniques of [13] to assist in the design and evaluation of veriﬁed ontologies
+axiomatized in ﬁrst-order logic.
+Within the ontology design methodology, competency questions serve as semantic require-
+ments for the ontologies being designed, and hence can be used for ontology validation. In the
+context of this research program, question answering with AI benchmarking datasets will play
+the role of competency questions. For example, competency questions for spatial ontologies can
+be based on visual question answering tasks with images from the datasets (such as detecting and
+localizing instances of objects and relationships among the objects in a scene), while competency
+questions for process ontologies can be based on dynamic visual questions (e.g. What changed
+between these two images? What activities could possibly have happened to cause the change?).
+Finally, we will use existing ontologies to evaluate the AI benchmark datasets; the ontological
+analysis of these datasets will make their ontological presuppositions explicit and identify logical
+inconsistencies within them. An ontological analysis identiﬁes the relations and classes of objects
+that are required to specify the data, characterizes the intended semantics of these relations
+implicit within the data, and then designs the ontologies that are needed to axiomatize this
+intended semantics.
+Theme 1: SHRDLU Redux (Perception)
+This theme will focus on benchmarking datasets and ontologies required to address the fol-
+lowing research problem about perception:
+Given a sequence of annotated images, specify scene description graphs to facilitate
+question answering by the robot about what activities possibly occurred and what phys-
+ical objects participated in those activities.
+Project 1.1: Evaluation of Computer Vision Benchmarking Datasets
+The ﬁrst project will use existing spatial ontologies to axiomatize the relations used in scene
+description graphs, which constitute the datasets for Visual Genome [19], NLVR [23], ShapeNet
+[3], and PartNet [27]. It will also augment the visual datasets and scene description graphs with
+the relations that are axiomatized in the spatial ontologies.
+Open Research Questions for Evaluation of Vision Benchmarking Datasets
+• What mereotopologies are implicit in the parthood decompositions of the ShapeNet and Part-
+Net datasets? MASc1
+• Do there exist multiple distinct parthood relations each with its own independent axiomati-
+zation? MASc2
+Project 1.2: Design of Spatial Ontologies for Visual Reasoning Benchmarks
+In some cases, there are spatial relations used within scene description graphs for which veriﬁed
+axiomatized ontologies do not currently exist.
+The second project will axiomatize these new
+
+
+=== PAGE 4 ===
+Michael Gruninger NSERC Pin: 103297
+4
+spatial ontologies, with visual question answering serving as competency questions for ontology
+design and validation.
+Open Research Questions for Ontologies in Visual Reasoning Benchmarks
+• What are the intended models for spatial ontologies, and what is the role of Euclidean ge-
+ometry in the speciﬁcation of these intended models? PhD1
+• Which spatial relations are not deﬁnable in Hilbert’s or Tarksi’s axiomatization of geometry
+nor any existing mereotopology? PhD2
+Theme 2: Robot Meets World (Reasoning)
+The second theme will evaluate the benchmarking datasets and ontologies used to support
+commonsense reasoning.
+While jointly performing a task, will the robot and human make the same commonsense
+inferences about the objects that they are manipulating?
+Project 2.1: Evaluation of Reasoning Benchmark Problems
+This project will evaluate existing benchmarks for commonsense reasoning (Folio [16], Big-
+Bench [25], COPA [22]) by identifying the fundamental classes and relations used in the speciﬁ-
+cation of the datasets. A focus in these datasets will be semantic parsing, which is the task of
+converting a natural language sentence into a logical formula [5]. Existing approaches to semantic
+parsing have neglected the role played by ontologies.
+Open Research Questions for Evaluation of Reasoning Benchmark Problems
+• What implicit assumptions about object identity, persistence, and location are being made
+in the benchmark datasets? MAsc3
+• Are all temporal relations within natural language deﬁnable by existing time ontologies?
+MASc4
+Project 2.2: Validation of Upper Ontologies
+In this project, we will specify new datasets to evaluate existing ontologies. In particular, the
+comparison and evaluation of top-level ontologies such as BFO, DOLCE, TUpper, and GFO will
+be supported through question answering from real datasets for commonsense reasoning in the
+form of images and natural language scenarios. The application of semantic parsing to translate
+such scenarios into sets of axioms that use a given top-level ontology would support more objective
+applications of the ontologies.
+Open Research Questions for Validation of Upper Ontologies
+• Are reiﬁed qualities in upper ontologies such as BFO, DOLCE, and GFO equivalent to
+ﬂuents in TUpper for the representation of changing attributes of entities? PhD3
+• Is material constitution distinct from parthood? PhD4
+Theme 3: RUIns – Robots Understanding Instructions (Action)
+The third theme will focus the evaluation of benchmarking datasets and process ontologies
+used for reasoning about action:
+
+
+=== PAGE 5 ===
+Michael Gruninger NSERC Pin: 103297
+5
+Given a set of verbal instructions, specify a process description that formalizes the
+instructions for the robot and that supports question answering by the robot about the
+instructions.
+Project 3.1: Evaluation of Process Benchmarks
+This project will evaluate existing benchmark datasets for understanding instructions (Piqa
+[6]) by using semantic parsers to translate natural language instructions (for activities such as
+assembly maintenance, cooking) to process descriptions speciﬁed in ﬁrst-order logic by the Process
+Speciﬁcation Language (PSL) Ontology. Theorem provers will be used to verify that the robot’s
+planned actions are consistent with the instructions.
+Open Research Questions for Evaluation of Process Benchmarks
+• What assumptions about change, causality, and time are implicit within the speciﬁcation of
+the datasets? MASc5
+Project 3.2: Validation of Process Ontologies
+In this project, we will specify ﬁrst-order reasoning problems (entailment or satisﬁability)
+that formalize question answering from process descriptions. Such reasoning problems include
+temporal projection, process data quality detection, and event recognition. The objective is to
+provide a set of semantic requirements which can be used to validate existing process ontologies.
+Open Research Questions for Validation of Process Ontolologies
+• Can the PSL Ontology axiomatize activity attempts, failure, and prevention? PhD5
+• Can activities be classiﬁed with respect to invariants (properties preserved by automor-
+phisms) of models of the PSL Ontology? PhD6
+5. Impact
+Collaboration within robot-human teams requires the ability to perceive, reason, and act
+in an integrated, coherent fashion, snd the projects within this proposal support commonsense
+reasoning within corobotic systems.
+Ontological foundations for AI benchmarks will have an
+immediate impact by improving the quality of the datasets used for the training and testing of
+the machine learning systems used in robotics. Most importantly, the capability of evaluating
+question answering from benchmark datasets should reduce the impact of hallucinations. The
+speciﬁc ontologies and automated reasoning techniques developed within this research program
+will provide the foundation for explainable and provably current neurosymbolic approaches to
+robotics.
+In the long-term, there is a critical need to support an open knowledge network with “large
+amounts of knowledge about entities, concepts, and relationships in the world” [9]. The ontologies
+designed and evaluated in this program will reside in COLORE, which will enable groundbreaking
+advances in the development of AI technology that can leverage commonsense knowledge about
+the physical world, and support novel testbeds for testing how cobotic systems encounter the
+physical world and each other.

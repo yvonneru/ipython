@@ -1,0 +1,220 @@
+=== PAGE 1 ===
+Michael Gruninger NSERC Pin: 103297
+1
+Ontologies for the Physical Turing Test
+1. Recent Progress
+An ontology is a computer-interpretable speciﬁcation that is used by an agent, application,
+or other information resource to declare what terms it uses, and what the terms mean.
+My
+research has focussed on the axiomatization of ontologies as theories in ﬁrst-order logic and the
+development of techniques for their design and veriﬁcation.
+• COLORE (Common Logic Ontology Repository) is an open repository of ﬁrst-order ontolo-
+gies that serves as a testbed for ontology evaluation and integration techniques, and that
+can support the design, evaluation, and application of ontologies in ﬁrst-order logic [13]. All
+ontologies are speciﬁed using Common Logic (ISO 24707-2017), which is a recently stan-
+dardized logical language for the speciﬁcation of ﬁrst-order ontologies and knowledge bases.
+There are currently 2580 ﬁrst-order ontologies within COLORE (colore.oor.net) which
+are organized into hierarchies (sets of ontologies with the same signature).
+• New Techniques for Ontology Design
+With design by reuse (introduced in [18], [19]), the intended structures are implicitly spec-
+iﬁed by treating a new ontology as reducible to a set of existing ontologies in COLORE.
+We use these ontologies, together with the translation deﬁnitions, to propose the axiom-
+atization of the new ontology. Design of these ontologies is therefore design via deﬁnable
+equivalence – any new axioms are entailed by translation deﬁnitions. The axiomatization
+is then evaluated using the competency questions for the new ontology.
+Design by ontology merging (employed in [2], [12]) uses translation deﬁnitions from ontology
+veriﬁcation to propose the axiomatization of the merger of the ontologies. If the veriﬁcation
+requires a new ontology in an existing hierarchy in COLORE, then ontology merging will be
+equivalent to the axiomatization of new residue subtheories, or the combination of existing
+residue theories with existing ontologies. Otherwise, the veriﬁcation leads to the design
+of an entirely new hierarchy of theories in COLORE. The technique of ontology transfer
+(introduced in [6]) speciﬁes new ontologies in one hierarchy of COLORE by identifying
+synonymous ontologies in another hierarchy.
+New Generic and Domain Ontologies have been designed and veriﬁed using the previously
+discussed ontology design techniques. My work on mereotopology [3], [22] and time [21]
+have been incorporated into the upper ontology TUpper [13], which is under review for
+international standardization as ISO 21838-4. TUpper includes a new approach to ontologies
+for units of measure called FOUnt [12], which won the Distinguished Paper Award at FOIS
+2018. Domain speciﬁc ontologies in medicinal chemistry [7] and hydrology [4] have also
+been designed.
+2. Objectives
+The Turing Test was originally proposed as a way of evaluating how well a software system
+represents human intelligence, based on natural language conversations. It has recently been
+recognized that a di↵erent approach is needed that incorporates capabilities required for general
+intelligence [10]. The Physical Turing Test extends the Turing Test by specifying questions that
+require the integration of perception, reasoning, and action. In particular, [23] proposes two tracks
+
+
+=== PAGE 2 ===
+Michael Gruninger NSERC Pin: 103297
+2
+for the Physical Turing Test. The Construction Track focuses on building predeﬁned structures
+(such as a tent or modular furniture) given a combination of verbal instructions and images. The
+Exploration Track focuses on experiments in building, modifying, and interacting with complex
+structures. The research program in this proposal is motivated by the following long-term vision
+related to the Construction Track:
+Given a set of verbal instructions, together with a sequence of annotated images, an-
+swer questions about the activities that can possibly occur during performance of the
+instructions and the various objects that participate in these activity occurrences.
+To address this long-term vision, the proposed research program has two primary objectives:
+• Design new ontologies1 in ﬁrst-order logic that can represent objects in the physical world,
+the activities in which these objects can possibly participate, and how to recognize these
+objects and the spatial relationships between them within images.
+• Integrate the PRAxIS Ontologies to support reasoning about physical objects, their be-
+haviours (e.g. the ways in which they can change), and their interactions (e.g. manipulation
+of solid physical objects).
+3. Literature Review
+Very few dynamic representations of space and physical objects have been formalized to the
+extent suitable for automated reasoning. With the exception of my previous work on PSL [11],
+existing work on process ontologies such as SEM [26] has focused on the use of languages with
+limited expressiveness, such as description logics. The weak axiomatizations of an ontology in
+these logics allow the existence of unintended models, a problem for automated reasoning insofar
+as there will exist sentences that are entailed by all intended models of the ontology but which
+are not provable from the axioms. Similarly, existing work in verb semantics (FrameNet [24],
+VerbNet [20]) has not been integrated with ﬁrst-order process ontologies.
+Spatial reasoning has focussed on the use of qualitative spatial calculi [9] Almost all work on
+ﬁrst-order spatial ontologies has been in mereotopology, although recent work has also explored
+notions of convexity [16] and betweenness [15].
+Several open datasets (ImageNet [8], ShapeNet, [5] and PartNet [27]) have been created to
+support object recognition is computer vision. These datasets consist of images and object de-
+scriptions that are manually annotated to indicate what objects are depicted. To capture the
+commonsense knowledge required to specify scene descriptions, existing approaches to computer
+vision and robotics have begun to extend these datasets to include simple knowledge represen-
+tation schemes such as ConceptNet [25]. However, none of these approaches can fully specify
+the intended semantics of the terminology, nor can they support automated reasoning from the
+ontology alone.
+4. Methodology
+The PRAxIS Ontologies will extend existing generic ﬁrst-order ontologies for time, space,
+and processes. Ontologies will be designed and evaluated using my widely accepted ontology
+lifecycle methodology from [17], together with the new techniques described in Recent Progress.
+1We will refer to these as the PRAxIS Ontologies (for Perception, Reasoning, and Action across Intelligent
+Systems).
+
+
+=== PAGE 3 ===
+Michael Gruninger NSERC Pin: 103297
+3
+All ontologies will be veriﬁed – we characterize the models of an ontology up to isomorphism and
+determine whether or not these models are equivalent to the intended models of the ontology.
+The questions that constitute the Physical Turing Test will become the competency questions
+for the PRAxIS Ontologies.
+In particular, ontologies for perception will be tested by visual
+question answering; ontologies for action will be tested through the representation of instructions
+for assembling, using, repairing, and maintaining physical objects, including devices and everyday
+objects such as furniture.
+In tackling the research challenges arising from the Construction Task of the Physical Turing
+Test, the proposed program focuses on two themes – designing new ontologies from linguistic cues
+and designing new ontologies from visual cues. The proposal will provide opportunities for HQP
+training through speciﬁc open research questions associated with each project within a theme.
+Theme 1: Ontologies from Linguistic Cues
+This theme will design and evaluate new process and spatial ontologies together with reasoning
+techniques required to address the following research problem:
+Given a set of verbal instructions, specify a process description that formalizes the
+instructions and that supports question answering about the instructions.
+Project 1.1: Domain Process Ontologies
+This project will apply the design methodology for domain process ontologies (introduced in
+[1]) that uses static domain ontologies to specify dynamic domain ontologies that can deal with
+spatial change and object change processes. The project will focus on verbs that intuitively corre-
+spond to physical processes (i.e. processes that change physical objects or the relationships among
+physical objects). In particular, for each verb that denotes an activity within the instructions, we
+1. identify the ﬂuents that are changed when the process corresponding to the verb occurs;
+2. axiomatize the domain state ontologies that contain the ﬂuents in their signature;
+3. identify the domain ontologies for these domain state ontologies; this may require additional
+axiomatizations if such ontologies do not currently exist;
+4. axiomatize the domain process ontologies, which classify all possible activities that change
+ﬂuents in the signature.
+A complete axiomatization of the process underlying a verb will require concepts from the PSL
+Ontology: participation, actor performing activities, natural activities, duration, composition of
+complex activities, and concurrency.
+Open Research Questions for Domain Process Ontologies
+• Can a↵ordances be formalized by domain process ontologies through the characterization of
+which activities can possibly occur with a given object? (e.g. “Pick up an object that you
+can use to cut the tape and open the box.”) PhD1
+• Can the PSL Ontology axiomatize activity attempts, failure, and prevention? MASc1
+
+
+=== PAGE 4 ===
+Michael Gruninger NSERC Pin: 103297
+4
+Project 1.2: Spatial Ontologies
+This project will design ontologies related to the spatial prepositions and verbs that denote
+spatial states (e.g. contain, support) within the instructions, beginning from existing qualitative
+spatial calculi [9]. For each qualitative spatial calculus, we will specify the ﬁrst-order ontology
+that axiomatizes the composition table of the calculus (using the technique we employed in [3],
+[14]), so that there is a one-to-one correspondence between models of the ontology and the set of
+solutions to constraints speciﬁed in the spatial calculus.
+Open Research Questions for Spatial Ontologies
+• What are the metalogical relationships among existing spatial ontologies? MASc2
+• Which classes of lattices, partial orderings, and graphs are needed for the veriﬁcation of
+mereologies and mereotopologies? MASc3
+• Can deﬁnability be used to determine when new spatial ontologies are required? PhD2
+Project 1.3: Reasoning with Process Descriptions
+To support question-answering in the Physical Turing Test, this project will also investigate
+reasoning with process descriptions as a generalization of problems in reasoning about action,
+such as temporal projection and plan existence. The focus will be on the speciﬁcation of new
+reasoning problems that formalize the competency questions that are answered by entailment
+from process descriptions.
+Open Research Questions for Reasoning with Process Descriptions
+• Can models constructed from the composition tables of qualitative temporal and spatial calculi
+be used to guide resolution with domain speciﬁc process ontologies? MASc4
+Theme 2: Ontologies from Visual Cues
+The second theme will design and evaluate the ontologies for perception and physical objects.
+Given a sequence of annotated images, specify scene descriptions to facilitate question
+answering about what activities possibly occurred and what physical objects participate
+in activities that may occur.
+Project 2.1: Physical Object Ontologies
+Solid physical objects are self-connected material objects that have a shape with boundaries
+and which are located in space [2]. Since each of these concepts is axiomatized by its own ontology,
+the physical object ontologies will be designed by ontology merging. The shape ontologies in this
+project will be designed by ontology transfer using the wide range of mathematical theories that
+axiomatize generalizations of topological manifolds and which already exist in COLORE.
+Open Research Questions for Physical Object Ontologies
+• Do there exist physical objects (e.g. in PartNet and ShapeNet) whose shapes are not deﬁnable
+by shape ontologies that are synonymous with theories of topological manifolds? MASc5
+• Does the axiomatization of objects that are rigid (e.g. ceramic cup), nonrigid (e.g. pillow),
+and articulated (e.g. hinge) require an ontology of processes and a↵ordances? PhD4
+• Do unity and identity criteria for material objects vary across classes of objects? PhD3
+
+
+=== PAGE 5 ===
+Michael Gruninger NSERC Pin: 103297
+5
+Project 2.2: Ontologies for Perception
+There are two fundamental classes of objects in the ontology of any vision problem – image
+and scene – together with a depiction relation between objects in these two classes. This project
+will design ontologies for the depiction of physical objects in images and the spatial relations
+among objects in the scene that lead to occlusion. The ontologies for perception will be designed
+by reuse.
+Open Research Questions for Ontologies of Perception
+• What spatial relations are needed for axiomatizing scenes containing physical objects? PhD2
+• Can objects be recognized by recognition of their possible behaviours? PhD1
+• Are the perception and shape ontologies expressive enough to represent the reconstruction of
+3D objects from a sequence of images that arise from manipulating an object? PhD5
+Project 2.3: Reasoning in Perception and Action
+To support the question-answering from scene descriptions, this project will investigate rea-
+soning (theorem proving and model construction through constraint satisfaction) with ﬁrst-order
+ontologies. For the shape and vision ontologies, the focus will be on model construction. Images,
+scenes, and depiction constraints are speciﬁed as modules in the ontology; a scene description
+is equivalent to ﬁnding models of the ontology which also satisfy the sentences representing the
+image. Since the vision ontologies are reducible, students will explore new techniques for model
+construction via amalgamation of the models of each module of the ontology that they desgin.
+In the case of the physical object ontologies, students will propose new theorem proving
+heuristics that exploit the modularity of the ontologies that they design. In particular, students
+will propose techniques that utilize logical properties (consistency, extensions) as well as linguistic
+cues and answer hints to identify the speciﬁc ontologies that adequately describe the implied
+background knowledge needed to solve a speciﬁc reasoning task.
+5. Impact
+We expect this research to lead to technologies that address needs in manufacturing. The entire
+product lifecycle (conceptual design, detailed design, manufacture, maintenance) involves a wide
+range of integrated tasks that focus on the properties of physical objects. PRAxIS Ontologies
+and automated reasoning techniques can be applied to problems in intelligent manufacturing,
+which can be implemented by software developers into products for automated generative design
+of products and process planning. Through the skills acquired in this program, HQP will also be
+ideally positioned to solve such real-world industrial problems through the application of formal
+techniques.
+There is a critical need to support an open knowledge network with “large amounts of knowl-
+edge about entities, concepts, and relationships in the world” [10]. The ontologies designed and
+evaluated in this program will reside in COLORE, which will enable groundbreaking advances in
+the development of AI technology that can leverage commonsense knowledge about the physical
+world, and support novel testbeds for testing how intelligent systems (including robotics and
+autonomous vehicles) encounter the physical world.

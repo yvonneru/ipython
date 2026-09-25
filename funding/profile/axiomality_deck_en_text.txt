@@ -1,0 +1,1111 @@
+=== SLIDE 1 ===
+AXIOMALITY
+Engineering the evidence layer
+Robotics data verification • Technical and business deep dive
+100,000
+disclosed 3D asset packages
+A reusable evidence layer
+Connect geometry, robot episodes, explicit checks, and release decisions.
+U.S. and Canadian commercialization plan • September 2026
+The starting point
+100,000 measured 3D asset packages; spatial capture and formal-ontology experience.
+Offline Engine under development; independent customer validation is the next milestone.
+Sources and technical notes: p.46.
+U.S. & CANADA · SEPTEMBER 2026 · CONFIDENTIAL
+=== SLIDE 2 ===
+AXIOMALITY
+U.S. & CANADA · SEPTEMBER 2026
+How this deck is organized
+Nine sections, from the data problem to the operating plan.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+02
+ | Section | What it covers | Pages
+01 | Problem | Scarce real-robot data; linear collection cost; coverage over repetition; data bound to the embodiment; value moving from hours to evidence | 3–8
+02 | Why now | The compliance clock; committed data budgets, world models as data engines, recurring field deployments | 9–10
+03 | Solution | Why current structures fail and the three loop criteria; the six-stage evidence loop from original data to feedback | 11–27
+04 | Product | Runtime guardrails as a separately gated product; experiments and falsifiers; deployment, rights and evidence interfaces | 28–32
+05 | Business model | Bottom-up market, pricing and cohort economics, customer ROI | 33–35
+06 | Go-to-market | First buyers, competitive map, the wedge against the existing stack, from pilot to recurring deployment | 36–39
+07 | Traction | Achieved, in progress and dated targets; assets and IP | 40–41
+08 | Team | Ontology, robotics and execution | 42
+09 | Roadmap | 18-month operating gates, capital plan, path from a tool to an evidence platform | 43–45
+Sources and notes: p.46. Original sample images and the exact JSON record appear on pp.14–15; the Passport example on pp.25–26.
+=== SLIDE 3 ===
+AXIOMALITY
+01 · PROBLEM
+Why robotics needs a verification layer
+More data creates more decisions about what to trust.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+03
+Decision
+quality
+Before training
+01
+Demonstrations, field logs, spatial scans, and generated data arrive with different assumptions.
+Coordinate errors, duplicates, missing metadata, and inconsistent task labels consume review time.
+After failure
+02
+Perception, coverage, task sequencing, and physical interaction can produce the same failed outcome.
+Engineers need the source record, a localized cause, and a reproducible regression test.
+Before release
+03
+New datasets, models, sensors, and operating sites can invalidate previous conclusions.
+Versioned checks connect each release to its evidence and unresolved exceptions.
+Why now
+04
+π0.5 illustrates heterogeneous training mixtures; NVIDIA is industrializing data production and evaluation.
+Agility/GXO deployment brings recurring field evidence into real operating workflows.
+=== SLIDE 4 ===
+AXIOMALITY
+01 · PROBLEM
+Real-robot data is scarce; video does not substitute
+About 500,000 hours exist worldwide, against an industry estimate of ~10 million hours needed.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+04
+Sources: The Paper (澎湃新闻), 2026; DreamVu, Robot Training Data Companies: The 2026 Landscape (Aug 2026); SCSP / ISF Voices 2026; dataset papers; Meta. The requirement is an industry estimate; gap spend is a linear extrapolation from public price quotes.
+Stock versus requirement (thousand hours)
+20× gap
+1 : 20,000
+Embodied data versus LLM text corpora (~15 trillion tokens): text is downloaded, motion data is collected in the physical world.
+$1.3B
+Cost of closing the 9.5-million-hour gap at 2025 data-factory pricing (≈$140/hour): about 4,750 teleoperation rigs at full utilization for a year.
+0 actions
+V-JEPA learns physics from 1M+ hours of video, but video carries no actions, forces or success criteria; Build AI’s free ~1M hours of factory video (Apr 2026) took raw video to zero.
+Public embodied datasets
+Dataset | Scale | Limitation
+Open X-Embodiment | 1M+ trajectories | 22 embodiments; formats differ
+DROID | ≈350 h; 564 scenes, 86 tasks | one arm family
+AgiBot World | 1M+ trajectories | 100 robots, 5 domains; one embodiment
+Ego4D | 3,670 h | human video, no action labels
+Build AI (Apr 2026) | ≈1M h | factory video, free; no actions
+Shanghai training ground | 1M+ episodes; 2.5 PB | not unified across embodiments
+Common limitations
+Scale is counted in episodes rather than hours; embodiments and formats are mutually incompatible; video lacks action labels. The combined stock stays within the ~500,000-hour order of magnitude.
+Why the gap does not close on its own
+Collection cost is linear  p.5
+Repetition does not generalize  p.6
+Data is bound to the embodiment  p.7
+=== SLIDE 5 ===
+AXIOMALITY
+01 · PROBLEM
+Collection cost is linear, with no learning curve
+Effective real-robot data costs $50–200 per hour; 200,000 hours means $10–40 million.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+05
+Sources: DreamVu (Aug 2026); SCSP / ISF Voices 2026, The Robotics Data Gap; Touzijie / TMTPost (Jul 2026). Spend is a linear extrapolation from public unit prices.
+Spend rises linearly with hours (USD millions)
+$28M buys 200,000 hours — under 2% of the estimated requirement
+Doubling spend doubles output and nothing more. Reaching the estimated 10 million hours costs $0.5–1.4 billion, and every hour is paid for again: there is no economy of scale in collection.
+Physical inputs behind each hour (public figures)
+Input | Figure
+Data-factory quote | ≈$140 per hour (2025)
+Teleoperation, effective cost | $50–200 per hour (2024)
+Teleoperation rig | $50k–150k per rig
+Single-operator output | <200 demonstrations per day
+Labour | one operator per rig
+Why cost does not fall with scale
+Capacity is added by adding rigs and operators. Every increment of capacity is new equipment and new labour.
+Single-operator output is capped. <200 demonstrations a day: 1,000 rigs at full utilization yield about 2 million hours a year, a fifth of the requirement.
+No learning curve. Collection is capital-intensive operations, not software; the ten-millionth hour costs what the first did.
+Collection must be targeted: the algorithm decides what to collect, and every hour must become a reusable, provable asset.
+=== SLIDE 6 ===
+AXIOMALITY
+01 · PROBLEM
+Repetition does not generalize; coverage does
+Generalization is set by the diversity of environments and objects, not by hours at one site.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+06
+Sources: Lin et al., Data Scaling Laws in Imitation Learning for Robotic Manipulation (2024) — the 32-pair setting is the reported configuration, not a 32 × 32 grid; Robotics Center of Silicon Valley, State of Robotics 2026; AXIOMALITY field interviews.
+Same budget, two allocations (schematic)
+Option A
+1 environment × 1 object × 1,000 repetitions
+A thousand hours at one site: success in a new environment does not rise with hours.
+Fails in the first new environment
+Option B
+32 environment–object pairs × 50 demonstrations
+The same budget spread over 32 pairs (1,600 demonstrations).
+≈90% success in a new environment
+Performance in a new environment is set by the number of environment–object pairs covered, not by hours at one site. Collection budget therefore goes to new pairs, and the model’s failures decide which pairs come next.
+Scarce environments are amplified rather than re-collected: one real trajectory generates several physically consistent variants that cover failure modes (p.23).
+32 × 50
+1,600 demonstrations across 32 environment–object pairs reach ≈90% success in unseen environments (Lin et al., 2024).
+<100 hours
+Usable demonstrations typically available from one factory line; local repetition cannot supply the diversity generalization requires.
+500 > 70B
+500 curated demonstrations fine-tuning a 7B model beat a 70B model trained on rough data (State of Robotics 2026): quality and coverage dominate scale.
+Diversity dimensions and their coverage source
+Dimension | What it governs | Coverage source
+Environment | Scene layout and background variation | Real home scans; target 500 homes by Q1 2027
+Objects | Affordances and contact modes | Object-level 3D annotation, several instances per class
+Lighting, pose, material | Visual and contact robustness | Simulated variants in the digital twin
+Task order and failure modes | Compositional generalization and safety margins | Kernel-constrained simulation; deployment failures fed back
+=== SLIDE 7 ===
+AXIOMALITY
+01 · PROBLEM
+Data is bound to the robot that collected it
+The action layer belongs to one embodiment and does not transfer; semantics and scenes can.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+07
+Sources: Open X-Embodiment (2023); DROID (2024); AgiBot World (2025); Ego4D (2022); DreamVu (Aug 2026). The matrix is compiled by AXIOMALITY from each dataset’s public documentation.
+Why a new robot means new action data
+ | Collaborative arm | Humanoid | Data effect
+Degrees of freedom | 6–7 axes | 14+ axes (two arms), plus legs | Joint sequences differ
+Action space | End-effector or joint space | Whole-body joint angles | Labels do not transfer
+Camera pose | Fixed or wrist-mounted | Head-mounted, moves with body | Viewpoint, occlusion differ
+Contact | Two-finger gripper | Five-finger hand | Contact events differ
+The cost chain of switching embodiment
+Switch robot
+Re-collect
+Re-label
+Re-verify
+100%: old action sequences are unusable — action space, camera pose and contact mode all change.
+100%: formats and semantics are not unified — without a shared schema the semantic layer also restarts.
+100%: no shared evidence format — exchanges cannot price the data, regulators can only spot-check.
+Dataset × embodiment usability
+Dataset | Arm | Humanoid | Custom
+DROID | ● | ○ | ○
+AgiBot World | ○ | ● | ○
+Open X-Embodiment | ◐ | ○ | ○
+Data-factory deliveries | ○ | ◐ | ○
+Human video (Ego4D etc.) | ◐ | ◐ | ◐
+Customer deployment logs | ○ | ○ | ●
+● trains directly   ◐ needs retargeting; loses force and contact information   ○ unusable   Custom: the buyer’s own embodiment
+22
+embodiments in Open X-Embodiment: joint training shows positive transfer after format unification, but action spaces remain non-interchangeable.
+≈0
+direct reuse of the action layer across embodiments; what transfers is semantics and scenes, not actions.
+×3
+the cost of switching: re-collect, re-label, re-verify. A data standard therefore has to rest on a shared world representation — the knowledge kernel (p.18).
+=== SLIDE 8 ===
+AXIOMALITY
+01 · PROBLEM
+Value is moving from hours to evidence
+Raw data prices are approaching zero; verified, certifiable data carries a 2–3× premium.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+08
+Sources: State of Robotics 2026; DreamVu (Aug 2026); Touzijie / TMTPost (Jul 2026); European Commission; Physical Intelligence; NVIDIA.
+Value tiers (scarcer towards the top)
+Certification
+Audit packs and listing evidence, paid per release; what regulators accept
+Verification
+Is it consistent: physics, logic, uncertainty; what exchanges and regulators rely on
+Semantics
+What happened: objects, affordances, contacts, task phases
+Raw hours
+Ungrounded trajectories and video: $50–200/hour (2024) → near zero (2026)
+value migrates upward
+Vendors price passported data at 2–3× raw hours; labs pay for semantics and coverage; exchanges and regulators pay for verification and certification.
+Four observations
+Observation | Data | Source
+Raw price falls | Teleoperation $50–200/h (2024) → ≈$140 data-factory quote (2025) → raw video free (2026) | DreamVu; Touzijie
+Quality beats scale | 500 curated demonstrations on a 7B model beat a 70B model trained on rough data | State of Robotics 2026
+Compliance as entry condition | EU Annex I applies to robots from 2028-08-02: traceable, auditable training data | European Commission
+Buyers gate their own data | Model developers and OEMs run acceptance and regression workflows (π0.5; NVIDIA data factory) | Physical Intelligence; NVIDIA
+When raw hours are supplied free, margin survives in three layers only: labs pay for semantics and coverage; exchanges and regulators pay for verification and certification. Pricing moves to the evidence layer, and the evidence format becomes the unit of trade.
+For standards work: the evidence format is the unit of measurement and of trade.
+=== SLIDE 9 ===
+AXIOMALITY
+02 · WHY NOW
+The compliance clock for training data is set
+EU Annex I obligations apply to robots from 2 August 2028; buyers already keep release records.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+09
+Sources: European Commission; Gibson Dunn (Regulation (EU) 2026/1744); NIST; ANSI/A3 R15.06 and R15.08; OSHA. North American references are voluntary or application-specific (p.32).
+Regulatory timeline
+2023-01
+NIST AI RMF 1.0 published (voluntary reference for U.S. buyers)
+2024-08-01
+EU AI Act, Regulation (EU) 2024/1689, enters into force
+2025-09-12
+EU Data Act applies
+2026-07-27
+Regulation (EU) 2026/1744 (amendments) enters into force
+Today, Sep 2026 · under 23 months to Annex I
+2027-12-02
+Annex III: stand-alone high-risk systems
+2028-08-02
+Annex I: AI embedded in machinery and other regulated products (robots)
+Requirement → evidence → deliverable
+Requirement (basis) | Evidence needed | AXIOMALITY deliverable
+Governance (Art. 10) | Provenance, coverage, bias checks | Passport: coverage, consistency, uncertainty
+Traceability (Art. 12) | Per-record provenance chain | Per-episode hash lineage; consent records
+Conformity (Annex I; ISO 10218 / 13482) | Evidence pack for notified bodies | Audit pack, accountant-reviewed, per release
+Benchmark testing (buyer / assessor protocols) | Held-out evaluation set | Held-out suite from the same kernel
+Existing evidence forms and the gap
+Requirement | Current form | Gap
+Governance, quality | Documents, self-declaration | Not machine-checkable
+Traceability | Log sampling | No per-record lineage
+Conformity assessment | Third-party audit report | One-off; not repeatable
+Benchmark testing | Self-reported results | Isolation self-attested
+None of the current forms can be checked record by record by a machine.
+=== SLIDE 10 ===
+AXIOMALITY
+02 · WHY NOW
+Data budgets, world models and deployments converge
+More generators and deployments make verification and independent evaluation the shared need.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+10
+Sources: 36Kr (Sep 2026); Huxiu (Jul–Aug 2026); ChinaVenture (14 Sep 2026); Robotics Frontier (7 Sep 2026); NVIDIA (Jun 2026); Physical Intelligence; Agility Robotics; SCSP / ISF Voices 2026; PwC Strategy&; MarketsandMarkets; Goldman Sachs.
+Budgets are committed
+$1B → $8B
+OpenAI data spend, 2025 → 2030 forecast
+$1B
+Anthropic’s planned spend on reinforcement-learning environments
+$3.2B
+AfterQuery valuation (Sep 2026)
+$4.9B → $17.1B
+Data annotation and training-data market, 2025 → 2030 (SCSP)
+≈€430B
+Physical AI market by 2030 (PwC Strategy&)
+$4.4B → $23.1B
+Embodied AI, 2025 → 2030, 39% CAGR (MarketsandMarkets); humanoids $38B by 2035 (Goldman Sachs)
+World models as data engines
+World Labs’ Atlas (1 September 2026) reconstructs environments from phone video and generates the RGB and depth a robot camera would see, with batch variants by object, position, lighting and background.
+World Arena 2.0 (IROS 2026) opened a “world model as data engine” track.
+In China, world-model start-ups raised over ¥10 billion in the first half of 2026; about a hundred companies claim the space and three to five pre-train. Deployment stalls at three points: the failure-data gap, missing standard evaluation, and real-robot calibration.
+More generators mean more data entering training that nobody has verified for physical and logical consistency, with no record of real-to-synthetic ratios.
+Deployments generate evidence
+π0.5 trains on heterogeneous data mixtures with internal quality workflows.
+NVIDIA’s data-factory blueprint industrializes data production and evaluation; Halos for Robotics (June 2026) unifies AI compute and functional safety, with an ANAB-accredited lab feeding TÜV, UL and SGS.
+Agility/GXO’s multi-year logistics deployment brings field logs into operating workflows; Figure, Sanctuary/Magna and Vention illustrate OEM and integrator workflows.
+Each deployment adds a stream of failures, interventions and release decisions that need a versioned, checkable record.
+AXIOMALITY does not build a generator. It builds the verification and evaluation layer that every generation route and every deployment uses.
+=== SLIDE 11 ===
+AXIOMALITY
+03 · SOLUTION
+No feedback loop connects the four functions
+Collection, training, compliance and assets run as separate businesses; value leaks at every break.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+11
+The three criteria for a closed loop follow on the next page.
+Four functions, four breaks
+Collect
+Train
+Comply
+Assets
+✕
+Collected ≠ needed: blind collection, no grounding
+✕
+Training cannot be proven: no per-record evidence
+✕
+Compliance files cannot be priced: no shared format
+✕
+No feedback: every order starts from zero
+Structural gaps of the three participant types
+Participant | Product | Break
+Collection and teleoperation vendors | Hours | Price → 0; no grounding, no feedback; every order starts from zero
+Simulation and world-model vendors | Synthetic data and engines | No real-robot calibration; output cannot be certified
+Data platforms and marketplaces | Listing and matching | No verifiable quality evidence; nothing to price on
+Our view
+Embodied data must be amplified and refined by algorithms. Ground first (map trajectories to structures that support reasoning), then verify (per-record consistency), then augment (physically consistent simulation for scarce cases).
+Amplifiers and refiners create value only inside a loop. Each stage’s output must feed the next and pay back the previous; otherwise the algorithm is one more middleware layer.
+This requires a party with prior accumulation. The kernel, the verification methods and a measured-data foundation take years to build (pp.14–19, p.40).
+=== SLIDE 12 ===
+AXIOMALITY
+03 · SOLUTION
+What counts as a closed loop: three criteria
+Independent output, connected stages, positive feedback.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+12
+The loop compounds: data assets appreciate with every cycle while raw hours depreciate. The six stages on p.13 are built to these criteria.
+1
+Every stage has an independently saleable output
+The stage closes a sale without the downstream stages.
+Does a customer pay for this stage alone?
+Labelling middleware that serves only an in-house model
+2
+The previous output is the next input
+No manual conversion, re-formatting or re-labelling between stages.
+Are the interfaces free of manual intervention?
+A pipeline stitched together by a format-conversion team
+3
+New value flows upstream and lowers its cost
+Round N+1 costs less per unit than round N, with higher coverage.
+Does unit cost fall with scale?
+Bespoke collection projects that start from zero each time
+Four structures compared
+Structure | Unit cost with scale | Data becomes an asset? | Regulator can verify? | Typical form
+Collection pipeline | Flat: labour grows linearly | No: hours depreciate | Spot checks | Data factories, teleop vendors
+Marketplace | Slightly lower: matching | Weak: quality unverifiable | Seller self-attestation | Data exchanges, marketplaces
+In-house lab data team | Falls, on own data only | No: not provable externally | No: self-attestation | Foundation-model labs
+Closed loop | Falls markedly: axioms accumulate | Yes: Passport appreciates data | Per-record checkable | AXIOMALITY (pp.13–27)
+Value flow in two structures (schematic)
+Pipeline
+Collect
+Label
+Deliver
+Depreciation: obsolete on embodiment change
+Loop
+Collect
+Ground
+Verify
+Deliver
+Feedback: new axioms → lower verification cost, targeted collection → asset appreciation
+=== SLIDE 13 ===
+AXIOMALITY
+03 · SOLUTION
+Six stages, one versioned evidence loop
+The offline Engine and Passport are the first commercial unit.
+Shared interfaces make the loop connected; each stage need not be a separate product or revenue stream.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+13
+1
+Collect
+Ingest measured geometry, episodes and logs under a declared input contract.
+Bind timestamps, calibration, configuration and source rights.
+2
+Ground
+Create typed objects, relations, contacts and task phases.
+Link every assertion to original observations and flag missing evidence.
+3
+Verify
+Run supported structural, geometric, temporal, semantic and physical checks.
+Return localized findings, unknowns and review decisions; preserve valid failures.
+4
+Augment
+Generate controlled variants around coverage gaps.
+Record source, parameters and lineage; test utility on independent real-world evidence.
+5
+Deliver
+Export accepted data, retained exceptions, diagnostics and an evaluation manifest.
+Attach a reproducible evidence Passport to the training workflow.
+6
+Learn
+Convert confirmed failures into adapter fixes, rules, calibration updates and targeted collection.
+Recheck affected records; measure later-batch improvement at a fixed error tolerance.
+=== SLIDE 14 ===
+AXIOMALITY
+03 · SOLUTION
+Original data: two scenes, four source views
+Samples 109 and 429 retain the company’s actual images and point clouds.
+100,000 3D packages; packages, objects, scenes and robot episodes are counted separately.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+14
+109 · 3D model
+109 · Point cloud + boxes
+429 · 3D model
+429 · Point cloud + boxes
+JPG
+Human-inspectable appearance and source context; check identity, image quality, and capture rights.
+USDZ
+Scene geometry and asset hierarchy; validate units, topology, parts, and simulation readiness.
+PLY
+Measured point representation; inspect scale, completeness, calibration, and reconstruction error.
+JSON
+Object class, centroid, dimensions, and rotation; make axes, units, and annotation conventions explicit.
+=== SLIDE 15 ===
+AXIOMALITY
+03 · SOLUTION
+Sample 109: exact geometric record
+A concrete schema anchors the technical discussion.
+Exact values for the two displayed objects; the excerpt does not list every object in the sample.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+15
+Original JSON excerpt
+{"folder":"pointclouds","filename":"109.ply","objects":[
+{"name":"mug","centroid":{"x":-0.2506,"y":0.1938,"z":0.0584},
+"dimensions":{"length":0.144,"width":0.1234,"height":0.1234},
+"rotations":{"x":0.0,"y":0.0,"z":-1.5708}},
+{"name":"laptop","centroid":{"x":0.2319,"y":-0.1292,"z":0.1483},
+"dimensions":{"length":0.35,"width":0.4148,"height":0.27},
+"rotations":{"x":0.0,"y":0.0,"z":1.5359}}]}
+Extensible categories
+The original taxonomy includes mug, laptop, keyboard, earphone, cap, vase, and fruit.
+The ingestion contract adds schema version, calibration, capture metadata, rights, and validation status.
+Meaning and validation
+centroid: oriented-box center in the source scene, measured in meters.
+dimensions: length, width, height in meters; rotations: angles in radians.
+Bind coordinate frame, handedness, and rotation order before deriving spatial relationships.
+Preserve original values and record any transform; decimal precision alone does not establish measurement accuracy.
+=== SLIDE 16 ===
+AXIOMALITY
+03 · SOLUTION
+From spatial assets to robot episodes
+Adapters expose a common checking interface without erasing source semantics.
+Original recordings stay immutable; conversion and normalization remain explicit, versioned operations.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+16
+01
+Episode contract
+episode_id, asset_ids, robot configuration, sensor references, timestamps, frame tree, calibration, state/action schema.
+Task phases, contact events, outcome, interventions, rights, and real/synthetic lineage extend the geometric inventory.
+02
+Learning formats
+LeRobot: time series, video, metadata, and episode boundaries.
+RLDS: observations/actions/rewards; preserve step alignment and terminal versus truncated episodes.
+03
+Robot and scene formats
+ROS 2 / MCAP: message schemas, clocks, channel validity, and frame transforms.
+OpenUSD/USDZ, PLY, JPG, JSON: preserve scene units, asset references, original geometry, and annotations.
+04
+Measured expansion
+Add robot actions, force/contact evidence, mass/friction calibration, and task outcomes where checks need them.
+Report support by adapter version; missing fields limit the checks that can execute.
+=== SLIDE 17 ===
+AXIOMALITY
+03 · SOLUTION
+Grounding turns observations into testable task claims
+Illustrative kitchen task: place a cup into a dishwasher.
+Scenario counts are illustrative. An evidence subgraph supports review; it is not automatically a formal proof certificate.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+17
+1
+Observe
+12 m² kitchen, 37 objects; scan plus teleoperation provides scene and episode references.
+Bind each signal to a clock, coordinate frame, calibration, and source record.
+2
+Propose
+VLM and graph models suggest cup/dishwasher identities, contextual affordances, and relations.
+The example has four task phases and three contact events; confidence attaches to each candidate.
+3
+Constrain
+Apply type, timing, geometry, and task checks; a contradiction creates a localized finding.
+Missing friction or contact evidence produces an unknown instead of an invented physical fact.
+4
+Review
+A typed graph links rules to frames and reviewer decisions; GraphRAG can retrieve relevant evidence.
+Confirmed corrections become regression cases; coverage, mapping accuracy, and task utility are measured separately.
+=== SLIDE 18 ===
+AXIOMALITY
+03 · SOLUTION
+Four ontology layers, explicit module interfaces
+Reuse a semantic foundation while keeping task assumptions inspectable.
+Ontology standard alignment does not certify the reasoning engine, translator, or robot safety.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+18
+01
+Foundational
+TUpper supplies documented concepts for objects, relations, time, and processes.
+ISO/IEC 21838-4 provides the ontology basis for integrating domain modules.
+02
+Physical world
+Parts, shape, measurement, materials, change, and process structure.
+Declare units, parameter provenance, numerical conventions, and physical assumptions.
+03
+Robotics domain
+Embodiment, kinematic chains, contextual affordances, contacts, task phases, and bounded safety-related conditions.
+A graspability claim depends on the gripper, pose, load, and environment.
+04
+Dataset instances
+Episodes, frames, sensors, identities, transformations, and source observations.
+Versioned vocabularies, bridge axioms, and dependency tests connect abstract rules to the exact record being checked.
+=== SLIDE 19 ===
+AXIOMALITY
+03 · SOLUTION
+Formal checking ships with exact evidence artifacts
+Specify, compile, check, and regress the supported theory.
+General quantified first-order logic is not universally decidable; no contradiction found is not a consistency proof.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+19
+01
+Specify and establish
+Common Logic modules define assumptions, dependencies, and bridge axioms.
+Prover9 checks stated theorem obligations; Mace4 searches finite models and counterexamples.
+Save exact inputs, outputs, tool versions, and resource limits.
+02
+Compile and test
+Compile approved constraints into a supported SMT/task-checking subset.
+Validate translation and combined modules, then regression-test changed conclusions on prior datasets.
+03
+Interpret the result
+SAT: encoded assertions are compatible; UNSAT: they conflict.
+For property P, search Φ ∧ observations ∧ ¬P; interpret the result only within declared scope.
+04
+Expose unresolved states
+UNKNOWN, timeout, unsupported construct, and missing input are first-class outputs.
+Return conflicts and source pointers; do not silently convert computation limits into a pass.
+=== SLIDE 20 ===
+AXIOMALITY
+03 · SOLUTION
+Physical residuals need an observation contract
+Use the cheapest model that meets a measured task requirement.
+A low residual establishes neither task success nor system safety. Correctly recorded failures may be physically consistent.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+20
+01
+Illustrative dynamics residual
+rₜ = ‖M(q)q̈ + C(q,q̇) + g(q) − τ − J(q)ᵀf‖
+M: inertia; C: Coriolis/centrifugal vector; g: gravity; τ: joint torque; Jᵀf: mapped contact force.
+02
+Required observations
+Synchronized states and relevant torque/contact signals; robot configuration and sensor calibration.
+Declare frames, units, load range, derivative estimation, noise, and uncertain physical parameters.
+03
+Layered checks
+Geometry: scale, extent, penetration, transforms, reachability.
+Kinematics: position, velocity, acceleration, timing.
+PINN/neural-operator proxies are candidates where a calibrated surrogate reduces cost.
+04
+Independent calibration
+Set tolerances on held-out measurements; report proxy error and out-of-domain behavior.
+Missing dynamics inputs leave that check unresolved; geometry or kinematics can still run.
+=== SLIDE 21 ===
+AXIOMALITY
+03 · SOLUTION
+Calibrated uncertainty controls abstention
+Define the prediction target before attaching a coverage number.
+Conformal guarantees require stated assumptions. Population coverage is not a safety probability for an individual trajectory.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+21
+Calibrated
+uncertainty
+Target
+01
+Choose a label set, physical-residual interval, or another measurable outcome.
+Record target units, scoring rule, model version, and the associated decision.
+Calibration
+02
+Separate model training and calibration data.
+Group related frames by episode or acquisition unit; document sample size and dependence assumptions.
+Coverage and efficiency
+03
+Report held-out coverage together with interval width or prediction-set size.
+Inspect robot, task, material, and environment subgroups; count abstentions and unresolved checks.
+Shift and action
+04
+Detect new sensors, objects, policies, embodiments, and sim-to-real changes.
+Trigger recalibration, human review, or a more expensive check; combine uncertainty with explicit constraints.
+=== SLIDE 22 ===
+AXIOMALITY
+03 · SOLUTION
+Keep informative failures; correct recording defects
+Task outcome and data quality are separate dimensions.
+Projection to a feasible trajectory must never silently rewrite a real failed action as an observed success.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+22
+Record type | Example | Disposition
+Valid success | Task completed; record consistent | Eligible for agreed use
+Valid failure | Cup truly slips in a sound recording | Retain failure phase and context
+Correctable defect | Confirmed unit, timing, or label error | New derived version; original retained
+Unresolved | Occlusion, missing signal, conflict, timeout | Review with exact missing evidence
+Unsupported synthetic | Constraint violation or absent calibration | Exclude from approved split; diagnose generator
+Immutable source, explicit derivation
+A repair records method, reason, magnitude, reviewer, and effect on labels.
+Audit a sample of passed records as well as the review queue; otherwise systematic false accepts can remain invisible.
+=== SLIDE 23 ===
+AXIOMALITY
+03 · SOLUTION
+Augment coverage and test outside the generator
+Controlled variations need independent real-world evidence.
+A generator and its checker may share blind spots; internal consistency does not establish sim-to-real utility.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+23
+1
+Choose a gap
+Select a known failure or underrepresented task/scene combination.
+Track why a variant was generated and how it relates to an original asset or episode.
+2
+Generate controlled variants
+Lighting/viewpoint; object pose/layout; calibrated material/contact; task order and failures.
+The kitchen example proposes five variants: two lighting, two pose, and one slip.
+3
+Check and separate
+Use shared schemas and constraints for reproducibility.
+Preserve generator version, seed, scene parameters, real/synthetic proportions, and review results.
+4
+Validate independently
+Use held-out real views, measured contacts, unseen layouts, external failures, and real execution.
+A feasible slip is valid failure data. A variant with unsupported physics remains outside the approved training split.
+=== SLIDE 24 ===
+AXIOMALITY
+03 · SOLUTION
+Coverage and transfer drive collection decisions
+Measure the marginal value of a scene, interaction, or embodiment.
+Collection benefit and cross-robot reuse are experimental questions; the industry hour estimates on p.4 frame the market, not a per-task threshold.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+24
+Coverage ledger
+Track unique environments, objects, interactions, contacts, loads, grasps, interventions, and failure mechanisms.
+Rank acquisition by customer failures, uncertainty, and novelty; inspect surprise for noise before allocating budget.
+Research basis
+Lin’s reported setting uses 32 unique environment–object pairs, not 32 × 32 combinations.
+Open X demonstrates shared formats and positive transfer; data diversity and reuse depend on task and model.
+What transfers
+Object identity, task phases, units, frame conventions, rule manifests, and evidence workflows can be shared.
+Actions still require kinematics, control-rate, retargeting, gripper, sensing, and parameter adaptation.
+What to measure
+Hold model, compute, and data budget fixed; evaluate unseen real tasks.
+For a second robot, record total adaptation hours and retained task performance—not just schema compatibility.
+=== SLIDE 25 ===
+AXIOMALITY
+03 · SOLUTION
+Passport is a portable evidence manifest
+A conclusion travels with the data, method, version, and review history.
+Signature validity, check reproducibility, formal proof, and external assessment acceptance are distinct evidence layers.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+25
+01
+Identity and rights
+Dataset/episode IDs, source type, permitted use, content hashes, and versions.
+An authorized recipient can identify the exact covered records and their processing lineage.
+02
+Scope and method
+Robot, task, sensor/calibration context, kernel, software, thresholds, and limitations.
+Record executed checks and explicit gaps instead of a single unexplained quality badge.
+03
+Findings and reproducibility
+Per-check results, evidence pointers, repairs, reviewer decisions, and derivations.
+Attach runnable specifications or supported proof/model artifacts plus required inputs.
+04
+Issuer and integrity
+Signature, issuer identity, signing policy, and package hash establish origin and detect changes.
+Recipients rerun or inspect authorized evidence; external acceptance is determined for the specific review.
+=== SLIDE 26 ===
+AXIOMALITY
+03 · SOLUTION
+Passport example: the original numerical detail
+A detailed product mock makes the evidence interface concrete.
+Product design example; the values illustrate the evidence interface.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+26
+Field | Original mock value | Evidence attached
+Dataset | 12,480 episodes: 8,140 real / 4,340 synthetic | Manifest and generation lineage
+Kernel | axiomality-kernel v1.2; kitchen task | Version, rules, logical fragment
+Grounding | 96.4% of frames mapped | Denominator, audits, unknown types
+Physical checks | 99.1% pass / 0.7% corrected / 0.2% unresolved | Calibration, counts, repair history
+Uncertainty | 0.94 coverage; target ≥0.90 | Target, groups, sample size, set size
+Release | Hash, issuer signature, reviewer history | Reproduction artifacts and scope
+Production interpretation
+Every percentage needs a denominator, exact record counts, calibration provenance, and a versioned method.
+Coverage must be accompanied by accuracy audits; uncertainty coverage also requires target definition and prediction-set size.
+=== SLIDE 27 ===
+AXIOMALITY
+03 · SOLUTION
+Feedback and learning share a versioned rule vocabulary
+Each confirmed finding should improve a later decision.
+Rule growth does not guarantee monotonically lower cost. Soft satisfaction is not automatically hard logical satisfaction.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+27
+1
+Classify and update
+Separate observation errors, missing metadata, task-definition errors, model limits, and real robot failures.
+Choose an adapter fix, calibration, rule, concept, or measurement request; not every failure needs a new axiom.
+2
+Review and release
+LLMs may propose candidate rules; experts and automated tools check exact versions, combined consistency, and regression effects.
+Recheck affected records and retain prior conclusions with their original versions.
+3
+Explore training interfaces
+L = L_task + λL_logic provides a soft constraint interface.
+Use the same named vocabulary for explicit checks; separately validate the soft/hard semantic bridge.
+4
+Measure net benefit
+Track later-batch detection, review effort, maintenance cost, and real task outcomes.
+Energy terms for policies/world models remain research options; select modules through fixed-budget ablations.
+=== SLIDE 28 ===
+AXIOMALITY
+04 · PRODUCT
+Runtime guardrails are a separately gated product
+Reuse semantics; engineer timing, observability, and fallback.
+Runtime revenue is outside the initial cohort model.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+28
+01
+Offline preparation
+Approve a bounded task, robot family, operating domain, rule set, and monitored conditions.
+Package the versioned configuration with scenario and regression tests.
+02
+Live interpretation
+Map available observations into bounded task-state assertions.
+Monitor sensor validity, timestamp age, uncertainty, and missing-input behavior before making a decision.
+03
+Semantic monitor
+Check selected high-level task transitions or action proposals within a defined computation budget.
+Measure false blocks, missed violations, and p95/p99 end-to-end latency on the target hardware.
+04
+Fallback and partner acceptance
+Connect timeout, lost-sensor, restart, and recovery paths to the partner’s stop/replan policy.
+Retain independent low-level safety controls; qualify the intended application before expanding.
+=== SLIDE 29 ===
+AXIOMALITY
+04 · PRODUCT
+Experiments isolate customer value and module necessity
+Strong baselines, fixed budgets, and held-out real outcomes.
+Acceptance thresholds and independent test ownership are agreed before delivery.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+29
+Experiment | Comparison | Primary result
+Detection | Customer scripts; simple rules; VLM+rules; Engine | False accepts/rejects; review time
+Ablation | Remove ontology, physics, uncertainty separately | Incremental benefit at fixed risk
+Training | Raw; conventional filter; Engine; +augmentation | Real success, interventions, failures
+Second robot | Same task; all adaptation work recorded | Hours and retained performance
+Feedback cycles | Time-ordered customer batches | Net benefit including maintenance
+Robustness | Shift, missing fields, corruption, timeout | Coverage and correct abstention
+Evaluation discipline
+Hold out rooms, objects, sessions, and time before tuning; distinguish natural defects from injected errors.
+Match model, compute, and data budget; audit passed samples and report confidence intervals.
+=== SLIDE 30 ===
+AXIOMALITY
+04 · PRODUCT
+Scientific falsifiers guide product decisions
+Negative results narrow scope before additional capital is committed.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+30
+Thesis | Weakening evidence | Response
+Semantic checks matter | Simple rules match full kernel at equal cost | Focus on valuable error classes
+Grounding is reliable | Consistent graphs remain factually wrong | Improve perception and abstention
+Augmentation helps | Internal score rises; real outcomes do not | Recalibrate generator and mixture
+Knowledge transfers | Each account needs extensive redesign | Narrow and standardize task domain
+Evidence is portable | Recipient cannot reproduce stated check | Improve artifacts and authorized access
+Runtime deploys | Tail latency / false stops fail acceptance | Keep module offline
+Decision rule
+Pre-register the comparison and preserve negative results.
+A simpler method that achieves the customer outcome is preferable to complexity without measured benefit.
+=== SLIDE 31 ===
+AXIOMALITY
+04 · PRODUCT
+Customer-controlled deployment and reusable rights
+Raw data, derived artifacts, and general rules have different permissions.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+31
+01
+Data plane
+Keep captures, derived graphs, and results in the agreed customer environment.
+Use role-based, logged access; define purpose, retention, deletion, deployment location, and operating ownership.
+02
+Evidence plane
+Package versioned rules, hashes, findings, and reproducible checks with each release.
+External sharing follows authorization; record dependencies and derivation back to source captures.
+03
+Software operations
+Signed releases, dependency inventory, vulnerability response, rollback, and incident responsibilities.
+Document compute operations, key management, update approval, and data deletion.
+04
+Rights boundary
+Separate customer datasets and confidential findings from reusable adapters, task schemas, and background technology.
+=== SLIDE 32 ===
+AXIOMALITY
+04 · PRODUCT
+Evidence interfaces for U.S. and Canadian buyers
+Application, jurisdiction, and customer contracts define the required scope.
+A Passport supports a specific review, not a blanket certificate of compliance or safety.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+32
+Reference | Useful interface | Scope boundary
+OSHA | Hazard-related tests and release records | No universal robotics-specific approval
+ANSI/A3 R15.06 / R15.08 | Supported application tests | Select by robot and application
+Canadian workplace requirements | Evidence for applicable duties/standards | Jurisdiction and adopted edition vary
+NIST AI RMF / SSDF | Risk records and secure release practice | Voluntary references, not certification
+Privacy and contracts | Purpose, rights, consent where required, retention | U.S. state / Canadian federal-provincial scope
+Role of the product
+Provide traceable tests, versioned records, and requirements-to-evidence mappings.
+The customer and applicable assessment parties retain application risk assessment and physical validation responsibilities.
+=== SLIDE 33 ===
+AXIOMALITY
+05 · BUSINESS MODEL
+A bottom-up market, with explicit scale conditions
+Count eligible purchasing organizations rather than robot shipments.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+33
+Scenario | Construction | Annual value
+Focused pool | 80–200 organizations × $150k–$300k | $12m–$60m
+Platform path A | 500 customers × $200k recurring | $100m ARR
+Platform path B | 200 customers × $500k recurring | $100m ARR
+Build the account model
+Name eligible U.S./Canadian buyers with recurring data, budget ownership, integration fit, and test access.
+Deduplicate parent companies, labs, business units, and sites; validate willingness to pay through scoped pilots.
+Earn the expansion
+Task reuse must reduce second-deployment effort while preserving reliability.
+Renewals and new purchase commitments establish commercial reuse; more supported concepts alone do not establish market scale.
+=== SLIDE 34 ===
+AXIOMALITY
+05 · BUSINESS MODEL
+Pricing and cohort economics remain testable
+Separate pilot bookings, annual commitments, credits, revenue, and cash.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+34
+Midpoint cohort example | USD | Interpretation
+10 pilots × $40,000 | $400,000 | Project bookings
+4 annual × $180,000 | $720,000 | Before first-year credits
+4 credits × $20,000 | −$80,000 | Avoid double counting
+Net software commitment | $640,000 | First contracted year
+Combined bookings | $1,040,000 | Pilots + net software
+Commercial offer
+Pilot: $25k–$50k, 8–12 weeks, one task family, fixed data and acceptance.
+Annual deployment: $120k–$240k; supported integrations, recurring checks, and support; implementation separately scoped.
+Range and conversion
+A sizing cohort of 10 pilots and four annual conversions implies $250k–$500k pilot bookings.
+Four contracts imply $480k–$960k annual recurring fees before credits.
+=== SLIDE 35 ===
+AXIOMALITY
+05 · BUSINESS MODEL
+Customer ROI includes the entire operating cost
+Released review capacity is valuable, but is not automatically cash savings.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+35
+USD thousands · illustrative
+2.4×
+Before other customer costs
+Illustrative baseline
+600 review hours/month × $150/hour × 12 = $1.08m annual review capacity.
+A hypothesized 40% effort reduction releases $432k of annual capacity.
+Purchase and full cost
+$150k subscription + $30k implementation = $180k stated first-year purchase.
+Add customer integration, compute/storage, operations, and remaining review before calculating net benefit.
+Proof of value
+Compare the same data batch and error tolerance with the current workflow.
+Record useful findings, avoided rework, adoption, and real task outcomes alongside review time.
+Renewal economics
+Customer ROI supports renewal; account contribution funds delivery.
+Measure module reuse through lower repeat integration, review, update and support costs.
+=== SLIDE 36 ===
+AXIOMALITY
+06 · GO-TO-MARKET
+First buyers own a recurring data decision
+U.S. and Canadian teams with data, budget, and independent tests.
+Public workflow examples.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+36
+Buyer | Budget owner | Initial deliverable
+Model developer | Robot-learning lead | Batch acceptance and diagnostics
+Robot OEM | Autonomy / quality lead | Failure-linked regression evidence
+Data supplier | Data operations | Repeatable customer acceptance
+Industrial integrator | Engineering / quality | Application-specific test evidence
+Qualified entry
+Named task family and next training/release date; recurring batches; a measurable review bottleneck.
+Confirm the data owner and budget owner together, with permitted access and customer-held tests.
+Deployment contexts
+Physical Intelligence/Figure: heterogeneous robot-learning data and internal quality workflows.
+Agility/GXO: U.S. logistics deployment; Sanctuary/Magna: Canadian robotics and manufacturing; Vention: automation workflow.
+=== SLIDE 37 ===
+AXIOMALITY
+06 · GO-TO-MARKET
+Competitive map: raw collection to verified data
+Complementary to collection, simulation and tooling vendors; the direct alternatives are narrow.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+37
+Sources: company announcements and press (2025–26); DreamVu, Robot Training Data Companies: The 2026 Landscape. Positioning is AXIOMALITY’s assessment; capability marks come from public documentation.
+Raw collection → structured and verified
+Hand / tabletop → room / whole scene
+Collection vendors
+Simulation vendors
+Tooling / labelling
+Build AI
+Mecka
+Human Archive
+DreamVu
+Config
+Scale AI
+Encord
+Foxglove
+Rerun
+Roboto
+Isaac / Cosmos (simulation)
+Lightwheel (simulation)
+World-model companies
+3Laws
+AXIOMALITY
+structured + room-scale + certified
+Capability comparison
+Capability | Collect | Simulate | Tools | World models | AXIOMALITY
+Formal ontology (ISO lineage) | ○ | ○ | ○ | ○ | ●
+Physics + logic checks | ○ | ◐ | ○ | ◐ | ●
+Measured room geometry | ○ | ◐ | ○ | ○ | ●
+Consumer capture flywheel | ◐ | ○ | ○ | ○ | ●
+Certification / audit pack | ○ | ○ | ◐ | ○ | ●
+Cross-embodiment schema | ○ | ◐ | ◐ | ◐ | ●
+● present   ◐ partial   ○ absent
+Functional-safety layer. NVIDIA Halos for Robotics (June 2026) unifies AI compute and functional safety, with an ANAB-accredited lab feeding TÜV, UL and SGS. AXIOMALITY does not occupy this layer; semantic guardrails sit above it at the task level.
+Direct alternatives. 3Laws Supervisor (real-time safety filter), reasonX SafetyScope (safety-case evidence management), NVIDIA’s data-factory blueprint, internal pipelines and KnowRob-style ontologies. The difference: an axiom set machine-proven consistent, per-record evidence that re-verifies offline, one kernel for guardrails and evidence.
+Complementarity. Collection hours and tooling pipelines gain value when they carry the kernel and the Passport; world-model and embodied-brain companies are customers and channels whose generated data needs verification and provenance. Platform and OS companies distribute; OEMs and deployers buy.
+=== SLIDE 38 ===
+AXIOMALITY
+06 · GO-TO-MARKET
+The wedge must beat the buyer’s existing stack
+Earn defensibility through diagnostics, reuse, and repeated adoption.
+Capabilities from public documentation.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+38
+Alternative | Relevant capability | Comparison
+NVIDIA / Scale | Data production, curation, evaluation | Add verification value
+Encord / Foxglove / Roboto / Rerun | Operations, inspection, debugging | Actionable integrated checks
+3Laws / evidence tools | Runtime filters and safety-case workflow | Scoped semantic evidence
+Internal pipelines / KnowRob | Custom rules and ontology research | Reliable reuse at lower effort
+AXIOMALITY’s position
+Cross-stack task semantics, localized check results, and reproducible evidence within existing data workflows.
+Prove less adaptation effort, better diagnostics, and lower total cost than the buyer’s alternative.
+Accumulating assets
+Validated task mappings, permitted failure taxonomies, adapters, regression cases, and recurring release integration.
+Measure reuse hours, retention, and paid expansion; public standards and solvers alone are not exclusive IP.
+=== SLIDE 39 ===
+AXIOMALITY
+06 · GO-TO-MARKET
+From pilot to recurring deployment
+Founder-led U.S./Canadian sales connect a funded problem to expansion.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+39
+1
+Qualify
+Confirm recurring data, a named task, a decision owner and the next release date.
+Resolve access and independent test availability before quoting.
+2
+Scope an 8–12-week pilot
+Agree inputs and rights, adapters, rule modules and processing limits.
+Lock the customer baseline, a blinded test set and the severity taxonomy.
+3
+Deliver and accept
+Deliver versioned artifacts and measurable findings against the agreed acceptance criteria.
+Training-lift experiments are separately scoped when needed.
+4
+Convert and expand
+Annual deployment follows acceptance.
+Expand within the account to further datasets, tasks and sites as installation and support stay repeatable.
+=== SLIDE 40 ===
+AXIOMALITY
+07 · TRACTION
+Achieved, in progress and dated targets
+Every target carries a date.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+40
+At least one named co-development partner moves from “in progress” to “achieved” before the formal roadshow.
+Achieved
+100,000 measured 3D packages: object image, USDZ model, PLY point cloud, JSON annotation (pp.14–15).
+Spatial-computing stack: room-level reconstruction and object-level 3D annotation; nine invention applications; consumer spatial app live on Apple Vision Pro.
+Knowledge kernel: axioms machine-proven consistent, aligned with ISO/IEC 21838-4.
+Compliance and audit collaboration: an international law firm (clause mapping) and a Big Four accounting firm (audit-pack review).
+Relationships in regulated industries: multinational medical-device and pharmaceutical companies, national standards bodies, a large hospital network.
+In progress
+Minimum verification Engine, internal test Q4 2026: ingestion → scene graph → SMT check → Passport; physics residuals and conformal calibration follow.
+Kernel v1 for home scenes; Engine connectors for LeRobot, RLDS and OpenUSD.
+Discussions with humanoid OEMs and platform / OS companies on co-development and channels.
+Dated targets
+Q1 2027: three co-development partners signed.
+Q1 2027: 10,000 verified episodes from partner data and open datasets.
+Q2 2027: Passport v1 recognized by one assessment body or standards organization.
+Month 18: five cumulative paying customers and two renewals or expansions, per the operating gates on p.43.
+Object classes and scenes in delivered samples
+Object classes | Sample scenes | Annotation content
+laptop, keyboard, mug, earphone | Desktop scenes (samples 109, 100, 429 and others) | Oriented 3D boxes: centroid, dimensions, rotation; PLY; USDZ
+cap, vase, fruit | Countertop scenes (samples 304, 310) | As above; multi-object occlusion relations
+Single object | Single-object scan (sample 20) | Single-box annotation as a class and size reference
+=== SLIDE 41 ===
+AXIOMALITY
+07 · TRACTION
+Assets and IP
+Current foundations, development in progress and commercial proof.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+41
+Foundation
+100,000 measured 3D packages, spatial capture application, ontology research, original samples.
+Inventory documented by rights, source geography and unique count.
+Intellectual property
+13 granted patents and nine invention applications in 3D recognition, indoor modelling and automatic reconstruction.
+Kernel specification, adapters and evidence schema are company-authored background technology.
+Product maturity
+Minimum offline Engine and supported connectors are under development; internal testing planned for Q4 2026.
+Next evidence: executable customer-data run, exact versions, known limits, and repeatable output.
+Commercial and expansion proof
+First paid design partners: acceptance against independent baselines with positive delivery contribution.
+Physics, uncertainty, augmentation, and runtime modules advance through distinct validation gates.
+=== SLIDE 42 ===
+AXIOMALITY
+08 · TEAM
+A team built across ontology, robotics, and execution
+Canadian research roots connect formal knowledge to applied systems.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+42
+21
+papers disclosed
+10+ years
+3D production experience
+$5m
+prior venture funding
+Founder / CEO
+University of Toronto AI doctorate and researcher; ISO/IEC 21838-4 participation.
+Disclosed 21 papers, FOIS outstanding-paper award, invited AAAI presentation, and an English-language monograph.
+AI and robotics
+CTO: McMaster University AI doctorate and applied AI leadership.
+Robotics lead: mechanical/electronic engineering doctorate and autonomous-system perception experience.
+3D production
+Senior asset lead: more than ten years of production experience.
+Spatial-computing and startup experience support the transition from datasets to customer-deployed software.
+Prior founder execution
+Reported DTC venture: $5m funding including Accel, >$50m annual revenue within a year, >100-person team.
+Separate recommendation-system venture reported Toronto/Imperial incubation.
+=== SLIDE 43 ===
+AXIOMALITY
+09 · ROADMAP
+An 18-month plan with observable operating gates
+Release effort against accepted product, paid demand, and reuse.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+43
+1
+Months 0–3: vertical slice
+One supported task and connector; audited assets; blind baseline; reproducible evidence package.
+Target two paid validation engagements; record all implementation and review effort.
+2
+Months 4–9: repeat delivery
+Repeated customer use, stable diagnostics, operational runbook, and known performance boundaries.
+Target three cumulative paying customers and positive delivery contribution on two.
+3
+Months 10–18: reuse
+Second task or embodiment; reusable mappings; integration into recurring release decisions.
+Target five cumulative customers and two renewals or expansions.
+4
+Expansion gates
+Adopt physical checks, calibrated uncertainty and augmentation when controlled tests justify their cost.
+Runtime needs a qualified partner, target hardware, latency and fallback tests, and a separate budget.
+=== SLIDE 44 ===
+AXIOMALITY
+09 · ROADMAP
+Capital follows the remaining evidence requirements
+Fund a repeatable offline business before broad platform expansion.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+44
+Core product
+Kernel, mappings, connectors, evidence schema, customer-controlled execution, and secure operational delivery.
+Next budget gate: reproducible run and independent customer acceptance.
+Independent validation
+Customer-owned benchmarks, expert adjudication, calibrated thresholds, real-robot tests, and regression suites.
+Next gate: measured value beyond simpler baselines at a known delivery cost.
+Commercial execution
+Support a small paid-design-partner cohort, acceptance, collections, and conversion.
+Next gate: repeat deployment, renewal, or expansion with a named buyer.
+Cash discipline
+Monthly model of headcount, contractors, cloud/inference, working capital and minimum reserve.
+Financing sized to the 18-month plan, with a buffer for delayed collection.
+=== SLIDE 45 ===
+AXIOMALITY
+09 · ROADMAP
+From a valuable tool to an evidence platform
+The investment case becomes stronger with each independently accepted result.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+45
+1
+Prove the wedge
+Demonstrate useful detection or review savings in a bounded customer task.
+Compare against scripts, simple rules, and the existing stack at the same risk and cost constraints.
+2
+Prove recurrence
+Integrate checks into repeat data and release decisions; track use, collections, renewals, and expansion.
+A signed recurring commitment matters more than interest or a one-off demonstration.
+3
+Prove reusable infrastructure
+Reduce adaptation effort across independent datasets and robots while preserving reliability.
+Extend to evaluation, targeted collection, and later bounded runtime only when the shared evidence remains useful.
+4
+Keep the record auditable
+Sources and technical notes accompany each page (p.46).
+=== SLIDE 46 ===
+AXIOMALITY
+SOURCES AND NOTES
+Sources and notes
+Public sources support external facts; company records support assets, people and progress.
+AXIOMALITY · SEPTEMBER 2026 · CONFIDENTIAL
+46
+The Paper (澎湃新闻), 2026: ~500,000 hours of high-quality real-robot interaction data worldwide; effective data-factory cost; “data follows the embodiment”.
+Touzijie / TMTPost, Jul 2026: real-robot data ≈10–15 RMB per 30 s (≈$140 per hour); 200,000 hours above $28M; V-JEPA 1M+ hours of video.
+2026 China Embodied-Intelligence Data Collection and Data Industry Outlook, Jul 2026: ~10 million hours for usable general capability; rig and labour costs.
+DreamVu, Robot Training Data Companies: The 2026 Landscape, Aug 2026: teleoperation $50–200 per hour; Build AI ~1M free hours; room-understanding gap.
+SCSP / ISF Voices 2026, The Robotics Data Gap: rigs $50k–150k; <200 demonstrations per operator-day; data annotation and training-data market $4.89B (2025) → $17.1B (2030).
+Robotics Center of Silicon Valley, State of Robotics 2026: Open X 1M+ episodes, 22 embodiments; 500 curated demonstrations vs a 70B model.
+Lin et al., Data Scaling Laws in Imitation Learning for Robotic Manipulation (2024); Open X-Embodiment (2023); DROID (2024); AgiBot World (2025); Ego4D (2022); Meta Llama 3 (2024).
+World models and data markets: 36Kr, Sep 2026 (World Labs Atlas); Huxiu, 8 Jul and 3 Aug 2026; ChinaVenture, 14 Sep 2026; Robotics Frontier, 7 Sep 2026 (World Arena 2.0, IROS 2026); Rupprecht et al., arXiv 2604.16592 (Apr 2026).
+Physical Intelligence, π0.5; Figure, Introducing Index; NVIDIA, open physical-AI data-factory blueprint; NVIDIA Halos for Robotics (Jun 2026); Agility Robotics / GXO multi-year agreement; Sanctuary AI / Magna; Vention.
+Market sizing: PwC Strategy&, Physical AI: Intelligence in motion; MarketsandMarkets; Goldman Sachs; Grand View Research.
+EU: Regulation (EU) 2024/1689 (AI Act), amended by Regulation (EU) 2026/1744 — published 24 Jul 2026, in force 27 Jul 2026; Annex III obligations from 2 Dec 2027, Annex I from 2 Aug 2028 (European Commission; Gibson Dunn). EU Data Act applies from 12 Sep 2025.
+North America: OSHA robotics standards; ANSI/A3 R15.06 and R15.08 (Association for Advancing Automation); CCOHS robots and cobots guidance; NIST AI Risk Management Framework; NIST SP 800-218 (SSDF); Office of the Privacy Commissioner of Canada (PIPEDA consent); California DOJ (CCPA).
+Standards and tools: ISO/IEC 21838-4:2023 (TUpper); ISO/IEC 24707 (Common Logic); NIST IR 8530 (2024); ISO 10218 / 13482; Prover9 / Mace4; Z3 (quantifiers); W3C PROV and SHACL.
+Methods: Fourier neural operators (arXiv 2010.08895); physics-informed learning (arXiv 2109.01050); conformal prediction (arXiv 2107.07511, 2202.13415); logic tensor networks and DeepProbLog; Specula (arXiv 2607.25333, Jul 2026); LeRobot dataset v3; RLDS; MCAP; KnowRob ontologies; SayCan (arXiv 2204.01691).
+Data formats and ecosystems: Scale AI physical AI; Encord physical AI; Foxglove; Rerun; Roboto; 3Laws; reasonX SafetyScope.
+Company records: 3D packages, original sample images and JSON, technical assets, team biographies, patents and applications.

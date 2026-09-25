@@ -1,0 +1,82 @@
+=== PAGE 1 ===
+Yi Ru 
+yi.ru@alumni.utoronto.ca 
+ 
+EDUCATION BACKGROUND 
+University of Toronto    
+Ph.D. in Information Engineering                                                   Mar. 2025 
+ 
+Fast Track Ph.D. | GPA: A｜Research Interests: Artificial Intelligence, Knowledge Representation, 
+Ontology 
+BASc. | Major: Industrial Engineering | Minor: Engineering Business                  Jun. 2015 
+ 
+President Scholarship | Dean’s Honours List | 5T3 Alumni Scholarship 
+ 
+LEADERSHIP & SERVICE to U OF T ENGINEERING 
+ 
+Vice President of The Graduate Students Association of Mechanical and Industrial Engineering (AMIGAS) 
+ 
+MIE Representative in Graduate Student Union at University of Toronto 
+ 
+Steward and Representative of CUPE 3902 
+ 
+RESEARCH CONTRIBUTIONS 
+ 
+Core Contributor to International Standard – Information Technology Top Level Ontologies (ISO/IEC 21838-4) 
+ 
+First Inventor of multiple patents, Published in multiple academic journals and conferences 
+ 
+Distinguished Paper Award (FOIS 2018); Session Chair (IISE Annual Conference 2017) 
+ 
+Teaching Assistant, Faculty of Applied Science and Engineering, University of Toronto; instructed upper-year 
+undergraduate courses including Engineering Economics and Accounting, Database Systems, Knowledge Modeling and 
+Management, and Resource and Production Modeling 
+ 
+INDUSTRY & ENTREPRENEURIAL EXPERIENCE 
+Co-Founder and CEO, Uing Technologies                                             Aug. 2022-Present 
+ 
+Built structured 3D physical-world datasets and ontology-based representations of objects, indoor environments, 
+spatial relationships, and interactions for training AI models in embodied intelligence, AR, and robotics. 
+ 
+Launched one of the first AR pet-interaction applications on the Apple Vision Pro App Store, enabling embodied 
+virtual objects to perceive and interact with the physical environment; developed core technologies including 
+ReactGPT, mesh object recognition, 3D spatial mapping, and autonomous path planning. 
+ 
+Led nine invention patent applications covering 3D recognition, indoor modelling, automated 3D reconstruction, 
+emotion sensing, and adaptive feedback; drove data commercialization and multi-party data collaboration. 
+ 
+Founding Team, MICAS                                                           Jul. 2021-Aug. 2022 
+ 
+Secured over USD 5 million in angel investment from top U.S. venture capital firms, including Accel Partners; 
+established a cross-border direct-to-consumer (DTC) platform achieving annual revenues exceeding USD 50 million. 
+ 
+Led a 100+ person team across technology and operations, building internal CRM, ERP, WMS, and product-
+management systems; developed Machine Learning-driven marketing strategies, including a KOL strategy achieving 
+ROI >4 through fully automated, data-driven processes, a cost & performance-breakthrough in the industry. 
+ 
+Established organizational structure and cross-functional workflows; implemented intelligent order-risk monitoring 
+and supply chain optimization systems; deployed algorithm-based integrated marketing strategies, scaling the brand 
+to over 1 million multi-channel followers and customers across 100+ countries within one year since launch. 
+ 
+
+
+=== PAGE 2 ===
+Venture Capital Intern, IDG Capital                                             Mar. 2018 – Jun. 2021 
+ 
+Conducted on-site commercial due diligence and executive interviews for portfolio companies, including operating-
+process reviews, financial analysis, field investigations, and risk assessment. 
+ 
+Produced cross-border market and industry analyses and authored investment research reports supporting 
+investment decisions. 
+ 
+Co-Founder, YourTable Inc.                                                      Mar. 2018 – Jun. 2021 
+ 
+Founded and led development of a personalized recommendation system; built and managed an internationally 
+diverse team overseeing the full product lifecycle from design to deployment. 
+ 
+Incubated by the University of Toronto, Schulich Business School, and Imperial College London. 
+ 
+Initiated an exclusive co-branded philanthropic collaboration with Tim Hortons Canada during the pandemic. 
+ 
+Recipient of the Lo Family Social Venture Fund; selected to represent Canadian Startup at Collision 2019. 
+ 
