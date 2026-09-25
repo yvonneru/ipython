@@ -65,19 +65,20 @@ In addition to the NSERC award I mentioned, I am applying to the University of T
 Thank you,
 Yi
 
-## 5. To the Data Sciences Institute — send after the information session, or by early December 2026
+## 5. To the Data Sciences Institute (awards.dsi@utoronto.ca [verify address]) — send by 10 October 2026; do not wait for the information session
 
-Subject: Postdoctoral Fellowship 2027 call — three questions before applying
+Subject: Postdoctoral Fellowship — next call: deadline and four questions before applying
 
 Dear DSI Postdoctoral Fellowship team,
 
-I am preparing an application for the 2027 call, with Prof. Michael Grüninger (MIE) and Prof. [name] ([unit]) as co-supervisors. Three questions I could not resolve from the website:
+I am preparing an application for the next Postdoctoral Fellowship call (applying in January 2027, to start 1 May 2027 or later), with Prof. Michael Grüninger (MIE) and Prof. [name] ([unit]) as co-supervisors. Questions I could not resolve from the website:
 
-1. Concurrency: the guidelines state that the fellowship may not be held with another major fellowship. If an applicant is also under consideration for the NSERC Canada Postdoctoral Research Award (results 31 March 2027), may they apply to both and choose at offer stage, and would DSI permit a deferral or a reduced arrangement if both are awarded?
-2. Format: for the research proposal, is there a page limit, font and margin requirement, and prescribed headings, and does the reference list count toward the limit? Is a cover letter or statement of interest required?
-3. References: how many reference letters are required, are they separate from the two co-supervisor letters, and how are they submitted (applicant upload, referee email, or DSI link)?
+1. Timing: when will the call open, what is the applicant deadline, and how is the call labelled (the page currently refers to the "2027" call as closed)?
+2. Concurrency: the guidelines state that the fellowship may not be held with another major fellowship. If an applicant is also under consideration for the NSERC Canada Postdoctoral Research Award (results 31 March 2027), may they apply to both and choose at offer stage, and would DSI permit a deferral or a reduced arrangement if both are awarded?
+3. Format: for the research proposal, is there a page limit, font and margin requirement, and prescribed headings, and does the reference list count toward the limit? Is a cover letter or statement of interest required?
+4. References: are the two co-supervisors' structured forms the only references, or are additional referees required, and how are they submitted (applicant upload, referee email, or DSI link)?
 
-I also wanted to confirm the permitted start-date window; my earliest start in Toronto would be April 2027.
+I also wanted to confirm that the 1 May – 1 December start window applies to the coming call, and that two co-supervisors from the same department but different disciplines are acceptable.
 
 Thank you very much.
 

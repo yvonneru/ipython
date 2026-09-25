@@ -49,7 +49,7 @@ Found by web search on 2026-09-25 (three searches; WebFetch blocked, so figures 
 - **Timeline and process:** re-opened 2 Sept 2026; competitive process with three deadlines per year; 2026 deadline 25 Nov 2026, 8 pm ET. Sources: https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international ; https://www.lakeheadu.ca/research-and-innovation/research-services/funding-prizes/funding-db/node/351436 ; pause notice https://www.uoguelph.ca/research/alerts/content/nserc-alliance-international-catalyst-and-collaboration-grants-program-paused
 - **Not found by search (verify):** whether the reference list counts toward the three pages; font and margin rules (assume NSERC's standard on-line presentation standards: 12 pt, 0.75 in margins); whether a public summary field exists; whether the collaborator letter is uploaded separately; expected decision date.
 
-proposal.md is written to the five funder headings, at about 1,650 words of body text, which fits three pages at 12 pt only if the reference list is excluded or kept to a single column of short entries — trim the Relevance section first if the rendered PDF overflows.
+proposal.md is written to the five funder headings at about 1,600 words of body text, which fits three pages at 12 pt only if the reference list is outside the count or kept to a compact single paragraph — render to PDF and trim the Relevance section first if it overflows.
 
 ## Who does what, by when
 
