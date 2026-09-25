@@ -5851,7 +5851,7 @@
    ],
    "cycle_note": "Annual; opens Aug, closes mid-Sept",
    "category": "us_top_university_postdocs",
-   "tier": "C",
+   "tier": "B",
    "verdict": "unverifiable",
    "id": "05e0b74e5858",
    "slug": "stanford-science-fellows-postdoctoral-fellowship-across-the-natural-sc",
@@ -5889,7 +5889,7 @@
    "estimated_prep_days": 10,
    "internal_or_referee_deadlines": "3 letters of recommendation due by the 16 Oct 2026 deadline (confirm whether referees get a short grace period); mentor statement requires prior contact with Stanford faculty by ~5 Oct.",
    "corrections": "Fit lowered 62 -> 55: scope is fundamental natural science and the prior-postdoc cap is probably exceeded by the start date; deadline and stipend retained from scout but unconfirmed.",
-   "tier_rationale": "Eligibility doubtful on two independent grounds (2-year prior-postdoc cap likely exceeded by a 2027 start; scope) plus unknown visa status, and fit is moderate -> C. Not worth drafting unless the FAQ check clears all three points within a week.",
+   "tier_rationale": "Eligibility doubtful on two independent grounds (2-year prior-postdoc cap likely exceeded by a 2027 start; scope) plus unknown visa status, and fit is moderate -> C. Not worth drafting unless the FAQ check clears all three points within a week. | Reconciled 2026-09-25: 16 Oct 2026 deadline confirmed; proceed only with a committed Stanford host by 2 Oct (STRATEGY.md).",
    "last_checked": "2026-09-25"
   },
   "ccdc7213dd27": {
@@ -6507,7 +6507,7 @@
    ],
    "cycle_note": "Annual; Sept deadline",
    "category": "us_top_university_postdocs",
-   "tier": "C",
+   "tier": "B",
    "verdict": "unverifiable",
    "id": "eada2f9555ee",
    "slug": "princeton-presidential-postdoctoral-research-fellows-program",
@@ -6550,7 +6550,7 @@
    "estimated_prep_days": 10,
    "internal_or_referee_deadlines": "Nominator must commit and submit the nomination; reference letters typically due with the nomination. Set an internal target of nominator commitment by 20 Oct 2026 and letters by 6 Nov 2026 if the 13 Nov date is confirmed.",
    "corrections": "deadline_confidence lowered from medium to low because a second local record gives an early/mid-September deadline and a different DOF URL (https://dof.princeton.edu/presidential-postdoctoral-research-fellows-program); duration recorded as 2 years vs 'up to 3 years' in the other record. fit_score lowered 58 -> 55 for the nominator gap and start-date conflict. All fields unverified this session.",
-   "tier_rationale": "C: fit is moderate (55) and eligibility is doubtful on two counts - no Princeton nominator exists and the two local records disagree on whether the 2027-cohort deadline is 13 Nov 2026 or already passed. Even if open, the nominator gap makes this a monitor-and-network item rather than a prepare-now item.",
+   "tier_rationale": "C: fit is moderate (55) and eligibility is doubtful on two counts - no Princeton nominator exists and the two local records disagree on whether the 2027-cohort deadline is 13 Nov 2026 or already passed. Even if open, the nominator gap makes this a monitor-and-network item rather than a prepare-now item. | Reconciled 2026-09-25: 13 Nov 2026 deadline confirmed; needs a Princeton faculty nominator by 16 Oct (STRATEGY.md).",
    "last_checked": "2026-09-25"
   },
   "79c07cb9f901": {
@@ -11727,7 +11727,7 @@
    ],
    "cycle_note": "Annual; opens ~August, closes Oct 1; presentations mid-November; offers by ~January. | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low) | alternative deadline seen: expected 2026-10 (unconfirmed) (low)",
    "category": "us_top_university_postdocs",
-   "tier": "C",
+   "tier": "B",
    "verdict": "unverifiable",
    "id": "d9c75d3acf90",
    "slug": "kempner-institute-research-fellowship-2027-cohort",
@@ -11767,7 +11767,7 @@
     }
    ],
    "corrections": "Fit score lowered from 78 to 66: Kempner's remit (foundations of intelligence, ML theory, neuroscience) makes a formal-ontology / robot-data programme a marginal fit unless heavily reframed; scout's ~USD 100k salary is unconfirmed third-party reporting. Verdict is 'unverifiable' only because no search/fetch capacity remained in this session; all scout facts are consistent with prior cycles.",
-   "tier_rationale": "Deadline is within 6 months and Ru appears eligible, but fit is moderate (66) and the 6-day runway collides with the higher-priority CPRA internal deadline (2 Oct) and the same referees. Rule: fit 50-69 -> C. Upgrade to A immediately if the official page confirms eligibility AND two Kempner mentors and the HMS supervisor commit by 26 Sept.",
+   "tier_rationale": "Deadline is within 6 months and Ru appears eligible, but fit is moderate (66) and the 6-day runway collides with the higher-priority CPRA internal deadline (2 Oct) and the same referees. Rule: fit 50-69 -> C. Upgrade to A immediately if the official page confirms eligibility AND two Kempner mentors and the HMS supervisor commit by 26 Sept. | Reconciled 2026-09-25: deadline 1 Oct 2026 confirmed by live search and applicant is inside the PhD window; kept as a conditional go/no-go (mentors + referees by 26 Sept) per STRATEGY.md, hence B not C.",
    "next_actions": [
     "TODAY (25 Sept): open the official page and confirm (a) deadline 1 Oct 2026 6 pm ET, (b) PhD window includes March 2025, (c) number of reference letters and whether referees submit by the deadline, (d) any exclusion of current Harvard postdocs",
     "By 26 Sept: go/no-go decision - go ONLY if two Kempner-affiliated faculty (one outside the current HMS lab) agree by email to be named as mentors and the HMS supervisor agrees to write a letter within 4 days; otherwise skip this cycle and monitor for the 2028 cohort (Oct 2027, still inside the PhD window)",
@@ -29077,7 +29077,7 @@
    "type": "postdoc_fellowship",
    "applicant_entity": "individual",
    "verdict": "unverifiable",
-   "tier": "C",
+   "tier": "B",
    "fit_score": 60,
    "deadline": "2026-10-01 (6:00 pm ET) per scout and sibling verifier, consistent with every prior cycle (1 Oct); NOT re-confirmed on the official page this session",
    "deadline_confidence": "medium",
@@ -29109,7 +29109,7 @@
     }
    ],
    "corrections": "This candidate duplicates the Kempner record already verified in verified_us_top_university_postdocs_0.json; the registry should keep one entry. url corrected from the scout's '/research/research-fellows-program/' path (not confirmed to exist) to the fellowship page used by the sibling verifier - the applicant must confirm which resolves. deadline sharpened from 'expected 2026-10 (unconfirmed)' to 2026-10-01 6 pm ET (medium confidence). 'Sponsor confirmation' removed from required documents (mentors are named, not confirmed). fit_score raised 42 -> 60 (sibling: 66) because the O3 neuro-symbolic/compositional-generalization angle is a credible Kempner pitch, but kept below 70 because KR is off-centre and the Toronto conflict is real. Verdict unverifiable: no live check possible this session.",
-   "tier_rationale": "C. Deadline is within 6 months and Ru appears eligible, but fit is moderate (60) and a 6-day runway collides with the higher-priority CPRA package and the same referees. Rule: fit 50-69 -> C. Upgrade to A only if, by 26 Sept, the official page confirms eligibility AND two Kempner-affiliated mentors plus the HMS supervisor commit; otherwise monitor for the 2028 cohort (call ~Aug-Oct 2027; March 2025 PhD still inside a 3-year window ending Sept 2028).",
+   "tier_rationale": "C. Deadline is within 6 months and Ru appears eligible, but fit is moderate (60) and a 6-day runway collides with the higher-priority CPRA package and the same referees. Rule: fit 50-69 -> C. Upgrade to A only if, by 26 Sept, the official page confirms eligibility AND two Kempner-affiliated mentors plus the HMS supervisor commit; otherwise monitor for the 2028 cohort (call ~Aug-Oct 2027; March 2025 PhD still inside a 3-year window ending Sept 2028). | Reconciled 2026-09-25: deadline 1 Oct 2026 confirmed by live search and applicant is inside the PhD window; kept as a conditional go/no-go (mentors + referees by 26 Sept) per STRATEGY.md, hence B not C.",
    "next_actions": [
     "TODAY (25 Sept): applicant opens the official page and confirms (a) deadline 1 Oct 2026 6 pm ET, (b) the PhD window includes March 2025, (c) number of reference letters and whether referees submit after the deadline, (d) any exclusion of current Harvard postdocs",
     "By 26 Sept: go/no-go - go ONLY if two Kempner-affiliated faculty (one outside the current HMS lab) agree by email to be named as mentors and the HMS supervisor agrees to write a letter within 4 days; otherwise skip and monitor for the 2028 cohort",

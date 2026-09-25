@@ -51,6 +51,30 @@ DESCRIPTION:14 days to Vector Institute compute (via Distinguished Postdoctoral 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:05e0b74e5858@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261016
+SUMMARY:DEADLINE: Stanford Science Fellows (2027 cohort) (Stanford University, Office of the Vice Provost and Dean of Research)
+DESCRIPTION:Tier B | conf medium | Stipend ~USD 98,000/yr (scout) plus research and professional-development funds; confirm on FAQ | https://stanfordsciencefellows.stanford.edu/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Stanford Science Fellows (2027 cohort)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eada2f9555ee@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261113
+SUMMARY:DEADLINE: Princeton Presidential Postdoctoral Research Fellows (2027 cohort) (Princeton University, Office of the Dean of the Faculty)
+DESCRIPTION:Tier B | conf low | Not published in any local record. Princeton postdoctoral salary scale (a second scout estimated approx. USD 70,000-80,000) plus benefits and research/travel funds; read the exact figure from the DOF page. | https://dof.princeton.edu/faculty-development-and-inclusion/talent-pathway-programs/presidential-postdoctoral-research-fellows
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Princeton Presidential Postdoctoral Research Fellows (2027 cohort)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:79c07cb9f901@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261015
@@ -96,6 +120,18 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to U of T Data Sciences Institute (DSI) Postdoctoral Fellowship (2027 call)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d9c75d3acf90@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261001
+SUMMARY:DEADLINE: Kempner Institute Research Fellowship (2027 cohort) (Kempner Institute for the Study of Natural and Artificial Intelligence, Harvard University)
+DESCRIPTION:Tier B | conf medium | Salary plus research/travel funds, office space, Kempner compute and engineering support; exact 2027 salary figure not confirmed (scout's ~USD 100k is a third-party report) | https://kempnerinstitute.harvard.edu/kempner-institute-research-fellowship
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Kempner Institute Research Fellowship (2027 cohort)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -192,6 +228,18 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to Digital Research Alliance of Canada - Resource Allocation Competition (RAC) 2027, Resources for Research Groups (RRG) stream, incl. AI compute (PAICE / Killarney) and Trillium GPU at SciNet
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4f90d80fed8c@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261001
+SUMMARY:DEADLINE: Kempner Institute Research Fellowship (Harvard) - 2027 cohort [DUPLICATE of the record verified in verified_us_top_university_postdocs_0.json; keep one] (Kempner Institute for the Study of Natural and Artificial Intelligence, Harvard University (endowed by the Chan Zuckerberg Initiative))
+DESCRIPTION:Tier B | conf medium | Salary (unverified third-party reports ~USD 100k+) plus research and travel funds, office space, Kempner compute cluster and engineering support; exact 2027 figures not confirmed | https://kempnerinstitute.harvard.edu/kempner-institute-research-fellowship
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Kempner Institute Research Fellowship (Harvard) - 2027 cohort [DUPLICATE of the record verified in verified_us_top_university_postdocs_0.json; keep one]
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
