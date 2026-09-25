@@ -7,7 +7,7 @@ UID:72a2c0e5fef9@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:DEADLINE: Branco Weiss Fellowship - Society in Science (2027 round) (The Branco Weiss Fellowship - Society in Science (administered by ETH Zurich))
-DESCRIPTION:Tier B | conf high | Maximum CHF 600,000 for up to five years (confirmed on the official eligibility page; the "CHF 100,000 per year" figure was a per-year approximation of the same cap) | https://brancoweissfellowship.org/
+DESCRIPTION:Tier A | conf high | Maximum CHF 600,000 for up to five years (confirmed on the official eligibility page; the "CHF 100,000 per year" figure was a per-year approximation of the same cap) | https://brancoweissfellowship.org/
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
@@ -99,30 +99,6 @@ DESCRIPTION:14 days to Eric and Wendy Schmidt AI in Science Postdoctoral Fellows
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:f8e29d686c81@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261128
-SUMMARY:DEADLINE: U of T Research Excellence Postdoctoral Fellows Program (REPFP) - Faculty of Applied Science & Engineering round (University of Toronto (Office of the Vice-President Research & Innovation / Provost; administered by divisions))
-DESCRIPTION:Tier B | conf low | CAD 80,000/yr salary + employer costs for 2 years, plus CAD 10,000/yr independent research funds (scout figure; not re-verified) | https://gradstudies.engineering.utoronto.ca/prospective-students/money-matters/research-excellence-postdoctoral-fellows-program/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to U of T Research Excellence Postdoctoral Fellows Program (REPFP) - Faculty of Applied Science & Engineering round
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:66133c209762@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270122
-SUMMARY:DEADLINE: U of T Data Sciences Institute (DSI) Postdoctoral Fellowship (2027 call) (Data Sciences Institute, University of Toronto)
-DESCRIPTION:Tier B | conf medium | CAD 60,000/yr + benefits (scout figure; not re-verified - confirm current value on the 2027 call) | https://datasciences.utoronto.ca/postdoctoral-fellowship/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to U of T Data Sciences Institute (DSI) Postdoctoral Fellowship (2027 call)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:d9c75d3acf90@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261001
@@ -132,66 +108,6 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to Kempner Institute Research Fellowship (2027 cohort)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:86eb3392f37c@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20260331
-SUMMARY:DEADLINE: CRA Trustworthy AI Research Fellowship for Early Career Scholars (2027-2028 cohort) (Computing Research Association (CRA) with Microsoft)
-DESCRIPTION:Tier B | conf low | Not published in local records: paid fellowship covering salary/benefits and research support at a US host institution; read the cohort-3 announcement for the exact stipend. | https://cra.org/cra-trustworthy-ai-research-fellowship/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to CRA Trustworthy AI Research Fellowship for Early Career Scholars (2027-2028 cohort)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:3f6543c405bd@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270728
-SUMMARY:DEADLINE: Creative Destruction Lab — Toronto (AI / Robotics-Physical AI streams) (Creative Destruction Lab (Rotman School of Management, U of T))
-DESCRIPTION:Tier B | conf medium | No cash, no equity taken by CDL; 9-month objectives-based mentorship; mentors/affiliated funds often invest; cloud credits | https://creativedestructionlab.com/streams/ai/cdl-toronto-artificial-intelligence/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Creative Destruction Lab — Toronto (AI / Robotics-Physical AI streams)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:aaae0071a616@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261103
-SUMMARY:DEADLINE: Digital Research Alliance of Canada - 2027 Resource Allocation Competition (compute for O2/O3) (Digital Research Alliance of Canada (federally funded))
-DESCRIPTION:Tier B | conf high | In-kind GPU/CPU/storage allocations (no cash); Rapid Access Service (RAS) default allocations available at any time without competition | https://www.alliancecan.ca/en/our-services/advanced-research-computing/accessing-advanced-research-computing-resources
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Digital Research Alliance of Canada - 2027 Resource Allocation Competition (compute for O2/O3)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:cdfa71958c38@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270115
-SUMMARY:DEADLINE: Branco Weiss Fellowship - Society in Science (ETH Zurich (Branco Weiss Fellowship))
-DESCRIPTION:Tier A | conf high | Approx. CHF 100,000 per year (salary and/or staff/equipment, allocated by the fellow) | https://brancoweissfellowship.org/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Branco Weiss Fellowship - Society in Science
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:21426014eede@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270328
-SUMMARY:DEADLINE: Newton International Fellowships (2027 round, Royal Society stream: natural sciences and engineering) (Royal Society (scheme run jointly with the British Academy))
-DESCRIPTION:Tier B | conf medium | Core award: subsistence about GBP 33,000 per year, research expenses up to GBP 8,000 per year, a one-off relocation allowance (~GBP 3,500) and a contribution to visa and Immigration Health Surcharge costs - roughly GBP 90,000-100,000 over two years. Separately, Newton alumni follow-on funding of up to GBP 6,000 per year for up to 10 years for fellows who return to their home country. Confirm exact 2027 figures in the scheme notes. | https://royalsociety.org/grants/newton-international-fellowships/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Newton International Fellowships (2027 round, Royal Society stream: natural sciences and engineering)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -207,18 +123,6 @@ DESCRIPTION:14 days to Activate Fellowship 2027 (Boston / Berkeley / New York / 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:319e85c7189f@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261125
-SUMMARY:DEADLINE: NSERC Alliance International Collaboration grants (and Catalyst grants, if still offered) - Prof. Grüninger as applicant, Dr. Ru named as HQP (Natural Sciences and Engineering Research Council of Canada (NSERC))
-DESCRIPTION:Tier B | conf high | Collaboration: up to CAD 100,000 per year for up to three years (confirmed). Catalyst stream: general availability unconfirmed - the programme was paused in 2025-26; a themed G7 Alliance International Catalyst Quantum call exists separately. | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to NSERC Alliance International Collaboration grants (and Catalyst grants, if still offered) - Prof. Grüninger as applicant, Dr. Ru named as HQP
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:e1dfb65e5146@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261103
@@ -231,27 +135,15 @@ DESCRIPTION:14 days to Digital Research Alliance of Canada - Resource Allocation
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:4f90d80fed8c@funding-agents
+UID:2ee36f1c16fd@funding-agents
 DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20261001
-SUMMARY:DEADLINE: Kempner Institute Research Fellowship (Harvard) - 2027 cohort [DUPLICATE of the record verified in verified_us_top_university_postdocs_0.json; keep one] (Kempner Institute for the Study of Natural and Artificial Intelligence, Harvard University (endowed by the Chan Zuckerberg Initiative))
-DESCRIPTION:Tier B | conf medium | Salary (unverified third-party reports ~USD 100k+) plus research and travel funds, office space, Kempner compute cluster and engineering support; exact 2027 figures not confirmed | https://kempnerinstitute.harvard.edu/kempner-institute-research-fellowship
+DTSTART;VALUE=DATE:20261101
+SUMMARY:DEADLINE: UC President's Postdoctoral Fellowship Program (PPFP) 2027-28 (University of California, Office of the President)
+DESCRIPTION:Tier B | conf medium | USD ~70,000-80,000 salary plus benefits and research/travel (confirm) | https://ppfp.ucop.edu/ppfp/
 BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
-DESCRIPTION:14 days to Kempner Institute Research Fellowship (Harvard) - 2027 cohort [DUPLICATE of the record verified in verified_us_top_university_postdocs_0.json; keep one]
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:3e06f276ee0e@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270228
-SUMMARY:DEADLINE: Vector Institute compute access (Bon Echo cluster and Vector-hosted national AI compute) - obtained via Vector Distinguished Postdoctoral Fellowship, Postgraduate Affiliate status, or a Vector faculty sponsor's group (Vector Institute for Artificial Intelligence)
-DESCRIPTION:Tier B | conf medium | In-kind: access to Vector's dedicated GPU cluster and, for Vector researchers, the Vector-hosted national AI compute (Killarney/PAICE). Compute is bundled with fellowship or affiliate status, not awarded on its own. The fellowship's salary figure is not published and the scout's '~CAD 90k+' is unsupported - removed. | https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Vector Institute compute access (Bon Echo cluster and Vector-hosted national AI compute) - obtained via Vector Distinguished Postdoctoral Fellowship, Postgraduate Affiliate status, or a Vector faculty sponsor's group
+DESCRIPTION:14 days to UC President's Postdoctoral Fellowship Program (PPFP) 2027-28
 END:VALARM
 END:VEVENT
 END:VCALENDAR

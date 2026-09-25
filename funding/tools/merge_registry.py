@@ -152,7 +152,9 @@ def write_tracker(reg):
         lines += [f"## {title} ({len(group)})", "", "| Deadline | Conf | Opportunity | Funder | Country | Type | Amount | Fit | Entity | Flags | Package |", "|---|---|---|---|---|---|---|---|---|---|---|"]
         for e in group:
             flags = "; ".join((e.get("eligibility_flags") or e.get("risks_and_flags") or [])[:3])
-            pkg = f"[pkg](../applications/{e['slug']}/README.md)" if os.path.isdir(os.path.join(REG, "..", "applications", e["slug"])) else ""
+            if os.path.isdir(os.path.join(REG, "..", "applications", e["slug"])): pkg = f"[pkg](../applications/{e['slug']}/README.md)"
+            elif e.get("bundle") and os.path.isdir(os.path.join(REG, "..", "applications", e["bundle"])): pkg = f"[bundle](../applications/{e['bundle']}/README.md)"
+            else: pkg = ""
             url = e.get("url") or ""
             name = f"[{e.get('name','')}]({url})" if url else e.get("name", "")
             lines.append(f"| {e.get('deadline','')} | {(e.get('deadline_confidence') or '?')[:1].upper()} | {name} | {e.get('funder','')} | {e.get('country','')} | {e.get('type','')} | {e.get('amount','')} | {e.get('fit_score','')} | {e.get('applicant_entity','')} | {flags} | {pkg} |")
@@ -165,8 +167,9 @@ def write_ics(reg):
     out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//funding-agents//deadlines//EN", "CALSCALE:GREGORIAN"]
     for e in reg["entries"].values():
         if e.get("tier") not in ("A", "B"): continue
+        if not re.match(r"20\d{2}-\d{2}-\d{2}", e.get("deadline") or ""): continue  # full dates only; month-only guesses are not calendar events
         d = parse_date(e.get("deadline"))
-        if not d: continue
+        if not d or d < datetime.date.today(): continue
         uid = e["id"] + "@funding-agents"
         summ = f"DEADLINE: {e.get('name')} ({e.get('funder')})"
         desc = f"Tier {e.get('tier')} | conf {e.get('deadline_confidence')} | {e.get('amount','')} | {e.get('url','')}"
