@@ -39,6 +39,18 @@ DESCRIPTION:14 days to NSERC Alliance International Collaboration grant (U of T 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:885668cd951e@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20270228
+SUMMARY:DEADLINE: Vector Institute compute (via Distinguished Postdoctoral Fellowship / faculty-affiliate sponsorship) (Vector Institute)
+DESCRIPTION:Tier A | conf high | In-kind: access to Vector's GPU cluster for Vector-affiliated researchers (fellows, postgraduate affiliates, faculty-affiliate group members); the DPF itself is a salaried two-year fellowship (Vector does not publish the stipend on the program page; ~CAD 90k+ is an unverified norm) | https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Vector Institute compute (via Distinguished Postdoctoral Fellowship / faculty-affiliate sponsorship)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:79c07cb9f901@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20261015
@@ -111,6 +123,18 @@ DESCRIPTION:14 days to Creative Destruction Lab — Toronto (AI / Robotics-Physi
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:aaae0071a616@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20261103
+SUMMARY:DEADLINE: Digital Research Alliance of Canada - 2027 Resource Allocation Competition (compute for O2/O3) (Digital Research Alliance of Canada (federally funded))
+DESCRIPTION:Tier B | conf high | In-kind GPU/CPU/storage allocations (no cash); Rapid Access Service (RAS) default allocations available at any time without competition | https://www.alliancecan.ca/en/our-services/advanced-research-computing/accessing-advanced-research-computing-resources
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Digital Research Alliance of Canada - 2027 Resource Allocation Competition (compute for O2/O3)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:cdfa71958c38@funding-agents
 DTSTAMP:20260925T000000Z
 DTSTART;VALUE=DATE:20270115
@@ -132,18 +156,6 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to Newton International Fellowships (2027 round, Royal Society stream: natural sciences and engineering)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:8db3b6c07d9d@funding-agents
-DTSTAMP:20260925T000000Z
-DTSTART;VALUE=DATE:20270228
-SUMMARY:DEADLINE: Vector Institute Distinguished Postdoctoral Fellowship (Spring 2027 cohort) (Vector Institute for Artificial Intelligence)
-DESCRIPTION:Tier B | conf medium | Salary and benefits, amount not published on the program page; third-party job listings cited by the scout show roughly CAD 49-65k base - treat as unconfirmed; plus Vector compute and research environment | https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:14 days to Vector Institute Distinguished Postdoctoral Fellowship (Spring 2027 cohort)
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -180,6 +192,18 @@ BEGIN:VALARM
 TRIGGER:-P14D
 ACTION:DISPLAY
 DESCRIPTION:14 days to Digital Research Alliance of Canada - Resource Allocation Competition (RAC) 2027, Resources for Research Groups (RRG) stream, incl. AI compute (PAICE / Killarney) and Trillium GPU at SciNet
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3e06f276ee0e@funding-agents
+DTSTAMP:20260925T000000Z
+DTSTART;VALUE=DATE:20270228
+SUMMARY:DEADLINE: Vector Institute compute access (Bon Echo cluster and Vector-hosted national AI compute) - obtained via Vector Distinguished Postdoctoral Fellowship, Postgraduate Affiliate status, or a Vector faculty sponsor's group (Vector Institute for Artificial Intelligence)
+DESCRIPTION:Tier B | conf medium | In-kind: access to Vector's dedicated GPU cluster and, for Vector researchers, the Vector-hosted national AI compute (Killarney/PAICE). Compute is bundled with fellowship or affiliate status, not awarded on its own. The fellowship's salary figure is not published and the scout's '~CAD 90k+' is unsupported - removed. | https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Vector Institute compute access (Bon Echo cluster and Vector-hosted national AI compute) - obtained via Vector Distinguished Postdoctoral Fellowship, Postgraduate Affiliate status, or a Vector faculty sponsor's group
 END:VALARM
 END:VEVENT
 END:VCALENDAR
