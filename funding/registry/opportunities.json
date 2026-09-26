@@ -5262,7 +5262,7 @@
     },
     {
      "claim": "Standards contribution is a legible credential for an information-science search.",
-     "quote": "Core contributor, ISO/IEC 21838-4:2023 \"Information technology — Top-level ontologies (TLO) — Part 4: TUpper\" (ISO/IEC JTC 1/SC 42).",
+     "quote": "Core contributor, ISO/IEC 21838-4:2023 \"Information technology — Top-level ontologies (TLO) — Part 4: TUpper\" (ISO/IEC JTC 1/SC 32).",
      "url": "file:///home/user/ipython/funding/profile/applicant_profile.md"
     }
    ],
@@ -5275,7 +5275,7 @@
    "estimated_prep_days": 5,
    "internal_or_referee_deadlines": "3 reference letters are requested directly by U of T after submission; brief referees before the closing date.",
    "tier_rationale": "Tier C: fit is moderate (58) and the 2026-27 search area is unknown; the deadline, if a suitable posting appears, would be within 6 months, so this is a monitor-and-pounce entry rather than a prepare-now one. Materials are shared with the MIE package.",
-   "corrections": "No field changes; deadline window widened to Nov-Dec and marked inferred.",
+   "corrections": "No field changes; deadline window widened to Nov-Dec and marked inferred. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "last_checked": "2026-09-25"
   },
   "4231a3510f15": {
@@ -17352,7 +17352,7 @@
    "last_checked": "2026-09-25"
   },
   "604d4bdcdce8": {
-   "name": "IEC 1906 Award (via ISO/IEC JTC 1/SC 42 nomination)",
+   "name": "IEC 1906 Award (via ISO/IEC JTC 1/SC 32 officers' nomination)",
    "funder": "International Electrotechnical Commission (IEC)",
    "url": "https://www.iec.ch/awards/iec-1906-award",
    "country": "International (Switzerland)",
@@ -17365,15 +17365,15 @@
    "applicant_entity": "individual",
    "citizenship_requirement": "None; must be a registered expert through a national body (e.g., SCC for Canada, ANSI/INCITS for the US, SAC for China)",
    "years_since_phd_limit": "None",
-   "needs_host_or_nominator": "Nomination by ISO/IEC JTC 1/SC 42 leadership (SC chair/secretary) - requires continued SC 42 participation and support from WG convenors (e.g., the 21838 project leadership)",
+   "needs_host_or_nominator": "Nomination by ISO/IEC JTC 1/SC 32 leadership (SC chair/secretary) - requires continued SC 32 participation and support from WG convenors (e.g., the 21838 project leadership)",
    "required_documents": [
     "Nomination form completed by SC 42 officers",
-    "One-page statement of contribution to ISO/IEC 21838-4:2023 and ongoing SC 42 work (supplied to officers)"
+    "One-page statement of contribution to ISO/IEC 21838-4:2023 and ongoing SC 32 work (supplied to officers)"
    ],
    "fit_score": 45,
-   "fit_rationale": "The applicant is a core contributor to ISO/IEC 21838-4 (TUpper), a published JTC 1/SC 42 standard, which is exactly the kind of contribution the 1906 Award recognizes; it also underpins the company's standards-recognition target (Passport v1 recognized by a standards body, Q2 2027). Maps to O1 and the standards deliverable.",
+   "fit_rationale": "The applicant is a core contributor to ISO/IEC 21838-4 (TUpper), a published JTC 1/SC 32 standard, which is exactly the kind of contribution the 1906 Award recognizes; it also underpins the company's standards-recognition target (Passport v1 recognized by a standards body, Q2 2027). Maps to O1 and the standards deliverable.",
    "risks_and_flags": [
-    "Award is recognized for recent contributions; 21838-4 was published in 2023 - ongoing SC 42 work (e.g., a new parts-ontology proposal or a 21838-4 revision) strengthens the case",
+    "Award is recognized for recent contributions; 21838-4 was published in 2023 - ongoing SC 32 work (e.g., a new parts-ontology proposal or a 21838-4 revision) strengthens the case",
     "Requires the applicant to be registered through a national body mirror committee and to have SC 42 officers willing to nominate",
     "Nomination cycle dates unverified"
    ],
@@ -17389,7 +17389,7 @@
    "id": "604d4bdcdce8",
    "slug": "iec-1906-award-via-iso-iec-jtc-1-sc-42-nomination",
    "first_seen": "2026-09-25",
-   "tier_rationale": "Not an application: the award is initiated by TC/SC officers (chair and secretary) for experts registered in the committee, so the applicant cannot apply; the case depends on whether the applicant is still a registered SC 42 expert through a national body (unknown) and whether SC 42 leadership would nominate for a 2023 publication rather than more recent work. Nomination cycle could not be re-verified this session (web-search budget exhausted; fetch blocked). Monitor; the practical route is to re-engage in SC 42 WG 3 work (e.g., a 21838-4 revision or a new parts-ontology contribution) so a 2028 nomination becomes natural.",
+   "tier_rationale": "Not an application: the award is initiated by TC/SC officers (chair and secretary) for experts registered in the committee, so the applicant cannot apply; the case depends on whether the applicant is still a registered SC 32 expert through a national body (unknown) and whether SC 32 leadership would nominate for a 2023 publication rather than more recent work. Nomination cycle could not be re-verified this session (web-search budget exhausted; fetch blocked). Monitor; the practical route is to re-engage in SC 32 WG 3 work (e.g., a 21838-4 revision or a new parts-ontology contribution) so a 2028 nomination becomes natural.",
    "eligibility_flags": [
     "Applicant must currently be a registered SC 42 expert through a national mirror committee — status unknown",
     "Nomination is by SC 42 chair/secretary; needs WG 3 convenor / project-leader support",
@@ -17403,20 +17403,20 @@
      "url": "https://www.iec.ch/awards/iec-1906-award"
     },
     {
-     "claim": "ISO/IEC JTC 1/SC 42 (Artificial intelligence) is the committee that owns ISO/IEC 21838-4",
+     "claim": "ISO/IEC JTC 1/SC 32 (Artificial intelligence) is the committee that owns ISO/IEC 21838-4",
      "quote": "[Not retrieved this session; committee page listed for confirmation of the applicant's expert registration and the WG responsible for 21838-4.]",
      "url": "https://www.iso.org/committee/6794475.html"
     }
    ],
    "next_actions": [
     "Applicant: confirm current expert registration status in ISO/IEC JTC 1/SC 42 (which national body, which WG) by 31 Oct 2026; if lapsed, contact SCC (Canada) or ANSI/INCITS (US) to re-register",
-    "Ask Prof. Grüninger (TUpper project lead lineage) whether SC 42 WG 3 leadership would support a 1906 nomination and what recent contribution would be needed, by 30 Nov 2026",
-    "Propose a concrete SC 42 contribution for 2027 (21838-4 maintenance/revision input or a new-work-item proposal on parts ontologies aligned with the research program's O1 deliverable) by 31 Jan 2027",
+    "Ask Prof. Grüninger (TUpper project lead lineage) whether SC 32 WG 3 leadership would support a 1906 nomination and what recent contribution would be needed, by 30 Nov 2026",
+    "Propose a concrete SC 32 contribution for 2027 (21838-4 maintenance/revision input or a new-work-item proposal on parts ontologies aligned with the research program's O1 deliverable) by 31 Jan 2027",
     "Applicant: check the IEC awards page in January 2027 for the 2027 officer nomination window and pass it to the SC 42 secretary"
    ],
    "estimated_prep_days": 2,
    "internal_or_referee_deadlines": "Committee officers must submit nominations within IEC's window (expected roughly Feb-Apr 2027); the applicant should hand them a one-page contribution statement at least 4 weeks earlier.",
-   "corrections": "No field corrections. Deadline 'expected 2027-03' downgraded to 'unconfirmed; roughly Feb-Apr 2027 for officer nominations'.",
+   "corrections": "No field corrections. Deadline 'expected 2027-03' downgraded to 'unconfirmed; roughly Feb-Apr 2027 for officer nominations'. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "last_checked": "2026-09-25",
    "bundle": "standards-participation-bundle"
   },
@@ -17737,7 +17737,7 @@
    "deadline_confidence": "low",
    "amount": "Certificate / recognition presented at the ISO General Assembly; no cash.",
    "duration": "One-time",
-   "eligibility_summary": "Individual technical experts, project leaders, convenors or committee officers who have made an outstanding contribution to ISO standards development. Nominations are made by ISO member bodies and/or technical committee leadership, not by the individual. No citizenship, age or PhD-date limits. The applicant's eligibility hinges on (a) a member body or SC 42 officer agreeing to nominate and (b) her formal role on ISO/IEC 21838-4 being substantial enough. ISO has also run a separate early-career 'Next Generation Award' in some years - check whether it exists in 2027 and whether an age cap (historically ~35) applies.",
+   "eligibility_summary": "Individual technical experts, project leaders, convenors or committee officers who have made an outstanding contribution to ISO standards development. Nominations are made by ISO member bodies and/or technical committee leadership, not by the individual. No citizenship, age or PhD-date limits. The applicant's eligibility hinges on (a) a member body or SC 32 officer agreeing to nominate and (b) her formal role on ISO/IEC 21838-4 being substantial enough. ISO has also run a separate early-career 'Next Generation Award' in some years - check whether it exists in 2027 and whether an age cap (historically ~35) applies.",
    "applicant_entity": "individual",
    "citizenship_requirement": "None; nomination flows through the national member body (e.g., SCC) or TC leadership",
    "years_since_phd_limit": "None",
@@ -17764,7 +17764,7 @@
    "id": "5916bc534c71",
    "slug": "iso-excellence-award",
    "first_seen": "2026-09-25",
-   "tier_rationale": "C (monitor). Could not be verified live. On the record, the ISO Excellence Award recognizes individual technical experts for outstanding contributions to ISO standards development; nominations are submitted by ISO member bodies and/or committee leadership (chairs/secretaries/convenors), usually in the first part of the year, with winners announced around the ISO General Assembly in September. The applicant cannot self-nominate; the channel runs through a national member body (SCC for Canada, ANSI for the US, SAC for China - which one depends on the unknown citizenship/residence and on which national mirror committee she participated in) or through the JTC 1/SC 42 leadership of the 21838 project. Awards have tended to go to project leaders and convenors; the applicant's formal role on ISO/IEC 21838-4:2023 ('core contributor' - exact wording unconfirmed) is probably below that bar, and the standard was published in 2023, so the contribution is not recent. Fit 35: strategically valuable for AXIOMALITY's standards-recognition narrative but low probability. Not D because a single ask to Grüninger (likely project leader) costs nothing; not B because no nominator has signalled willingness and the nomination window is unconfirmed.",
+   "tier_rationale": "C (monitor). Could not be verified live. On the record, the ISO Excellence Award recognizes individual technical experts for outstanding contributions to ISO standards development; nominations are submitted by ISO member bodies and/or committee leadership (chairs/secretaries/convenors), usually in the first part of the year, with winners announced around the ISO General Assembly in September. The applicant cannot self-nominate; the channel runs through a national member body (SCC for Canada, ANSI for the US, SAC for China - which one depends on the unknown citizenship/residence and on which national mirror committee she participated in) or through the JTC 1/SC 32 leadership of the 21838 project. Awards have tended to go to project leaders and convenors; the applicant's formal role on ISO/IEC 21838-4:2023 ('core contributor' - exact wording unconfirmed) is probably below that bar, and the standard was published in 2023, so the contribution is not recent. Fit 35: strategically valuable for AXIOMALITY's standards-recognition narrative but low probability. Not D because a single ask to Grüninger (likely project leader) costs nothing; not B because no nominator has signalled willingness and the nomination window is unconfirmed.",
    "eligibility_flags": [
     "Nomination must come from an ISO member body (SCC/ANSI/SAC) or committee leadership - applicant's national-body affiliation unknown (citizenship/residence unknown)",
     "Formal role on ISO/IEC 21838-4:2023 must be confirmed (contributing expert vs project leader/editor); award usually goes to project leaders/convenors",
@@ -17784,19 +17784,19 @@
     },
     {
      "claim": "Applicant's standards contribution and its unconfirmed role wording (profile)",
-     "quote": "Core contributor, ISO/IEC 21838-4:2023 'Information technology - Top-level ontologies (TLO) - Part 4: TUpper' (ISO/IEC JTC 1/SC 42). [Confirm exact role wording and working-group designation.]",
+     "quote": "Core contributor, ISO/IEC 21838-4:2023 'Information technology - Top-level ontologies (TLO) - Part 4: TUpper' (ISO/IEC JTC 1/SC 32). [Confirm exact role wording and working-group designation.]",
      "url": "/home/user/ipython/funding/profile/applicant_profile.md"
     }
    ],
    "next_actions": [
     "Applicant: confirm her exact role on ISO/IEC 21838-4 (expert / co-editor / project leader) and which national body's mirror committee she sat on, by 15 Oct 2026",
-    "Applicant: ask Prof. Grüninger (as TUpper project leader / SC 42 participant) by 30 Nov 2026 whether he or the SCC mirror committee (or ANSI/SAC as applicable) would put her forward for the ISO Excellence Award or the Next Generation Award in 2027, and whether an ongoing SC 42 work item on parts ontologies (O1) could be started to make the contribution current",
+    "Applicant: ask Prof. Grüninger (as TUpper project leader / SC 32 participant) by 30 Nov 2026 whether he or the SCC mirror committee (or ANSI/SAC as applicable) would put her forward for the ISO Excellence Award or the Next Generation Award in 2027, and whether an ongoing SC 32 work item on parts ontologies (O1) could be started to make the contribution current",
     "Applicant: open https://www.iso.org/ (Awards section) by 15 Jan 2027 and record the 2027 nomination window, categories and whether the Next Generation Award still runs and its age cap",
     "If no member-body nominator emerges by 1 Mar 2027, park this and revisit for 2028 alongside the IEC 1906 Award route"
    ],
    "estimated_prep_days": 3,
    "internal_or_referee_deadlines": "Member-body nomination must be agreed before the ISO nomination window closes (expected Q1-Q2 2027); national bodies typically run an internal call several weeks earlier - ask SCC/ANSI contact for their internal cut-off.",
-   "corrections": "No field corrections; flagged that the awards page URL could not be confirmed and that the scout's committee URL (iso.org/committee/6794475.html) is the SC 42 committee page, not an awards page. Verdict unverifiable.",
+   "corrections": "No field corrections; flagged that the awards page URL could not be confirmed and that the scout's committee URL (iso.org/committee/6794475.html) is the SC 42 committee page, not an awards page. Verdict unverifiable. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "last_checked": "2026-09-25"
   },
   "3a34f32b1e11": {
@@ -18435,7 +18435,7 @@
    "deadline_confidence": "low",
    "amount": "Recognition only (no cash); presented at ANSI's Leadership and Service Awards / World Standards Week event",
    "duration": "One-time",
-   "eligibility_summary": "Recognises an early-career individual (historically defined by an age ceiling around 35 and/or limited years in standardization - confirm the current wording) for significant contributions to voluntary consensus standardization within the U.S. system (ANSI-accredited standards developers, U.S. TAGs such as INCITS/AI for ISO/IEC JTC 1/SC 42). Nominations are submitted by ANSI members/standards developers. The applicant's ISO/IEC 21838-4 contribution was made while at U of T, almost certainly through the Canadian national body (SCC) mirror committee rather than the U.S. TAG, so there is no U.S.-system participation record today. AXIOMALITY's plan mentions ANSI/A3 R15.06/R15.08 compliance as a market driver, not as standards-committee participation. Age is not on file (BASc 2015 suggests early-to-mid 30s in 2027).",
+   "eligibility_summary": "Recognises an early-career individual (historically defined by an age ceiling around 35 and/or limited years in standardization - confirm the current wording) for significant contributions to voluntary consensus standardization within the U.S. system (ANSI-accredited standards developers, U.S. TAGs such as INCITS/AI for ISO/IEC JTC 1/SC 32). Nominations are submitted by ANSI members/standards developers. The applicant's ISO/IEC 21838-4 contribution was made while at U of T, almost certainly through the Canadian national body (SCC) mirror committee rather than the U.S. TAG, so there is no U.S.-system participation record today. AXIOMALITY's plan mentions ANSI/A3 R15.06/R15.08 compliance as a market driver, not as standards-committee participation. Age is not on file (BASc 2015 suggests early-to-mid 30s in 2027).",
    "applicant_entity": "individual",
    "citizenship_requirement": "US standardization participation required (via INCITS for JTC 1/SC 42); citizenship not required",
    "years_since_phd_limit": "Early-career/age threshold set by ANSI (confirm)",
@@ -18477,8 +18477,8 @@
      "url": "WebSearch tool response, 2026-09-25 (queries 'ANSI Next Generation Award nominations 2026 criteria early career standardization' and 'ANSI Leadership and Service Awards 2026 nominations deadline Next Generation Award recipient' refused); WebFetch/curl blocked"
     },
     {
-     "claim": "Applicant's standards work is ISO/IEC JTC 1/SC 42 (TUpper), with no U.S. TAG participation recorded",
-     "quote": "Core contributor, ISO/IEC 21838-4:2023 'Information technology - Top-level ontologies (TLO) - Part 4: TUpper' (ISO/IEC JTC 1/SC 42). [Confirm exact role wording and working-group designation.]",
+     "claim": "Applicant's standards work is ISO/IEC JTC 1/SC 32 (TUpper), with no U.S. TAG participation recorded",
+     "quote": "Core contributor, ISO/IEC 21838-4:2023 'Information technology - Top-level ontologies (TLO) - Part 4: TUpper' (ISO/IEC JTC 1/SC 32). [Confirm exact role wording and working-group designation.]",
      "url": "file:///home/user/ipython/funding/profile/applicant_profile.md"
     },
     {
@@ -18501,7 +18501,7 @@
    "estimated_prep_days": 3,
    "internal_or_referee_deadlines": "None applicable until a U.S. standards-committee record exists; the nominator (an ANSI member organization) files.",
    "tier_rationale": "Tier D for 2027: the award's core criterion is participation in the U.S. standardization system, which the applicant does not have (the ISO work was done from Canada), a U.S. nominator would be needed, the award carries no funding, and the age ceiling is unverified. Not worth effort now; revisit in 2028 if a U.S. committee record is built.",
-   "corrections": "Name expanded to place the award within the ANSI Leadership and Service Awards. Deadline corrected from 'expected 2027-06' to 'expected spring/early-summer 2027, unconfirmed'. Amount clarified as recognition only.",
+   "corrections": "Name expanded to place the award within the ANSI Leadership and Service Awards. Deadline corrected from 'expected 2027-06' to 'expected spring/early-summer 2027, unconfirmed'. Amount clarified as recognition only. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "last_checked": "2026-09-25"
   },
   "45a1fdff31b9": {
@@ -20313,7 +20313,7 @@
     "IAOA membership and travel-grant form if requesting travel support"
    ],
    "fit_score": 66,
-   "fit_rationale": "The single best venue for the O1 result (verified parts ontology as a TUpper/PSL extension with representation theorems) and for the O2 audit paper. A FOIS award would repeat the 2018 Distinguished Paper and strengthen every fellowship/faculty file. Also the place to announce the COLORE contribution and SC 42 work item.",
+   "fit_rationale": "The single best venue for the O1 result (verified parts ontology as a TUpper/PSL extension with representation theorems) and for the O2 audit paper. A FOIS award would repeat the 2018 Distinguished Paper and strengthen every fellowship/faculty file. Also the place to announce the COLORE contribution and SC 32 work item.",
    "risks_and_flags": [
     "Conference location/dates unverified; deadline inferred from the usual pattern",
     "FOIS 2026 cycle is almost certainly closed as of Sept 2026"
@@ -20364,7 +20364,7 @@
    ],
    "estimated_prep_days": 18,
    "internal_or_referee_deadlines": "None external. FOIS usually has an abstract deadline ~1 week before the full-paper deadline; check the 2027 CFP. IAOA travel-grant applications typically open after acceptances (~2-3 months before the conference).",
-   "corrections": "Deadline kept as an estimate but re-labelled 'expected 2027-02 to 2027-03 (CFP not yet published)'. Amount corrected to make explicit that FOIS awards carry no grant money. Country field annotated: 2027 location unconfirmed. Ordinal ('15th/16th') removed from the name pending confirmation. fit_score lowered 68 -> 66 because this is a recognition/publication venue rather than funding; strategic value remains high.",
+   "corrections": "Deadline kept as an estimate but re-labelled 'expected 2027-02 to 2027-03 (CFP not yet published)'. Amount corrected to make explicit that FOIS awards carry no grant money. Country field annotated: 2027 location unconfirmed. Ordinal ('15th/16th') removed from the name pending confirmation. fit_score lowered 68 -> 66 because this is a recognition/publication venue rather than funding; strategic value remains high. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "tier_rationale": "C (monitor). Applicant is eligible and the venue is the single best fit for O1/O2, but (i) no funding is attached, (ii) the 2027 CFP/deadline could not be confirmed this run, and (iii) fit for a funding registry is moderate (66 < 70). Treat as a scheduled publication milestone that strengthens every fellowship file (CPRA, Vector, DSI, faculty applications), not as a grant. Re-tier when the CFP is published.",
    "last_checked": "2026-09-25"
   },
@@ -29313,7 +29313,7 @@
    "deadline_confidence": "low",
    "amount": "Recognition award (no cash or nominal); presented at SCC's annual awards ceremony (Ottawa or virtual). Unverified.",
    "duration": "One-time",
-   "eligibility_summary": "Recalled (unverified): SCC's awards (categories have included Jean P. Carrière, Hugh Krentz, McMahon Dedicated Service, Committee Chair, and a Young Leader award for younger professionals, with an age ceiling around 35) go to members of Canada's standardization network - SCC mirror-committee members, Canadian experts/delegates to ISO/IEC, and SDO committee members - nominated by peers in that network. Eligibility therefore hinges on whether Dr. Ru is (or was) a registered Canadian expert on the SCC mirror committee to ISO/IEC JTC 1/SC 42 when contributing to ISO/IEC 21838-4:2023. The CV states 'Core Contributor' but does not say through which national body; the profile flags this as unconfirmed. She is not currently in Canada; a nomination in spring 2027 would coincide with the start at U of T MIE and with (re)joining the SCC mirror committee. Age likely within a ~35 ceiling in 2027 but unverified (no date of birth on file).",
+   "eligibility_summary": "Recalled (unverified): SCC's awards (categories have included Jean P. Carrière, Hugh Krentz, McMahon Dedicated Service, Committee Chair, and a Young Leader award for younger professionals, with an age ceiling around 35) go to members of Canada's standardization network - SCC mirror-committee members, Canadian experts/delegates to ISO/IEC, and SDO committee members - nominated by peers in that network. Eligibility therefore hinges on whether Dr. Ru is (or was) a registered Canadian expert on the SCC mirror committee to ISO/IEC JTC 1/SC 32 when contributing to ISO/IEC 21838-4:2023. The CV states 'Core Contributor' but does not say through which national body; the profile flags this as unconfirmed. She is not currently in Canada; a nomination in spring 2027 would coincide with the start at U of T MIE and with (re)joining the SCC mirror committee. Age likely within a ~35 ceiling in 2027 but unverified (no date of birth on file).",
    "eligibility_flags": [
     "SCC mirror-committee membership / Canadian expert status NOT confirmed - decisive",
     "Not in Canada until spring 2027; Canadian affiliation needed for the nominator's case",
@@ -29334,7 +29334,7 @@
     },
     {
      "claim": "Profile flags the exact role wording and working-group designation as unconfirmed",
-     "quote": "Core contributor, ISO/IEC 21838-4:2023 ... (ISO/IEC JTC 1/SC 42). [Confirm exact role wording and working-group designation.]",
+     "quote": "Core contributor, ISO/IEC 21838-4:2023 ... (ISO/IEC JTC 1/SC 32). [Confirm exact role wording and working-group designation.]",
      "url": "file:///home/user/ipython/funding/profile/applicant_profile.md"
     },
     {
@@ -29349,7 +29349,7 @@
     }
    ],
    "next_actions": [
-    "Applicant: ask Prof. Grüninger (with the 2 Oct 2026 CPRA email) whether the 21838-4 contribution was made as an SCC-registered Canadian expert or via another route, and whether he or the SC 42 mirror-committee chair would nominate in 2027",
+    "Applicant: ask Prof. Grüninger (with the 2 Oct 2026 CPRA email) whether the 21838-4 contribution was made as an SCC-registered Canadian expert or via another route, and whether he or the SC 32 mirror-committee chair would nominate in 2027",
     "Applicant: apply to (re)join the SCC mirror committee to ISO/IEC JTC 1/SC 42 as soon as the U of T MIE affiliation is confirmed (target Apr 2027) - a prerequisite for a credible nomination",
     "Ops: check scc.ca/en/about-scc/awards on 1 Feb 2027 for the 2027 categories, age rule and close date; if a Young Leader category exists and membership is in place, have the nominator submit by the spring 2027 close with a 1-page contribution summary (21838-4 TUpper, COLORE, AXIOMALITY Passport standards work) and two supporting letters"
    ],
@@ -29361,7 +29361,7 @@
     "Supporting letters (2)",
     "Proof of age if the category is age-limited"
    ],
-   "corrections": "Name narrowed to the Young Leader / emerging-professional category (the other SCC categories are for long-service or chair roles and do not fit). fit_score 40 -> 38 because SCC membership is unconfirmed and no Canadian affiliation exists until spring 2027. Deadline remains an unverified projection (~spring 2027). URL kept but flagged: confirm the awards page path on scc.ca.",
+   "corrections": "Name narrowed to the Young Leader / emerging-professional category (the other SCC categories are for long-service or chair roles and do not fit). fit_score 40 -> 38 because SCC membership is unconfirmed and no Canadian affiliation exists until spring 2027. Deadline remains an unverified projection (~spring 2027). URL kept but flagged: confirm the awards page path on scc.ca. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "sources": [
     "file:///home/user/ipython/funding/profile/cv_text.txt",
     "file:///tmp/claude-0/-home-user-ipython/5a01957d-63c9-5f0c-bfa3-9add7b486076/scratchpad/registry/verified_standards_ontology_open_source_community_0.json",
@@ -29377,7 +29377,7 @@
    "citizenship_requirement": "Must participate in Canadian standardization (SCC mirror committee for ISO/IEC JTC 1/SC 42) - residency in Canada generally expected",
    "years_since_phd_limit": "None (age-limited category may apply, e.g., under 40)",
    "needs_host_or_nominator": "Nomination by SCC mirror committee chair or a member of the Canadian standards community",
-   "fit_rationale": "If the applicant participated (or re-joins in 2027) in Canada's SC 42 mirror committee, the 21838-4 contribution is a strong emerging-leader case; supports the company's standards-recognition target and O1. Achievable once back at U of T.",
+   "fit_rationale": "If the applicant participated (or re-joins in 2027) in Canada's SC 32 mirror committee, the 21838-4 contribution is a strong emerging-leader case; supports the company's standards-recognition target and O1. Achievable once back at U of T.",
    "risks_and_flags": [
     "Requires Canadian standardization membership - confirm whether the applicant contributed to 21838-4 through SCC (Canada) or another national body",
     "Award category names and dates unverified; SCC has revised its award program in recent years"
@@ -30411,9 +30411,9 @@
    "bundle": "standards-participation-bundle"
   },
   "8fb02c5146c5": {
-   "name": "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation via a national mirror committee (SCC for Canada; INCITS/AI as the ANSI-accredited US TAG) - ISO/IEC 5259 data-quality-for-ML series, ISO/IEC 21838 TLO maintenance, WG 3 trustworthiness, SC 42 liaison with ISO/TC 299",
+   "name": "ISO/IEC JTC 1/SC 32 (Data management and interchange; home of ISO/IEC 21838) expert participation via a national mirror committee (SCC for Canada; INCITS/AI as the ANSI-accredited US TAG) - ISO/IEC 5259 data-quality-for-ML series, ISO/IEC 21838 TLO maintenance, WG 3 trustworthiness, SC 32 liaison with ISO/TC 299",
    "funder": "Standards Council of Canada (Canadian mirror committee to JTC 1/SC 42) or ANSI / INCITS (US TAG)",
-   "url": "https://www.iso.org/committee/6794475.html",
+   "url": "https://www.iso.org/standard/78928.html",
    "country": "International (via national body)",
    "type": "standards_participation",
    "verdict": "unverifiable",
@@ -30423,12 +30423,12 @@
    "deadline_confidence": "high",
    "amount": "No funding. SCC mirror-committee membership is free for individual experts (travel self-funded unless SCC delegate support is granted); INCITS membership is organisational and fee-based (small-company tier on the order of USD 1-3k/yr; confirm current schedule).",
    "duration": "Ongoing; SC 42 work items run 2-4 years",
-   "eligibility_summary": "Experts participate in SC 42 working groups only through a national member body's mirror committee. Dr. Ru already contributed to ISO/IEC 21838-4 (published 2023), so was registered by some national body (most likely SCC while at U of T) - the first check is whether that registration is still active. Eligibility depends on where the expert works/resides: SCC registers experts affiliated with Canadian organisations (U of T from spring 2027, or a Canadian-incorporated AXIOMALITY); INCITS registers via a US member organisation (Harvard would have to be the sponsoring member, or AXIOMALITY if US-incorporated). Citizenship is not a criterion; organisational sponsorship is. ISO/IEC 5259 Parts 1-5 are published (2024-2025), so the near-term opportunity is a maintenance/extension contribution or a new-work-item proposal (e.g., a robot-dataset data-quality profile), not drafting the base series.",
+   "eligibility_summary": "Experts participate in SC 32 working groups only through a national member body's mirror committee. Dr. Ru already contributed to ISO/IEC 21838-4 (published 2023), so was registered by some national body (most likely SCC while at U of T) - the first check is whether that registration is still active. Eligibility depends on where the expert works/resides: SCC registers experts affiliated with Canadian organisations (U of T from spring 2027, or a Canadian-incorporated AXIOMALITY); INCITS registers via a US member organisation (Harvard would have to be the sponsoring member, or AXIOMALITY if US-incorporated). Citizenship is not a criterion; organisational sponsorship is. ISO/IEC 5259 Parts 1-5 are published (2024-2025), so the near-term opportunity is a maintenance/extension contribution or a new-work-item proposal (e.g., a robot-dataset data-quality profile), not drafting the base series.",
    "eligibility_flags": [
     "Registration route (SCC vs INCITS) hinges on affiliation and residence, both unconfirmed until the U of T start (spring 2027) or AXIOMALITY's incorporation country is settled",
     "Employer/institution nomination needed for national-body expert registration",
     "No cash; travel to plenaries self-funded unless SCC delegate support applies",
-    "Existing SC 42 expert registration from the 21838-4 work may have lapsed - check first"
+    "Existing SC 32 expert registration from the 21838-4 work may have lapsed - check first"
    ],
    "evidence": [
     {
@@ -30437,8 +30437,8 @@
      "url": "https://www.iso.org/committee/6794475.html"
     },
     {
-     "claim": "ISO/IEC JTC 1/SC 42 is the committee responsible for both the ISO/IEC 21838 TLO series and the ISO/IEC 5259 data-quality-for-analytics-and-ML series.",
-     "quote": "[Prior-knowledge paraphrase: SC 42 'Artificial intelligence' scope includes standardization in AI and serves as the JTC 1 focus for AI; its published catalogue lists ISO/IEC 21838-1..4 and ISO/IEC 5259-1..5 (Parts 1-4 published 2024, Part 5 2025).]",
+     "claim": "ISO/IEC JTC 1/SC 32 is the committee responsible for both the ISO/IEC 21838 TLO series and the ISO/IEC 5259 data-quality-for-analytics-and-ML series.",
+     "quote": "[Prior-knowledge paraphrase: SC 32 'Artificial intelligence' scope includes standardization in AI and serves as the JTC 1 focus for AI; its published catalogue lists ISO/IEC 21838-1..4 and ISO/IEC 5259-1..5 (Parts 1-4 published 2024, Part 5 2025).]",
      "url": "https://www.iso.org/committee/6794475/x/catalogue/"
     },
     {
@@ -30468,9 +30468,9 @@
     }
    ],
    "next_actions": [
-    "By 3 Oct 2026: check the ISO Global Directory / SCC expert portal (or email the SCC mirror-committee secretary for JTC 1/SC 42) to learn whether Dr. Ru's expert registration from the 21838-4 work is still active and under which organisation.",
+    "By 3 Oct 2026: check the ISO Global Directory / SCC expert portal (or email the SCC mirror-committee secretary for JTC 1/SC 32) to learn whether Dr. Ru's expert registration from the 21838-4 work is still active and under which organisation.",
     "By 3 Oct 2026: open https://www.iso.org/committee/6794475.html (work programme tab) and note the WG that holds 21838 maintenance and 5259 follow-on items, and the date/location of the spring-2027 plenary.",
-    "By 15 Oct 2026: ask Grüninger (already an SC 42 / TUpper participant) whether the U of T Semantic Technologies Lab can sponsor the SCC registration from the Toronto start date, and whether an earlier registration under his group is possible while Dr. Ru is still at Harvard.",
+    "By 15 Oct 2026: ask Grüninger (already an SC 32 / TUpper participant) whether the U of T Semantic Technologies Lab can sponsor the SCC registration from the Toronto start date, and whether an earlier registration under his group is possible while Dr. Ru is still at Harvard.",
     "By 30 Nov 2026: decide the registration route: SCC via U of T (from spring 2027) versus INCITS via Harvard or AXIOMALITY (requires knowing the company's incorporation country).",
     "By 31 Jan 2027: draft a 3-4 page contribution or NWIP outline ('data-quality profile for robot-learning datasets' mapping O2's audit metrics to ISO/IEC 5259-2 measures) for tabling at the spring-2027 plenary through the mirror committee.",
     "Confirm on scc.ca whether SCC delegate travel support exists for SC 42 meetings and its application deadline before the spring plenary."
@@ -30488,7 +30488,7 @@
     "https://www.scc.ca/en/standards/participate"
    ],
    "applicant_entity": "either",
-   "corrections": "Name tightened: INCITS/AI named as the US TAG; 'ISO/IEC 5259 series' qualified as already published (Parts 1-5, 2024-2025) so the opportunity is maintenance/NWIP, not base drafting. Funder wording adjusted accordingly. Fit lowered 85 -> 80: no cash, and the registration route is blocked until affiliation is settled. Deadline text now gives the practical target (register by ~Feb 2027 for the spring plenary).",
+   "corrections": "Name tightened: INCITS/AI named as the US TAG; 'ISO/IEC 5259 series' qualified as already published (Parts 1-5, 2024-2025) so the opportunity is maintenance/NWIP, not base drafting. Funder wording adjusted accordingly. Fit lowered 85 -> 80: no cash, and the registration route is blocked until affiliation is settled. Deadline text now gives the practical target (register by ~Feb 2027 for the spring plenary). | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "tier_rationale": "B: eligibility is essentially certain (prior SC 42 contributor, no citizenship rule) and the fit is the highest in this batch, but registration first requires an organisational nomination through a national body, and the Canadian route only opens with the U of T affiliation in spring 2027. No funding attached, so it is positioning rather than an application to prepare now.",
    "internal_or_referee_deadlines": "National-body document-submission cut-offs are typically 6-8 weeks before each SC 42 plenary (spring plenary ~April 2027 → submit through the mirror committee by ~mid-Feb 2027; confirm exact dates with the SCC secretary).",
    "category": "robotics_physical_ai_programs",
@@ -30503,32 +30503,32 @@
     "National mirror committee application",
     "Expert nomination from employer/institution"
    ],
-   "fit_rationale": "SC 42 owns both the TUpper standard that O1 extends and the ISO/IEC 5259 'data quality for analytics and ML' series that AXIOMALITY's Passport must eventually map to; contributing a robot-data-quality profile or a 21838-4 extension is a concrete O1/O2 deliverable already named in the research program. Standards recognition is also an explicit company milestone for Q2 2027.",
+   "fit_rationale": "SC 32 owns both the TUpper standard that O1 extends and the ISO/IEC 5259 'data quality for analytics and ML' series that AXIOMALITY's Passport must eventually map to; contributing a robot-data-quality profile or a 21838-4 extension is a concrete O1/O2 deliverable already named in the research program. Standards recognition is also an explicit company milestone for Q2 2027.",
    "risks_and_flags": [
     "Registration route depends on residence/affiliation (Canada vs US) which is unconfirmed",
     "No cash"
    ],
    "cycle_note": "Plenaries twice yearly (spring/autumn). | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low) | alternative deadline seen: rolling (high) | alternative deadline seen: rolling (medium) | alternative deadline seen: rolling (expert nominations accepted any time; SC 42 plenaries roughly April and October; NWIPs submitted through the national body ahead of a plenary) (low)",
    "merged_from": [
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
-    "ISO/IEC JTC 1/SC 42 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 42/WG 3 trustworthiness, JTC 1/SC 42 - ISO/TC 299 liaison",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
-    "ISO/IEC JTC 1/SC 42 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items"
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items",
+    "ISO/IEC JTC 1/SC 32 (AI) participation via SCC or ANSI - ISO/IEC 5259 data quality for ML series, ISO/IEC 21838 TLO maintenance, SC 32/WG 3 trustworthiness, JTC 1/SC 32 - ISO/TC 299 liaison",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) participation: TLO series (ISO/IEC 21838), data quality for AI (ISO/IEC 5259), AI-in-robotics work, and standards recognition of the AXIOMALITY data Passport",
+    "ISO/IEC JTC 1/SC 32 (Artificial intelligence) expert participation: TLO series (ISO/IEC 21838, incl. Part 4 TUpper), data quality for AI (ISO/IEC 5259 series), AI-in-robotics work items"
    ],
    "bundle": "standards-participation-bundle"
   },
@@ -30735,7 +30735,7 @@
    ]
   },
   "e1cd5a203054": {
-   "name": "Standards Council of Canada: membership on the Canadian mirror committee to ISO/IEC JTC 1/SC 42 and SCC travel/participation support for Canadian delegates at international meetings",
+   "name": "Standards Council of Canada: membership on the Canadian mirror committee to ISO/IEC JTC 1/SC 32 (ISO/IEC 21838 home; SC 42 optional for AI data quality) and SCC travel/participation support for Canadian delegates at international meetings",
    "funder": "Standards Council of Canada (SCC)",
    "url": "https://www.scc.ca/en/standards/get-involved",
    "country": "Canada",
@@ -30793,7 +30793,7 @@
     "https://www.scc.ca/en/standards/get-involved",
     "https://www.scc.ca/en/standards/participate"
    ],
-   "corrections": "Name tightened to the mirror committee to ISO/IEC JTC 1/SC 42. The scout's amount statement ('historically SCC reimburses...') is unconfirmed and now marked as such; do not budget on it. deadline_confidence lowered to low. Fit lowered from 76 to 74 because the only funded component (travel) is unverified and cannot be used before spring 2027.",
+   "corrections": "Name tightened to the mirror committee to ISO/IEC JTC 1/SC 42. The scout's amount statement ('historically SCC reimburses...') is unconfirmed and now marked as such; do not budget on it. deadline_confidence lowered to low. Fit lowered from 76 to 74 because the only funded component (travel) is unverified and cannot be used before spring 2027. | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "tier_rationale": "B: eligible in principle once Dr. Ru holds a Canadian affiliation (spring 2027, ~7 months away, or sooner if the company is Canadian), and the application requires institutional endorsement (mirror-committee chair/SCC approval, Grüninger support). Not A because eligibility today is doubtful and the funded element is unverified; not C because it is the only Canadian public route that could pay for the O1 standards deliverable and the timeline aligns with the U of T start.",
    "category": "standards_ontology_open_source_community",
    "last_checked": "2026-09-25",
