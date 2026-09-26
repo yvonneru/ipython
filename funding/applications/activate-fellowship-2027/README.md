@@ -79,7 +79,7 @@ Recorded format:
 |---|---|---|
 | Applicant | Track decision; cohort choice; eligibility email to Activate; work-authorization confirmation; pre-application form; all narrative sections; CV; submit | 2 Oct / 6 Oct / 9 Oct / 20 Oct / 28 Oct |
 | Company officer / CTO | Entity facts (legal name, jurisdiction, date, cap table, raised-to-date, revenue, headcount, Uing relationship); confirm which partner/adviser names may be disclosed; co-applicant decision; Engine test numbers if available | 3 Oct; 23 Oct |
-| Prof. Grüninger | Heads-up and consistency with the CPRA letter; agreement to be named as academic reference if references are requested; confirmation of COLORE/SC 42 contribution route for the open ontology | 10 Oct |
+| Prof. Grüninger | Heads-up and consistency with the CPRA letter; agreement to be named as academic reference if references are requested; confirmation of COLORE/SC 32 contribution route for the open ontology | 10 Oct |
 | Harvard supervisor | Heads-up on the full-time mid-2027 commitment; possible Boston host-lab introduction; reference if requested | 10 Oct |
 | Referees (if letters requested) | Letters per referee_brief.md | [Activate's referee deadline — confirm] |
 | Institution | None required at application stage (individual fellowship; host lab arranged by Activate after selection) | — |
@@ -107,7 +107,7 @@ Recorded format:
 | Problem addressed | §2: robot-learning datasets define "part" operationally, satisfy no parthood axioms, cannot be mapped across vocabularies; real-robot data is scarce (~500k h vs ~10M needed) and value is migrating to verification; EU AI Act Annex I applies to robots from 2 Aug 2028 |
 | Development stage | §3: kernel axioms machine-proven consistent; minimum Engine in internal test Q4 2026; adapters for LeRobot, RLDS, ROS 2/MCAP, OpenUSD/USDZ, PLY, JSON; 100,000 measured 3D asset packages; consumer spatial app live on Apple Vision Pro |
 | Evidence it works | §3: theorems (consistency, module relationships); Vision Pro app in production; audit pack reviewed with a Big Four firm and an international law firm; [Engine test numbers when available] |
-| Potential impact | §4: data Passport as certification for embodied-AI data; standards route (SC 42); safety evidence for deployments; audit toolkit generalizes to medical imaging, CAD, BIM; open ontology released |
+| Potential impact | §4: data Passport as certification for embodied-AI data; standards route (SC 32); safety evidence for deployments; audit toolkit generalizes to medical imaging, CAD, BIM; open ontology released |
 | Technical expertise | §5 and statement.md: PhD Information Engineering (U of T); core contributor ISO/IEC 21838-4; two Synthese submissions; 13 granted patents and 9 applications; production systems at MICAS and Uing; Harvard Medical School postdoc |
 | Leadership role | §6: founder/CEO; owns kernel, verification and standards strategy; leads a CTO, robotics lead and senior 3D asset lead; prior team of 100+ at MICAS |
 | Commercial plan | §7 and budget_and_timeline.md: Engine + Passport as first unit; pilots USD 25–50k (8–12 weeks) → annual deployments USD 120–240k; three co-development partners Q1 2027; Passport v1 recognition Q2 2027; five paying customers by month 18 |
@@ -144,3 +144,5 @@ Remaining risks, in order:
 4. Consistency across applications. §5 and the budget timeline promise the public parthood audit and the open COLORE/SC 42 ontology — the same deliverables the CPRA/Vector/DSI drafts promise as the applicant's postdoctoral program. Reviewers will not see both, but referees will; Prof. Grüninger must agree the contribution route is open to the company (email 3).
 5. The raise-to-date ceiling (USD 2M non-governmental) and the MICAS USD 5M round: MICAS is a different company, but if AXIOMALITY is Uing Technologies renamed, anything Uing raised counts. Unconfirmed.
 6. Cohort choice and host lab: Boston presumes an Activate host-lab arrangement; Anywhere requires a facility the company already controls and it is unconfirmed whether an Anywhere fellow may reside outside the U.S.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

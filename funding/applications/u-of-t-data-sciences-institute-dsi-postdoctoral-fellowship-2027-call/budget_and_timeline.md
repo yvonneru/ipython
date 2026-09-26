@@ -28,9 +28,9 @@ No budget is requested or submitted. The fellowship is a fixed-value award: CAD 
 | 10–14 | 3.1 (pooling track) | Policies trained on ontology-aligned vs unaligned pooled data; transfer across part vocabularies measured in SAPIEN with confidence intervals | Interim results; methods paper on specification-based auditing submitted |
 | 13–18 | 3.1 Constraint-based training | Differentiable parthood-constraint losses; constraint-guided augmentation for underrepresented categories; ablations by axiom family | Second methods paper draft |
 | 17–22 | 3.2 Verification-in-the-loop evaluation | Violation-rate metric in the evaluation loop; held-out PartNet-Mobility category experiments in SAPIEN and [second simulator]; violation rate vs task failure analysis | Robotics-venue paper submitted |
-| 20–24 | Dissemination | Ontology contributed to ISO/IEC JTC 1/SC 42 as a working document [verify procedure] and released under an open licence in COLORE; toolkit v2; non-robotics demonstration of the audit method (medical-image part labels or CAD assemblies) [choose with second co-supervisor]; final report | Final deliverables; faculty-application materials |
+| 20–24 | Dissemination | Ontology contributed to ISO/IEC JTC 1/SC 32 as a working document [verify procedure] and released under an open licence in COLORE; toolkit v2; non-robotics demonstration of the audit method (medical-image part labels or CAD assemblies) [choose with second co-supervisor]; final report | Final deliverables; faculty-application materials |
 
-Throughout: monthly meetings with both co-supervisors; DSI community events, seminars and [workshop/tutorial contribution — verify what DSI offers fellows]; Robotics Institute seminar series; SC 42 meetings as the laboratory's representative; co-supervision of [number] graduate students on the ontology and audit components [confirm with co-supervisors].
+Throughout: monthly meetings with both co-supervisors; DSI community events, seminars and [workshop/tutorial contribution — verify what DSI offers fellows]; Robotics Institute seminar series; SC 32 meetings as the laboratory's representative; co-supervision of [number] graduate students on the ontology and audit components [confirm with co-supervisors].
 
 ## Pre-submission timeline (September 2026 – January 2027)
 

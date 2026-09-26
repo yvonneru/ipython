@@ -148,3 +148,5 @@ Selection criteria (official page, verbatim in substance; no weights published â
 7. Bibliography entry 16 may have no published source, in which case the "logical errors in ShapeNet and PartNet" claim must be softened or dropped.
 8. Page counts after PDF export are unverified; 1,489 words at 11 pt with headings may exceed 3 pages.
 9. Start-date conflict with the Toronto track (CPRA) is a real decision the applicant has not made; referees are being asked for two letters in the same week.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

@@ -103,7 +103,7 @@ proposal.md is written to the five funder headings at roughly 2,050 words includ
 | Training | proposal.md §3 | Each open research question owned by a trainee slot; Toronto-based training with 2–4-week visits; individual development plans; postdoc mentors, PI supervises |
 | EDI | proposal.md §4 | Recruitment, environment, research-design (dataset coverage measured, not assumed) and access actions |
 | Budget | proposal.md §5; budget_and_timeline.md | Request ≤ min(CAD 100k, international award in CAD); salary-led; MASc requested only if the arithmetic closes; CPRA non-duplication stated |
-| Impact and benefit to Canada (60% of rank) | proposal.md §1, final paragraph | Four numbered benefits: open infrastructure maintained in Canada; evidence for Canadian adopters exporting to the EU; SC 42 contribution via the Canadian route; talent return and access to foreign-funded research. [Named Canadian users — only if written interest exists] |
+| Impact and benefit to Canada (60% of rank) | proposal.md §1, final paragraph | Four numbered benefits: open infrastructure maintained in Canada; evidence for Canadian adopters exporting to the EU; SC 32 contribution via the Canadian route; talent return and access to foreign-funded research. [Named Canadian users — only if written interest exists] |
 | Quality of training in Canada (40% of rank) | proposal.md §3 | One grant-funded postdoc, [one MASc if the budget closes], and PhD/undergraduates on other support, all Toronto-based |
 
 ## Open items — every [bracketed] item that still needs the applicant
@@ -124,7 +124,7 @@ proposal.md is written to the five funder headings at roughly 2,050 words includ
 14. [Whether references count within the three pages; font/margin rules; public summary field]
 15. [Thesis title and doctoral supervisor, if a biosketch of Dr. Ru is requested]
 16. [Whether Prof. Grüninger's Discovery program cited in proposal §1 is funded and active, and its title]
-17. [Dr. Ru's ISO/IEC 21838-4 role wording; SC 42 participation route (SCC mirror committee)]
+17. [Dr. Ru's ISO/IEC 21838-4 role wording; SC 32 participation route (SCC mirror committee)]
 18. [Canadian organizations willing, in writing, to trial the audit toolkit (benefit to Canada) — or none]
 19. [Current EU AI Act application date for Annex I systems]
 20. [Whether the collaboration is new: no prior joint grant or joint paper between the two groups]
@@ -171,3 +171,5 @@ Everything else (PIN 103297, COLORE 2,580, PSL, TUpper/ISO/IEC 21838-4:2023, Syn
 7. **Declarations.** The AXIOMALITY COI, a CEO role alongside a grant-funded full-time postdoc, and STRAC for every named person all have to be handled.
 8. **Grüninger overload.** Alliance ranks below CPRA and the RAC.
 9. **Unverified rules.** The 25% rule, the "within three months" wording versus 120 days, the next deadline date and the CV format are all still unconfirmed.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

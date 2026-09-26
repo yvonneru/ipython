@@ -86,7 +86,7 @@ Three searches on 2026-09-25 and three on 2026-09-26 (budget: 3 each). Found:
 - [ ] Budget option chosen; cash within the cash cap and credits within the credit cap; justification text filled with measured SMT check time and advisor's GPU sizing; no non-allocable indirect costs
 - [ ] Bibliography entries 3, 4, 8, 9 and 14 completed; every [verify] entry checked
 - [ ] Start date reads June 2027 or later everywhere (never April)
-- [ ] ISO/IEC JTC 1 committee for 21838-4 verified (SC 42 in the profile) before it is named as a deliverable
+- [x] ISO/IEC JTC 1 committee for 21838-4 verified before it is named as a deliverable: SC 32 (ISO catalogue, checked 2026-09-26)
 - [ ] All [brackets] resolved
 - [ ] IP / publication terms of the 2026 rules read and accepted by PI and Research Services
 - [ ] Submitted by the PI in the portal at least three days before the close; confirmation email filed
@@ -156,3 +156,5 @@ Three searches on 2026-09-25 and three on 2026-09-26 (budget: 3 each). Found:
 8. Page fit is unverified until the Fall 2026 template posts; the PI CV page is still empty.
 9. Double-funding perception: the Theme 1 question sits close to the PI's Discovery program; the §1 distinction needs his sign-off.
 10. IP terms for 2026 are unread; AXIOMALITY material must stay out.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

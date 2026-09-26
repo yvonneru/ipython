@@ -14,7 +14,7 @@ Both programs require a pitch deck (the Venture Program asks for one that "addre
 | 8 | Business model | Pilot USD 25–50k (8–12 wk) → annual USD 120–240k → exchange | Sizing cohort: 10 pilots, 4 conversions → USD 250–500k bookings; gates Q1/Q2 2027, month 18 | proposal §6 |
 | 9 | Competition | Nobody else produces evidence a third party can re-derive | 2×2: checks meaning vs format; reproducible vs not. Named: 3Laws, reasonX, NVIDIA data factory, KnowRob-style | proposal §7 |
 | 10 | Team | Standards author + shipped founder + robotics and 3D leads | Yi Ru (ISO/IEC 21838-4; MICAS; Uing); CTO [name, McMaster AI PhD]; robotics lead [name]; 3D asset lead [name]; advisors [i-lab staff advisor; Prof. Grüninger if agreed] | proposal §8 |
-| 11 | Impact | Data not wasted, deployments not blocked, a public audit of the field's benchmarks | Illustrative USD 50–200M avoided collection cost (10% of 10M h); Annex I evidence; public audit to COLORE / ISO SC 42 | proposal §9 |
+| 11 | Impact | Data not wasted, deployments not blocked, a public audit of the field's benchmarks | Illustrative USD 50–200M avoided collection cost (10% of 10M h); Annex I evidence; public audit to COLORE / ISO SC 32 | proposal §9 |
 | 12 | Ask | 12 weeks at the i-lab → two signed pilots and Passport v0.9; a grand prize → Passport v1 recognized by an assessment body (Q2 2027) | Use-of-prize table for USD 75k / USD 25k | proposal §10; budget §2 |
 
 Appendix (not counted): LOIs; internal-test table; patent schedule [13 granted, 9 applications — reconcile]; Technical Annex summary (four-layer ontology, two-tier checking); sources for every market figure.

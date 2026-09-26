@@ -35,7 +35,7 @@ No budget is requested from the applicant. The fellowship pays the fellow's sala
 | 6–12 | 2 Audit | Cross-dataset label mappings proved meaning-preserving; corrected annotations; merged, ontology-aligned corpus | Public data release; audit/data paper submitted (ML or robotics venue) |
 | 8–16 | 3 Learning | Part-aware policy backbone agreed with sponsor; axioms compiled to semantic-loss / fuzzy-logic terms; constraint-guided augmentation from Mace4 models instantiated in SAPIEN; pooled-data experiments (H3) | Methods paper draft; toolkit v1 |
 | 12–20 | 3 Learning | Constraint-based training on held-out PartNet-Mobility categories (H1); verification-in-the-loop evaluation, violation rate vs task success (H2); ablations by axiom family | ML-venue paper submitted |
-| 16–24 | 2–3 | Extension to real-robot corpora (AgiBot World, DROID; Open X-Embodiment if licences permit); second simulator; toolkit release; ontology contributed to ISO/IEC JTC 1/SC 42 | Robotics-venue paper; toolkit v2; standards contribution |
+| 16–24 | 2–3 | Extension to real-robot corpora (AgiBot World, DROID; Open X-Embodiment if licences permit); second simulator; toolkit release; ontology contributed to ISO/IEC JTC 1/SC 32 | Robotics-venue paper; toolkit v2; standards contribution |
 | 20–24 | — | Consolidation; talks at Vector and the U of T Robotics Institute; faculty applications | — |
 
 ## Decision points

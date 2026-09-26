@@ -13,7 +13,7 @@ No budget is requested: the fellowship provides a stipend of USD 98,000 a year, 
 | Y1 M4–9 (Oct 2027–Mar 2028) | 2.1 Audit pipeline | Adapters for PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World, Open X-Embodiment, DROID; Datalog/SMT compilation; theorem-proving tier for residual cases | Audit toolkit v0.1; first violation-rate results on PartNet and DROID, discussed with their Stanford authors [confirm host] |
 | Y1 M9–12 (Mar–Jun 2028) | 2.1 / 2.2 | Audit across all seven datasets; simulated vs real-robot comparison; first draft of the audit/data paper | Audit paper submitted [venue — a datasets-and-benchmarks track or a robotics venue; confirm with host] |
 | Y2 M13–18 (Jul–Dec 2028) | 2.2 Alignment and release; 3.1 Constraint-based training | Provably meaning-preserving label mappings; corrected annotations; merged corpus released; differentiable relaxations of parthood constraints implemented in [host's policy architecture]; SAPIEN training on held-out PartNet-Mobility categories | Merged ontology-aligned corpus v1; toolkit v1.0; first generalization results |
-| Y2 M18–24 (Jan–Jun 2029) | 3.1 / 3.2 | Constraint-guided augmentation; verification-in-the-loop evaluation; ablations by axiom family; violation rate vs task failure; pooled-data transfer experiments | Methods paper submitted [ML venue]; ontology and toolkit contributed to ISO/IEC JTC 1/SC 42 |
+| Y2 M18–24 (Jan–Jun 2029) | 3.1 / 3.2 | Constraint-guided augmentation; verification-in-the-loop evaluation; ablations by axiom family; violation rate vs task failure; pooled-data transfer experiments | Methods paper submitted [ML venue]; ontology and toolkit contributed to ISO/IEC JTC 1/SC 32 |
 | Y3 M25–30 (Jul–Dec 2029) | 3.2 real-robot replication; 2.2 second domain | Replication on [host group's robot platform — confirm]; audit transferred to a second hierarchical-annotation domain (CAD assemblies or medical-imaging part labels, with [Stanford biomedical-ontology group — confirm]) | Real-robot results; second-domain audit released |
 | Y3 M30–36 (Jan–Jun 2030) | Synthesis | Which axiom families account for generalization gains; cross-embodiment transfer; [second simulator — confirm] replication | Third paper [robotics venue]; final ontology release; faculty-application package |
 
@@ -26,7 +26,7 @@ No budget is requested: the fellowship provides a stipend of USD 98,000 a year, 
 | Research funds | Conference travel; open-data hosting; software licences if any | Amount set by the program [confirm] |
 | Professional development | Faculty-preparation and cohort activities | Provided by the program [confirm scope] |
 | Software | Prover9/Mace4, Z3, SAPIEN, Common Logic tooling — all open source | No cost |
-| Access to COLORE and ISO/IEC JTC 1/SC 42 | Verification methodology and dissemination path | Through Prof. Grüninger (external collaborator on Theme 1) [confirm] |
+| Access to COLORE and ISO/IEC JTC 1/SC 32 | Verification methodology and dissemination path | Through Prof. Grüninger (external collaborator on Theme 1) [confirm] |
 | Dataset licences | PartNet/ShapeNet, SAPIEN, GAPartNet, AgiBot World, OXE, DROID under research (mostly non-commercial) licences | Corrected annotations released under compatible licences; no commercial reuse by AXIOMALITY without separate agreements |
 
 ## Risk register

@@ -184,3 +184,5 @@ Founder record
 6. The deadline itself is unconfirmed; if the 2027 PIC follows 2026 (early December), the internal 1 Dec date leaves no slack for a slipped LOI.
 7. Patent counts (13 + 9 in the deck vs 3 + 9–10 in the CPRA draft) contradict each other and must be reconciled before any number is put in front of external judges.
 8. The founder's time is committed to CPRA (17 Oct), the HMS appointment and the company in the same eight weeks; the 8-day preparation estimate assumes the CTO carries the deck.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

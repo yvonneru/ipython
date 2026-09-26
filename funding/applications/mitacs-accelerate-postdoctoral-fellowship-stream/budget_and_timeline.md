@@ -26,7 +26,7 @@ The award is paid to a research account at the University of Toronto administere
 | Compute for O3 (policy training in SAPIEN and [second simulator]; ablations by axiom family) | Units 4–6 | [Partner infrastructure, a Vector Institute allocation if a Vector affiliation is granted, or U of T/Digital Research Alliance — choose and size with the supervisor; estimate: GPU-hours for matched comparisons over held-out PartNet-Mobility categories with confidence intervals] | The only cost that could exceed laboratory resources; the source must be named in the proposal. |
 | Data storage and hosting for the aligned public corpus and toolkit releases | Units 3–6 | Semantic Technologies Laboratory servers [confirm capacity] | The public corpora plus the merged corpus; releases hosted for the life of the project. |
 | Open-access publication fees (audit/data paper; methods paper; robotics paper) | Units 3, 5, 6 | [Supervisor's grant or partner; or venues without fees] | Three papers over 24 months. |
-| Travel: partner site visits; one ISO/IEC JTC 1/SC 42 meeting; one conference presentation per year | Each unit | [Partner (site visits); supervisor's grant or SC 42 delegation (standards meeting); conference — source] | On-site time each unit (§7 of the proposal) and contribution of the ontology to SC 42. |
+| Travel: partner site visits; one ISO/IEC JTC 1/SC 32 meeting; one conference presentation per year | Each unit | [Partner (site visits); supervisor's grant or SC 32 delegation (standards meeting); conference — source] | On-site time each unit (§7 of the proposal) and contribution of the ontology to SC 32. |
 
 Notes. (1) No equipment is requested; verification runs on laboratory workstations (Prover9/Mace4, SMT solvers) and existing servers. (2) No funds go to the partner or to AXIOMALITY in either route. (3) [Route B: state the reduced partner contribution and the incubator's in-kind support, if any.] (4) [If the template requires Mitacs's own budget categories, re-map the lines above onto them.] (5) The partner's cash contribution is invoiced by Mitacs per unit [confirm invoicing schedule and whether the first year is invoiced on approval].
 
@@ -43,7 +43,7 @@ Notes. (1) No equipment is requested; verification runs on laboratory workstatio
 | Audits: public corpora [1–7] | | ██ | ██ | | | |
 | Toolkit v1 at partner | | | ██ | | | |
 | Merged ontology-aligned corpus; public release | | | | ██ | | |
-| COLORE contribution; SC 42 proposal | | | | ██ | ██ | |
+| COLORE contribution; SC 32 proposal | | | | ██ | ██ | |
 | Pooled-data experiments | | | | ██ | ██ | |
 | Constraint-guided augmentation | | | | | ██ | |
 | Constrained training (auxiliary losses) | | | | | ██ | ██ |
@@ -58,7 +58,7 @@ Notes. (1) No equipment is requested; verification runs on laboratory workstatio
 | Unit 1 | Parts ontology v0.1: four modules proved consistent and non-trivial (Prover9/Mace4); competency-question document agreed with the partner | Proof scripts and models in the repository; signed-off competency questions |
 | Unit 2 | Representation theorems for the public schemas and the partner schema; first audit report on [partner dataset 1] and on PartNet / PartNet-Mobility | Theorem files; violation-rate tables |
 | Unit 3 | Audit pipeline v1 (both tiers; adapters for LeRobot, RLDS, ROS 2/MCAP, OpenUSD/USDZ, PLY, JSON [+ partner formats]); audits of the part-level public corpora [1–4] and of the part labels in [5–7]; audit/data paper submitted; toolkit v1 installed at the partner | Release tag; submission receipt; partner acceptance |
-| Unit 4 | Merged ontology-aligned public corpus released; private aligned release of the partner's data; ontology in COLORE and proposed to SC 42; pooled-data results | Release DOI; SC 42 document number; results tables |
+| Unit 4 | Merged ontology-aligned public corpus released; private aligned release of the partner's data; ontology in COLORE and proposed to SC 32; pooled-data results | Release DOI; SC 32 document number; results tables |
 | Unit 5 | Augmentation and constrained-training methods; methods paper submitted | Code release; submission receipt |
 | Unit 6 | Verification-in-the-loop evaluation protocol; robotics paper; toolkit v2; evidence pack for the partner [route B: Passport integration]; Mitacs Final Report and Survey | Protocol document; submission receipt; partner acceptance; Final Report filed |
 

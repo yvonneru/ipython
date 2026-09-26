@@ -93,7 +93,7 @@ Recorded format:
 | Management and team capability | proposal.md §5; statement.md | Founder: U of T PhD, ISO/IEC 21838-4 core contributor, MICAS (USD 5M raised incl. Accel; >USD 50M revenue; 100+ team), YourTable; CTO McMaster AI doctorate and accountable technical lead; robotics lead; 10+-year asset lead; IP, academic-separation and conflict-of-interest paragraph in §5 |
 | Commercial potential and business plan | proposal.md §6 | Pilot USD 25–50k (8–12 weeks); annual deployment USD 120–240k; focused pool USD 12–60M; four buyer types; 18-month gates (3 partners Q1 2027, Passport v1 recognized Q2 2027, five customers by month 18) |
 | Financial capacity | budget_and_timeline.md; [financial statements] | [To be demonstrated: cash, financing sized to the 18-month plan] |
-| Benefits to Canada | proposal.md §6 | R&D positions in [Toronto]; Canadian robotics and manufacturing buyers (deck names Sanctuary/Magna and Vention as deployment contexts); standards participation through SC 42 [Canadian mirror committee — confirm]; an exportable compliance product ahead of the EU AI Act Annex I date (2 Aug 2028) |
+| Benefits to Canada | proposal.md §6 | R&D positions in [Toronto]; Canadian robotics and manufacturing buyers (deck names Sanctuary/Magna and Vention as deployment contexts); standards participation through SC 32 (ontology) and, prospectively, SC 42 (evidence formats) [Canadian mirror committees — confirm]; an exportable compliance product ahead of the EU AI Act Annex I date (2 Aug 2028) |
 
 ## Open items for the applicant (every [bracket] in the package)
 
@@ -153,3 +153,5 @@ Skeptical panel review, 2026-09-25 (one WebSearch used of the three allowed; the
 7. **Patent inventory.** Two incompatible counts exist and the assignee is unknown; an IP position that cannot be stated is a red flag in an ITA's due diligence.
 8. **Program transition.** IRAP may move to the Canada Innovation Corporation during FY 2027-28; intake practice and templates could change between first contact and agreement.
 9. **Length.** The proposal is about eight pages; ITA templates use bounded text boxes, so a further cut of 30–40% will be needed on transfer.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

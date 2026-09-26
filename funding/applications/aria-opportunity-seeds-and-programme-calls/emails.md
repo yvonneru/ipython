@@ -13,7 +13,7 @@ Following my note about the CPRA application: a separate, non-competing route ha
 The proposal is the same program as the CPRA outline, cut to a seed: a verified parts ontology as a TUpper extension with PSL; the two-tier audit of PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and AgiBot World; and a SAPIEN experiment on whether ontology-consistent training improves generalization. It answers, at dataset scale, the two open questions in your Commonsense Cobotics program about which mereotopologies are implicit in ShapeNet and PartNet decompositions and whether multiple distinct parthood relations exist there. The draft is attached.
 
 Three questions:
-1. Would you be willing to provide a one-paragraph letter of collaboration covering the verification methodology, COLORE placement and SC 42 dissemination, and to be named as collaborator?
+1. Would you be willing to provide a one-paragraph letter of collaboration covering the verification methodology, COLORE placement and SC 32 dissemination, and to be named as collaborator?
 2. Is there a UK group you would recommend as host — someone in applied ontology, formal verification or robot learning who would want the audit results? Your suggestion would carry weight.
 3. Could a Toronto share (a student on the ontology modules, or your time) be covered by a subaward, and would MIE administer it?
 

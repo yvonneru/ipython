@@ -141,3 +141,5 @@ A university-wide postdoctoral fellowship run by the Office of the Vice Provost 
 5. Record: the two central papers are under review, not published; the committee will weigh the CV's publication list, which the package could not verify.
 6. Career-statement limit and prompt not captured; the two-page assumption may be wrong.
 7. Twenty-plus bracketed facts (thesis title, lab, patent count, ISO wording, references) still need the applicant.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

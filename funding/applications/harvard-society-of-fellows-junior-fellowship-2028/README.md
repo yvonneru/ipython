@@ -148,3 +148,4 @@ Found 2026-09-25 by web search (three searches; WebFetch was unavailable, so the
 5. Nomination logistics: no nominator, no referees 2–3, no residential address, no thesis chapter chosen, publication and patent counts unreconciled, second Synthese title unknown, HMS supervisor unnamed.
 6. Registry mismatch: the registry record's slug is "harvard-society-of-fellows-junior-fellowship" while this package directory is "-2028"; its stipend figure is stale (USD 85–90k vs USD 101,000) and its eligibility note ("no fixed post-PhD limit") understates the published guidance. Update the registry entry.
 
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

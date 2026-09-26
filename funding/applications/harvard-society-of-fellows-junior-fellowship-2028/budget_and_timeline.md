@@ -28,7 +28,7 @@ Mapped from the 24-month program template extended to the fellowship's three yea
 | Y2 Q1–Q2 (Jul–Dec 2029) | Year-2 study: ontology as audit (O2) | Audit across all five datasets; violation rates by axiom family, category and source; corrected annotations, proven cross-dataset mappings and merged ontology-aligned corpus released under an open licence; audit/data paper submitted [AI or robotics venue] |
 | Y2 Q3–Q4 (Jan–Jun 2030) | Year-3 study begun: ontology as inductive bias (O3) | Differentiable relaxations of parthood constraints as auxiliary losses; constraint-guided augmentation; pooled-data transfer experiments in SAPIEN [+ second simulator]; methods paper submitted [ML venue] |
 | Y3 Q1–Q2 (Jul–Dec 2030) | Verification-in-the-loop evaluation (O3) | Verification-in-the-loop evaluation; violation rate as failure predictor; ablations by axiom family; robotics-venue paper submitted |
-| Y3 Q3–Q4 (Jan–Jun 2031) | Replication and dissemination | Audit toolkit applied to a second domain [medical-image part labels or CAD assemblies]; ontology contributed to COLORE and to ISO/IEC JTC 1/SC 42 [as a proposal for a TUpper extension — confirm route]; faculty applications |
+| Y3 Q3–Q4 (Jan–Jun 2031) | Replication and dissemination | Audit toolkit applied to a second domain [medical-image part labels or CAD assemblies]; ontology contributed to COLORE and to ISO/IEC JTC 1/SC 32 [as a proposal for a TUpper extension — confirm route]; faculty applications |
 
 ## C. Interaction with other awards (decide before nomination)
 | If held | Effect of a July 2028 Junior Fellowship |

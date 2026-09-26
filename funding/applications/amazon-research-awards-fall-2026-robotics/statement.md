@@ -13,7 +13,7 @@ ARA takes no personal statement or cover letter. Amazon's stated criteria are sc
 **Experience.** [Appointments, most recent first — Professor, University of Toronto, [years]; prior positions [e.g., NIST, University of Toronto Enterprise Integration Laboratory — confirm].]
 
 **Principal artefacts and standards.**
-- TUpper, the upper ontology published as ISO/IEC 21838-4:2023 (ISO/IEC JTC 1 [SC 42 per profile — verify the committee on iso.org]), incorporating the PI's mereotopology, time, location and units-of-measure ontologies; each module verified. [Role: editor / lead author — confirm.]
+- TUpper, the upper ontology published as ISO/IEC 21838-4:2023 (ISO/IEC JTC 1/SC 32), incorporating the PI's mereotopology, time, location and units-of-measure ontologies; each module verified. [Role: editor / lead author — confirm.]
 - COLORE (Common Logic Ontology Repository), colore.oor.net: more than 2,580 first-order ontologies in Common Logic (ISO/IEC 24707), organized into hierarchies.
 - Process Specification Language (PSL) ontology [ISO 18629 — confirm].
 - FOUnt, ontologies for units of measure — Distinguished Paper Award, FOIS 2018 [confirm citation].
@@ -40,7 +40,7 @@ ARA takes no personal statement or cover letter. Amazon's stated criteria are sc
 
 **Research.** Knowledge representation at the boundary of formal ontology and machine learning for physical AI: formally verified first-order ontologies of physical objects and their parts (TUpper / ISO/IEC 21838-4 lineage, PSL, COLORE methodology, Prover9/Mace4, SMT), used as specifications, audits and inductive biases for robot-learning datasets and manipulation policies.
 
-**Standards.** Core contributor, ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper (ISO/IEC JTC 1 [SC 42 per profile — verify committee and working-group designation]) [confirm role wording].
+**Standards.** Core contributor, ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper (ISO/IEC JTC 1/SC 32 [confirm working-group designation]) [confirm role wording].
 
 **Most relevant papers and outputs.**
 1. Ru, Y., and Grüninger, M. (2026, submitted). Material Constitution as a Parthood-Preserving Mapping between Mereologies. Synthese. First author; developed the theory and proofs.

@@ -13,14 +13,14 @@ No budget is requested: the fellowship provides a salary and an annual research 
 | Y1 M6–12 | 2.2 Measurement | Audit across all seven datasets (minimum at M12: the first three released); violation rates by axiom family with bootstrap intervals, stratified by category and depth; random-effects analysis of source disagreement with Mentor 1; corrections and mappings | Audit/data paper submitted [venue — e.g., a datasets-and-benchmarks track; confirm with mentors]; corrected annotations and mappings released |
 | Y1 M9–Y2 M15 | 2.3 Health extension | Anatomical partonomy and segmentation dataset chosen with Mentor 3 [confirm; access approvals]; adapter written; audit run; divergence report | Imaging data-quality report; toolkit v1.0 with second-domain adapter |
 | Y2 M13–18 | 3.1 Pooled data | Merged ontology-aligned corpus v1 released; part-aware policies trained in SAPIEN [+ second simulator] on native vs aligned pooled data; held-out PartNet-Mobility categories; matched comparisons with confidence intervals | Merged corpus; first generalization results |
-| Y2 M16–22 | 3.2 Constraints and evaluation | Differentiable parthood-constraint losses; constraint-guided augmentation; verification-in-the-loop protocol; ablations by axiom family; violation rate vs task failure | Methods paper submitted [ML venue]; ontology and toolkit contributed to ISO/IEC JTC 1/SC 42 |
+| Y2 M16–22 | 3.2 Constraints and evaluation | Differentiable parthood-constraint losses; constraint-guided augmentation; verification-in-the-loop protocol; ablations by axiom family; violation rate vs task failure | Methods paper submitted [ML venue]; ontology and toolkit contributed to ISO/IEC JTC 1/SC 32 |
 | Y2 M22–24 | Synthesis | Which axiom families account for gains; shared violation classes across robotics and imaging; final releases | Third paper [robotics or imaging venue]; final ontology release; faculty-application package |
 
 ## Use of the annual research and travel allocation (amount set by HDSI [confirm]; no figures invented)
 
 | Item | Why | Notes |
 |---|---|---|
-| Conference travel | Present the audit paper and methods paper; attend one ISO/IEC JTC 1/SC 42 plenary as the laboratory's contributor [confirm] | Two to three trips per year |
+| Conference travel | Present the audit paper and methods paper; attend one ISO/IEC JTC 1/SC 32 plenary as the laboratory's contributor [confirm] | Two to three trips per year |
 | Cloud compute for the bulk audit | Tier-one Datalog/SMT checks over millions of part instances; theorem-proving tier with time budget | Sized after the M3 pilot; policy-training compute arranged with Mentor 2 (below) |
 | Open-data hosting | Corrected annotations, mappings, merged corpus, audit logs | Prefer a Harvard-supported repository [confirm — e.g., Harvard Dataverse] |
 | Workshop / cohort activity | Present the audit tooling at an HDSI event; the equity commitment in statement.md | Small |
@@ -33,7 +33,7 @@ No budget is requested: the fellowship provides a salary and an annual research 
 | Policy architecture and second simulator | Project 3.1 | Mentor 2 [confirm] |
 | Anatomical partonomy and segmentation dataset; any data-use approvals | Project 2.3 | Mentor 3 [confirm resource and approvals; no patient-identifiable data is required for a label-hierarchy audit, but confirm] |
 | Software | Prover9/Mace4, Z3, SAPIEN, Common Logic tooling, LeRobot/RLDS adapters — all open source | No cost |
-| COLORE access and SC 42 contribution path | Verification methodology and dissemination | Prof. Grüninger (external collaborator) [confirm] |
+| COLORE access and SC 32 contribution path | Verification methodology and dissemination | Prof. Grüninger (external collaborator) [confirm] |
 
 ## Risk register
 

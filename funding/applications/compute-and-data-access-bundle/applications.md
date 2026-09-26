@@ -32,7 +32,7 @@ Non-duplication across the Harvard-period requests (state this in each "other su
 
 ### 0.4 Expected outcomes (≈120 words)
 
-(1) A verified parts ontology released under an open licence and contributed to COLORE and ISO/IEC JTC 1/SC 42. (2) The first quantitative audit of parthood consistency in robot datasets — violation rates by dataset, object category and axiom family, with counter-models for representative failures — released publicly, first as a LeRobot-compatible validator plus an audit report on 2–3 public datasets [by 15 Jan 2027], then across five datasets [M4–8 of the 12-month plan]. (3) Provably meaning-preserving label mappings between the part vocabularies of the audited datasets, and corrected-annotation diffs where dataset terms allow. (4) An audit toolkit reusable for medical-image part labels, CAD assemblies and BIM. (5) Policy-training results in SAPIEN [and Isaac Lab] reporting ontology-violation rate alongside task success; two ML-venue papers and one robotics-venue paper (24-month plan).
+(1) A verified parts ontology released under an open licence and contributed to COLORE and ISO/IEC JTC 1/SC 32. (2) The first quantitative audit of parthood consistency in robot datasets — violation rates by dataset, object category and axiom family, with counter-models for representative failures — released publicly, first as a LeRobot-compatible validator plus an audit report on 2–3 public datasets [by 15 Jan 2027], then across five datasets [M4–8 of the 12-month plan]. (3) Provably meaning-preserving label mappings between the part vocabularies of the audited datasets, and corrected-annotation diffs where dataset terms allow. (4) An audit toolkit reusable for medical-image part labels, CAD assemblies and BIM. (5) Policy-training results in SAPIEN [and Isaac Lab] reporting ontology-violation rate alongside task success; two ML-venue papers and one robotics-venue paper (24-month plan).
 
 ### 0.5 Data-management statement (≈200 words)
 
@@ -142,7 +142,7 @@ Google Cloud is the natural home for the audit because two of the largest corpor
 
 *Timeline (12 months from credit issue).* Months 1–2: adapters, S3 layout, Batch job definitions; first Tier-1 pass on PartNet and PartNet-Mobility. Months 3–6: all five core datasets audited; Tier-2 proving; first public release (validator + audit report on 2–3 datasets, target 15 Jan 2027). Months 7–12: re-audit with the released ontology version, label mappings and corrected-annotation diffs released; container image and documentation; Open Data Sponsorship application.
 
-*Sharing plan.* Code on GitHub (Apache-2.0); reports and mappings on S3 and the Hugging Face Hub; ontology contributed to COLORE and ISO/IEC JTC 1/SC 42; audit/data paper at a robotics or ML venue.
+*Sharing plan.* Code on GitHub (Apache-2.0); reports and mappings on S3 and the Hugging Face Hub; ontology contributed to COLORE and ISO/IEC JTC 1/SC 32; audit/data paper at a robotics or ML venue.
 
 *Team.* Yi Ru, Postdoctoral Researcher, Harvard Medical School (PhD U of T 2025; core contributor to ISO/IEC 21838-4); [HMS supervisor], PI of the lab account; Prof. Michael Grüninger, U of T, collaborator on the ontology.
 
@@ -175,7 +175,7 @@ Three objectives. **O1 — Ontology as specification.** Axiomatize and verify a 
 
 During the allocation year (1 Apr 2027 – 31 Mar 2028) the project runs the re-audit of all corpora with the released ontology (O2) and the full O3 experimental matrix; O1 and the first audit are completed before April 2027 on the applicant's current allocations at Harvard, whose results (audit report on 2–3 public datasets, [15 Jan 2027]) will be cited in the application [insert once available]. The GPU work is new for the group; the CPU work continues the group's established theorem-proving workflow.
 
-Outcomes: an open-licence verified ontology contributed to COLORE and ISO/IEC JTC 1/SC 42; public audit reports and mappings; two ML-venue papers and one robotics-venue paper; a toolkit reusable for CAD assemblies, BIM and medical-image part labels. HQP: Dr. Yi Ru (PDF); [graduate students in the lab working on COLORE/PSL — PI to list].
+Outcomes: an open-licence verified ontology contributed to COLORE and ISO/IEC JTC 1/SC 32; public audit reports and mappings; two ML-venue papers and one robotics-venue paper; a toolkit reusable for CAD assemblies, BIM and medical-image part labels. HQP: Dr. Yi Ru (PDF); [graduate students in the lab working on COLORE/PSL — PI to list].
 
 **Resource justification (form sections):**
 

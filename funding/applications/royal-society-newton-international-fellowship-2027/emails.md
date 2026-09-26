@@ -10,12 +10,12 @@ Dear Michael,
 
 Alongside the CPRA application, I am weighing one alternative that I would not pursue without your view: the Royal Society's Newton International Fellowship, a two-year UK fellowship (up to GBP 280,000) for postdocs based outside the UK. It cannot be combined with a Toronto postdoc, so it is a fork rather than an addition — if the CPRA or Vector routes come through, I would take Toronto. I need to decide by mid-October whether to approach UK hosts at all, because host institutions run internal expressions of interest from December.
 
-The research programme would be the same one you have seen: the verified parts ontology as a TUpper/PSL extension, the audit of PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and AgiBot World, and the constraint-based policy experiments. The Newton scheme weighs the host match and the long-term link to the home research base, so the proposal names you as the continuing collaborator: the ontology goes into COLORE, the Synthese work continues, and the SC 42 route becomes a UK–Canada channel.
+The research programme would be the same one you have seen: the verified parts ontology as a TUpper/PSL extension, the audit of PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and AgiBot World, and the constraint-based policy experiments. The Newton scheme weighs the host match and the long-term link to the home research base, so the proposal names you as the continuing collaborator: the ontology goes into COLORE, the Synthese work continues, and the SC 32 route becomes a UK–Canada channel.
 
 Three questions:
 1. Is there a UK group you would trust to host this — in applied ontology, knowledge-based robotics or verification of autonomous systems? I have a preliminary list (Oxford Robotics Institute with Oxford's KR group, the Edinburgh Centre for Robotics, Manchester's ontology group, Leeds' spatial-reasoning group, Bristol Robotics Lab) and would rather start from a name you know.
 2. Would you be willing to act as one of the two referees if I proceed? References are entered online about a week before the deadline, expected mid-March 2027.
-3. Are you comfortable being named as the home-country collaborator for COLORE and SC 42 in the proposal?
+3. Are you comfortable being named as the home-country collaborator for COLORE and SC 32 in the proposal?
 
 If your advice is to keep everything on Toronto, I will park this.
 

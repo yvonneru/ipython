@@ -15,7 +15,7 @@ Mitacs reviewers evaluate the problem addressed, the objectives, the methodology
 
 ## The four points that would help most
 1. **The theory is real and it is mine.** The material-constitution and mereological-pluralism results (two Synthese submissions, first author) answer the question the datasets pose — when are two part decompositions of the same object compatible — and they were established with automated provers, not by argument alone.
-2. **Standards-grade rigour.** Core contribution to ISO/IEC 21838-4:2023 shows the ability to produce verified, modular first-order theories that survive an international committee, and gives the project a realistic dissemination path through ISO/IEC JTC 1/SC 42.
+2. **Standards-grade rigour.** Core contribution to ISO/IEC 21838-4:2023 shows the ability to produce verified, modular first-order theories that survive an international committee, and gives the project a realistic dissemination path through ISO/IEC JTC 1/SC 32.
 3. **Theory to deployed systems.** Ontology-governed data systems built and shipped in production at companies I founded, plus patents in 3D recognition and reconstruction, predict success on the partner-facing audit toolkit (O2), which is the part of the project the partner will use.
 4. **Independence and fit.** The program is my own, complementary to but distinct from the supervisor's Physical Turing Test and Commonsense Cobotics programs; it connects the University of Toronto's formal-ontology strength to its Robotics Institute and to the Vector Institute, and it brings a Canadian-trained researcher back from the United States.
 

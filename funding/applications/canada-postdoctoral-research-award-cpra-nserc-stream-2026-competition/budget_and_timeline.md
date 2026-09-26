@@ -21,9 +21,9 @@ No budget is requested or submitted. The CPRA is a fixed-value award: CAD 70,000
 | 6–16 | 3.1 (pooled-data track) | Pooled-data experiments: policies trained on ontology-aligned vs unaligned pooled data, transfer across part vocabularies measured in SAPIEN | Interim results for Y1 report |
 | 12–18 | 3.1 Constraint-based training | Differentiable parthood-constraint losses; constraint-guided augmentation for underrepresented categories; ablations by axiom family | Methods paper draft |
 | 16–22 | 3.2 Verification-in-the-loop evaluation | Violation-rate metric integrated into evaluation; held-out PartNet-Mobility category experiments in SAPIEN and [second simulator] using the baselines released with GAPartNet / SAPIEN; violation rate vs task failure analysis. Fallback if compute or collaborator access is constrained: evaluate existing trained policies only (no training), and scope 3.1 to one axiom family | Two ML-venue papers and one robotics-venue paper submitted (cumulative); at minimum the audit/data paper plus one methods paper |
-| 20–24 | Dissemination | Ontology contributed to ISO/IEC JTC 1/SC 42 and released under an open licence in COLORE; toolkit v2; final report | Final deliverables; faculty-application materials |
+| 20–24 | Dissemination | Ontology contributed to ISO/IEC JTC 1/SC 32 and released under an open licence in COLORE; toolkit v2; final report | Final deliverables; faculty-application materials |
 
-Throughout: monthly supervision meetings with Prof. Grüninger; Robotics Institute seminar series; [Vector Institute affiliation for compute]; SC 42 meetings as the laboratory's representative; co-supervision of [number] graduate students on the ontology and audit components [confirm with supervisor].
+Throughout: monthly supervision meetings with Prof. Grüninger; Robotics Institute seminar series; [Vector Institute affiliation for compute]; SC 32 meetings as the laboratory's representative; co-supervision of [number] graduate students on the ontology and audit components [confirm with supervisor].
 
 ## Pre-submission timeline (September–October 2026)
 

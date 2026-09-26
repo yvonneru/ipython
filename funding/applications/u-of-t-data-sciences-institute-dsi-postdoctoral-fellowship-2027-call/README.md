@@ -135,3 +135,5 @@ The decisive ones: the posted deadline (12 or ~22 January 2027?) and the call's 
 5. Immigration status is unknown; an international applicant needs a work permit for a 1 May 2027 start, and the PhD-before-start rule (met) applies.
 6. Theme 3 still depends on an unnamed pipeline, unconfirmed compute and a bracketed second simulator; the fallback is weaker than the plan.
 7. Nothing in this package was read from the DSI page itself; limits, headings, the reference count and the criteria rubric are reconstructions and must be re-fitted to the posted form. Bibliography entries [3], [4], [8], [9], [17] and the Theme 3 seed count are incomplete.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

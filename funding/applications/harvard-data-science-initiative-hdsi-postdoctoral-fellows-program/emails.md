@@ -77,7 +77,7 @@ Dear Michael,
 
 Following the CPRA and the Kempner note: I am also applying to the Harvard Data Science Initiative's Postdoctoral Fellows Program, a two-year fellowship with a deadline in [November/early December]. It is the same program — the verified parts ontology, the dataset audit and the measured effect on learning — but written for a data-science committee, so the audit pipeline and the measurement design lead and there is an extension to anatomical part labels in medical imaging.
 
-Two requests. HDSI requires Harvard faculty as the named mentors, so may I name you as external collaborator for the COLORE verification methodology and the contribution back to SC 42, as in the other applications? And would you write a reference letter? Letters are uploaded through HDSI's portal; I have asked referees for [deadline − 7 days]. The draft statement is attached with a one-page brief on what reviewers weigh; it reuses the CPRA outline, so the reading is short.
+Two requests. HDSI requires Harvard faculty as the named mentors, so may I name you as external collaborator for the COLORE verification methodology and the contribution back to SC 32, as in the other applications? And would you write a reference letter? Letters are uploaded through HDSI's portal; I have asked referees for [deadline − 7 days]. The draft statement is attached with a one-page brief on what reviewers weigh; it reuses the CPRA outline, so the reading is short.
 
 As with Kempner, an HDSI start in [September 2027] and a Toronto start in spring 2027 cannot both happen; I am applying to both and will decide when offers arrive, and I will keep you informed at every step.
 

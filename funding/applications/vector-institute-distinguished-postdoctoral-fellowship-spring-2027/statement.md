@@ -50,7 +50,7 @@ List complete and submitted work only; no work "in preparation". Most recent fir
 - [Title, publisher, year — English-language monograph; confirm.]
 
 **International standard**
-- ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper. Core contributor to the axiomatization and verification of the TUpper ontology (ISO/IEC JTC 1/SC 42) [confirm exact role wording].
+- ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper. Core contributor to the axiomatization and verification of the TUpper ontology (ISO/IEC JTC 1/SC 32) [confirm exact role wording].
 
 **Patents (granted)**
 - [List each: title, jurisdiction, number, grant date, inventors, assignee. Reconcile before listing: 13 granted patents and 9 invention applications per the AXIOMALITY deck; 3 Chinese invention patents and 9–10 German utility patents per the earlier drafts; "first inventor" per the CV. List applications separately, if at all.]

@@ -92,7 +92,7 @@ Review criteria used in this package (Accelerate standard plus the GEA mandate; 
 | Problem addressed | proposal.md, Background | Pooled robot datasets mix incompatible part vocabularies; no formal specification; consequences observed but never measured |
 | Objectives | proposal.md, Objectives | Three numbered objectives (specification, audit, inductive bias) with a long-term challenge |
 | Methodology | proposal.md, Methodology | Themes → projects → open research questions answerable by theorem or counter-model; COLORE lifecycle methodology; Prover9/Mace4/SMT two-tier pipeline |
-| Expected deliverables | proposal.md, Deliverables; budget_and_timeline.md | Verified ontology (open licence, COLORE, SC 42), first quantitative audit, aligned corpus, audit toolkit, partner data report, papers |
+| Expected deliverables | proposal.md, Deliverables; budget_and_timeline.md | Verified ontology (open licence, COLORE, SC 32), first quantitative audit, aligned corpus, audit toolkit, partner data report, papers |
 | Benefits to the intern | statement.md; proposal.md, Benefits | Industry-embedded postdoctoral training, standards participation, path to faculty position in KR for engineering systems |
 | Benefits to the partner and Canada | proposal.md, Benefits; Impact | Audited data with machine-checkable evidence; compliance clock (EU AI Act Annex I [date to confirm: 2027 in the published Article 113 vs 2028 in the company deck]; NIST AI RMF); talent repatriated to Canada |
 | Commercialization and sector fit (GEA mandate) | proposal.md, Benefits "Commercialization path"; Project information | AI sector; open core + partner-owned adapters/reports; readiness milestones M8 / M16 / M21; partner states intended use in its letter |
@@ -140,3 +140,5 @@ Remaining risks after this pass:
 6. Standalone-call rule: whether GEA can be held with CPRA is unknown; the applicant may have to choose.
 7. Reference placeholders [2], [5], [11], [16] and the EU AI Act date must be resolved before the form is filled; the 25% partner-time figure is a guess.
 8. Qualification claims from the company deck (publication count, AAAI, patents) are unverified; a reviewer who checks Google Scholar against "21 papers" and finds fewer will discount the whole section.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

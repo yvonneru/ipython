@@ -5,7 +5,7 @@ No budget is requested or scored. The fellowship provides an annual salary of **
 
 | Year | Use of the research and computing support (indicative; scale to the actual amount) | Priority order |
 |---|---|---|
-| Y1 | Compute for the audit pipeline and first simulation runs [confirm whether the sponsor group's cluster or a Princeton research-computing allocation is available; if so, reallocate to travel]; one ISO/IEC JTC 1/SC 42 meeting; one conference (FOIS or a robotics venue) | compute > SC 42 > conference |
+| Y1 | Compute for the audit pipeline and first simulation runs [confirm whether the sponsor group's cluster or a Princeton research-computing allocation is available; if so, reallocate to travel]; one ISO/IEC JTC 1/SC 32 meeting; one conference (FOIS or a robotics venue) | compute > SC 32 > conference |
 | Y2 | Compute for policy-training experiments (SAPIEN + second simulator); two conferences (one ML/robotics — CoRL/ICRA/RSS class — and one KR/ontology venue); open-source release costs (DOI, hosting); job-market travel | compute > conferences > release > job market |
 
 No salary is requested for anyone other than the fellow. Undergraduate researchers, if any, are funded through Princeton's own independent-work and summer research programs [confirm what the sponsor's department offers].
@@ -21,7 +21,7 @@ No salary is requested for anyone other than the fellow. Undergraduate researche
 | 10–16 | 2 | Cross-dataset label mappings proven meaning-preserving; corrected annotations; merged ontology-aligned corpus | Public data release with DOI; audit toolkit v1; Y2 workshop for students (month 12–14) |
 | 12–18 | 3 | Differentiable relaxations of parthood constraints as auxiliary losses; constraint-guided augmentation | Training code; pilot results on held-out PartNet-Mobility categories in SAPIEN |
 | 16–24 | 3 | Verification-in-the-loop evaluation protocol; full simulation study with confidence intervals and ablations by axiom family; real-robot replication on [sponsor group's platform] if available in months 20–24 | **Y2 questions: does ontology-consistent training improve generalization? does violation rate predict failure?**; methods paper submitted to an ML or robotics venue |
-| 18–24 | 1–3 | Contribution of the parts ontology to ISO/IEC JTC 1/SC 42 [confirm mechanism — new work item or amendment]; consolidated open release; faculty job market | SC 42 contribution document; final release; job applications |
+| 18–24 | 1–3 | Contribution of the parts ontology to ISO/IEC JTC 1/SC 32 [confirm mechanism — new work item or amendment]; consolidated open release; faculty job market | SC 32 contribution document; final release; job applications |
 | beyond | 2–3 | Second hierarchical-annotation domain (CAD assemblies); cross-embodiment transfer on pooled, aligned data | Continued with the sponsor's group or from the fellow's next position |
 
 Community milestones from the contributions text run alongside: undergraduate independent-work projects each year; the parts-and-wholes reading group from month 3; the audit-tooling workshop after toolkit v1 (month 12–14).

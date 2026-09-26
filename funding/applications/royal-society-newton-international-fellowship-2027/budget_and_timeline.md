@@ -10,7 +10,7 @@ The fellowship pays up to **GBP 280,000 over two years** (registry record, from 
 | Research expenses: compute | [GBP] | [GBP] | GPU hours for SAPIEN policy training and ablations by axiom family (WP3); Datalog/SMT audit runs over millions of part instances (WP2). Sizing method: [number of policy-training runs × hypotheses (3) × ablation arms × seeds] × [host GPU-hour rate] — fill with the sponsor. [State whether the host provides compute in kind; if so reduce this line and record the in-kind contribution for the HoD statement] |
 | Research expenses: workstation and software | [GBP] | — | Workstation for theorem proving (Prover9/Mace4, SMT solvers) and simulation; open-source tools, no licence costs expected |
 | Research expenses: open-access publication charges | [GBP] | [GBP] | Audit/data paper (Y1–Y2), methods paper (Y2), robotics-venue paper (Y2) |
-| Research expenses: conferences and standards meetings | [GBP] | [GBP] | One AI or robotics conference per year (e.g., CoRL / ICRA / FOIS [choose]); ISO/IEC JTC 1/SC 42 plenary attendance [confirm whether SC 42 travel is an allowable cost] |
+| Research expenses: conferences and standards meetings | [GBP] | [GBP] | One AI or robotics conference per year (e.g., CoRL / ICRA / FOIS [choose]); ISO/IEC JTC 1/SC 32 plenary attendance [confirm whether SC 32 travel is an allowable cost] |
 | Research expenses: collaboration visit to Toronto | [GBP] | [GBP] | One short visit per year to the Semantic Technologies Laboratory for COLORE integration and the Synthese follow-on work; within the scheme's limit on time outside the UK |
 | Relocation and visa (fellow [+ dependents — confirm]) | [GBP] | — | Visa fees, immigration health surcharge, travel and removal; per the 2027 cap |
 | **Total** | [GBP] | [GBP] | **≤ GBP 280,000** |
@@ -28,7 +28,7 @@ Data costs: none — PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled and
 | M12–M16 | Cross-dataset label mappings proved meaning-preserving; merged ontology-aligned corpus; toolkit packaging | WP2 | **M16: toolkit and merged corpus released** |
 | M12–M18 | Pooled-data experiments; constraint-guided augmentation on the host's pipeline (SAPIEN [+ second simulator]) | WP3 | Interim results; first hypothesis tested |
 | M18–M22 | Differentiable parthood-constraint losses; verification-in-the-loop evaluation protocol; ablations by axiom family | WP3 | Methods paper drafted |
-| M22–M24 | Papers, standards contribution (SC 42 liaison), alumni-funding plan, faculty applications | all | **M24: methods paper and robotics-venue paper submitted; ontology proposed for SC 42 consideration** |
+| M22–M24 | Papers, standards contribution (SC 32 liaison), alumni-funding plan, faculty applications | all | **M24: methods paper and robotics-venue paper submitted; ontology proposed for SC 32 consideration** |
 
 ## Pre-award timeline (see README for the full table)
 

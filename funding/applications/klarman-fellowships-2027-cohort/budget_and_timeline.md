@@ -5,9 +5,9 @@ No budget is requested or scored. The official page (read 2026-09-25 via web sea
 
 | Year | Use of the USD 12,000 research allowance (indicative) | Approx. |
 |---|---|---|
-| Y1 | Cloud GPU/compute for the audit pipeline and first simulation runs [confirm whether the host group's cluster is available; if so, reallocate to travel]; ISO/IEC JTC 1/SC 42 plenary attendance (one meeting); one conference (FOIS or a robotics venue) | 6,000 / 2,500 / 3,500 |
+| Y1 | Cloud GPU/compute for the audit pipeline and first simulation runs [confirm whether the host group's cluster is available; if so, reallocate to travel]; ISO/IEC JTC 1/SC 32 plenary attendance (one meeting); one conference (FOIS or a robotics venue) | 6,000 / 2,500 / 3,500 |
 | Y2 | Compute for policy-training experiments (SAPIEN + second simulator); two conferences (one ML/robotics — CoRL/ICRA/RSS class — and one KR/ontology venue); open-source release costs (DOI, hosting) | 6,500 / 5,000 / 500 |
-| Y3 | Real-robot replication consumables [confirm with host]; second-domain data access [confirm licence costs, if any]; job-market travel; SC 42 meeting | 4,000 / 2,000 / 3,500 / 2,500 |
+| Y3 | Real-robot replication consumables [confirm with host]; second-domain data access [confirm licence costs, if any]; job-market travel; SC 32 meeting | 4,000 / 2,000 / 3,500 / 2,500 |
 
 No salary is requested for anyone other than the fellow. Undergraduate research assistants, if any, are funded through Cornell's own programs [confirm what the host department offers].
 
@@ -24,7 +24,7 @@ No salary is requested for anyone other than the fellow. Undergraduate research 
 | 18–24 | 3 | Verification-in-the-loop evaluation protocol; full simulation study with confidence intervals and ablations by axiom family | **Y2 milestones: does ontology-consistent training improve generalization? does violation rate predict failure?**; methods paper submitted to an ML or robotics venue |
 | 24–30 | 3 | Replication on [host group's robot platform — confirm]; cross-embodiment transfer on pooled, aligned data | Robotics-venue paper |
 | 24–32 | 2 | Audit method applied to a second hierarchical-annotation domain (CAD assemblies or medical-imaging part labels) [choose with host] | Toolkit v2; second-domain paper or report |
-| 30–36 | 1–3 | Contribution of the parts ontology to ISO/IEC JTC 1/SC 42 [confirm mechanism — new work item or amendment]; consolidated open release; faculty job market | SC 42 contribution document; final release; job applications |
+| 30–36 | 1–3 | Contribution of the parts ontology to ISO/IEC JTC 1/SC 32 [confirm mechanism — new work item or amendment]; consolidated open release; faculty job market | SC 32 contribution document; final release; job applications |
 
 ## Internal deadlines for this application
 | Date | Item |

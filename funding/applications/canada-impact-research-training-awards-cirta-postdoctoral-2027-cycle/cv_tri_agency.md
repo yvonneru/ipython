@@ -30,7 +30,7 @@ Yi Ru (茹意). Current position: Postdoctoral Researcher, [laboratory/departmen
 [Grants and contracts held or co-held, with role, body, amount, dates — or "none as principal".]
 
 ## 7. Standards
-ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper. Core contributor, ISO/IEC JTC 1/SC 42. [Working-group designation; current standards activity.]
+ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper. Core contributor, ISO/IEC JTC 1/SC 32. [Working-group designation; current standards activity.]
 
 ## 8. Patents
 [Reconcile: 13 granted patents and 9 invention applications (3D recognition, indoor modelling, automatic reconstruction, emotion sensing, adaptive feedback) per the company deck; 3 Chinese invention patents and 9–10 German utility patents (Gebrauchsmuster) per the drafts. List each: title, jurisdiction, number, date, inventors, assignee.]

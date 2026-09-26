@@ -148,3 +148,4 @@ Weighted: before 2.85 / 5 → after 3.05 / 5. Honest reading: this package is co
 6. **Placeholders.** Publication list, patents (13 granted vs 3 + 9–10 in drafts), FOIS 2018 role, thesis title, Harvard details and two referee names are all still brackets; the package is not submittable until filled.
 7. **Concurrency** with CPRA / DSI unconfirmed; page limits unpublished.
 
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

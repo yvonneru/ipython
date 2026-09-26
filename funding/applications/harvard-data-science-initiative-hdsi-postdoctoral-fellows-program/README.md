@@ -62,7 +62,7 @@ Not found (working assumptions used in this package; **verify**):
 | Applicant | Shortlist Harvard faculty for Mentor slots 1–3 from HDSI faculty pages and Statistics/SEAS/DBMI directories; send emails 3–4 | 10 Oct |
 | HMS supervisor | Agree to a letter; say whether they can be one of the named faculty; confirm no objection to an internal application (email 2) | 17 Oct |
 | Prospective mentors (2–3) | Agree to be named; confirm the audit datasets they care about (Mentor 1), the policy pipeline and simulator (Mentor 2), the medical-imaging part-label resource (Mentor 3); provide a confirmation or support letter if the portal asks [verify] | 24 Oct |
-| Prof. Grüninger | Agree to be named as external collaborator (COLORE verification; SC 42 contribution); write a reference letter (email 5) | 24 Oct |
+| Prof. Grüninger | Agree to be named as external collaborator (COLORE verification; SC 32 contribution); write a reference letter (email 5) | 24 Oct |
 | Referee 3 [external expert in applied ontology, data integration or robot learning] | Agree to a letter (email 6) | 24 Oct |
 | Applicant | Fill every [bracket] in proposal.md and statement.md; update CV; export PDFs; check limits | Deadline − 21 d |
 | Referees | Upload letters through the portal | Deadline [or the portal's referee date] |
@@ -91,7 +91,7 @@ Not found (working assumptions used in this package; **verify**):
 | Independence and record | Recent Progress: ISO/IEC 21838-4 core contribution; two Synthese submissions (first author); ontology-based 3D datasets and nine patent applications at Uing Technologies, recommendation system at YourTable (as the CV states them); the program is the applicant's own and distinct from the thesis and from any mentor's grant; fellowship outputs explicitly separated from the AXIOMALITY company in both proposal and statement |
 | Fit with Harvard faculty across schools | Mentor slots span Statistics/CS (methods), SEAS (robotics) and HMS/DBMI (biomedical ontologies); Prof. Grüninger as external collaborator supplies the verification methodology |
 | Feasibility in two years | budget_and_timeline.md: M1–8 ontology + audit pipeline + first audit; M6–16 release and pooled-data experiments; M12–24 constraint-based training and papers; all tools open source; adapters in priority order with a stated minimum outcome at M12 (audit of PartNet, PartNet-Mobility, GAPartNet) |
-| Breadth of impact | Audit toolkit reusable on medical image labels, CAD assemblies and BIM; public corrected annotations and merged corpus; contribution to COLORE and ISO/IEC JTC 1/SC 42; machine-checkable provenance for training data (regulatory framing removed — it read as commercial to a fellowship panel) |
+| Breadth of impact | Audit toolkit reusable on medical image labels, CAD assemblies and BIM; public corrected annotations and merged corpus; contribution to COLORE and ISO/IEC JTC 1/SC 32; machine-checkable provenance for training data (regulatory framing removed — it read as commercial to a fellowship panel) |
 
 ## Open items — every [bracket] the applicant must resolve
 
@@ -164,3 +164,5 @@ Not found (working assumptions used in this package; **verify**):
 8. The imaging extension names TotalSegmentator / FMA as placeholders; without Mentor 3 it is an assertion of generality, not a plan.
 9. Bibliography entry 14 may have no published replacement, in which case the "unchecked datasets" motivation stands on the applicant's word.
 10. The Harvard 2027–2029 track conflicts with the Toronto spring-2027 plan; the applicant has not decided, and referees are being asked for several letters in the same weeks.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

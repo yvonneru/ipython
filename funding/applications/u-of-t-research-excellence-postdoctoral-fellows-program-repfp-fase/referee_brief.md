@@ -12,7 +12,7 @@ Send with the reference request, together with the proposal, the career-goals st
 
 **Points that would help.**
 1. The theoretical work on material constitution and mereological pluralism (two first-author papers submitted to Synthese with Prof. Grüninger), and why a machine-checkable theory of when two part decompositions of one object are compatible matters for knowledge representation and for robot data.
-2. The ISO/IEC 21838-4:2023 (TUpper) contribution: what it shows about rigour, and about the ability to work within a standards body — the same body (ISO/IEC JTC 1/SC 42) to which the proposed parts ontology will be contributed.
+2. The ISO/IEC 21838-4:2023 (TUpper) contribution: what it shows about rigour, and about the ability to work within a standards body — the same body (ISO/IEC JTC 1/SC 32) to which the proposed parts ontology will be contributed.
 3. The move from theory to deployed systems (patents as first inventor; production ontology-governed data-integration systems at companies I co-founded), and why that predicts delivery of the audit pipeline, public data release and simulation experiments.
 4. Independence: the proposed program is my own, complementary to but distinct from Prof. Grüninger's NSERC programs; my thesis addressed knowledge-system architecture and top-level ontology, not robot datasets or learned policies. Reviewers may weigh the fact that I return to the university where I completed my PhD; a sentence on why the Semantic Technologies Laboratory is the only place with the verification methodology and tool support the program needs would help.
 

@@ -16,7 +16,7 @@ Constraints (search summaries of 2026-09-25 and 2026-09-26; verify on the offici
 | Travel — Toronto–Boston exchanges | [ ] | [ ] | [ ] | [2–4] weeks per graduate student per year in the international team's group; Dr. Ru [two] short visits per year |
 | Travel — conferences | [ ] | [ ] | [ ] | Two presentations per year (one ML/robotics venue, one applied-ontology venue) |
 | Compute and storage | [ ] | [ ] | [ ] | GPU time for policy training beyond Vector / Digital Research Alliance allocations; storage for the merged corpus |
-| Dissemination and standards | [ ] | [ ] | [ ] | Open-access charges; one ISO/IEC JTC 1/SC 42 meeting per year for the PhD student or Dr. Ru |
+| Dissemination and standards | [ ] | [ ] | [ ] | Open-access charges; one ISO/IEC JTC 1/SC 32 meeting per year for the PhD student or Dr. Ru |
 | **Total** | **≤ 100,000** | **≤ 100,000** | **≤ 100,000** | |
 
 Sizing rule: set the total to the lesser of CAD 100,000 and [the international award's annual amount in CAD] (1:1 cost-sharing). The lines must sum to the request. If the postdoctoral line leaves less than [amount] for the rest, move the MASc stipend to [Discovery Grant] support and keep travel and compute. If both CPRA and this grant succeed, the postdoctoral salary line moves to CPRA and this budget shifts to graduate students, travel and compute [check NSERC rules on holding a CPRA alongside Alliance-funded stipend top-ups].
@@ -50,7 +50,7 @@ Convert at [Bank of Canada rate on the date of the letter]; state the rate and d
 | 12–18 | Audit extended to AgiBot World, Open X-Embodiment, DROID; corrected annotations and proved mappings | [Real-robot data] audited | M18: merged ontology-aligned corpus released; data/audit paper submitted |
 | 18–24 | Pooled-data and constraint-guided augmentation experiments in SAPIEN [and second simulator] | Evaluation design; MASc1 exchange visit | M24: methods paper submitted; MASc1 thesis |
 | 24–30 | Auxiliary-loss training; verification-in-the-loop evaluation | [Real-robot validation] of trained policies | M30: robotics-venue paper submitted |
-| 30–36 | Contribution of the parts module to ISO/IEC JTC 1/SC 42; applied-ontology paper; PhD1 candidacy/thesis progress | Joint workshop or tutorial proposal | M36: final report; standard contribution filed; Dr. Ru's faculty applications supported by three years of joint output |
+| 30–36 | Contribution of the parts module to ISO/IEC JTC 1/SC 32; applied-ontology paper; PhD1 candidacy/thesis progress | Joint workshop or tutorial proposal | M36: final report; standard contribution filed; Dr. Ru's faculty applications supported by three years of joint output |
 
 ## 5. Risks to the budget and schedule
 

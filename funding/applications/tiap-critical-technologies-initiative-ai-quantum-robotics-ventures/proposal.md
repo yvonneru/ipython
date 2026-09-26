@@ -20,7 +20,7 @@ An ontology is a computer-interpretable specification that an application uses t
 - **Measured spatial data at scale.** 100,000 measured 3D asset packages (JPG, USDZ, PLY, JSON oriented boxes: centroid, dimensions, rotation in metres and radians) from room-level reconstruction and object-level annotation; a consumer spatial-capture application on the Apple Vision Pro App Store; nine invention applications from that stack. The inventory is documented by rights, source geography and unique count.
 - **Patents and background technology.** 13 granted patents and nine invention applications in 3D recognition, indoor modelling and automatic reconstruction [numbers, titles and assignee to list; the drafts elsewhere count 3 Chinese invention patents and 9–10 German utility patents — reconcile]. The kernel specification, adapters and evidence schema are company-authored background technology.
 - **Evidence loop in progress.** A minimum verification Engine (ingestion → scene graph → SMT check → Passport) is scheduled for internal test in Q4 2026, with a kernel v1 for home scenes and connectors for LeRobot [7], RLDS [8] and OpenUSD. An international law firm has done the regulatory clause mapping and a Big Four accounting firm has reviewed the audit-pack design [firms to name if they consent; scope of each engagement to state].
-- **Standards position.** The kernel's ISO/IEC 21838-4 lineage and my participation in ISO/IEC JTC 1/SC 42 [working-group designation to confirm] give the company a route to have the Passport format recognized where the evidence format becomes the unit of measurement and of trade.
+- **Standards position.** The kernel's ISO/IEC 21838-4 lineage and my participation in ISO/IEC JTC 1/SC 32 [working-group designation to confirm], with ISO/IEC JTC 1/SC 42 as a prospective venue for the Passport format, give the company a route to have that format recognized where the evidence format becomes the unit of measurement and of trade.
 
 What is *not* yet established, and what this project establishes, is stated in §4.
 
@@ -136,13 +136,13 @@ Founder/CEO — Dr. Yi Ru: PhD in Information Engineering, University of Toronto
 
 ## 9. Impact for Ontario and for the member institution
 
-The project places the company's core IP development (kernel, adapters, evidence schema) in Ontario with [N] R&D positions including ENG1; gives Canadian robotics and manufacturing companies (the deck cites Sanctuary/Magna and Vention as deployment contexts) and Canadian data suppliers a repeatable acceptance product to sell into US and EU markets ahead of the Annex I date; and returns to the University of Toronto a commercial application of a standard and a theory developed there, with verified modules contributed to the open COLORE repository and a standards route through ISO/IEC JTC 1/SC 42. The audit methodology generalizes beyond robotics to medical-image part labels, CAD assemblies and building information models — the first of which is the bridge to TIAP's health-science portfolio and to the hospital and medical-device relationships the company already holds.
+The project places the company's core IP development (kernel, adapters, evidence schema) in Ontario with [N] R&D positions including ENG1; gives Canadian robotics and manufacturing companies (the deck cites Sanctuary/Magna and Vention as deployment contexts) and Canadian data suppliers a repeatable acceptance product to sell into US and EU markets ahead of the Annex I date; and returns to the University of Toronto a commercial application of a standard and a theory developed there, with verified modules contributed to the open COLORE repository and a standards route through ISO/IEC JTC 1/SC 32. The audit methodology generalizes beyond robotics to medical-image part labels, CAD assemblies and building information models — the first of which is the bridge to TIAP's health-science portfolio and to the hospital and medical-device relationships the company already holds.
 
 ---
 
 ## Bibliography
 
-[1] ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 42.
+[1] ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 32.
 [2] ISO/IEC 24707:2018. Information technology — Common Logic (CL): a framework for a family of logic-based languages.
 [3] W. McCune. Prover9 and Mace4. Software and documentation, 2005–2010.
 [4] L. de Moura and N. Bjørner. Z3: An efficient SMT solver. TACAS 2008.

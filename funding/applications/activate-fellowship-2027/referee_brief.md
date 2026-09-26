@@ -26,7 +26,7 @@ Activate selects fellows, not only technologies: the person's ability to lead th
 - Prof. Michael Grüninger, University of Toronto (MIE), Semantic Technologies Laboratory — scientific basis, standards, independence. [Note: he is also writing for the NSERC CPRA; the two letters must be consistent about my plans — see emails.md, email 3.]
 - [Harvard Medical School postdoctoral supervisor — name] — current research, work ethic, applied judgement.
 - [Industry reference — a former investor, co-founder, or a design-partner / standards-body contact who can speak to execution; e.g., a MICAS investor or a Uing Technologies partner. Name and confirm willingness.]
-- [Optional: an ISO/IEC JTC 1/SC 42 colleague or editor who can attest to the standards contribution.]
+- [Optional: an ISO/IEC JTC 1/SC 32 colleague or editor who can attest to the standards contribution.]
 
 ## Deadline for references
 

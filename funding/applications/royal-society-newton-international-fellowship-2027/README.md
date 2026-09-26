@@ -79,7 +79,7 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 | Person | Task | By |
 |---|---|---|
 | Applicant | Decide UK track vs U of T track; confirm non-UK citizenship; approach hosts; submit host EoI; draft Parts A/B; enter referees and supporting participants in Flexi-Grant; submit | 15 Oct 2026 → deadline |
-| Prof. Grüninger | Advise on UK hosts; agree to remain home-country collaborator (COLORE, Synthese papers, SC 42); act as one referee | Ask now; letter by ~4 Mar 2027 |
+| Prof. Grüninger | Advise on UK hosts; agree to remain home-country collaborator (COLORE, Synthese papers, SC 32); act as one referee | Ask now; letter by ~4 Mar 2027 |
 | Harvard postdoctoral supervisor [name] | Second referee (current employer) [confirm the 2027 rule on who may act as referee — typically not the UK sponsor or HoD] | Letter by ~4 Mar 2027 |
 | UK sponsor [name] | Agree to host; co-develop the proposal; one-page sponsor statement; steer the internal EoI | Sponsor secured 15 Nov 2026; statement by ~4 Mar 2027 |
 | Head of Department at host | HoD statement confirming host commitments | ~4 Mar 2027 |
@@ -108,7 +108,7 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 | Applicant's track record and potential (~30%) | ISO/IEC 21838-4:2023 core contribution; two *Synthese* submissions (first author); 21 papers [list to confirm — a publication list must be built before the form opens]; FOIS 2018 Distinguished Paper [role to confirm]; patents [counts to reconcile]; production systems at MICAS, YourTable and Uing — `statement.md` §2. Weakness stated openly: no robot-learning publication (`proposal.md` "Risks"; referee brief point 3) |
 | Clearly defined, feasible, mutually beneficial research (~30%) | Three objectives with milestones M8/M12/M16/M24, five named audit datasets, named tools (Prover9, Mace4, Datalog/SMT, SAPIEN), hypotheses each with a matched baseline, a month-3 pilot audit with go/no-go, and a risks-and-mitigation paragraph — `proposal.md`. Distinctness from Prof. Grüninger's NSERC programmes stated in "Fit with the host" |
 | Host suitability: expertise, facilities, support and training (~20%) | Host supplies the robot-learning pipeline, compute and experimental practice the applicant lacks; named training asks (WP3 collaborator, seminar, co-supervision, researcher development, grant-writing support) — `proposal.md` "Career development", `statement.md` §5. **All host content is bracketed until a sponsor is confirmed** |
-| Mutual benefit and long-term UK links (~20%) | Host receives ontology, corrected data, toolkit and failure signal, and co-maintains the releases; Grüninger as continuing home-base collaborator (COLORE, SC 42, joint papers); alumni follow-on funding — `proposal.md` "Fit with the host", `statement.md` §6 |
+| Mutual benefit and long-term UK links (~20%) | Host receives ontology, corrected data, toolkit and failure signal, and co-maintains the releases; Grüninger as continuing home-base collaborator (COLORE, SC 32, joint papers); alumni follow-on funding — `proposal.md` "Fit with the host", `statement.md` §6 |
 | Wider benefits to society (within the proposal criterion) | Benchmark quality, machine-checkable assurance evidence for AI-in-machinery regulation, open releases, cross-domain toolkit — `proposal.md` "Impact" |
 
 ## Open items for the applicant
@@ -124,7 +124,7 @@ Found by web search on 2026-09-25 (search-result summaries only; the pages were 
 - [Research-expenses and relocation caps for 2027; host salary scale and on-costs]
 - [Harvard supervisor name, laboratory and a one-sentence description of the current work]
 - [Thesis title and supervisor name]
-- [Exact ISO/IEC 21838-4 role wording and SC 42 working-group designation; UK (BSI) mirror committee]
+- [Exact ISO/IEC 21838-4 role wording and SC 32 working-group designation; UK (BSI) mirror committee]
 - [Publication list (21 papers claimed) — the form asks for one and none exists in this repository; FOIS 2018 award role; AAAI invited talk; monograph title]
 - [PhD supervisor's name — the registry notes one referee is normally the PhD supervisor; confirm whether that is Prof. Grüninger]
 - [Any robot-learning or ML publication by the applicant — if none, the referee brief and proposal now say so rather than leave a gap]
@@ -170,3 +170,4 @@ Remaining risks, in order:
 5. Track conflict and founder load. The fellowship is incompatible with the U of T postdoc and a full-time CEO role; the CPRA/Vector/DSI drafts describe a Toronto future with the same deliverables. Referees (Grüninger, Harvard supervisor) will see both stories; the track decision must precede the referee requests.
 6. Scheme drift. Amount, experience cap, sponsor terminology ("sponsor" vs "UK co-applicant") and field limits all changed between the 2024 and 2026 notes; every limit in this README must be re-read against the 2027 notes in Dec 2026 / Jan 2027.
 
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

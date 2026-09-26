@@ -29,11 +29,11 @@ No budget is submitted with a faculty application. Two things are needed instead
 | Simulation and verification workstation(s) | SAPIEN and the second simulator [Isaac Sim or MuJoCo] for Theme 3; prover and SMT jobs for Theme 2; GPU nodes — CFI JELF is the intended source, with start-up bridging year 1 | [JELF-scale request to be set with FASE research office] |
 | Compute allocation | Digital Research Alliance of Canada RAC for the audit at dataset scale and policy training; Vector compute if affiliated | no cash; applications in year 1 |
 | Software and data | Open-source stack (Prover9/Mace4, SMT solvers, Datalog engines, SAPIEN); all datasets named in the program are public; no licences needed | nil to small |
-| Travel and dissemination | FOIS/KR, one ML venue and one robotics venue per year; ISO/IEC JTC 1/SC 42 plenaries for the parts-ontology contribution | [per department norms] |
+| Travel and dissemination | FOIS/KR, one ML venue and one robotics venue per year; ISO/IEC JTC 1/SC 32 plenaries for the parts-ontology contribution | [per department norms] |
 | Teaching release, year 1 | Standard for new hires in FASE [confirm] — needed to submit Discovery, JELF and the first audit paper in year 1 | policy, not money |
 | Space | Office plus a shared computational lab; no wet or hardware lab required | modest |
 
-Sequence of external funding (no amounts): NSERC Discovery Grant (first cycle after appointment); CFI JELF (with FASE, year 1); Digital Research Alliance RAC (year 1); Vector Institute faculty affiliation [confirm process]; NSERC Alliance with a robot-data or manufacturing partner [name] for Project 2.3 (years 2–3); Mitacs Accelerate with an industrial partner for MASc students (year 2 onward); ISO/IEC SC 42 participation via the Standards Council of Canada mirror committee [confirm route].
+Sequence of external funding (no amounts): NSERC Discovery Grant (first cycle after appointment); CFI JELF (with FASE, year 1); Digital Research Alliance RAC (year 1); Vector Institute faculty affiliation [confirm process]; NSERC Alliance with a robot-data or manufacturing partner [name] for Project 2.3 (years 2–3); Mitacs Accelerate with an industrial partner for MASc students (year 2 onward); ISO/IEC SC 32 participation via the Standards Council of Canada mirror committee [confirm route].
 
 ## C. Five-year research milestones (from proposal.md §6)
 
@@ -41,6 +41,6 @@ Sequence of external funding (no amounts): NSERC Discovery Grant (first cycle af
 |---|---|
 | Y1 | Parts ontology modules verified (Projects 1.1–1.2); schema translation definitions for PartNet and PartNet-Mobility; audit pipeline v1; Discovery, JELF and RAC submitted; PhD1, PhD2, MASc1 recruited; ontology paper (FOIS/KR) |
 | Y2 | Representation theorems for all five schemas (Project 1.3); first audit of five datasets with public release of corrected annotations, mappings and merged corpus (Project 2.2); audit paper (AI/robotics venue); MASc2 recruited; Alliance partner identified |
-| Y3 | Theme 3 methods: parthood losses and augmentation (Project 3.1); verification-in-the-loop evaluation v1 (Project 3.2); first ML-venue paper; PhD3, MASc3 recruited; SC 42 contribution drafted; Project 2.3 begins on CAD assemblies with the Alliance partner |
+| Y3 | Theme 3 methods: parthood losses and augmentation (Project 3.1); verification-in-the-loop evaluation v1 (Project 3.2); first ML-venue paper; PhD3, MASc3 recruited; SC 32 contribution drafted; Project 2.3 begins on CAD assemblies with the Alliance partner |
 | Y4 | Pooling experiments on the aligned corpus (Project 3.3); second ML-venue paper and robotics-venue paper; toolkit v2; MASc4 recruited; medical part-label audit with the Harvard collaboration [confirm] |
-| Y5 | SC 42 contribution submitted; violation rate proposed as a benchmark metric; first PhD graduations; tenure dossier assembled on the ontology standard, the audit releases and the learning results |
+| Y5 | SC 32 contribution submitted; violation rate proposed as a benchmark metric; first PhD graduations; tenure dossier assembled on the ontology standard, the audit releases and the learning results |

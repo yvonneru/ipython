@@ -9,10 +9,10 @@ All figures are [to be entered]; none is invented here. The range — GBP 10,000
 | Lead applicant salary and on-costs | Dr. Ru; [UK host, visiting appointment — FTE %; or a Toronto/Harvard share — confirm which is allowable] | 12 months × [FTE] | [GBP] |
 | Research engineer / postdoc — audit pipeline and simulation | [UK host]; UK | 12 months × [FTE] | [GBP] |
 | UK co-lead time | [UK host]; UK | [FTE %] | [GBP] |
-| Toronto collaboration (verification, COLORE, SC 42) | U of T, Semantic Technologies Laboratory; subcontract or collaboration agreement [confirm ARIA rules on non-UK subawards] | [graduate student months / Grüninger time] | [GBP] |
+| Toronto collaboration (verification, COLORE, SC 32) | U of T, Semantic Technologies Laboratory; subcontract or collaboration agreement [confirm ARIA rules on non-UK subawards] | [graduate student months / Grüninger time] | [GBP] |
 | Compute | UK host cluster or cloud; policy training in SAPIEN and audit at scale (millions of part instances; SMT and prover runs) | [GPU-hours; storage TB] | [GBP] |
 | AXIOMALITY contribution | In-kind: Engine, adapters, 100,000 asset packages, engineering time [role: in-kind / subcontract — decide; if subcontract, cost and conflict-of-interest declaration for the founder-applicant] | — | [GBP or in-kind value] |
-| Travel | ARIA programme meetings (UK); one SC 42 meeting; one robotics venue for results | [trips] | [GBP] |
+| Travel | ARIA programme meetings (UK); one SC 32 meeting; one robotics venue for results | [trips] | [GBP] |
 | Open release | Licensing review, data hosting, DOI minting, toolkit packaging | — | [GBP] |
 | Host overheads / indirect costs | [UK host rate; ARIA policy — verify] | — | [GBP] |
 | VAT (where applicable) | [UK host / subcontract lines — confirm which attract VAT] | — | [GBP] |
@@ -33,7 +33,7 @@ All figures are [to be entered]; none is invented here. The range — GBP 10,000
 | M8 | Audit across PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World; violation rates by axiom family; provable cross-dataset mappings; corrected annotations | **Public release:** audit report, corrected annotations, merged corpus v1, toolkit v1 |
 | M9 | Policy training set up in SAPIEN on raw / audited / pooled data; auxiliary losses and augmentation implemented | Pre-registered hypotheses and evaluation protocol shared with the Programme Director |
 | M11 | Generalization results on unseen PartNet-Mobility categories; violation-rate-vs-failure analysis | O3 primary results |
-| M12 | Ablations by axiom family; ontology v1.0 with SC 42 contribution filed [confirm route]; toolkit v1.1; stretch transfer to one non-robotics annotation set | Final report; methods paper and audit/data paper submitted; handover plan with an Activation Partner and AXIOMALITY's Passport |
+| M12 | Ablations by axiom family; ontology v1.0 with SC 32 contribution filed [confirm route]; toolkit v1.1; stretch transfer to one non-robotics annotation set | Final report; methods paper and audit/data paper submitted; handover plan with an Activation Partner and AXIOMALITY's Passport |
 
 ## Risks and mitigations
 - **UK-majority rule cannot be met** → the proposal is not submitted under this call; the concept paper is kept for a future programme call and the Toronto/Harvard routes in the registry carry the program instead.

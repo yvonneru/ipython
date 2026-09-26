@@ -116,3 +116,5 @@ The earlier "early/mid-September 2026" deadline in one scout record is the date 
 4. Page limits, letter mechanism, and whether a candidate statement is required are not established; the September call has not been read.
 5. A Sept 2027 Princeton start excludes every spring-2027 Toronto award; the applicant's stated preference is Canada first, which a sponsor investing in a nomination has a right to know.
 6. Salary and start-window figures are from a lab page that may describe a prior cycle.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

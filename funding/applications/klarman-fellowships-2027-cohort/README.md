@@ -53,7 +53,7 @@ The applicant is Founder/CEO of AXIOMALITY, a company whose product (offline ver
 | Alignment with the proposed faculty mentor and Cornell (25%) | "Why Cornell and [host]" paragraph names host, CS and Sage School and reserves a sentence for a concrete point of contact with the host's work — **empty until a host agrees; this is the weakest criterion today** |
 | Completeness and compliance — two pages, three letters incl. doctoral advisor, host form, eligibility (15%) | proposal.md cut to the limit; referee brief and emails state the upload mechanism and the advisor requirement; eligibility questions routed to the program (email 1) |
 | Legibility to a college-wide committee | Proposal and statement written for non-specialists; philosophical framing explicit in "Problem", "State of the art" and "Significance" |
-| Use of a three-year term | Y1 ontology + audit → Y2 learning → Y3 replication, second domain, SC 42 contribution (proposal "Plan"; budget_and_timeline.md) |
+| Use of a three-year term | Y1 ontology + audit → Y2 learning → Y3 replication, second domain, SC 32 contribution (proposal "Plan"; budget_and_timeline.md) |
 
 ## Who must do what by when
 | Who | What | By |
@@ -135,3 +135,5 @@ The applicant is Founder/CEO of AXIOMALITY, a company whose product (offline ver
 - The company overlap is a real risk if handled late; it is also, handled well, evidence of the "capacity to complete" the audit — but only if disclosed.
 - Stipend figures in the registry are not confirmed for 2027 and should not be quoted to hosts or referees as fact.
 - Fit score 58–60 is honest: this is a long shot without a host who actively wants the program.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

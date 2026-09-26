@@ -27,7 +27,7 @@ No U of T, Harvard or AXIOMALITY funds are involved. [AXIOMALITY: confirm that t
 | M6 | Ontology v1.0; audit pipeline v1 released; audit results for two datasets |
 | M9 | Audit of all five datasets; proved cross-dataset mappings; merged corpus and corrected annotations released; audit/data paper submitted |
 | M10 | Policy experiments running in SAPIEN and the host's platform |
-| M12 | Methods paper draft; verification-in-the-loop evaluation protocol published with code; SC 42 liaison document [confirm]; joint follow-on proposal drafted with the host |
+| M12 | Methods paper draft; verification-in-the-loop evaluation protocol published with code; SC 32 liaison document [confirm]; joint follow-on proposal drafted with the host |
 
 ## After the stay
 Theme 3 continues in Toronto [or per the sequencing decision] with joint supervision from the host; the toolkit and ontology are maintained as one artefact on both sides. Humboldt alumni sponsorship (return visits, equipment, publication support) is available after the stay [confirm current alumni measures].

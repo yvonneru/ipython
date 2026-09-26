@@ -25,7 +25,7 @@ Dates before the cohort start come from the September 2026 company plan; dates a
 | Q1 2027 (pre-cohort) | Three co-development partners signed; 10,000 verified episodes | Signed agreements [names on permission]; first Passports |
 | Q2 2027 (pre-cohort / cohort start) | Passport v1 recognized by one assessment body or standards organization | Recognition letter or listing |
 | M1–M3 | Host-lab onboarding; live-sensor validation of physics residuals and observation contract; first Passport on company-collected data | Validation report; Passport v1.1 |
-| M3–M6 | Public audit of parthood consistency across the six public datasets released with the open parts ontology (COLORE; contributed to ISO/IEC JTC 1/SC 42) | Public dataset + audit paper; ontology in COLORE |
+| M3–M6 | Public audit of parthood consistency across the six public datasets released with the open parts ontology (COLORE; contributed to ISO/IEC JTC 1/SC 32) | Public dataset + audit paper; ontology in COLORE |
 | M6–M12 | Pilots converted to annual deployments (USD 120–240k); Augment/Deliver product (corrected annotations, proven cross-dataset mappings) shipped to first partners | [n] paid pilots; [n] annual contracts; ontology-aligned corpus deliveries |
 | M12 (≈ month 18 of company plan) | Five paying customers, two renewals | Contracts; ARR [figure] |
 | M12–M18 | Runtime semantic guardrails opened as a gated product with one deployment partner; verification-in-the-loop evaluation reporting violation rate alongside task success | Guardrail pilot; evaluation report |

@@ -100,7 +100,7 @@ Recorded format (from the registry entry and the applicant's drafts):
 |---|---|
 | Research excellence and potential of the candidate | Core contributor to ISO/IEC 21838-4:2023 (TUpper) [role wording to confirm]; two first-author formal-ontology papers submitted to Synthese (2026) with Prof. Grüninger; verified knowledge-system architecture thesis (U of T, 2025) [title]; patents and production ontology-governed data systems at two co-founded companies (cv_tri_agency.md; statement.md Part A). **Weak until the CV lists exist:** the record visible today is two submitted papers, one standard with an unspecified role, a thesis without a title, and patents without numbers |
 | Quality of the research plan and fit with the AI priority area | Three-objective program — ontology as specification, audit, inductive bias — with named datasets (PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World), named tools (Prover9/Mace4, COLORE, SMT, SAPIEN), theorems and Y1/Y2 milestones (proposal.md; budget_and_timeline.md) |
-| Training environment, nominator capacity and commitments | Semantic Technologies Laboratory (MIE): verified-ontology methodology with tool support (COLORE, Prover9/Mace4); U of T Robotics Institute and Vector Institute for robotics community and compute [affiliate sponsor unnamed]; SC 42 participation; co-supervision of [number] graduate students on the (G)-tagged questions; nominator commitments and Budgetary Chair endorsement field (statement.md Part B) |
+| Training environment, nominator capacity and commitments | Semantic Technologies Laboratory (MIE): verified-ontology methodology with tool support (COLORE, Prover9/Mace4); U of T Robotics Institute and Vector Institute for robotics community and compute [affiliate sponsor unnamed]; SC 32 participation; co-supervision of [number] graduate students on the (G)-tagged questions; nominator commitments and Budgetary Chair endorsement field (statement.md Part B) |
 | Recruitment of talent from outside Canada | Candidate is a U of T PhD now at Harvard Medical School; the program can be executed only in Toronto; long-term goal is a Canadian faculty position in knowledge representation for engineering systems (statement.md Part A) |
 | Independence and complementarity with the nominator's grants | The nominator's Discovery Grant proposals (Commonsense Cobotics Project 1.1; Physical Turing Test Project 2.1) do name PartNet and ShapeNet and ask which mereotopologies their part decompositions presuppose, so the earlier "none of its datasets appears in the nominator's proposals" claim was false and has been removed. The program is distinguished by five things those proposals do not treat: articulated, functional and assembly parthood; parthood change under manipulation; real-robot corpora; audit at dataset scale; cross-dataset alignment (proposal.md §3 and Part A; statement.md Part A and Part B) |
 
@@ -122,7 +122,7 @@ See `open_items` in the workflow output; the same list is reproduced here.
 - [Patent list with numbers: reconcile 13 granted + 9 applications (deck) vs 3 Chinese + 9–10 German (drafts)]
 - [Awards with body, value and dates; research funding held]
 - [Exact title of the second Synthese paper]
-- [Exact ISO/IEC JTC 1/SC 42 role wording and working-group designation]
+- [Exact ISO/IEC JTC 1/SC 32 role wording and working-group designation]
 - [Second simulator for Theme 3]
 - [Number of graduate students to be co-supervised]
 - [Robotics Institute collaborator name; Vector affiliate name]
@@ -176,3 +176,5 @@ See `open_items` in the workflow output; the same list is reproduced here.
 6. The timing trap stands: a U of T appointment under any other award before the nomination date breaks the "not affiliated" condition.
 7. Theme 3 still depends on an unnamed Robotics Institute collaborator and unconfirmed Vector compute; the CV shows no robot-learning publications.
 8. Format is unverified: no field list, character limits, CV template or rubric were obtained; Part B is 0.2 page over two pages before trimming.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

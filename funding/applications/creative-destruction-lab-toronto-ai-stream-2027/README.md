@@ -128,7 +128,7 @@ Recorded format:
 15. [Founder's Toronto presence from spring 2027; postdoc appointment status; outside-activity disclosure route]
 16. [CTO, robotics lead, 3D asset lead: full names, degrees, prior roles for bios]
 17. [Founder's pronouns for third-person bios]
-18. [Exact ISO/IEC JTC 1/SC 42 role wording; FOIS 2018 award authorship; AAAI invited presentation details; monograph title/publisher]
+18. [Exact ISO/IEC JTC 1/SC 32 role wording; FOIS 2018 award authorship; AAAI invited presentation details; monograph title/publisher]
 19. [Patent counts reconciled: deck says 13 granted + 9 applications; profile drafts say 3 Chinese invention patents + 9–10 German utility patents; state which are assigned to the company]
 20. [Reviewer deck: which 10–15 slides; refreshed numbers]
 21. [Fallback stream decision: CDL-Montreal AI / CDL Defence]
@@ -180,3 +180,5 @@ Recorded format:
 5. Stream fit: the Toronto AI page's "scientific discovery" framing may route this application to triage elsewhere; admissions' answer (email 1) decides whether Toronto AI, Montreal AI or Defence is the target.
 6. Form unknowns: field list, character limits, demo-video requirement, referral field and 2027/28 dates are all unverified; §4 and §9 already exceed the self-imposed 350-word target and every answer will need cutting to the live limits.
 7. Financing: no round size exists; every fundability statement is a bracket, and mentors are investors.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

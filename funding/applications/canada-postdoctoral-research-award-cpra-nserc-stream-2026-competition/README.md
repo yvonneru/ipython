@@ -88,7 +88,7 @@ Recorded format (from the registry entry and the applicant's checklist):
 | Quality of the proposed research program (50%) — clear objectives, sound methodology, feasibility, EDI in design | proposal.md §2–§4; statement.md B.3 | Italic long-term challenge; three numbered objectives; three themes with six projects; each open research question answerable by theorem or counter-model; named datasets (PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled, AgiBot World, Open X-Embodiment, DROID), tools (Prover9, Mace4, Common Logic, SMT, SAPIEN), Y1/Y2 milestones; Theme 3 now names its baselines, collaborator slot, compute slot and a fallback |
 | Distinct from the supervisor's funded program | proposal.md §3 (five named gaps); statement.md B.1; referee_brief.md point 4 | Prof. Grüninger's Commonsense Cobotics Project 1.1 already asks which mereotopologies PartNet/ShapeNet decompositions presuppose; the package now states what is new (articulated/functional/assembly parthood, parthood change, real-robot corpora, dataset-scale audit, cross-dataset alignment, learning) |
 | Fit of location of tenure and justification for returning to PhD institution | statement.md B.1 | Verification methodology and tooling exist only in the Semantic Technologies Laboratory; applicant has left Toronto (Harvard Medical School); program is new relative to thesis |
-| Training / career development | statement.md Part III; budget_and_timeline.md | Faculty-position goal; independent agenda; Robotics Institute and Vector environment; SC 42 participation; co-supervision |
+| Training / career development | statement.md Part III; budget_and_timeline.md | Faculty-position goal; independent agenda; Robotics Institute and Vector environment; SC 32 participation; co-supervision |
 | EDI | statement.md B.3 | Dataset-coverage reporting by source; open release; concrete mentoring commitment [to be specified] |
 | NSERC mandate (agency fit) | statement.md C | Subject matter, methods, data, evaluation and dissemination all NSE; not CIHR or SSHRC |
 
@@ -120,7 +120,7 @@ Supervisor and referees
 Contributions and CV
 12. [Full list of refereed journal articles — 20+ SCI-indexed / 21 papers per the deck]; [refereed conference papers — FOIS, JOWO, ICBO, IEEE/ACM]; [FOIS 2018 authorship role]; [invited AAAI presentation details]; [monograph title and publisher].
 13. [Reconciled patent list — CV: multiple / nine applications; deck: 13 granted + 9 applications; earlier draft: 3 Chinese invention patents + 9–10 German utility patents — numbers, titles, dates, jurisdictions, assignees].
-14. [Exact ISO/IEC JTC 1/SC 42 role wording and working-group designation]; [which TUpper modules and verification results were the applicant's].
+14. [Exact ISO/IEC JTC 1/SC 32 role wording and working-group designation]; [which TUpper modules and verification results were the applicant's].
 15. [Exact title of the second Synthese submission (mereological pluralism validation)]; [one plain-language sentence stating the central theorem of the constitution paper].
 16. [Released software, ontologies, datasets, deployed systems to list under (f)].
 17. [Number of students supervised]; [journals/conferences reviewed for]; [invited talks, standards meetings, outreach, equity-focused activities].
@@ -174,3 +174,5 @@ Format and process
 4. Theme 3 depends on an unnamed collaborator and unconfirmed compute; the applicant's CV shows no robot-learning publications.
 5. Page limits per attachment, Form 201 character limits, the priority-area list and the once-only rule are unverified; the deadline itself was not re-verified on the official page this session.
 6. Bibliography entries [3], [4], [8], [9], [14] are incomplete; an incomplete bibliography in a 1-page attachment is visible to every reviewer.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

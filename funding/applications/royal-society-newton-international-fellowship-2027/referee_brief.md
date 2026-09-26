@@ -12,7 +12,7 @@ Three kinds of supporting participants write into Flexi-Grant for this scheme: t
 
 **Points that would help.**
 1. The theoretical work on material constitution and mereological pluralism (two *Synthese* submissions, first author) and why it matters for knowledge representation.
-2. The ISO/IEC 21838-4 contribution and what it shows about rigour and the ability to work in a standards body — and, for Prof. Grüninger, that the standardisation route through SC 42 is a real UK–Canada collaboration channel that will continue after the fellowship.
+2. The ISO/IEC 21838-4 contribution and what it shows about rigour and the ability to work in a standards body — and, for Prof. Grüninger, that the standardisation route through SC 32 is a real UK–Canada collaboration channel that will continue after the fellowship.
 3. The move from theory to deployed systems (patents, production CRM/ERP/WMS and recommendation systems at MICAS and YourTable, the Vision Pro application at Uing) and why that predicts success with the audit pipeline. Please be candid that I have not published in robot learning: the committee will see it, and the case is that WP3 is built on the host's pipeline and that my formal-methods side is what the host lacks.
 4. Independence: the programme is my own, complementary to but distinct from Prof. Grüninger's NSERC programs; the fellowship is the step toward a faculty position.
 
