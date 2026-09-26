@@ -98,7 +98,7 @@ PPFP is run by the University of California Office of the President. It funds po
 6. [Thesis title, official abstract, committee; conferral date; whether the thesis touched object parts or robot data (thesis_abstract.md closing sentence)]
 7. [Harvard appointment: laboratory/department, start month, one-sentence description]
 8. [Immigration status and US work-authorization route; any J-1 home-residency constraint]
-9. [ISO/IEC 21838-4 role wording and SC 42 participation (proposal §1, statement ¶3, cv.md); Grüninger's title on the standard (referee_brief)]
+9. [ISO/IEC 21838-4 role wording and SC 32 participation (proposal §1, statement ¶3, cv.md); Grüninger's title on the standard (referee_brief)]
 10. [Itemized publications, reconciled patents, FOIS 2018 role, AAAI talk, monograph (cv.md)]
 11. [Statement: one concrete governance case; one concrete mentoring commitment at the host campus]
 12. [Outside-activity arrangement for the CEO roles; concurrency of external awards]
@@ -125,3 +125,5 @@ Skeptical-panel review, 2026-09-26. Sources: the package, registry entry 2ee36f1
 **Invented or untraceable facts found and bracketed:** "ISO/IEC 21838-4 editor" for Grüninger; "mentored students"; the thesis_abstract claim that the thesis did not address object parts; Prover9/Mace4 attributed to the Synthese papers (drafts say "automated provers and model finders"); the statement items above.
 
 **Remaining risks:** (1) no mentor, and the primary candidate may have left UCSD; (2) G0 not taken, and choosing PPFP forfeits every Toronto award; (3) 2027–28 call unposted, all funder facts from 2026–27 snippets; (4) thin verifiable record (no itemized publications; key papers unaccepted); (5) thesis advisor unknown, which decides the referee pair; (6) work authorization unknown; (7) tight word counts (≈955/1,000, ≈685/700); (8) CEO roles against full-time terms; (9) bibliography [4]/[14], EU AI Act date and 21838-4 wording unresolved.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

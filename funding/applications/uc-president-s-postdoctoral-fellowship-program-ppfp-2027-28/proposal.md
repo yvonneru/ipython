@@ -38,14 +38,14 @@ Ontologies follow the lifecycle methodology of [1] and COLORE verification [13]:
 
 ## 5. Impact
 
-For knowledge representation, the program tests at dataset scale whether a verified ontology can govern learned systems. For robotics, it releases corrected, aligned data and an interpretable failure signal of the kind robot-assurance regimes will require (EU AI Act Annex I [2 Aug 2027 per Article 113 vs 2 Aug 2028 per the company deck — resolve before use]; NIST AI RMF). At [UC San Diego] the work sits with the group that maintains SAPIEN and PartNet-Mobility [confirm]: I bring the specification and audit method; the group brings data, simulator and robotics community; corrections flow back into the datasets. I will co-supervise [number — agree with the mentor] undergraduate researchers on Theme 2. The ontology goes to COLORE and ISO/IEC JTC 1/SC 42, and the fellowship gives me the independent program on which to build a faculty career in knowledge representation for engineering systems.
+For knowledge representation, the program tests at dataset scale whether a verified ontology can govern learned systems. For robotics, it releases corrected, aligned data and an interpretable failure signal of the kind robot-assurance regimes will require (EU AI Act Annex I [2 Aug 2027 per Article 113 vs 2 Aug 2028 per the company deck — resolve before use]; NIST AI RMF). At [UC San Diego] the work sits with the group that maintains SAPIEN and PartNet-Mobility [confirm]: I bring the specification and audit method; the group brings data, simulator and robotics community; corrections flow back into the datasets. I will co-supervise [number — agree with the mentor] undergraduate researchers on Theme 2. The ontology goes to COLORE and ISO/IEC JTC 1/SC 32, and the fellowship gives me the independent program on which to build a faculty career in knowledge representation for engineering systems.
 
 ## Bibliography
 
 (Not counted toward the word limit. [Verify each entry against the source before upload.])
 
 1. Grüninger, M., Fox, M. S. (1995). Methodology for the design and evaluation of ontologies. IJCAI-95 Workshop on Basic Ontological Issues in Knowledge Sharing.
-2. ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 42.
+2. ISO/IEC 21838-4:2023. Information technology — Top-level ontologies (TLO) — Part 4: TUpper. ISO/IEC JTC 1/SC 32.
 3. Ru, Y., Grüninger, M. (2026, submitted). Material Constitution as a Parthood-Preserving Mapping between Mereologies. *Synthese*.
 4. Ru, Y., Grüninger, M. (2026, submitted). [Exact title — mereological pluralism validation paper]. *Synthese*.
 5. Mo, K., Zhu, S., Chang, A. X., Yi, L., Tripathi, S., Guibas, L. J., Su, H. (2019). PartNet: A large-scale benchmark for fine-grained and hierarchical part-level 3D object understanding. CVPR.

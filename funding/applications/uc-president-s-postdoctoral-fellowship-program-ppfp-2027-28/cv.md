@@ -14,7 +14,7 @@ Derived from `funding/profile/master_cv_outline.md` (STRATEGY.md §4, M4 variant
 - Postdoctoral researcher, Harvard Medical School, [laboratory/department], [start month/year]–present. [One-sentence description.]
 
 ## Standards
-- ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper (ISO/IEC JTC 1/SC 42). Core contributor [exact role wording and working-group designation — confirm with Prof. Grüninger].
+- ISO/IEC 21838-4:2023, Information technology — Top-level ontologies (TLO) — Part 4: TUpper (ISO/IEC JTC 1/SC 32). Core contributor [exact role wording and working-group designation — confirm with Prof. Grüninger].
 
 ## Publications
 - Submitted: Ru, Y., Grüninger, M. (2026, submitted). Material Constitution as a Parthood-Preserving Mapping between Mereologies. *Synthese*. First author.
