@@ -11,7 +11,7 @@ Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensembled
 - O3 — Ontology as inductive bias. Training methods that use the ontology to shape part-aware manipulation policies: differentiable relaxations of parthood constraints as auxiliary losses; constraint-guided data augmentation for underrepresented categories; verification-in-the-loop evaluation reporting ontology-violation rate alongside task success. Hypotheses: ontology-consistent training improves generalization to unseen PartNet-Mobility categories; violation rate predicts task failure; pooled ontology-aligned data transfers across part vocabularies. Experiments in SAPIEN [+ second simulator], ablations by axiom family.
 
 ## Deliverables
-Verified parts ontology (open licence; contributed to COLORE and ISO/IEC JTC 1/SC 42); first quantitative audit of parthood consistency in robot datasets with public release; merged ontology-aligned corpus; audit toolkit; two ML-venue papers and one robotics-venue paper (24-month plan) or an audit/data paper plus a methods paper (12-month plan).
+Verified parts ontology (open licence; contributed to COLORE and to the ISO/IEC 21838 series through ISO/IEC JTC 1/SC 32); first quantitative audit of parthood consistency in robot datasets with public release; merged ontology-aligned corpus; audit toolkit; two ML-venue papers and one robotics-venue paper (24-month plan) or an audit/data paper plus a methods paper (12-month plan).
 
 ## Timeline templates
 - 24 months: M1–8 ontology + verification + audit pipeline + first audit; M6–16 data release, pooled-data experiments, augmentation; M12–24 constraint-based training, verification-in-the-loop evaluation, papers.

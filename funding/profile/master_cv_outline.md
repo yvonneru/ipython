@@ -19,7 +19,7 @@ Yi Ru (茹意) · yi.ru@alumni.utoronto.ca · [phone] · [city] · ORCID [id] ·
 - Distinguished Paper Award, FOIS 2018 [role/authorship — confirm]. Lo Family Social Venture Fund [value, year]. President Scholarship; Dean's Honours List; 5T3 Alumni Scholarship [values, years]. Collision 2019 Canadian startup representative. [others]
 
 ## 5. Standards
-- ISO/IEC 21838-4:2023 TUpper — core contributor [exact committee wording]; ISO/IEC JTC 1/SC 42 [working-group designation; current registration status].
+- ISO/IEC 21838-4:2023 TUpper — core contributor [exact committee wording]; ISO/IEC JTC 1/SC 32 (the managing committee per iso.org; earlier drafts wrongly said SC 42) [working-group designation; current registration status].
 
 ## 6. Publications (NSERC convention: * refereed; all authors in order; role where not obvious)
 (a) Refereed journal articles — [insert the 20+ SCI-indexed articles / 21 papers disclosed in the deck; full citations with DOIs]
