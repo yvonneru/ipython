@@ -1,0 +1,101 @@
+{
+ "_source": "/home/user/ipython/axiomality/prototype/results/benchmark.md (run 2026-09-26)",
+ "fig1_ratio": 0.5625,
+ "fig2_ratio": 0.625,
+ "fig3_ratio": 0.5625,
+ "fig1_w": 6.6,
+ "table_colW": [
+  1.6,
+  1.3,
+  0.8,
+  1.05,
+  1.05,
+  0.8
+ ],
+ "cn_cover_big": "41 条真实轨迹",
+ "cn_cover_label": "原型已在 DROID 等 3 个公开真实数据集上跑通，发现卡死、越限与字段说明错误",
+ "cn_demo_title": "原型实测：检出 90% 注入错误，纯规则基线只有 40%",
+ "cn_demo_sub": "内部原型 · 合成数据：200 条基于样本 109 几何生成的抓放轨迹，7 类错误各 10 条；干净样本 0 误拒，有效失败 10/10 保留",
+ "cn_table": [
+  [
+   "",
+   "检出（70 条错误）",
+   "精确率",
+   "干净样本误拒",
+   "有效失败保留",
+   "每条耗时"
+  ],
+  [
+   "AXIOMALITY 引擎",
+   "90%（63/70）",
+   "1.00",
+   "0 / 120",
+   "10 / 10",
+   "7.7 ms"
+  ],
+  [
+   "纯规则基线",
+   "40%（28/70）",
+   "1.00",
+   "0 / 120",
+   "10 / 10",
+   "0.5 ms"
+  ]
+ ],
+ "cn_tamper": "改一个物体标签、把一个时间戳挪 1 毫秒、或改一个计数，验签即失败；还原后通过。本张验收单覆盖 147 条（137 通过、10 修复），另有 53 条拒收。",
+ "cn_demo_note": "内部原型、合成数据、每类 n = 10，注入器与引擎出自同一团队。引擎漏检 7 条：6 条错标为尺寸相近的类别（杯子→花瓶 / 水果 / 耳机），1 条轻微下陷。下一步：真实数据上由第三方复现。",
+ "cn_selfcheck": "30 条规则：24 条用 Z3 在 14 帧有界模型上证明可同时满足（一条成功、一条滑落）；其中 9 条在合成数据上逐条由 Z3 判定；6 条为数值检查。真实数据模式目前只跑数值检查。",
+ "cn_proto_bullets": [
+  "真实数据：DROID、Jaco Play、NYU ROT 共 41 条轨迹、3,870 帧；在 DROID 中发现机械臂卡死、关节越限、动作字段说明与数值不符",
+  "合成基准（含噪声）：检出 92%、0 误拒，与我们的强基线持平；细节优势基线约一天可追平，不作壁垒",
+  "每条真实数据集都签发了验收单，离线验签通过；改任一字段即失败",
+  "一条命令复现全部结果（run_v2.py）"
+ ],
+ "us_cover_big": "41 real episodes",
+ "us_cover_label": "checked across DROID and two other public datasets; found a stuck arm, an over-limit joint, a mis-documented field",
+ "us_demo_title": "The prototype catches 90% of injected errors; rules alone catch 40%",
+ "us_demo_sub": "Internal, synthetic: 200 pick-and-place episodes seeded from real scan geometry; 7 error classes, 10 each; 0 false rejects; 10/10 valid failures kept",
+ "us_table": [
+  [
+   "",
+   "Caught (70 errors)",
+   "Precision",
+   "False rejects",
+   "Valid failures kept",
+   "Per episode"
+  ],
+  [
+   "AXIOMALITY engine",
+   "90% (63/70)",
+   "1.00",
+   "0 / 120",
+   "10 / 10",
+   "7.7 ms"
+  ],
+  [
+   "Rules-only baseline",
+   "40% (28/70)",
+   "1.00",
+   "0 / 120",
+   "10 / 10",
+   "0.5 ms"
+  ]
+ ],
+ "us_tamper": "Change one label, shift one timestamp by 1 ms, or edit one count: verification fails. Restore the files: it passes. This passport covers 147 accepted episodes (137 pass, 10 repaired); 53 were rejected.",
+ "us_demo_note": "Internal prototype, synthetic data, n = 10 per class; the same team wrote the injector and the engine. Misses: 6 relabels to similar-sized classes, 1 slight sink. Next: third-party rerun on real data.",
+ "us_selfcheck": "30 rules: 24 proven jointly consistent with Z3 on a bounded 14-frame model (one success, one slip); 9 are decided by Z3 per episode on synthetic data; 6 are numeric. Real-data mode runs numeric checks only today.",
+ "us_proto_bullets": [
+  "Real data: 41 episodes, 3,870 frames from DROID, Jaco Play and NYU ROT; in DROID it found a stuck arm, an over-limit joint and a mis-documented action field",
+  "Noisy synthetic benchmark: 92% recall, 0 false rejects; ties our own strong baseline, which could close the remaining detail gaps in about a day",
+  "A signed passport for every real dataset, verified offline; change any field and it fails",
+  "One command reproduces everything (run_v2.py)"
+ ],
+ "us_colW": [
+  1.55,
+  1.15,
+  0.85,
+  1.0,
+  1.15,
+  0.9
+ ]
+}
