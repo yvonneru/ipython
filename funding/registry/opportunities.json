@@ -30411,7 +30411,7 @@
    "bundle": "standards-participation-bundle"
   },
   "8fb02c5146c5": {
-   "name": "ISO/IEC JTC 1/SC 32 (Data management and interchange; home of ISO/IEC 21838) expert participation via a national mirror committee (SCC for Canada; INCITS/AI as the ANSI-accredited US TAG) - ISO/IEC 5259 data-quality-for-ML series, ISO/IEC 21838 TLO maintenance, WG 3 trustworthiness, SC 32 liaison with ISO/TC 299",
+   "name": "ISO/IEC JTC 1/SC 32 (Data management and interchange; home of ISO/IEC 21838) expert participation via a national mirror committee (SCC for Canada; INCITS/DM32 [confirm; INCITS/AI is the US TAG to SC 42] as the ANSI-accredited US TAG) - ISO/IEC 5259 data-quality-for-ML series, ISO/IEC 21838 TLO maintenance, WG 3 trustworthiness, SC 32 liaison with ISO/TC 299",
    "funder": "Standards Council of Canada (Canadian mirror committee to JTC 1/SC 42) or ANSI / INCITS (US TAG)",
    "url": "https://www.iso.org/standard/78928.html",
    "country": "International (via national body)",
@@ -30447,7 +30447,7 @@
      "url": "https://www.scc.ca/en/standards/participate"
     },
     {
-     "claim": "INCITS/AI is the ANSI-accredited US TAG to SC 42; participation is through INCITS organisational membership.",
+     "claim": "INCITS/DM32 [confirm; INCITS/AI is the US TAG to SC 42] is the ANSI-accredited US TAG to SC 42; participation is through INCITS organisational membership.",
      "quote": "[Prior-knowledge paraphrase: INCITS 'Artificial Intelligence' technical committee serves as the US TAG to ISO/IEC JTC 1/SC 42; membership dues are set by organisation size.]",
      "url": "https://www.incits.org/committees/ai"
     },
@@ -30488,7 +30488,7 @@
     "https://www.scc.ca/en/standards/participate"
    ],
    "applicant_entity": "either",
-   "corrections": "Name tightened: INCITS/AI named as the US TAG; 'ISO/IEC 5259 series' qualified as already published (Parts 1-5, 2024-2025) so the opportunity is maintenance/NWIP, not base drafting. Funder wording adjusted accordingly. Fit lowered 85 -> 80: no cash, and the registration route is blocked until affiliation is settled. Deadline text now gives the practical target (register by ~Feb 2027 for the spring plenary). | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
+   "corrections": "Name tightened: INCITS/DM32 [confirm; INCITS/AI is the US TAG to SC 42] named as the US TAG; 'ISO/IEC 5259 series' qualified as already published (Parts 1-5, 2024-2025) so the opportunity is maintenance/NWIP, not base drafting. Funder wording adjusted accordingly. Fit lowered 85 -> 80: no cash, and the registration route is blocked until affiliation is settled. Deadline text now gives the practical target (register by ~Feb 2027 for the spring plenary). | 2026-09-26: ISO/IEC 21838 (incl. Part 4 TUpper) is managed by ISO/IEC JTC 1/SC 32 per https://www.iso.org/standard/78928.html; SC 42 references tied to the applicant's 21838 work were corrected to SC 32 (STRATEGY Addendum item 12).",
    "tier_rationale": "B: eligibility is essentially certain (prior SC 42 contributor, no citizenship rule) and the fit is the highest in this batch, but registration first requires an organisational nomination through a national body, and the Canadian route only opens with the U of T affiliation in spring 2027. No funding attached, so it is positioning rather than an application to prepare now.",
    "internal_or_referee_deadlines": "National-body document-submission cut-offs are typically 6-8 weeks before each SC 42 plenary (spring plenary ~April 2027 → submit through the mirror committee by ~mid-Feb 2027; confirm exact dates with the SCC secretary).",
    "category": "robotics_physical_ai_programs",
