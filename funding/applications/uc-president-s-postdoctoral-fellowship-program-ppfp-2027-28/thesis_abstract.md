@@ -1,12 +1,12 @@
 # Thesis Abstract (one page) — scaffold
 
-PPFP requires a one-page abstract of the PhD thesis (application requirements page, found 2026-09-25; verify). The repository does not hold the thesis title, abstract or supervisor's name, so this file is a scaffold built from the CPRA thesis summary; the applicant must replace it with the abstract as submitted to the School of Graduate Studies, or a lightly edited version of it. Keep to one page (about 400–500 words at 12 pt).
+PPFP requires a one-page abstract of the PhD thesis (application requirements page, found 2026-09-25; verify). The repository does not hold the thesis title, abstract or supervisor's name, so this file is a scaffold built from the CPRA thesis summary; the applicant must replace it with the abstract as submitted to the School of Graduate Studies, or a lightly edited version of it. Keep to one page (about 400–500 words at 12 pt). PDF header: "Ru, Yi — Thesis Abstract" [confirm the header convention in the 2027–28 instructions].
 
 **[Thesis title].** PhD, Information Engineering, Department of Mechanical and Industrial Engineering, University of Toronto. All requirements completed March 2025 [confirm; conferral date: confirm from the transcript]. Supervisor: [name]. Committee: [names].
 
 [Paste the official abstract here. The CPRA draft summarizes the contributions as: (i) an ontology contribution — a modular axiomatization within TUpper of the concepts the system reasons over, with machine-checked consistency; (ii) an architecture contribution — how ontology, data and machine-learning-based simulation are coupled, and what guarantees the coupling provides; (iii) an empirical contribution — the application domain and the principal quantitative results. Elements of the thesis contributed to ISO/IEC 21838-4:2023.]
 
-Closing sentence to keep, whatever the abstract says: *The thesis did not address physical object parts, robot datasets or learned manipulation policies; the proposed fellowship program applies its verification methodology to that new domain.* This sentence answers the reviewer's question of whether the proposal is a continuation of the dissertation.
+Closing sentence, to keep only if it is true of the thesis [confirm — the repository does not record the thesis's application domain]: *The thesis did not address physical object parts, robot datasets or learned manipulation policies; the proposed fellowship program applies its verification methodology to that new domain.* This sentence answers the reviewer's question of whether the proposal is a continuation of the dissertation. If the thesis did touch any of these, replace it with one sentence naming what the fellowship adds (the five gaps in proposal §3).
 
 ## Writing sample (up to 35 pages, PDF) — recommendation
 
