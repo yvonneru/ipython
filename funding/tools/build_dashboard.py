@@ -43,20 +43,22 @@ n30 = len([r for r in dated if r["days"] <= 30])
 CHECKLIST = [
     ("2026-09-26", "Kempner go/no-go (deadline 1 Oct, 6 pm ET). Default: no. Go only if two Kempner mentors and three referees confirm today."),
     ("2026-09-26", "Record citizenship / immigration status; locate the proof-of-status document for CPRA; check the PhD conferral date (Klarman needs on or after 1 May 2025)."),
-    ("2026-09-28", "Prof. Grüninger's yes/no on supervising from spring 2027 and on the Schmidt AI in Science co-supervision. Schmidt go/no-go."),
+    ("2026-09-28", "Prof. Grüninger's yes/no on supervising from June 2027 and on the Schmidt AI in Science co-supervision. Schmidt go/no-go."),
+    ("2026-09-29", "Email FASE Graduate Studies and the MIE office: is the REPFP 2026-27 round open now? A UTSC page says the cycle runs late September to early November; UTM closes 9 Nov."),
+    ("2026-09-29", "Ask the Harvard supervisor whether the lab holds an award dated on or after 28 July 2026 that an NSERC Alliance International project could join (go/no-go 10 Oct)."),
     ("2026-09-30", "If Schmidt is a go: package to Grüninger; one consolidated letter request to each referee (Schmidt + CPRA text boxes)."),
-    ("2026-10-02", "CPRA full draft (2-page outline, 4-page statements, Form 201 texts) to Grüninger and referees. Ask him in the same message for the REPFP nomination, RAC 2027 PI role and Alliance International."),
+    ("2026-10-02", "CPRA full draft (2-page outline, 4-page statements, Form 201 texts) to Grüninger and referees. Same message: REPFP nomination, a CCDB role sponsorship for Alliance compute, Alliance International, and the exact ISO/IEC JTC 1/SC 32 role wording for the 21838-4 contribution."),
     ("2026-10-03", "Record AXIOMALITY's legal entity and country/province of incorporation (decides the Canadian company stack). Request the HMS O2 compute account."),
     ("2026-10-05", "Schmidt AI in Science deadline, 5 pm ET (only if go)."),
     ("2026-10-09", "CPRA referee reports in the NSERC system. Order the transcript and the SGS requirements-met letter if the transcript shows only conferral."),
-    ("2026-10-15", "AWS Cloud Credit for Research and NSF ACCESS Explore requests filed. Klarman (15 Oct) only with a committed Cornell host."),
     ("2026-10-14", "Submit CPRA after running Verify in the portal. Deadline Saturday 17 Oct, 8 pm ET (NSERC moves weekend deadlines to Monday; do not rely on it)."),
+    ("2026-10-15", "AWS Cloud Credit for Research and NSF ACCESS Explore requests filed. Klarman (15 Oct) only with a committed Cornell host."),
 ]
 DECIDERS = [
     ("Citizenship / immigration status", "Decides the CPRA proof-of-status document, work-permit lead times for a Toronto start, NAIRR and DOE resources, Fulbright-type programs. Needed by 26 Sept."),
     ("AXIOMALITY legal entity and incorporation", "Decides IRAP, SR&ED, TIAP, Vector FastLane, Scale AI, DIGITAL, Mitacs partner status, SBIR/STTR. Needed by 3 Oct."),
     ("Spring 2027 Toronto vs Sept 2027 US start", "CPRA, Vector, DSI, REPFP and CIRTA cannot be combined with Kempner, Klarman, Stanford, Princeton, UC PPFP or Activate. Choose the fork before asking referees."),
-    ("Prof. Grüninger's agreement", "Supervisor for CPRA, Schmidt, Vector co-sponsor, REPFP nominator; PI for RAC 2027, Alliance International, Alliance Advantage, Amazon Research Awards."),
+    ("Prof. Grüninger's agreement", "Supervisor for CPRA, Schmidt, Vector co-sponsor, REPFP nominator; CCDB sponsor for Alliance compute; PI for Alliance International, Alliance Advantage, Amazon Research Awards, and RAC 2027 only if the pilot clears the competition floor."),
 ]
 
 def esc(s): return html.escape(str(s or ""))
@@ -137,6 +139,7 @@ details ul {{ margin:6px 0 0 18px; padding:0; }} .acts li {{ color:var(--ink); }
     <div class="eyebrow">Funding radar · generated {TODAY.isoformat()}</div>
     <h1>Ru Funding Radar</h1>
     <p class="sub">Every tier A and B opportunity for Dr. Yi Ru and AXIOMALITY from the registry, sorted by deadline, with days left, confidence and package status. Dates come from search results and must be confirmed on the official page before you rely on them. NSERC-style deadlines close at 8 pm ET.</p>
+    <p class="sub"><b>Correction applied 26 Sept:</b> ISO/IEC 21838-4 (TUpper) is managed by ISO/IEC JTC 1/SC 32, not SC 42 as the earlier drafts said. Every package now names SC 32 for the TUpper work.</p>
   </header>
   <section class="stats">
     <div class="stat"><div class="n">{len([r for r in rows if r["tier"]=="A"])}</div><div class="l">tier A (prepare now)</div></div>
