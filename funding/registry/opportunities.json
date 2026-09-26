@@ -30411,7 +30411,7 @@
    "bundle": "standards-participation-bundle"
   },
   "8fb02c5146c5": {
-   "name": "ISO/IEC JTC 1/SC 32 (Data management and interchange; home of ISO/IEC 21838) expert participation via a national mirror committee (SCC for Canada; INCITS/DM32 [confirm; INCITS/AI is the US TAG to SC 42] as the ANSI-accredited US TAG) - ISO/IEC 5259 data-quality-for-ML series, ISO/IEC 21838 TLO maintenance, WG 3 trustworthiness, SC 32 liaison with ISO/TC 299",
+   "name": "ISO/IEC standards participation: JTC 1/SC 32 for ISO/IEC 21838 TLO maintenance and a parts-ontology extension (primary); JTC 1/SC 42 for ISO/IEC 5259 AI data quality and robotics liaison (secondary) — via a national mirror committee (SCC in Canada; INCITS in the US [confirm TAG])",
    "funder": "Standards Council of Canada (Canadian mirror committee to JTC 1/SC 42) or ANSI / INCITS (US TAG)",
    "url": "https://www.iso.org/standard/78928.html",
    "country": "International (via national body)",
