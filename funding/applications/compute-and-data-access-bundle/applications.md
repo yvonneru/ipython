@@ -22,8 +22,8 @@ Robot-learning datasets — PartNet, PartNet-Mobility, GAPartNet, PartNet-Ensemb
 
 | Quantity | Oct 2026 – Mar 2027 (Harvard period) | Apr 2027 – Mar 2028 (Toronto period) |
 |---|---|---|
-| CPU for the O2 audit and O1 verification | [~9,000 core-hours ≈ 1 core-year] | [~2 core-years planned; up to ~7 worst case] |
-| GPU for O3 | pilot [500–1,000 GPU-hours, A100/H100-class] | main matrix [5,000–8,000 GPU-hours] + [~1 core-year] CPU for simulation |
+| CPU for the O2 audit and O1 verification | [~9,000 core-hours ≈ 1 core-year] | [~2.4 core-years planned (17,000 Tier-1 + 4,000 Tier-2 core-hours); up to ~9 worst case (Tier-2 at 62,500)] |
+| GPU for O3 | pilot [500–1,000 GPU-hours, A100/H100-class] | main matrix [5,000–8,000 GPU-hours] + [~4.6–7.3 core-years] CPU for simulation (8 cores per GPU) |
 | Memory | 64 GB standard; [2–4] jobs at 256 GB | same |
 | Storage | [15–20 TB] raw + [2–10 TB] instance store/outputs | [20 TB] project + [50 TB] nearline/scratch (all seven corpora incl. AgiBot Beta); [2–5 TB] O3 scratch |
 | Software | Prover9/Mace4, an SMT solver [Z3 — confirm], a Datalog engine [Soufflé — confirm], Python, SAPIEN, Isaac Lab, PyTorch, LeRobot/RLDS readers | same |
@@ -99,11 +99,11 @@ Robot-learning datasets (PartNet, PartNet-Mobility, GAPartNet, Open X-Embodiment
 | Verification-in-the-loop evaluation | [+25 %] of training | [800] GPU-hours |
 | Second simulator (Isaac Lab, half matrix) | | [2,000] GPU-hours |
 | Development, failed runs | [+30 % of training] | [1,000] GPU-hours |
-| SAPIEN physics/rendering CPU | [8 cores per GPU] | [~1 core-year] Bridges-2/Anvil |
-| Re-audit, seven corpora, [3] ontology versions × [5] axiom conditions | Tier-1 [0.2 s/instance] × [20M] instances × 15 passes; Tier-2 [50k] obligations × [300 s] timeout × 5 | [17,000] + [4,000] core-hours (worst case [60,000]) |
+| SAPIEN physics/rendering CPU | [8 cores per GPU] × [7,100] GPU-hours | [~57,000 core-hours ≈ 6.5 core-years] Bridges-2/Anvil |
+| Re-audit, seven corpora, [3] ontology versions × [5] axiom conditions | Tier-1 [0.2 s/instance] × [20M] instances × 15 passes; Tier-2 [50k] obligations × [300 s] timeout × 15 | [17,000] + [4,000] core-hours (Tier-2 worst case [62,500]) |
 | Storage | annotation shards for seven corpora, instance store, checkpoints | [30 TB] project + [5 TB] scratch |
 
-Total: [~7,000] GPU-hours and [~3] core-years → [credits per the exchange calculator; must be ≤ 3,000,000 for Accelerate — confirm cap]. Note that the Toronto share of this work (from April 2027) is requested in parallel from the Digital Research Alliance of Canada RAC 2027; if that allocation is awarded, the ACCESS allocation will be closed early or transferred to the co-PI, and any unused credits returned.
+Total: [~7,000] GPU-hours and [~9] core-years (21,000 audit + ~57,000 simulation core-hours) → [credits per the exchange calculator; must be ≤ 3,000,000 for Accelerate — confirm cap]. Note that the Toronto share of this work (from April 2027) is requested in parallel from the Digital Research Alliance of Canada RAC 2027; if that allocation is awarded, the ACCESS allocation will be closed early or transferred to the co-PI, and any unused credits returned.
 
 **5. Data management.** [Paste 0.5.]
 
@@ -182,7 +182,7 @@ Outcomes: an open-licence verified ontology contributed to COLORE and ISO/IEC JT
 | Resource | Request (allocation year) | Justification |
 |---|---|---|
 | GPU (RGU) on an H100-class system [Killarney or Trillium-GPU — confirm whether AI compute is inside the RRG form] | [5,000–8,000] GPU-hours ≈ [0.6–0.9] GPU-years → [convert to RGU with the Alliance H100 factor] | 120 O3 training runs (8 conditions × [5] splits × [3] seeds) + 18 pooled-transfer runs at [24] GPU-hours each, plus verification-in-the-loop evaluation [+25 %], Isaac Lab half-matrix [+2,000 GPU-hours] and development [+30 %]. Per-run cost is calibrated by pilot runs at Harvard in [Oct 2026 – Mar 2027]. |
-| CPU core-years | [2] core-years (Tier-1 [17,000] core-hours; Tier-2 Prover9/Mace4 [4,000] core-hours, worst case [60,000]; SAPIEN physics/rendering [~1 core-year]) | Embarrassingly parallel array jobs; [3] ontology versions × [5] axiom-family conditions over [~20M] annotated part instances; Prover9/Mace4 obligations with a [300 s] timeout. |
+| CPU core-years | [~9] core-years (Tier-1 [17,000] core-hours; Tier-2 Prover9/Mace4 [4,000] core-hours, worst case [62,500]; SAPIEN physics/rendering [~56,000] core-hours ≈ 6.4 core-years at 8 cores per GPU) — still far below the RAC floor of 200 core-years; see the RAC package's go/no-go gate | Embarrassingly parallel array jobs; [3] ontology versions × [5] axiom-family conditions over [~20M] annotated part instances; Prover9/Mace4 obligations with a [300 s] timeout. |
 | Large-memory nodes | [2–4] jobs at 256 GB | Datalog materialization of the largest corpus; Mace4 counter-model search. |
 | Project storage | [20 TB] | Annotation shards and ontology instance store for seven corpora (no frames); audit outputs; mappings. |
 | Nearline / scratch storage | [50 TB] | Raw corpora during extraction (OXE ~9 TB; AgiBot World Beta tens of TB; DROID ~1.7 TB — registry figures) and O3 rollouts/checkpoints [2–5 TB]. [Confirm Alliance storage categories and default quotas.] |

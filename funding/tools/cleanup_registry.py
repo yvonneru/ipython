@@ -124,6 +124,11 @@ for rec in ADD:
     k = key(rec); rec["id"] = k; rec["slug"] = slugify(rec); rec["first_seen"] = TODAY; rec["last_checked"] = TODAY
     if k not in E: E[k] = rec; print("added:", rec["name"][:60])
 
+for _e in reg["entries"].values():
+    if isinstance(_e.get("merged_from"), list):
+        _seen = []
+        [_seen.append(x) for x in _e["merged_from"] if x not in _seen]
+        _e["merged_from"] = _seen
 reg["generated"] = TODAY
 json.dump(reg, open(OPP, "w"), indent=1, ensure_ascii=False)
 print("entries:", len(E))

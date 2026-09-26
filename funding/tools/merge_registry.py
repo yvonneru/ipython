@@ -187,6 +187,11 @@ if __name__ == "__main__":
     if a.scratch:
         reg = merge(reg, a.scratch)
         reg = coalesce(reg)
+        for _e in reg["entries"].values():
+            if isinstance(_e.get("merged_from"), list):
+                _seen = []
+                [_seen.append(x) for x in _e["merged_from"] if x not in _seen]
+                _e["merged_from"] = _seen
         with open(OPP, "w") as f:
             json.dump(reg, f, indent=1, ensure_ascii=False)
         print(f"wrote {OPP}")
