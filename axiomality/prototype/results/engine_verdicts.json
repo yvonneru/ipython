@@ -1,0 +1,2587 @@
+[
+  {
+    "episode_id": "ep_0000",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 10.199960999898394
+  },
+  {
+    "episode_id": "ep_0001",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.188670999994429
+  },
+  {
+    "episode_id": "ep_0002",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.766031000073781
+  },
+  {
+    "episode_id": "ep_0003",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.077829000058045
+  },
+  {
+    "episode_id": "ep_0004",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.431723000081547
+  },
+  {
+    "episode_id": "ep_0005",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3257699998521275
+  },
+  {
+    "episode_id": "ep_0006",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.520339999928183
+  },
+  {
+    "episode_id": "ep_0007",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3872830000709655
+  },
+  {
+    "episode_id": "ep_0008",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.177198999874236
+  },
+  {
+    "episode_id": "ep_0009",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-01",
+        "frame": 0,
+        "message": "Frame 0: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'grasp'"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 60,
+        "message": "Frame 60: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'approach'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 68,
+        "message": "Frame 68: object in contact during phase 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'grasp'; rule R-PHASE-01",
+    "ms": 10.350706000053833
+  },
+  {
+    "episode_id": "ep_0010",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SUP-01",
+        "frame": 146,
+        "message": "Frame 146: obj0 unsupported (33 mm above support, no contact) but vertical accel 0.5 m/s^2 is not free fall"
+      },
+      {
+        "rule": "R-SUP-02",
+        "frame": 149,
+        "message": "Frame 149: obj0 airborne for 0.17 s from 3 mm; free fall would land within 0.16 s"
+      },
+      {
+        "rule": "R-TASK-01",
+        "frame": 167,
+        "message": "Frame 167: outcome 'success' but obj0 ends 13 mm from target centre (radius 50 mm), held=False"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 146: obj0 unsupported (33 mm above support, no contact) but vertical accel 0.5 m/s^2 is not free fall; rule R-SUP-01",
+    "ms": 7.4724189998960355
+  },
+  {
+    "episode_id": "ep_0011",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PERM-01",
+        "frame": 17,
+        "message": "Frame 17: obj0 moved 0.17 m in 33 ms (5.0 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-02",
+        "frame": 17,
+        "message": "Frame 17: obj0 rests with no contact yet moved 166 mm"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 66,
+        "message": "Frame 66: contact_begin on obj0 with gripper closed and TCP 167 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-TASK-01",
+        "frame": 175,
+        "message": "Frame 175: outcome 'success' but obj0 ends 150 mm from target centre (radius 50 mm), held=False"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 17: obj0 moved 0.17 m in 33 ms (5.0 m/s > v_max 3.0 m/s); rule R-PERM-01",
+    "ms": 7.722176000015679
+  },
+  {
+    "episode_id": "ep_0012",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          30,
+          31
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 10.166248999894378
+  },
+  {
+    "episode_id": "ep_0013",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.37913199986906
+  },
+  {
+    "episode_id": "ep_0014",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.788594999989073
+  },
+  {
+    "episode_id": "ep_0015",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.440949000056207
+  },
+  {
+    "episode_id": "ep_0016",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3781579999376845
+  },
+  {
+    "episode_id": "ep_0017",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-05",
+        "frame": 54,
+        "message": "Frame 54: phase 'transport' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 72,
+        "message": "Frame 72: phase sequence approach > transport > grasp > place > release (outcome success) violates the task grammar at segment 'grasp'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 54: phase 'transport' but obj0 is not held; rule R-PHASE-05",
+    "ms": 9.184482999899046
+  },
+  {
+    "episode_id": "ep_0018",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 32,
+        "message": "Frame 32: joint 1 speed 4.20 rad/s > 2.175 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 32,
+        "message": "Frame 32: recorded TCP differs from FK(joints) by 51.0 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 37,
+        "message": "Frame 37: joint 1 = 2.995 rad outside [-2.897, 2.897]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 32: joint 1 speed 4.20 rad/s > 2.175 rad/s; rule R-JNT-02",
+    "ms": 7.4563859998306725
+  },
+  {
+    "episode_id": "ep_0019",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-05",
+        "frame": 58,
+        "message": "Frame 58: phase 'transport' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-03",
+        "frame": 147,
+        "message": "Frame 147: phase sequence approach > transport > place > release (outcome success) violates the task grammar at segment 'release'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 58: phase 'transport' but obj0 is not held; rule R-PHASE-05",
+    "ms": 9.089457000072798
+  },
+  {
+    "episode_id": "ep_0020",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.301335999954972
+  },
+  {
+    "episode_id": "ep_0021",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.259583000177372
+  },
+  {
+    "episode_id": "ep_0022",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SPAT-02",
+        "frame": 0,
+        "message": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 64 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 64 mm; rule R-SPAT-02",
+    "ms": 9.760261000110404
+  },
+  {
+    "episode_id": "ep_0023",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.5483709999843995
+  },
+  {
+    "episode_id": "ep_0024",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.426576999932877
+  },
+  {
+    "episode_id": "ep_0025",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 9.12246400002914
+  },
+  {
+    "episode_id": "ep_0026",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.954752000136068
+  },
+  {
+    "episode_id": "ep_0027",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.856763000063438
+  },
+  {
+    "episode_id": "ep_0028",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.252848999996786
+  },
+  {
+    "episode_id": "ep_0029",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.889823999879809
+  },
+  {
+    "episode_id": "ep_0030",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.455306999872846
+  },
+  {
+    "episode_id": "ep_0031",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-05",
+        "frame": 57,
+        "message": "Frame 57: phase 'transport' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 75,
+        "message": "Frame 75: phase sequence approach > transport > grasp > place > release (outcome success) violates the task grammar at segment 'grasp'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 57: phase 'transport' but obj0 is not held; rule R-PHASE-05",
+    "ms": 9.544050999920728
+  },
+  {
+    "episode_id": "ep_0032",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.400275999998485
+  },
+  {
+    "episode_id": "ep_0033",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SUP-01",
+        "frame": 1,
+        "message": "Frame 1: obj1 unsupported (28 mm above support, no contact) but vertical accel 0.0 m/s^2 is not free fall"
+      },
+      {
+        "rule": "R-SUP-02",
+        "frame": 5,
+        "message": "Frame 5: obj1 airborne for 0.17 s from 28 mm; free fall would land within 0.14 s"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 1: obj1 unsupported (28 mm above support, no contact) but vertical accel 0.0 m/s^2 is not free fall; rule R-SUP-01",
+    "ms": 7.498651000105383
+  },
+  {
+    "episode_id": "ep_0034",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.361028000104852
+  },
+  {
+    "episode_id": "ep_0035",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.456078999894089
+  },
+  {
+    "episode_id": "ep_0036",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.19170600018515
+  },
+  {
+    "episode_id": "ep_0037",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.14030700009971
+  },
+  {
+    "episode_id": "ep_0038",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          94,
+          96
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 10.132962000170664
+  },
+  {
+    "episode_id": "ep_0039",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.353876000024684
+  },
+  {
+    "episode_id": "ep_0040",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.348743999955332
+  },
+  {
+    "episode_id": "ep_0041",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.408951000115849
+  },
+  {
+    "episode_id": "ep_0042",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.247358000086024
+  },
+  {
+    "episode_id": "ep_0043",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.62885299991467
+  },
+  {
+    "episode_id": "ep_0044",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 10,
+        "message": "Frame 10: joint 5 speed 4.50 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 10,
+        "message": "Frame 10: recorded TCP differs from FK(joints) by 35.2 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 15,
+        "message": "Frame 15: joint 5 = -2.939 rad outside [-2.897, 2.897]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 10: joint 5 speed 4.50 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.722204999936366
+  },
+  {
+    "episode_id": "ep_0045",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.476579000012862
+  },
+  {
+    "episode_id": "ep_0046",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.499439999946844
+  },
+  {
+    "episode_id": "ep_0047",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.114030000138882
+  },
+  {
+    "episode_id": "ep_0048",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          39,
+          40
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 10.04848899992794
+  },
+  {
+    "episode_id": "ep_0049",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.181381999998848
+  },
+  {
+    "episode_id": "ep_0050",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PERM-01",
+        "frame": 59,
+        "message": "Frame 59: obj0 moved 0.35 m in 35 ms (10.2 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-02",
+        "frame": 59,
+        "message": "Frame 59: obj0 rests with no contact yet moved 354 mm"
+      },
+      {
+        "rule": "R-SPAT-02",
+        "frame": 59,
+        "message": "Frame 59: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 61 mm"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 60,
+        "message": "Frame 60: contact_begin on obj0 with gripper closed and TCP 354 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-TYPE-03",
+        "frame": 61,
+        "message": "Frame 61: fragile 'mug' accelerated at 333.9 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 62,
+        "message": "Frame 62: attached obj0 deviates 354 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 59: obj0 moved 0.35 m in 35 ms (10.2 m/s > v_max 3.0 m/s); rule R-PERM-01",
+    "ms": 7.578899999998612
+  },
+  {
+    "episode_id": "ep_0051",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-KIN-01",
+        "frame": 14,
+        "message": "Frame 14: recorded TCP differs from FK(joints) by 7.0 mm"
+      },
+      {
+        "rule": "R-JNT-02",
+        "frame": 17,
+        "message": "Frame 17: joint 4 speed 2.36 rad/s > 2.175 rad/s"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 20,
+        "message": "Frame 20: joint 4 = -3.081 rad outside [-3.072, -0.070]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 14: recorded TCP differs from FK(joints) by 7.0 mm; rule R-KIN-01",
+    "ms": 7.263124000019161
+  },
+  {
+    "episode_id": "ep_0052",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.102200999952402
+  },
+  {
+    "episode_id": "ep_0053",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3399749999225605
+  },
+  {
+    "episode_id": "ep_0054",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-QTY-02",
+        "frame": 0,
+        "message": "Scene: obj1 labelled 'keyboard': box 0.409 x 0.356 x 0.268 m is outside the 'keyboard' range (0.28-0.5 x 0.09-0.2 x 0.01-0.05 m)"
+      }
+    ],
+    "repairs": [],
+    "reason": "Scene: obj1 labelled 'keyboard': box 0.409 x 0.356 x 0.268 m is outside the 'keyboard' range (0.28-0.5 x 0.09-0.2 x 0.01-0.05 m); rule R-QTY-02",
+    "ms": 7.53845100007311
+  },
+  {
+    "episode_id": "ep_0055",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 144,
+        "message": "Frame 144: joint 6 speed 6.82 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 144,
+        "message": "Frame 144: recorded TCP differs from FK(joints) by 63.7 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 146,
+        "message": "Frame 146: joint 6 = 3.810 rad outside [-0.018, 3.752]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 144: joint 6 speed 6.82 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.7651399999467685
+  },
+  {
+    "episode_id": "ep_0056",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.532599999876766
+  },
+  {
+    "episode_id": "ep_0057",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 77,
+        "message": "Frame 77: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 77: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m; rule R-GRIP-01",
+    "ms": 8.367417000044952
+  },
+  {
+    "episode_id": "ep_0058",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.291410000107135
+  },
+  {
+    "episode_id": "ep_0059",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 147,
+        "message": "Frame 147: obj0 in contact but gripper cmd=open, width 0.124 m vs object 0.122 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 147: obj0 in contact but gripper cmd=open, width 0.124 m vs object 0.122 m; rule R-GRIP-01",
+    "ms": 7.408043000168618
+  },
+  {
+    "episode_id": "ep_0060",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-QTY-02",
+        "frame": 0,
+        "message": "Scene: obj1 labelled 'vase': box 0.423 x 0.357 x 0.273 m is outside the 'vase' range (0.05-0.4 x 0.05-0.4 x 0.1-0.6 m)"
+      }
+    ],
+    "repairs": [],
+    "reason": "Scene: obj1 labelled 'vase': box 0.423 x 0.357 x 0.273 m is outside the 'vase' range (0.05-0.4 x 0.05-0.4 x 0.1-0.6 m); rule R-QTY-02",
+    "ms": 7.57767900017825
+  },
+  {
+    "episode_id": "ep_0061",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.382479999932912
+  },
+  {
+    "episode_id": "ep_0062",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-02",
+        "frame": 144,
+        "message": "Frame 144: phase sequence approach > grasp > transport > release > place (outcome success) violates the task grammar at segment 'place'"
+      },
+      {
+        "rule": "R-PHASE-03",
+        "frame": 144,
+        "message": "Frame 144: phase sequence approach > grasp > transport > release > place (outcome success) violates the task grammar at segment 'place'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 144,
+        "message": "Frame 144: phase 'place' but obj0 is not held"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 144: phase sequence approach > grasp > transport > release > place (outcome success) violates the task grammar at segment 'place'; rule R-PHASE-02",
+    "ms": 14.265815000044313
+  },
+  {
+    "episode_id": "ep_0063",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.086782999977004
+  },
+  {
+    "episode_id": "ep_0064",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.143542000221714
+  },
+  {
+    "episode_id": "ep_0065",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.1827619999567105
+  },
+  {
+    "episode_id": "ep_0066",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.539481999856434
+  },
+  {
+    "episode_id": "ep_0067",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.550136999952883
+  },
+  {
+    "episode_id": "ep_0068",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-TYPE-03",
+        "frame": 106,
+        "message": "Frame 106: fragile 'mug' accelerated at 406.8 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-01",
+        "frame": 107,
+        "message": "Frame 107: obj0 moved 0.46 m in 33 ms (13.9 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 107,
+        "message": "Frame 107: attached obj0 deviates 451 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 106: fragile 'mug' accelerated at 406.8 m/s^2 > 8.0; rule R-TYPE-03",
+    "ms": 7.245058000080462
+  },
+  {
+    "episode_id": "ep_0069",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.186152000031143
+  },
+  {
+    "episode_id": "ep_0070",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 49,
+        "message": "Frame 49: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 49,
+        "message": "Frame 49: contact_begin on obj0 with gripper open and TCP 69 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 49,
+        "message": "Frame 49: object in contact during phase 'approach'"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 50,
+        "message": "Frame 50: attached obj0 deviates 14 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 49: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m; rule R-GRIP-01",
+    "ms": 7.410650999872814
+  },
+  {
+    "episode_id": "ep_0071",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.1624950001023535
+  },
+  {
+    "episode_id": "ep_0072",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.203795000123137
+  },
+  {
+    "episode_id": "ep_0073",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-TYPE-03",
+        "frame": 89,
+        "message": "Frame 89: fragile 'mug' accelerated at 299.2 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-01",
+        "frame": 90,
+        "message": "Frame 90: obj0 moved 0.34 m in 34 ms (10.0 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 90,
+        "message": "Frame 90: attached obj0 deviates 343 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 89: fragile 'mug' accelerated at 299.2 m/s^2 > 8.0; rule R-TYPE-03",
+    "ms": 7.200065999995786
+  },
+  {
+    "episode_id": "ep_0074",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 82,
+        "message": "Frame 82: joint 5 speed 4.79 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 82,
+        "message": "Frame 82: recorded TCP differs from FK(joints) by 13.5 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 87,
+        "message": "Frame 87: joint 5 = -2.953 rad outside [-2.897, 2.897]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 82: joint 5 speed 4.79 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.317167000110203
+  },
+  {
+    "episode_id": "ep_0075",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.164350000039121
+  },
+  {
+    "episode_id": "ep_0076",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 30,
+        "message": "Frame 30: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.122 m"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 30,
+        "message": "Frame 30: contact_begin on obj0 with gripper open and TCP 142 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 30,
+        "message": "Frame 30: object in contact during phase 'approach'"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 39,
+        "message": "Frame 39: attached obj0 deviates 12 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 30: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.122 m; rule R-GRIP-01",
+    "ms": 7.309834999887244
+  },
+  {
+    "episode_id": "ep_0077",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-01",
+        "frame": 0,
+        "message": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 60,
+        "message": "Frame 60: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'place'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 60,
+        "message": "Frame 60: phase 'place' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-03",
+        "frame": 162,
+        "message": "Frame 162: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'; rule R-PHASE-01",
+    "ms": 11.804551000068386
+  },
+  {
+    "episode_id": "ep_0078",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 78,
+        "message": "Frame 78: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.123 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 78: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.123 m; rule R-GRIP-01",
+    "ms": 7.761159999972733
+  },
+  {
+    "episode_id": "ep_0079",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.19026899992059
+  },
+  {
+    "episode_id": "ep_0080",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.329065000021728
+  },
+  {
+    "episode_id": "ep_0081",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          158,
+          159
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 9.661333999929411
+  },
+  {
+    "episode_id": "ep_0082",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          144,
+          145,
+          146
+        ],
+        "action": "re-sorted 3 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 3 rows written out of timestamp order",
+    "ms": 9.858490999931746
+  },
+  {
+    "episode_id": "ep_0083",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 106,
+        "message": "Frame 106: joint 6 speed 27.23 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 106,
+        "message": "Frame 106: recorded TCP differs from FK(joints) by 239.0 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 107,
+        "message": "Frame 107: joint 6 = 4.055 rad outside [-0.018, 3.752]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 106: joint 6 speed 27.23 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.361209999999119
+  },
+  {
+    "episode_id": "ep_0084",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.385969999859299
+  },
+  {
+    "episode_id": "ep_0085",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.657056999983979
+  },
+  {
+    "episode_id": "ep_0086",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SPAT-02",
+        "frame": 0,
+        "message": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 63 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 63 mm; rule R-SPAT-02",
+    "ms": 7.1869010000682465
+  },
+  {
+    "episode_id": "ep_0087",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.244540000101551
+  },
+  {
+    "episode_id": "ep_0088",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.196152000005895
+  },
+  {
+    "episode_id": "ep_0089",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-TYPE-03",
+        "frame": 121,
+        "message": "Frame 121: fragile 'mug' accelerated at 134.8 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-01",
+        "frame": 122,
+        "message": "Frame 122: obj0 moved 0.15 m in 34 ms (4.5 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 122,
+        "message": "Frame 122: attached obj0 deviates 151 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 121: fragile 'mug' accelerated at 134.8 m/s^2 > 8.0; rule R-TYPE-03",
+    "ms": 7.267753999940396
+  },
+  {
+    "episode_id": "ep_0090",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-01",
+        "frame": 0,
+        "message": "Frame 0: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'grasp'"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 52,
+        "message": "Frame 52: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'approach'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 61,
+        "message": "Frame 61: object in contact during phase 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: phase sequence grasp > approach > transport > place > release (outcome success) violates the task grammar at segment 'grasp'; rule R-PHASE-01",
+    "ms": 9.054821000063384
+  },
+  {
+    "episode_id": "ep_0091",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.284345000016401
+  },
+  {
+    "episode_id": "ep_0092",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.233906999999817
+  },
+  {
+    "episode_id": "ep_0093",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-QTY-02",
+        "frame": 0,
+        "message": "Scene: obj0 labelled 'cap': box 0.145 x 0.126 x 0.125 m is outside the 'cap' range (0.18-0.32 x 0.14-0.25 x 0.06-0.16 m)"
+      }
+    ],
+    "repairs": [],
+    "reason": "Scene: obj0 labelled 'cap': box 0.145 x 0.126 x 0.125 m is outside the 'cap' range (0.18-0.32 x 0.14-0.25 x 0.06-0.16 m); rule R-QTY-02",
+    "ms": 7.0981439998831775
+  },
+  {
+    "episode_id": "ep_0094",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.408510999994178
+  },
+  {
+    "episode_id": "ep_0095",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.128678999833937
+  },
+  {
+    "episode_id": "ep_0096",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-KIN-01",
+        "frame": 45,
+        "message": "Frame 45: recorded TCP differs from FK(joints) by 30.0 mm"
+      },
+      {
+        "rule": "R-JNT-02",
+        "frame": 46,
+        "message": "Frame 46: joint 2 speed 4.96 rad/s > 2.175 rad/s"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 52,
+        "message": "Frame 52: joint 2 = -1.791 rad outside [-1.763, 1.763]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 45: recorded TCP differs from FK(joints) by 30.0 mm; rule R-KIN-01",
+    "ms": 7.226543999877322
+  },
+  {
+    "episode_id": "ep_0097",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.101732999899468
+  },
+  {
+    "episode_id": "ep_0098",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          67,
+          68
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 10.325404000013805
+  },
+  {
+    "episode_id": "ep_0099",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.1681330000501475
+  },
+  {
+    "episode_id": "ep_0100",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.358629999998811
+  },
+  {
+    "episode_id": "ep_0101",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.230383999967671
+  },
+  {
+    "episode_id": "ep_0102",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.6143270000557095
+  },
+  {
+    "episode_id": "ep_0103",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.284559000027002
+  },
+  {
+    "episode_id": "ep_0104",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.2008970000752015
+  },
+  {
+    "episode_id": "ep_0105",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PERM-01",
+        "frame": 52,
+        "message": "Frame 52: obj0 moved 0.18 m in 34 ms (5.5 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-02",
+        "frame": 52,
+        "message": "Frame 52: obj0 rests with no contact yet moved 184 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 52: obj0 moved 0.18 m in 34 ms (5.5 m/s > v_max 3.0 m/s); rule R-PERM-01",
+    "ms": 7.381341999916913
+  },
+  {
+    "episode_id": "ep_0106",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.099166999978479
+  },
+  {
+    "episode_id": "ep_0107",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.332893000011609
+  },
+  {
+    "episode_id": "ep_0108",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.055604000015592
+  },
+  {
+    "episode_id": "ep_0109",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.110981000096217
+  },
+  {
+    "episode_id": "ep_0110",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.125460999986899
+  },
+  {
+    "episode_id": "ep_0111",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-QTY-02",
+        "frame": 0,
+        "message": "Scene: obj1 labelled 'keyboard': box 0.421 x 0.350 x 0.270 m is outside the 'keyboard' range (0.28-0.5 x 0.09-0.2 x 0.01-0.05 m)"
+      }
+    ],
+    "repairs": [],
+    "reason": "Scene: obj1 labelled 'keyboard': box 0.421 x 0.350 x 0.270 m is outside the 'keyboard' range (0.28-0.5 x 0.09-0.2 x 0.01-0.05 m); rule R-QTY-02",
+    "ms": 7.67492999989372
+  },
+  {
+    "episode_id": "ep_0112",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SPAT-02",
+        "frame": 0,
+        "message": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 42 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: rigid obj0 ('mug') and obj1 ('laptop') interpenetrate by 42 mm; rule R-SPAT-02",
+    "ms": 7.082253999897148
+  },
+  {
+    "episode_id": "ep_0113",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.300510000050053
+  },
+  {
+    "episode_id": "ep_0114",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SUP-01",
+        "frame": 1,
+        "message": "Frame 1: obj1 unsupported (93 mm above support, no contact) but vertical accel 0.0 m/s^2 is not free fall"
+      },
+      {
+        "rule": "R-SUP-02",
+        "frame": 7,
+        "message": "Frame 7: obj1 airborne for 0.23 s from 93 mm; free fall would land within 0.20 s"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 1: obj1 unsupported (93 mm above support, no contact) but vertical accel 0.0 m/s^2 is not free fall; rule R-SUP-01",
+    "ms": 7.367406000184928
+  },
+  {
+    "episode_id": "ep_0115",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.212503000118886
+  },
+  {
+    "episode_id": "ep_0116",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 84,
+        "message": "Frame 84: joint 7 speed 5.92 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 91,
+        "message": "Frame 91: joint 7 = -2.965 rad outside [-2.897, 2.897]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 84: joint 7 speed 5.92 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.272912999951586
+  },
+  {
+    "episode_id": "ep_0117",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-TYPE-03",
+        "frame": 76,
+        "message": "Frame 76: fragile 'mug' accelerated at 336.2 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-01",
+        "frame": 77,
+        "message": "Frame 77: obj0 moved 0.36 m in 32 ms (11.2 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 77,
+        "message": "Frame 77: attached obj0 deviates 358 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 76: fragile 'mug' accelerated at 336.2 m/s^2 > 8.0; rule R-TYPE-03",
+    "ms": 7.377363999921727
+  },
+  {
+    "episode_id": "ep_0118",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.224866999877122
+  },
+  {
+    "episode_id": "ep_0119",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.142566000084116
+  },
+  {
+    "episode_id": "ep_0120",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3819389999698615
+  },
+  {
+    "episode_id": "ep_0121",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.1372330000940565
+  },
+  {
+    "episode_id": "ep_0122",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.304724000050555
+  },
+  {
+    "episode_id": "ep_0123",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.207514999890918
+  },
+  {
+    "episode_id": "ep_0124",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          109,
+          110
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 9.838467000008677
+  },
+  {
+    "episode_id": "ep_0125",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.217817000082505
+  },
+  {
+    "episode_id": "ep_0126",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.7588529998374725
+  },
+  {
+    "episode_id": "ep_0127",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.304390999934185
+  },
+  {
+    "episode_id": "ep_0128",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PERM-01",
+        "frame": 13,
+        "message": "Frame 13: obj0 moved 0.52 m in 35 ms (15.1 m/s > v_max 3.0 m/s)"
+      },
+      {
+        "rule": "R-PERM-02",
+        "frame": 13,
+        "message": "Frame 13: obj0 rests with no contact yet moved 523 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 13: obj0 moved 0.52 m in 35 ms (15.1 m/s > v_max 3.0 m/s); rule R-PERM-01",
+    "ms": 7.245044999990569
+  },
+  {
+    "episode_id": "ep_0129",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.2183639999821025
+  },
+  {
+    "episode_id": "ep_0130",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.497005999994144
+  },
+  {
+    "episode_id": "ep_0131",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.41261600001053
+  },
+  {
+    "episode_id": "ep_0132",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.356996999988041
+  },
+  {
+    "episode_id": "ep_0133",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-KIN-01",
+        "frame": 82,
+        "message": "Frame 82: recorded TCP differs from FK(joints) by 32.9 mm"
+      },
+      {
+        "rule": "R-JNT-02",
+        "frame": 83,
+        "message": "Frame 83: joint 4 speed 3.94 rad/s > 2.175 rad/s"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 85,
+        "message": "Frame 85: joint 4 = -3.152 rad outside [-3.072, -0.070]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 82: recorded TCP differs from FK(joints) by 32.9 mm; rule R-KIN-01",
+    "ms": 7.3141110001415655
+  },
+  {
+    "episode_id": "ep_0134",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.400812000014412
+  },
+  {
+    "episode_id": "ep_0135",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.28960699984782
+  },
+  {
+    "episode_id": "ep_0136",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.298748000039268
+  },
+  {
+    "episode_id": "ep_0137",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SPAT-01",
+        "frame": 0,
+        "message": "Frame 0: obj1 bottom -30 mm below the table surface"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: obj1 bottom -30 mm below the table surface; rule R-SPAT-01",
+    "ms": 7.346871999970972
+  },
+  {
+    "episode_id": "ep_0138",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.211159999997108
+  },
+  {
+    "episode_id": "ep_0139",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.265978000077666
+  },
+  {
+    "episode_id": "ep_0140",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-JNT-02",
+        "frame": 64,
+        "message": "Frame 64: joint 5 speed 9.27 rad/s > 2.61 rad/s"
+      },
+      {
+        "rule": "R-KIN-01",
+        "frame": 64,
+        "message": "Frame 64: recorded TCP differs from FK(joints) by 6.7 mm"
+      },
+      {
+        "rule": "R-JNT-01",
+        "frame": 67,
+        "message": "Frame 67: joint 5 = 2.906 rad outside [-2.897, 2.897]"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 64: joint 5 speed 9.27 rad/s > 2.61 rad/s; rule R-JNT-02",
+    "ms": 7.421671999964019
+  },
+  {
+    "episode_id": "ep_0141",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 97,
+        "message": "Frame 97: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.124 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 97: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.124 m; rule R-GRIP-01",
+    "ms": 7.4982849998832535
+  },
+  {
+    "episode_id": "ep_0142",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 142,
+        "message": "Frame 142: obj0 in contact but gripper cmd=open, width 0.122 m vs object 0.121 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 142: obj0 in contact but gripper cmd=open, width 0.122 m vs object 0.121 m; rule R-GRIP-01",
+    "ms": 7.45894000010594
+  },
+  {
+    "episode_id": "ep_0143",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 39,
+        "message": "Frame 39: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.121 m"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 39,
+        "message": "Frame 39: contact_begin on obj0 with gripper open and TCP 107 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 39,
+        "message": "Frame 39: object in contact during phase 'approach'"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 40,
+        "message": "Frame 40: attached obj0 deviates 13 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 39: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.121 m; rule R-GRIP-01",
+    "ms": 7.372247999910542
+  },
+  {
+    "episode_id": "ep_0144",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          26,
+          27
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 9.852536000153123
+  },
+  {
+    "episode_id": "ep_0145",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          10,
+          11
+        ],
+        "action": "re-sorted 2 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 2 rows written out of timestamp order",
+    "ms": 9.969955000087793
+  },
+  {
+    "episode_id": "ep_0146",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.272326000020257
+  },
+  {
+    "episode_id": "ep_0147",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.846856000038315
+  },
+  {
+    "episode_id": "ep_0148",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.19482199997401
+  },
+  {
+    "episode_id": "ep_0149",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.221636000167564
+  },
+  {
+    "episode_id": "ep_0150",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-TYPE-03",
+        "frame": 87,
+        "message": "Frame 87: fragile 'mug' accelerated at 65.3 m/s^2 > 8.0"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 88,
+        "message": "Frame 88: attached obj0 deviates 74 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 87: fragile 'mug' accelerated at 65.3 m/s^2 > 8.0; rule R-TYPE-03",
+    "ms": 7.457297999962975
+  },
+  {
+    "episode_id": "ep_0151",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.217400999934398
+  },
+  {
+    "episode_id": "ep_0152",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.091154999898208
+  },
+  {
+    "episode_id": "ep_0153",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.4030420000781305
+  },
+  {
+    "episode_id": "ep_0154",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-01",
+        "frame": 0,
+        "message": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 49,
+        "message": "Frame 49: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'place'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 49,
+        "message": "Frame 49: phase 'place' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-03",
+        "frame": 135,
+        "message": "Frame 135: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'; rule R-PHASE-01",
+    "ms": 11.631900000111273
+  },
+  {
+    "episode_id": "ep_0155",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.679973999984213
+  },
+  {
+    "episode_id": "ep_0156",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.397217000037926
+  },
+  {
+    "episode_id": "ep_0157",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.304892000092877
+  },
+  {
+    "episode_id": "ep_0158",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 153,
+        "message": "Frame 153: obj0 in contact but gripper cmd=open, width 0.126 m vs object 0.123 m"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 153: obj0 in contact but gripper cmd=open, width 0.126 m vs object 0.123 m; rule R-GRIP-01",
+    "ms": 7.370458999957918
+  },
+  {
+    "episode_id": "ep_0159",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.881778999968446
+  },
+  {
+    "episode_id": "ep_0160",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PERM-02",
+        "frame": 35,
+        "message": "Frame 35: obj0 rests with no contact yet moved 93 mm"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 35: obj0 rests with no contact yet moved 93 mm; rule R-PERM-02",
+    "ms": 7.285991999879116
+  },
+  {
+    "episode_id": "ep_0161",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.435232000034375
+  },
+  {
+    "episode_id": "ep_0162",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.668547999855946
+  },
+  {
+    "episode_id": "ep_0163",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SUP-01",
+        "frame": 135,
+        "message": "Frame 135: obj0 unsupported (32 mm above support, no contact) but vertical accel -0.4 m/s^2 is not free fall"
+      },
+      {
+        "rule": "R-SUP-02",
+        "frame": 138,
+        "message": "Frame 138: obj0 airborne for 0.17 s from 0 mm; free fall would land within 0.17 s"
+      },
+      {
+        "rule": "R-TASK-01",
+        "frame": 155,
+        "message": "Frame 155: outcome 'success' but obj0 ends 18 mm from target centre (radius 50 mm), held=False"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 135: obj0 unsupported (32 mm above support, no contact) but vertical accel -0.4 m/s^2 is not free fall; rule R-SUP-01",
+    "ms": 7.334759000059421
+  },
+  {
+    "episode_id": "ep_0164",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.39084399992862
+  },
+  {
+    "episode_id": "ep_0165",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.213573999933942
+  },
+  {
+    "episode_id": "ep_0166",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.09724099988307
+  },
+  {
+    "episode_id": "ep_0167",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 8.151590999887048
+  },
+  {
+    "episode_id": "ep_0168",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.359493999956612
+  },
+  {
+    "episode_id": "ep_0169",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-SPAT-01",
+        "frame": 0,
+        "message": "Frame 0: obj1 bottom -81 mm below the table surface"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: obj1 bottom -81 mm below the table surface; rule R-SPAT-01",
+    "ms": 7.867698000154633
+  },
+  {
+    "episode_id": "ep_0170",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.338155000070401
+  },
+  {
+    "episode_id": "ep_0171",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.399711999823921
+  },
+  {
+    "episode_id": "ep_0172",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-GRIP-01",
+        "frame": 36,
+        "message": "Frame 36: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m"
+      },
+      {
+        "rule": "R-CONT-01",
+        "frame": 36,
+        "message": "Frame 36: contact_begin on obj0 with gripper open and TCP 141 mm from object (reach 60 mm)"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 36,
+        "message": "Frame 36: object in contact during phase 'approach'"
+      },
+      {
+        "rule": "R-PERM-03",
+        "frame": 47,
+        "message": "Frame 47: attached obj0 deviates 11 mm from the gripper motion"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 36: obj0 in contact but gripper cmd=open, width 0.140 m vs object 0.125 m; rule R-GRIP-01",
+    "ms": 7.640885000000708
+  },
+  {
+    "episode_id": "ep_0173",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REPAIR",
+    "findings": [],
+    "repairs": [
+      {
+        "rule": "R-TIME-01",
+        "frames": [
+          63,
+          64,
+          65
+        ],
+        "action": "re-sorted 3 rows written out of timestamp order"
+      }
+    ],
+    "reason": "re-sorted 3 rows written out of timestamp order",
+    "ms": 9.659908999992695
+  },
+  {
+    "episode_id": "ep_0174",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.369909999852098
+  },
+  {
+    "episode_id": "ep_0175",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.8205249999664375
+  },
+  {
+    "episode_id": "ep_0176",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.253622000007454
+  },
+  {
+    "episode_id": "ep_0177",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.161625999970056
+  },
+  {
+    "episode_id": "ep_0178",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.422078999979931
+  },
+  {
+    "episode_id": "ep_0179",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.431391000181975
+  },
+  {
+    "episode_id": "ep_0180",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.398649999913687
+  },
+  {
+    "episode_id": "ep_0181",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.313412000030439
+  },
+  {
+    "episode_id": "ep_0182",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.2041200000967365
+  },
+  {
+    "episode_id": "ep_0183",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.306835000008505
+  },
+  {
+    "episode_id": "ep_0184",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.964379999999437
+  },
+  {
+    "episode_id": "ep_0185",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.2650599997814425
+  },
+  {
+    "episode_id": "ep_0186",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-02",
+        "frame": 71,
+        "message": "Frame 71: phase sequence approach > grasp > approach > place > release (outcome success) violates the task grammar at segment 'approach'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 71,
+        "message": "Frame 71: object in contact during phase 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 71: phase sequence approach > grasp > approach > place > release (outcome success) violates the task grammar at segment 'approach'; rule R-PHASE-02",
+    "ms": 9.370548000106282
+  },
+  {
+    "episode_id": "ep_0187",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "REJECT",
+    "findings": [
+      {
+        "rule": "R-PHASE-01",
+        "frame": 0,
+        "message": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'"
+      },
+      {
+        "rule": "R-PHASE-02",
+        "frame": 58,
+        "message": "Frame 58: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'place'"
+      },
+      {
+        "rule": "R-PHASE-05",
+        "frame": 58,
+        "message": "Frame 58: phase 'place' but obj0 is not held"
+      },
+      {
+        "rule": "R-PHASE-03",
+        "frame": 153,
+        "message": "Frame 153: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'approach'"
+      }
+    ],
+    "repairs": [],
+    "reason": "Frame 0: phase sequence release > place > transport > grasp > approach (outcome success) violates the task grammar at segment 'release'; rule R-PHASE-01",
+    "ms": 11.767392000137988
+  },
+  {
+    "episode_id": "ep_0188",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.261162000077093
+  },
+  {
+    "episode_id": "ep_0189",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.744048000200564
+  },
+  {
+    "episode_id": "ep_0190",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.27333700001509
+  },
+  {
+    "episode_id": "ep_0191",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.4628070001381275
+  },
+  {
+    "episode_id": "ep_0192",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.555271000001085
+  },
+  {
+    "episode_id": "ep_0193",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.3946090001300036
+  },
+  {
+    "episode_id": "ep_0194",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 6.7379079998772795
+  },
+  {
+    "episode_id": "ep_0195",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.401946000072712
+  },
+  {
+    "episode_id": "ep_0196",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.2636300001249765
+  },
+  {
+    "episode_id": "ep_0197",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.14662300015334
+  },
+  {
+    "episode_id": "ep_0198",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.299096999986432
+  },
+  {
+    "episode_id": "ep_0199",
+    "engine": "ax-engine-0.1.0-prototype",
+    "verdict": "PASS",
+    "findings": [],
+    "repairs": [],
+    "reason": "all rules satisfied",
+    "ms": 7.536644999845521
+  }
+]

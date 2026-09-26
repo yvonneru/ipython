@@ -1,0 +1,257 @@
+{
+  "dataset": "AX-DEMO-109 injected held-out copy (SYNTHETIC)",
+  "episodes": 200,
+  "engine_version": "ax-engine-0.1.0-prototype",
+  "class_docs": {
+    "a_wrong_label": "Object label replaced by another class from the company vocabulary (mug or laptop, whole episode).",
+    "b_impossible_relation": "Physically impossible relation: laptop box shifted into the mug (penetration 5-80 mm), laptop floating (+10-120 mm), laptop sunk into table (10-100 mm), or mug hovering 10-120 mm above the table after release (3-frame ramp).",
+    "c_phase_order": "Task-phase labels: swap two adjacent phase blocks, reverse all blocks, or relabel one block.",
+    "d_teleport": "Mug position jumps 0.03-0.60 m horizontally at one frame (glitch lasting 1-3 frames, or persistent).",
+    "e_timestamp_warp": "Three consecutive rows written out of order (rows carry their own timestamps) -> non-monotonic time.",
+    "f_joint_limit": "One joint pushed 0.02-0.40 rad beyond its declared limit by a smooth 5-21 frame bump.",
+    "g_gripper_contact_mismatch": "Gripper reported open while carrying (5-20 frames), contact_begin logged 8-30 frames early, or contact_end logged 5-15 frames late.",
+    "valid_failure": "NOT an error: episode re-simulated with the mug slipping out of the gripper during transport and falling ballistically (outcome=failure_slip). Must be KEPT."
+  },
+  "per_class": {
+    "a_wrong_label": {
+      "n": 10,
+      "engine_verdicts": {
+        "PASS": 6,
+        "REJECT": 4
+      },
+      "baseline_verdicts": {
+        "PASS": 10
+      },
+      "engine_recall": 0.4,
+      "baseline_recall": 0.0,
+      "engine_correct_action": 0.4,
+      "engine_rule_attribution": 0.4,
+      "engine_missed": [
+        {
+          "episode": "ep_0002",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "vase"
+        },
+        {
+          "episode": "ep_0016",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "vase"
+        },
+        {
+          "episode": "ep_0047",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "earphone"
+        },
+        {
+          "episode": "ep_0119",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "fruit"
+        },
+        {
+          "episode": "ep_0182",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "fruit"
+        },
+        {
+          "episode": "ep_0198",
+          "class": "a_wrong_label",
+          "object": "obj0",
+          "from": "mug",
+          "to": "vase"
+        }
+      ]
+    },
+    "b_impossible_relation": {
+      "n": 10,
+      "engine_verdicts": {
+        "PASS": 1,
+        "REJECT": 9
+      },
+      "baseline_verdicts": {
+        "PASS": 10
+      },
+      "engine_recall": 0.9,
+      "baseline_recall": 0.0,
+      "engine_correct_action": 0.9,
+      "engine_rule_attribution": 0.9,
+      "engine_missed": [
+        {
+          "episode": "ep_0087",
+          "class": "b_impossible_relation",
+          "subtype": "laptop_sunk",
+          "sink_m": 0.0171
+        }
+      ]
+    },
+    "c_phase_order": {
+      "n": 10,
+      "engine_verdicts": {
+        "REJECT": 10
+      },
+      "baseline_verdicts": {
+        "PASS": 10
+      },
+      "engine_recall": 1.0,
+      "baseline_recall": 0.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": []
+    },
+    "d_teleport": {
+      "n": 10,
+      "engine_verdicts": {
+        "REJECT": 10
+      },
+      "baseline_verdicts": {
+        "PASS": 2,
+        "REJECT": 8
+      },
+      "engine_recall": 1.0,
+      "baseline_recall": 0.8,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": []
+    },
+    "e_timestamp_warp": {
+      "n": 10,
+      "engine_verdicts": {
+        "REPAIR": 10
+      },
+      "baseline_verdicts": {
+        "REJECT": 10
+      },
+      "engine_recall": 1.0,
+      "baseline_recall": 1.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": []
+    },
+    "f_joint_limit": {
+      "n": 10,
+      "engine_verdicts": {
+        "REJECT": 10
+      },
+      "baseline_verdicts": {
+        "REJECT": 10
+      },
+      "engine_recall": 1.0,
+      "baseline_recall": 1.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": []
+    },
+    "g_gripper_contact_mismatch": {
+      "n": 10,
+      "engine_verdicts": {
+        "REJECT": 10
+      },
+      "baseline_verdicts": {
+        "PASS": 10
+      },
+      "engine_recall": 1.0,
+      "baseline_recall": 0.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": []
+    },
+    "valid_failure": {
+      "n": 10,
+      "engine_verdicts": {
+        "PASS": 10
+      },
+      "baseline_verdicts": {
+        "PASS": 10
+      },
+      "engine_kept": 1.0,
+      "baseline_kept": 1.0
+    },
+    "clean": {
+      "n": 120,
+      "engine_verdicts": {
+        "PASS": 120
+      },
+      "baseline_verdicts": {
+        "PASS": 120
+      },
+      "engine_kept": 1.0,
+      "baseline_kept": 1.0
+    }
+  },
+  "overall": {
+    "engine": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "tp": 63,
+      "fp": 0,
+      "fn": 7,
+      "false_reject_rate_clean": 0.0,
+      "valid_failures_kept": "10/10",
+      "classes_with_full_recall": 5,
+      "ms_per_episode": 7.6889853199998015,
+      "false_reject_rate_pristine_200": 0.0,
+      "repairs_byte_identical_to_original": "10/10"
+    },
+    "baseline": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "tp": 28,
+      "fp": 0,
+      "fn": 42,
+      "false_reject_rate_clean": 0.0,
+      "valid_failures_kept": "10/10",
+      "classes_with_full_recall": 2,
+      "ms_per_episode": 0.4761103699991054
+    }
+  },
+  "classes_caught_by_engine_but_missed_entirely_by_baseline": [
+    "a_wrong_label",
+    "b_impossible_relation",
+    "c_phase_order",
+    "g_gripper_contact_mismatch"
+  ],
+  "behaviour_checks": [
+    {
+      "case": "object poses missing",
+      "expected": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "engine_reason": "R-PROV-01: cannot evaluate, missing frames.object_poses",
+      "baseline": "REJECT",
+      "ok": true
+    },
+    {
+      "case": "joint angles logged in degrees",
+      "expected": "REPAIR",
+      "engine": "REPAIR",
+      "engine_reason": "joint angles logged in degrees; converted to radians",
+      "baseline": "REJECT",
+      "ok": true
+    },
+    {
+      "case": "slip episode relabelled as success",
+      "expected": "REJECT",
+      "engine": "REJECT",
+      "engine_reason": "Frame 111: phase sequence approach > grasp > transport > release (outcome success) violates the task grammar at segment 'release'; rule R-PHASE-03",
+      "baseline": "PASS",
+      "ok": true
+    },
+    {
+      "case": "duplicate timestamp (not re-sortable)",
+      "expected": "REJECT",
+      "engine": "REJECT",
+      "engine_reason": "Frame 50: timestamp 1.6334s <= previous 1.6334s and rows cannot be re-sorted into a regular time base; rule R-TIME-01",
+      "baseline": "REJECT",
+      "ok": true
+    }
+  ],
+  "accepted_episodes": 147
+}
