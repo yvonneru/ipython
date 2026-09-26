@@ -1,0 +1,332 @@
+{
+  "passport_version": "ax-passport/0.2",
+  "issuer": "AXIOMALITY prototype engine (demo key - not a production issuer)",
+  "issued_at": "2026-09-26T07:16:16+00:00",
+  "dataset_id": "OXE/droid_100@1.0.0 (subset)",
+  "title": "REAL robot data: droid_100 (franka_panda), 14 episodes from 8 RLDS shard(s)",
+  "rulebook": {
+    "version": "ax-kernel-0.1.0-demo",
+    "hash": "sha256:b3c3fed10488fd8f50475ff85279db4f2255aec0f07bb5f2f10ac043afbfb510",
+    "used_for": "arm limits (Panda datasheet values), kinematic model, v_max"
+  },
+  "real_mode": {
+    "version": "ax-real-mode-0.1.0",
+    "catalogue_hash": "sha256:e276a71af8d24e4f3f8019156009ac5901cefd2a8601d6efc104d4de3715fc06"
+  },
+  "verdict_counts": {
+    "submitted": 14,
+    "PASS": 5,
+    "REPAIR": 1,
+    "REJECT": 8,
+    "UNKNOWN": 0
+  },
+  "family_verdict_shares_pct": {
+    "timing": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no per-frame timestamps in dataset (fps is declared externally only)"
+    },
+    "boundaries": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 1
+    },
+    "numeric": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "frames": {
+      "PASS": 92.9,
+      "REPAIR": 0.0,
+      "REJECT": 7.1,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "joint_limits": {
+      "PASS": 92.9,
+      "REPAIR": 0.0,
+      "REJECT": 7.1,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "motion": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "kinematics": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "action_state": {
+      "PASS": 92.9,
+      "REPAIR": 0.0,
+      "REJECT": 7.1,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "gripper": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 1
+    },
+    "duplicates": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "task": {
+      "PASS": 35.7,
+      "REPAIR": 7.1,
+      "REJECT": 57.1,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "outcome": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "semantic": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+    }
+  },
+  "checks_not_run": {
+    "timing": "no per-frame timestamps in dataset (fps is declared externally only)",
+    "semantic": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+  },
+  "findings_summary": {
+    "episodes_with_reject_or_repair_by_family": {
+      "task": 9,
+      "joint_limits": 1,
+      "frames": 1,
+      "action_state": 1
+    },
+    "column_aliases": [
+      {
+        "column": "action",
+        "slice": "[:6]",
+        "equals": "action.cartesian_position",
+        "declared_as": "Robot action, consists of [6x joint velocities, 1x gripper position].",
+        "other_declared_as": "Commanded Cartesian position"
+      }
+    ]
+  },
+  "real_synthetic": {
+    "real": 6,
+    "synthetic": 0,
+    "real_ratio": 1.0
+  },
+  "provenance": {
+    "source": {
+      "collection": "Open X-Embodiment (RLDS)",
+      "url": "https://storage.googleapis.com/gresearch/robotics/droid_100/1.0.0/",
+      "dataset": "droid_100",
+      "version": "1.0.0",
+      "download_bytes": 165274734,
+      "shards": [
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00009-of-00031",
+          "bytes": 9541347,
+          "sha256": "645d500e23e7359c21121b12fe1a1395157ba421b1b326eee7df829eb608a03d"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00006-of-00031",
+          "bytes": 12745632,
+          "sha256": "5732b48d47e881ed50b9fefe8e33936507a53fc595b9cfbe55ee2aac306dbd8b"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00019-of-00031",
+          "bytes": 14490316,
+          "sha256": "f1d7b239b203b62a86a3b3bb9fe0709b0d8f565d01aed3208db8c0ebd53ba498"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00029-of-00031",
+          "bytes": 20013917,
+          "sha256": "cb56b87bd815d1927e589f335d15af62bffe2e116d2d47a69afc398de0059a07"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00024-of-00031",
+          "bytes": 25002446,
+          "sha256": "e945a82903385b9f143f5b9baf127617e445d5d97b0fa015efa6af9551e89350"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00017-of-00031",
+          "bytes": 27059787,
+          "sha256": "e88df71c292b886449908981872b4ff2f23e4cd90ef505f43b4384f78cd938e0"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00000-of-00031",
+          "bytes": 27488816,
+          "sha256": "37d04d3586fbde386d14122320d8f7d866b37007ff7a8d96625e72a3994dda70"
+        },
+        {
+          "file": "r2d2_faceblur-train.tfrecord-00005-of-00031",
+          "bytes": 28932473,
+          "sha256": "4fed372681053345ca603668706827993c8bb296035996df2163a006a76aa4a5"
+        }
+      ],
+      "selection": "subset of shards chosen by file size to keep the total download < 300 MB; may be biased toward shorter episodes",
+      "why_not_huggingface": "huggingface.co blocked by this environment's egress policy (HTTP 403 on CONNECT)"
+    },
+    "robot_type": "franka_panda",
+    "fps": 15.0,
+    "fps_source": "DROID paper / OXE overview table (15 Hz control); not stored in the RLDS files",
+    "profile": {
+      "joint_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "joint_units": "rad",
+      "gripper_state_idx": 7,
+      "ee_state_column": "observation.cartesian_position",
+      "ee_state_idx": [
+        0,
+        1,
+        2
+      ],
+      "ee_units_m": true,
+      "gripper_state_semantics": "0 = open, 1 = closed (continuous)",
+      "action_interface": "absolute_joint_position",
+      "action_joint_column": "action.joint_position",
+      "action_joint_velocity_column": "action.joint_velocity",
+      "gripper_cmd_column": "action.gripper_position",
+      "gripper_cmd_semantics": "0 = open, 1 = closed",
+      "limits": {
+        "q_lower": [
+          -2.8973,
+          -1.7628,
+          -2.8973,
+          -3.0718,
+          -2.8973,
+          -0.0175,
+          -2.8973
+        ],
+        "q_upper": [
+          2.8973,
+          1.7628,
+          2.8973,
+          -0.0698,
+          2.8973,
+          3.7525,
+          2.8973
+        ],
+        "qd_max": [
+          2.175,
+          2.175,
+          2.175,
+          2.175,
+          2.61,
+          2.61,
+          2.61
+        ],
+        "source": "external: Franka Emika Panda datasheet (robot_type franka_panda); NOT declared in the dataset's own metadata"
+      },
+      "outcome_from": "episode_metadata/file_path contains /success/ or /failure/; reward=1 on final step for successful demos (features.json)"
+    }
+  },
+  "checks": {
+    "engine": "ax-real-mode-0.1.0",
+    "families": [
+      "timing",
+      "boundaries",
+      "numeric",
+      "frames",
+      "joint_limits",
+      "motion",
+      "kinematics",
+      "action_state",
+      "gripper",
+      "duplicates",
+      "task",
+      "outcome",
+      "semantic"
+    ],
+    "z3_in_loop": false,
+    "tools": {
+      "python": "3.11.15",
+      "z3-solver": "5.1.0",
+      "numpy": "2.4.6",
+      "cryptography": "50.0.1",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "known_limitations": [
+    "Real data, but only a small subset (shards selected by size to stay under 300 MB).",
+    "Semantic checks (object type/size, support, contact, permanence, spatial relations, phase grammar, task success) were NOT run: no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated",
+    "No per-frame timestamps in the source, so timing checks (monotonicity, gaps, jitter) were not run.",
+    "Heuristic findings (robust-range outliers, assumed command semantics) are advisory only and do not affect verdicts; they are listed in results/real_data.json.",
+    "Joint-limit and speed checks use external datasheet limits where stated (not the dataset's own metadata); if the arm model differs, those findings may be wrong.",
+    "No Z3 query is made in real-data mode; all checks are numeric.",
+    "Accepted means none of the runnable checks found a defect; it does not mean the data is correct. Not a safety certification. Demo signing key."
+  ],
+  "content": {
+    "accepted_split_file": "results/accepted/real_droid_100.jsonl",
+    "episodes": 6,
+    "frames": 1181,
+    "content_hash": "sha256:3d2b92bd55386bb75be20442e243cee0903707a062979662a5f18034b8a436ea",
+    "hash_method": "sha256 over canonical JSON of sorted [episode_id, sha256(canonical episode JSON)]",
+    "episode_hashes": [
+      [
+        "droid_100/episode_000000",
+        "120f7a2e5171dbf48a32fc194fd6dcc162e3e1955f55db8ee31754b73d0bd43b"
+      ],
+      [
+        "droid_100/episode_000002",
+        "da45458254b764e3551edcd98cf6ec11e4284a0430157336c6c071c44d73a5df"
+      ],
+      [
+        "droid_100/episode_000008",
+        "25bc044d5d846d40f402646f9f051f44cecef4083401648608553f511ccd1df1"
+      ],
+      [
+        "droid_100/episode_000009",
+        "0cd69b297b47d6be13b3b738fe23242943db3d213beec8df86184b4659770521"
+      ],
+      [
+        "droid_100/episode_000010",
+        "3a4cce7027150731c6ecbd3421b88f758edcb5208e8adb9c5dcb4b629b6d2dd0"
+      ],
+      [
+        "droid_100/episode_000011",
+        "75836831c12802a7317ecdab2b7b751876a337f4a8cb8056950af7df42331aa0"
+      ]
+    ]
+  },
+  "signature": {
+    "alg": "Ed25519",
+    "key_id": "ed25519:581e68418d4a4255",
+    "signed": "canonical JSON of passport without 'signature'",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAP9KAzAbnzX0zyuksWR64QFmmUqkaOEsRl4ROVX4l9Vc=\n-----END PUBLIC KEY-----\n",
+    "value_b64": "JorSFO9ivqshUdEkLbdIjuDbNXkNXw02jsmQWSOq1+OLwHomIKb5dzjvsVrC0dfxM+NjCSXetCF87SbFYpVRDw=="
+  }
+}

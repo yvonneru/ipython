@@ -1,0 +1,4523 @@
+{
+  "real_mode": "ax-real-mode-0.1.0",
+  "catalogue_hash": "sha256:e276a71af8d24e4f3f8019156009ac5901cefd2a8601d6efc104d4de3715fc06",
+  "thresholds": {
+    "min_seconds_advisory": 2.0,
+    "short_frames_no_fps": 20,
+    "dup_run_reject": 3,
+    "stuck_cmd_rad": 0.02,
+    "stuck_static_rad": 0.0001,
+    "stuck_min_seconds": 1.0,
+    "lagged_div_rad": 0.1,
+    "lagged_div_seconds": 2.0,
+    "grip_lag_seconds": 1.0,
+    "grip_min_seconds": 1.5,
+    "kin_tol_m": 0.005,
+    "spike_factor": 4.0,
+    "range_factor": 0.5
+  },
+  "datasets": {
+    "droid_100": {
+      "robot_type": "franka_panda",
+      "fps": 15.0,
+      "fps_source": "DROID paper / OXE overview table (15 Hz control); not stored in the RLDS files",
+      "download_mb": 165.3,
+      "shards": 8,
+      "episodes": 14,
+      "frames": 2551,
+      "verdicts": {
+        "PASS": 5,
+        "REPAIR": 1,
+        "REJECT": 8,
+        "UNKNOWN": 0
+      },
+      "family_table": {
+        "timing": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no per-frame timestamps in dataset (fps is declared externally only)"
+        },
+        "boundaries": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 1
+        },
+        "numeric": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "frames": {
+          "PASS": 92.9,
+          "REPAIR": 0.0,
+          "REJECT": 7.1,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "joint_limits": {
+          "PASS": 92.9,
+          "REPAIR": 0.0,
+          "REJECT": 7.1,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "motion": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "kinematics": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "action_state": {
+          "PASS": 92.9,
+          "REPAIR": 0.0,
+          "REJECT": 7.1,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "gripper": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 1
+        },
+        "duplicates": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "task": {
+          "PASS": 35.7,
+          "REPAIR": 7.1,
+          "REJECT": 57.1,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "outcome": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "semantic": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+        }
+      },
+      "column_aliases": [
+        {
+          "column": "action",
+          "slice": "[:6]",
+          "equals": "action.cartesian_position",
+          "declared_as": "Robot action, consists of [6x joint velocities, 1x gripper position].",
+          "other_declared_as": "Commanded Cartesian position"
+        }
+      ],
+      "dataset_stats": {
+        "action_state_lag_frames": 4,
+        "lag_per_episode": [
+          4,
+          4,
+          5,
+          0,
+          4,
+          6,
+          5,
+          5,
+          3,
+          4,
+          5,
+          4,
+          4
+        ]
+      },
+      "max_fk_error_um": 0.04,
+      "findings": [
+        {
+          "dataset": "droid_100",
+          "episode": "all",
+          "frame": null,
+          "family": "schema",
+          "evidence": "hard",
+          "what": "column 'action[:6]' is bit-identical to 'action.cartesian_position' in all 2551 frames",
+          "why": "documented as \"Robot action, consists of [6x joint velocities, 1x gripper position].\" but it holds \"Commanded Cartesian position\""
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 3,
+          "source": "AUTOLab/failure/2023-11-09",
+          "frame": 19,
+          "family": "action_state",
+          "evidence": "hard",
+          "what": "commanded motion not executed for 15 frames (1.0 s): all joints static (|dq| < 1e-04 rad/frame) while the commanded joint position differs by 0.133 rad (median)",
+          "why": "the recorded actions do not produce the recorded next states (stuck arm, controller not engaged or stale state stream); a policy trained on these pairs learns that commands do nothing",
+          "verdict_effect": "REJECT"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 1,
+          "source": "TRI/failure/2023-10-18",
+          "frame": 141,
+          "family": "joint_limits",
+          "evidence": "hard",
+          "what": "joint 6 = 3.7626 rad outside [-0.0175, 3.7525] on 32 frame(s), max excess 207.0 mrad",
+          "why": "limits from external: Franka Emika Panda datasheet (robot_type franka_panda)",
+          "verdict_effect": "REJECT"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 3,
+          "source": "AUTOLab/failure/2023-11-09",
+          "frame": 43,
+          "family": "frames",
+          "evidence": "hard",
+          "what": "7 duplicated frame(s), longest run 7 (from frame 43)",
+          "why": "every channel incl. a non-zero action is bit-identical to the previous frame: a stale or frozen data stream, not an idle robot",
+          "verdict_effect": "REJECT"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": "8/14 episodes",
+          "frame": 0,
+          "family": "task",
+          "evidence": "hard",
+          "what": "no language instruction in any instruction field (episodes [1, 3, 4, 5, 6, 7, 12, 13]; 5 of them recorded as success)",
+          "why": "unusable for language-conditioned training; task undocumented"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 0,
+          "source": "AUTOLab/success/2023-10-15",
+          "frame": 0,
+          "family": "task",
+          "evidence": "hard",
+          "what": "whitespace anomaly in task string 'Put the  cable in the storage box'",
+          "why": "double/leading/trailing whitespace",
+          "verdict_effect": "REPAIR"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 6,
+          "source": "WEIRD/success/2024-01-09",
+          "frame": 143,
+          "family": "gripper",
+          "evidence": "heuristic",
+          "what": "partial close command (0.25) with gripper state exactly 0 for 34 frames",
+          "why": "HEURISTIC: command below an unknown deadband or gripper not reporting",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "droid_100",
+          "episode": 7,
+          "source": "TRI/failure/2023-08-22",
+          "frame": null,
+          "family": "boundaries",
+          "evidence": "heuristic",
+          "what": "very short episode: 13 frames (0.9 s)",
+          "why": "shorter than 2 s of data; often an aborted recording",
+          "verdict_effect": "advisory"
+        }
+      ],
+      "baseline": {
+        "verdicts": {
+          "PASS": 12,
+          "REJECT": 2
+        },
+        "checks_run": [
+          "min_frames",
+          "finite",
+          "joint_limits",
+          "joint_speed",
+          "tcp_speed_spike"
+        ],
+        "agreement_accept_reject": "8/14",
+        "disagreements": [
+          {
+            "episode": 3,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "action_state: commanded motion not executed for 15 frames (1.0 s): all joints static (|dq| < 1e-04 rad/f",
+              "frames: 7 duplicated frame(s), longest run 7 (from frame 43)",
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          },
+          {
+            "episode": 4,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          },
+          {
+            "episode": 5,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          },
+          {
+            "episode": 6,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          },
+          {
+            "episode": 12,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          },
+          {
+            "episode": 13,
+            "engine": "REJECT",
+            "baseline": "PASS",
+            "engine_reasons": [
+              "task: empty task / language instruction"
+            ],
+            "baseline_issues": []
+          }
+        ],
+        "agreement_on_shared_checks": "14/14"
+      },
+      "accepted_episodes": 6,
+      "passport": {
+        "file": "passport_real_droid_100.json",
+        "verify_ok": true,
+        "messages": [
+          "OK   signature valid (Ed25519, ed25519:581e68418d4a4255)",
+          "OK   content hash matches (6 episodes, sha256:3d2b92bd55386bb7...)"
+        ]
+      },
+      "episode_results": [
+        {
+          "episode_index": 0,
+          "frames": 119,
+          "verdict": "REPAIR",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.529214785301208e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REPAIR",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "whitespace anomaly in task string 'Put the  cable in the storage box'",
+                  "why": "double/leading/trailing whitespace",
+                  "check": "whitespace",
+                  "evidence": "hard",
+                  "repair": "collapse whitespace"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 6.210558000020683
+        },
+        {
+          "episode_index": 1,
+          "frames": 190,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 141,
+                  "what": "joint 6 = 3.7626 rad outside [-0.0175, 3.7525] on 32 frame(s), max excess 207.0 mrad",
+                  "why": "limits from external: Franka Emika Panda datasheet (robot_type franka_panda)",
+                  "check": "limits",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.187003658333084e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 7.5582039999062545
+        },
+        {
+          "episode_index": 2,
+          "frames": 144,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.216857739671988e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 7.7097739999771875
+        },
+        {
+          "episode_index": 3,
+          "frames": 50,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 43,
+                  "what": "7 duplicated frame(s), longest run 7 (from frame 43)",
+                  "why": "every channel incl. a non-zero action is bit-identical to the previous frame: a stale or frozen data stream, not an idle robot",
+                  "check": "duplicate_frames",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 1.8984504205120607e-08
+            },
+            "action_state": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 19,
+                  "what": "commanded motion not executed for 15 frames (1.0 s): all joints static (|dq| < 1e-04 rad/frame) while the commanded joint position differs by 0.133 rad (median)",
+                  "why": "the recorded actions do not produce the recorded next states (stuck arm, controller not engaged or stale state stream); a policy trained on these pairs learns that commands do nothing",
+                  "check": "stuck",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 4.327795999870432
+        },
+        {
+          "episode_index": 4,
+          "frames": 200,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.348202717936631e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 7.721596000010322
+        },
+        {
+          "episode_index": 5,
+          "frames": 157,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 2.9776216227808605e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 6.578795000223181
+        },
+        {
+          "episode_index": 6,
+          "frames": 323,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.097073212000638e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 143,
+                  "what": "partial close command (0.25) with gripper state exactly 0 for 34 frames",
+                  "why": "HEURISTIC: command below an unknown deadband or gripper not reporting",
+                  "check": "partial_cmd",
+                  "evidence": "heuristic"
+                }
+              ]
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 10.750742000254832
+        },
+        {
+          "episode_index": 7,
+          "frames": 13,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": null,
+                  "what": "very short episode: 13 frames (0.9 s)",
+                  "why": "shorter than 2 s of data; often an aborted recording",
+                  "check": "short",
+                  "evidence": "heuristic"
+                }
+              ]
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 1.9774882582217545e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.0037569999876723
+        },
+        {
+          "episode_index": 8,
+          "frames": 388,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.1603796874650136e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 12.40167499963718
+        },
+        {
+          "episode_index": 9,
+          "frames": 126,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.0379395124650434e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 5.704752000383451
+        },
+        {
+          "episode_index": 10,
+          "frames": 166,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.051798923001414e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 6.72426200026166
+        },
+        {
+          "episode_index": 11,
+          "frames": 238,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.84397333861368e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 8.58525700004975
+        },
+        {
+          "episode_index": 12,
+          "frames": 173,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.285162771810342e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 6.889090999720793
+        },
+        {
+          "episode_index": 13,
+          "frames": 264,
+          "verdict": "REJECT",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "max_fk_error_m": 3.974777110296801e-08
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "REJECT",
+              "findings": [
+                {
+                  "frame": 0,
+                  "what": "empty task / language instruction",
+                  "why": "episode cannot be used for language-conditioned training and its task is undocumented",
+                  "check": "empty",
+                  "evidence": "hard"
+                }
+              ],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 9.189931000037177
+        }
+      ]
+    },
+    "jaco_play": {
+      "robot_type": "kinova_jaco2",
+      "fps": 10.0,
+      "fps_source": "OXE overview table (10 Hz); not stored in the RLDS files",
+      "download_mb": 112.4,
+      "shards": 6,
+      "episodes": 13,
+      "frames": 879,
+      "verdicts": {
+        "PASS": 13,
+        "REPAIR": 0,
+        "REJECT": 0,
+        "UNKNOWN": 0
+      },
+      "family_table": {
+        "timing": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no per-frame timestamps in dataset (fps is declared externally only)"
+        },
+        "boundaries": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "numeric": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "frames": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "joint_limits": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0,
+          "note": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+        },
+        "motion": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "kinematics": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+        },
+        "action_state": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0,
+          "note": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+        },
+        "gripper": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0,
+          "note": "gripper command semantics not declared in the dataset; heuristic check only"
+        },
+        "duplicates": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "task": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "outcome": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no independent outcome label to compare the reward with"
+        },
+        "semantic": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+        }
+      },
+      "column_aliases": [],
+      "dataset_stats": {
+        "action_state_lag_frames": null,
+        "lag_per_episode": null
+      },
+      "max_fk_error_um": null,
+      "findings": [],
+      "baseline": {
+        "verdicts": {
+          "PASS": 13
+        },
+        "checks_run": [
+          "min_frames",
+          "finite"
+        ],
+        "agreement_accept_reject": "13/13",
+        "disagreements": [],
+        "agreement_on_shared_checks": "13/13"
+      },
+      "accepted_episodes": 13,
+      "passport": {
+        "file": "passport_real_jaco_play.json",
+        "verify_ok": true,
+        "messages": [
+          "OK   signature valid (Ed25519, ed25519:581e68418d4a4255)",
+          "OK   content hash matches (13 episodes, sha256:2901a8f37a4a6605...)"
+        ]
+      },
+      "episode_results": [
+        {
+          "episode_index": 0,
+          "frames": 65,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.692745000080322
+        },
+        {
+          "episode_index": 1,
+          "frames": 92,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.8564860001315537
+        },
+        {
+          "episode_index": 2,
+          "frames": 42,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.013660999840795
+        },
+        {
+          "episode_index": 3,
+          "frames": 74,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.792985000018234
+        },
+        {
+          "episode_index": 4,
+          "frames": 45,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.240261999962968
+        },
+        {
+          "episode_index": 5,
+          "frames": 48,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.660943999875599
+        },
+        {
+          "episode_index": 6,
+          "frames": 45,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.7134479998712777
+        },
+        {
+          "episode_index": 7,
+          "frames": 85,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.937722000046051
+        },
+        {
+          "episode_index": 8,
+          "frames": 70,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.994127000169101
+        },
+        {
+          "episode_index": 9,
+          "frames": 66,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.511517000333697
+        },
+        {
+          "episode_index": 10,
+          "frames": 43,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 3.055200999824592
+        },
+        {
+          "episode_index": 11,
+          "frames": 114,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 4.5012819996372855
+        },
+        {
+          "episode_index": 12,
+          "frames": 90,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset (fps is declared externally only)"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "joint_limits": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint limits declared in dataset metadata; only a heuristic robust-range check ran"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "kernel has no kinematic model for robot_type 'kinova_jaco2'"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not declared in the dataset; heuristic check only"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 5.073623000043881
+        }
+      ]
+    },
+    "nyu_rot": {
+      "robot_type": "xarm",
+      "fps": null,
+      "fps_source": "not stored in the RLDS files and not used",
+      "download_mb": 5.6,
+      "shards": 1,
+      "episodes": 14,
+      "frames": 440,
+      "verdicts": {
+        "PASS": 14,
+        "REPAIR": 0,
+        "REJECT": 0,
+        "UNKNOWN": 0
+      },
+      "family_table": {
+        "timing": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no per-frame timestamps in dataset"
+        },
+        "boundaries": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "numeric": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "frames": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 14,
+          "note": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+        },
+        "joint_limits": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no joint angles in dataset"
+        },
+        "motion": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "kinematics": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no joint angles in dataset"
+        },
+        "action_state": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 13,
+          "note": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+        },
+        "gripper": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "gripper command semantics not documented or channels missing"
+        },
+        "duplicates": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "task": {
+          "PASS": 100.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 0.0,
+          "advisory_episodes": 0
+        },
+        "outcome": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no independent outcome label to compare the reward with"
+        },
+        "semantic": {
+          "PASS": 0.0,
+          "REPAIR": 0.0,
+          "REJECT": 0.0,
+          "UNKNOWN": 100.0,
+          "advisory_episodes": 0,
+          "note": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+        }
+      },
+      "column_aliases": [],
+      "dataset_stats": {
+        "action_state_lag_frames": null,
+        "lag_per_episode": null
+      },
+      "max_fk_error_um": null,
+      "findings": [
+        {
+          "dataset": "nyu_rot",
+          "episode": 0,
+          "source": "data/train/episode_4.npy",
+          "frame": 0,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 1,
+          "source": "data/train/episode_3.npy",
+          "frame": 6,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis y: commanded + for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 2,
+          "source": "data/train/episode_10.npy",
+          "frame": 14,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 4 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 3,
+          "source": "data/train/episode_12.npy",
+          "frame": 7,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis y: commanded - for 6 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 4,
+          "source": "data/train/episode_1.npy",
+          "frame": 17,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 5,
+          "source": "data/train/episode_5.npy",
+          "frame": 13,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 7,
+          "source": "data/train/episode_0.npy",
+          "frame": 15,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 8,
+          "source": "data/train/episode_13.npy",
+          "frame": 14,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis x: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 9,
+          "source": "data/train/episode_8.npy",
+          "frame": 18,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 5 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 10,
+          "source": "data/train/episode_6.npy",
+          "frame": 16,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 11,
+          "source": "data/train/episode_9.npy",
+          "frame": 22,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis x: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 11,
+          "source": "data/train/episode_9.npy",
+          "frame": 9,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 4 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 12,
+          "source": "data/train/episode_7.npy",
+          "frame": 15,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 13,
+          "source": "data/train/episode_2.npy",
+          "frame": 20,
+          "family": "action_state",
+          "evidence": "heuristic",
+          "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+          "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 0,
+          "source": "data/train/episode_4.npy",
+          "frame": 29,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 11 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 1,
+          "source": "data/train/episode_3.npy",
+          "frame": 20,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 10 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 2,
+          "source": "data/train/episode_10.npy",
+          "frame": 19,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 11 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 3,
+          "source": "data/train/episode_12.npy",
+          "frame": 20,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 10 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 4,
+          "source": "data/train/episode_1.npy",
+          "frame": 21,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 9 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 5,
+          "source": "data/train/episode_5.npy",
+          "frame": 25,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 5 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 6,
+          "source": "data/train/episode_11.npy",
+          "frame": 21,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 9 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 7,
+          "source": "data/train/episode_0.npy",
+          "frame": 20,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 10 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 8,
+          "source": "data/train/episode_13.npy",
+          "frame": 21,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 9 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 9,
+          "source": "data/train/episode_8.npy",
+          "frame": 25,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 5 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 10,
+          "source": "data/train/episode_6.npy",
+          "frame": 21,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 9 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 11,
+          "source": "data/train/episode_9.npy",
+          "frame": 25,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 15 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 12,
+          "source": "data/train/episode_7.npy",
+          "frame": 20,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 10 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        },
+        {
+          "dataset": "nyu_rot",
+          "episode": 13,
+          "source": "data/train/episode_2.npy",
+          "frame": 25,
+          "family": "frames",
+          "evidence": "heuristic",
+          "what": "idle tail: last 5 frames have zero action and unchanged state",
+          "why": "idle frames add no information; consider trimming",
+          "verdict_effect": "advisory"
+        }
+      ],
+      "baseline": {
+        "verdicts": {
+          "PASS": 14
+        },
+        "checks_run": [
+          "min_frames",
+          "finite"
+        ],
+        "agreement_accept_reject": "14/14",
+        "disagreements": [],
+        "agreement_on_shared_checks": "14/14"
+      },
+      "accepted_episodes": 14,
+      "passport": {
+        "file": "passport_real_nyu_rot.json",
+        "verify_ok": true,
+        "messages": [
+          "OK   signature valid (Ed25519, ed25519:581e68418d4a4255)",
+          "OK   content hash matches (14 episodes, sha256:575d4de89fbaa8f3...)"
+        ]
+      },
+      "episode_results": [
+        {
+          "episode_index": 0,
+          "frames": 40,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 29,
+                  "what": "idle tail: last 11 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 0,
+                  "what": "axis z: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.79005899983531
+        },
+        {
+          "episode_index": 1,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 20,
+                  "what": "idle tail: last 10 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 6,
+                  "what": "axis y: commanded + for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.1504530000129307
+        },
+        {
+          "episode_index": 2,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 19,
+                  "what": "idle tail: last 11 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 14,
+                  "what": "axis z: commanded - for 4 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 1.9823980001092423
+        },
+        {
+          "episode_index": 3,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 20,
+                  "what": "idle tail: last 10 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 7,
+                  "what": "axis y: commanded - for 6 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.1403929999905813
+        },
+        {
+          "episode_index": 4,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 21,
+                  "what": "idle tail: last 9 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 17,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 1.9792610000877175
+        },
+        {
+          "episode_index": 5,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 25,
+                  "what": "idle tail: last 5 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 13,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.274088999911328
+        },
+        {
+          "episode_index": 6,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 21,
+                  "what": "idle tail: last 9 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.089419000185444
+        },
+        {
+          "episode_index": 7,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 20,
+                  "what": "idle tail: last 10 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 15,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.3450769999726617
+        },
+        {
+          "episode_index": 8,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 21,
+                  "what": "idle tail: last 9 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 14,
+                  "what": "axis x: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.94061500017051
+        },
+        {
+          "episode_index": 9,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 25,
+                  "what": "idle tail: last 5 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 18,
+                  "what": "axis z: commanded - for 5 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.3658850000174425
+        },
+        {
+          "episode_index": 10,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 21,
+                  "what": "idle tail: last 9 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 16,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.5524100001348415
+        },
+        {
+          "episode_index": 11,
+          "frames": 40,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 25,
+                  "what": "idle tail: last 15 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 22,
+                  "what": "axis x: commanded - for 2 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                },
+                {
+                  "frame": 9,
+                  "what": "axis z: commanded - for 4 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.229276999969443
+        },
+        {
+          "episode_index": 12,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 20,
+                  "what": "idle tail: last 10 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 15,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.406178999990516
+        },
+        {
+          "episode_index": 13,
+          "frames": 30,
+          "verdict": "PASS",
+          "families": {
+            "timing": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no per-frame timestamps in dataset"
+            },
+            "boundaries": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "numeric": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "frames": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 25,
+                  "what": "idle tail: last 5 frames have zero action and unchanged state",
+                  "why": "idle frames add no information; consider trimming",
+                  "check": "idle_tail",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+            },
+            "joint_limits": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "motion": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "kinematics": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no joint angles in dataset"
+            },
+            "action_state": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": [
+                {
+                  "frame": 20,
+                  "what": "axis z: commanded - for 3 frames, EE position unchanged (not at the dataset's workspace bound)",
+                  "why": "HEURISTIC commanded motion not executed; a benign cause is contact with a surface (e.g. pressing on a board), which cannot be checked without object state",
+                  "check": "no_motion",
+                  "evidence": "heuristic"
+                }
+              ],
+              "reason": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+            },
+            "gripper": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "gripper command semantics not documented or channels missing"
+            },
+            "duplicates": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "task": {
+              "verdict": "PASS",
+              "findings": [],
+              "advisories": []
+            },
+            "outcome": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no independent outcome label to compare the reward with"
+            },
+            "semantic": {
+              "verdict": "UNKNOWN",
+              "findings": [],
+              "advisories": [],
+              "reason": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+            }
+          },
+          "ms": 2.4919319998844003
+        }
+      ]
+    }
+  },
+  "timing_selftest": {
+    "note": "SYNTHETIC timestamps added to 3 real nyu_rot episodes to unit-test the timing family",
+    "cases": [
+      {
+        "case": "clean clock",
+        "timing_verdict": "PASS",
+        "finding": null
+      },
+      {
+        "case": "two missing frames (gap of 3 periods)",
+        "timing_verdict": "REJECT",
+        "finding": "1 gap(s) totalling ~2 dropped frame(s); first at frame 10 (3.0/fps)"
+      },
+      {
+        "case": "two rows swapped",
+        "timing_verdict": "REPAIR",
+        "finding": "rows out of timestamp order at frame 6"
+      }
+    ]
+  }
+}

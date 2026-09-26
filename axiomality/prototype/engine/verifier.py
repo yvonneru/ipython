@@ -47,6 +47,52 @@ def _permute_frames(ep: dict, order: np.ndarray) -> dict:
     return out
 
 
+def _dt_bad(dt: np.ndarray, hz: float) -> np.ndarray:
+    """Sampling intervals violating R-TIME-02. v2 profile: up to P['max_single_drops'] isolated
+    single dropped frames (interval ~2/hz) are tolerated; physics checks use the true dt."""
+    r = dt * hz
+    bad = np.abs(r - 1) > P["dt_rel_tol"]
+    m = P.get("max_single_drops", 0)
+    if m:
+        drop = np.abs(r - 2) <= P["dt_rel_tol"]
+        if drop.sum() <= m:
+            bad = bad & ~drop
+    return bad
+
+
+def _rollmed(x: np.ndarray, w: int) -> np.ndarray:
+    """Centred rolling median along axis 0 (edge-padded); v2 noise-robust geometry."""
+    if not w or w < 3 or len(x) < w:
+        return x
+    h = w // 2
+    xp = np.concatenate([np.repeat(x[:1], h, 0), x, np.repeat(x[-1:], h, 0)])
+    win = np.lib.stride_tricks.sliding_window_view(xp, w, axis=0)
+    return np.median(win, axis=-1)
+
+
+def _sg_acc(pos: np.ndarray, t: np.ndarray, w: int) -> np.ndarray:
+    """Second derivative from local quadratic least-squares fits (Savitzky-Golay style, true
+    timestamps, windows truncated at the ends). Returns (n-2, d) aligned like the
+    finite-difference acc (acc[i] is at frame i+1). Vectorised normal equations."""
+    n, d = pos.shape
+    if n < 3:
+        return np.zeros((0, d))
+    h = w // 2
+    tp = np.pad(np.asarray(t, float), h, constant_values=np.nan)
+    pp = np.pad(np.asarray(pos, float), ((h, h), (0, 0)), constant_values=np.nan)
+    Wt = np.lib.stride_tricks.sliding_window_view(tp, w)                 # (n, w)
+    Wp = np.lib.stride_tricks.sliding_window_view(pp, w, axis=0)         # (n, d, w)
+    m = ~np.isnan(Wt)
+    tt = np.where(m, Wt - np.asarray(t, float)[:, None], 0.0)
+    S = [np.sum(m * tt ** k, 1) for k in range(5)]
+    A = np.stack([np.stack([S[4], S[3], S[2]], -1), np.stack([S[3], S[2], S[1]], -1),
+                  np.stack([S[2], S[1], S[0]], -1)], 1)                   # (n, 3, 3)
+    y = np.where(m[:, None, :], Wp, 0.0)
+    B = np.stack([np.sum(y * tt[:, None, :] ** k, -1) for k in (2, 1, 0)], 1)  # (n, 3, d)
+    coef = np.linalg.solve(A[1:-1], B[1:-1])
+    return 2 * coef[:, 0, :]
+
+
 class _Ctx:
     def __init__(self):
         self.findings, self.repairs = [], []
@@ -74,7 +120,7 @@ def _repair(ep: dict, ctx: _Ctx) -> dict | None:
         order = np.argsort(t, kind="stable")
         ts = t[order]
         dts = np.diff(ts)
-        if np.all(dts > 0) and np.all(np.abs(dts * hz - 1) <= P["dt_rel_tol"]):
+        if np.all(dts > 0) and not np.any(_dt_bad(dts, hz)):
             moved = [int(i) for i in np.flatnonzero(order != np.arange(len(t)))]
             ep = _permute_frames(ep, order)
             ctx.repairs.append({"rule": "R-TIME-01", "frames": moved,
@@ -94,6 +140,12 @@ def _repair(ep: dict, ctx: _Ctx) -> dict | None:
     if ctx.repairs:
         ep["meta"]["ax_repairs"] = ctx.repairs
     return ep
+
+
+def _runs_bool(mask) -> list[tuple[int, int]]:
+    m = np.r_[False, np.asarray(mask, bool), False]
+    d = np.diff(m.astype(int))
+    return list(zip(np.flatnonzero(d == 1), np.flatnonzero(d == -1)))
 
 
 def verify_episode(ep: dict) -> dict:
@@ -154,7 +206,7 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
     add = ctx.add
 
     # --- time base
-    k = _first(np.abs(dt * hz - 1) > P["dt_rel_tol"])
+    k = _first(_dt_bad(dt, hz))
     if k is not None:
         add("R-TIME-02", k + 1, f"Frame {k + 1}: sampling interval {dt[k] * 1e3:.1f} ms vs nominal {1e3 / hz:.1f} ms")
 
@@ -184,10 +236,11 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
         j = int(np.flatnonzero(bad[k])[0])
         add("R-JNT-01", k, f"Frame {k}: joint {j + 1} = {q[k, j]:.3f} rad outside [{Q_LO[j]:.3f}, {Q_HI[j]:.3f}]")
     qd = np.abs(np.diff(q, axis=0)) / dt[:, None]
-    k = _first((qd > QD_MAX).any(1))
+    qd_lim = QD_MAX * P.get("qd_margin", 1.0)  # v2: finite-difference noise margin (calibrated)
+    k = _first((qd > qd_lim).any(1))
     if k is not None:
-        j = int(np.argmax(qd[k] / QD_MAX))
-        add("R-JNT-02", k + 1, f"Frame {k + 1}: joint {j + 1} speed {qd[k, j]:.2f} rad/s > {QD_MAX[j]} rad/s")
+        j = int(np.argmax(qd[k] / qd_lim))
+        add("R-JNT-02", k + 1, f"Frame {k + 1}: joint {j + 1} speed {qd[k, j]:.2f} rad/s > {qd_lim[j]:g} rad/s")
     fk_err = np.linalg.norm(fk(q)[:, :3, 3] - tcp, axis=1)
     k = _first(fk_err > P["fk_tol"])
     if k is not None:
@@ -202,6 +255,11 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
     for ev in sorted(ep["events"], key=lambda e: e.get("t", -1)):
         o, et = ev.get("object"), float(ev.get("t", -1))
         k = int(np.searchsorted(t, et - 1e-9))
+        snap = P.get("event_snap_s")
+        if snap:  # v2: events snap to the nearest frame within half a period (dropped frames / jitter)
+            k = int(np.argmin(np.abs(t - et)))
+            if abs(t[k] - et) <= snap:
+                et = t[k]
         if o not in poses or k >= n or abs(t[k] - et) > 1e-6 or ev.get("type") not in ("contact_begin", "contact_end"):
             add("R-CONT-03", min(k, n - 1), f"event {ev} does not reference a known object/frame/type")
             continue
@@ -221,19 +279,22 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
 
     # --- per-object physics
     airborne_all = {}
+    sw = P.get("smooth_window", 0)
+    geo = {o: (_rollmed(v, sw) if sw else v) for o, v in poses.items()}  # v2: geometry on rolling medians
     for oid, Pz in poses.items():
+        Pg = geo[oid]
         dims = objs[oid]["dimensions"]
         d3 = (dims["length"], dims["width"], dims["height"])
         h = d3[2]
         lab = labels.get(oid)
-        gap = Pz[:, 2] - h / 2 - table
+        gap = Pg[:, 2] - h / 2 - table
         supported = gap <= P["support_tol"]
-        for o2, P2 in poses.items():
+        for o2, P2 in geo.items():
             if o2 != oid:
                 d2 = objs[o2]["dimensions"]
                 top2 = P2[:, 2] + d2["height"] / 2
-                on_top = (np.abs(Pz[:, 2] - h / 2 - top2) <= P["support_tol"]) & \
-                    (footprint_overlap(Pz, d3, P2, (d2["length"], d2["width"])) > 0)
+                on_top = (np.abs(Pg[:, 2] - h / 2 - top2) <= P["support_tol"]) & \
+                    (footprint_overlap(Pg, d3, P2, (d2["length"], d2["width"])) > 0)
                 supported |= on_top
         att = attached[oid]
         free = ~att
@@ -265,6 +326,8 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
                                 f"width {width[k]:.3f} m vs object {gw:.3f} m")
         vel = step / dt[:, None]
         acc = np.diff(vel, axis=0) / ((dt[:-1] + dt[1:]) / 2)[:, None]  # acc[i] is at frame i+1
+        if sw:
+            acc = _sg_acc(Pz[:, :3], t, sw)
         if lab and CLASSES[lab]["fragile"]:
             m = att[:-2] & att[1:-1] & att[2:] & (np.linalg.norm(acc, axis=1) > P["a_fragile"])
             k = _first(m)
@@ -275,6 +338,16 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
         lo, hi = P["ballistic_az"]
         az = acc[:, 2]
         m = airborne[:-2] & airborne[1:-1] & airborne[2:] & ((az > hi * g) | (az < lo * g))
+        if sw:  # v2: one quadratic fit per airborne run (>= 4 frames) instead of 3-frame differences
+            m = np.zeros(max(n - 2, 0), bool)
+            for s0, e0 in _runs_bool(airborne):
+                if e0 - s0 >= 4:
+                    tt = t[s0:e0] - t[s0]
+                    a_fit = 2 * np.polyfit(tt, Pz[s0:e0, 2], 2)[0]
+                    if a_fit > hi * g or a_fit < lo * g:
+                        m[max(s0 - 1, 0)] = True
+                        az = az.copy()
+                        az[max(s0 - 1, 0)] = a_fit
         k = _first(m)
         if k is not None:
             add("R-SUP-01", k + 1, f"Frame {k + 1}: {oid} unsupported ({gap[k + 1] * 1e3:.0f} mm above support, no "
@@ -306,8 +379,8 @@ def _kernel_checks(ep: dict, ctx: _Ctx) -> None:
             if not (labels.get(a) and labels.get(b) and CLASSES[labels[a]]["rigid"] and CLASSES[labels[b]]["rigid"]):
                 continue
             da, db = objs[a]["dimensions"], objs[b]["dimensions"]
-            depth = box_penetration(poses[a], (da["length"], da["width"], da["height"]),
-                                    poses[b], (db["length"], db["width"], db["height"]))
+            depth = box_penetration(geo[a], (da["length"], da["width"], da["height"]),
+                                    geo[b], (db["length"], db["width"], db["height"]))
             k = _first(depth > P["pen_tol"])
             if k is not None:
                 add("R-SPAT-02", k, f"Frame {k}: rigid {a} ('{labels[a]}') and {b} ('{labels[b]}') interpenetrate "

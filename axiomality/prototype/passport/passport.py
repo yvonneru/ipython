@@ -154,9 +154,47 @@ def verify(passport_path: Path = PASSPORT_FILE, pubkey_path: Path = PUB, data_pa
         diff = sorted(k for k in set(signed) | set(now) if signed.get(k) != now.get(k))
         msgs.append(f"FAIL content hash mismatch: {root[:23]}... != signed {passport['content']['content_hash'][:23]}...; "
                     f"changed episodes: {', '.join(diff[:5])}")
-    if passport["rulebook"]["hash"] != rulebook_hash():
+    rb = passport["rulebook"]
+    if rb.get("overrides") is not None:  # v2 tolerance profile: recompute from the recorded overrides
+        from kernel.profiles import rulebook_v2_hash
+        expect = rulebook_v2_hash(rb["overrides"])
+    else:
+        expect = rulebook_hash()
+    if rb["hash"] != expect:
         msgs.append("WARN rulebook in this checkout differs from the one the passport was issued under")
+    if "real_mode" in passport:
+        from engine.real_mode import catalogue_hash
+        if passport["real_mode"]["catalogue_hash"] != catalogue_hash():
+            msgs.append("WARN real-mode check catalogue in this checkout differs from the one used for the passport")
     return ok, msgs
+
+
+def issue_generic(out_path: Path, accepted: list[dict], accepted_file: Path, body: dict) -> dict:
+    """Sign a passport for any accepted split. ``body`` supplies dataset_id, title, rulebook,
+    verdict_counts, findings_summary, real_synthetic, provenance, checks, known_limitations, ...
+    The content hash is computed here from ``accepted`` (which must equal the file's content)."""
+    ensure_keys()
+    sk = serialization.load_pem_private_key(PRIV.read_bytes(), password=None)
+    root, manifest = content_manifest(accepted)
+    passport = {"passport_version": "ax-passport/0.2",
+                "issuer": "AXIOMALITY prototype engine (demo key - not a production issuer)",
+                "issued_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), **body}
+    passport["content"] = {"accepted_split_file": str(accepted_file.relative_to(ROOT)), "episodes": len(accepted),
+                           "frames": sum(len(next(iter(e["frames"].values()))) for e in accepted),
+                           "content_hash": root,
+                           "hash_method": "sha256 over canonical JSON of sorted [episode_id, sha256(canonical episode JSON)]",
+                           "episode_hashes": manifest}
+    passport["checks"] = dict(passport.get("checks", {}), tools={
+        "python": platform.python_version(), "z3-solver": z3.get_version_string(), "numpy": np.__version__,
+        "cryptography": cryptography.__version__, "matplotlib": matplotlib.__version__})
+    pk = sk.public_key()
+    sig = sk.sign(canonical_json(passport))
+    passport["signature"] = {"alg": "Ed25519", "key_id": key_id(pk), "signed": "canonical JSON of passport without 'signature'",
+                             "public_key_pem": pk.public_bytes(serialization.Encoding.PEM,
+                                                               serialization.PublicFormat.SubjectPublicKeyInfo).decode(),
+                             "value_b64": base64.b64encode(sig).decode()}
+    write_json(out_path, passport)
+    return passport
 
 
 if __name__ == "__main__":

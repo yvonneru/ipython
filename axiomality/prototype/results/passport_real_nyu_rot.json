@@ -1,0 +1,290 @@
+{
+  "passport_version": "ax-passport/0.2",
+  "issuer": "AXIOMALITY prototype engine (demo key - not a production issuer)",
+  "issued_at": "2026-09-26T07:16:16+00:00",
+  "dataset_id": "OXE/nyu_rot_dataset_converted_externally_to_rlds@0.1.0 (subset)",
+  "title": "REAL robot data: nyu_rot (xarm), 14 episodes from 1 RLDS shard(s)",
+  "rulebook": {
+    "version": "ax-kernel-0.1.0-demo",
+    "hash": "sha256:b3c3fed10488fd8f50475ff85279db4f2255aec0f07bb5f2f10ac043afbfb510",
+    "used_for": "arm limits (Panda datasheet values), kinematic model, v_max"
+  },
+  "real_mode": {
+    "version": "ax-real-mode-0.1.0",
+    "catalogue_hash": "sha256:e276a71af8d24e4f3f8019156009ac5901cefd2a8601d6efc104d4de3715fc06"
+  },
+  "verdict_counts": {
+    "submitted": 14,
+    "PASS": 14,
+    "REPAIR": 0,
+    "REJECT": 0,
+    "UNKNOWN": 0
+  },
+  "family_verdict_shares_pct": {
+    "timing": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no per-frame timestamps in dataset"
+    },
+    "boundaries": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "numeric": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "frames": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 14,
+      "note": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream"
+    },
+    "joint_limits": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no joint angles in dataset"
+    },
+    "motion": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "kinematics": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no joint angles in dataset"
+    },
+    "action_state": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 13,
+      "note": "ee-delta action interface: action-to-motion scale and frame are not declared; only a heuristic sign check ran"
+    },
+    "gripper": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "gripper command semantics not documented or channels missing"
+    },
+    "duplicates": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "task": {
+      "PASS": 100.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 0.0,
+      "advisory_episodes": 0
+    },
+    "outcome": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no independent outcome label to compare the reward with"
+    },
+    "semantic": {
+      "PASS": 0.0,
+      "REPAIR": 0.0,
+      "REJECT": 0.0,
+      "UNKNOWN": 100.0,
+      "advisory_episodes": 0,
+      "note": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+    }
+  },
+  "checks_not_run": {
+    "timing": "no per-frame timestamps in dataset",
+    "frames": "state is quantized (median 2% distinct values per non-constant state channel over 440 frames); bit-identical consecutive rows are expected and are not evidence of a stale stream",
+    "joint_limits": "no joint angles in dataset",
+    "kinematics": "no joint angles in dataset",
+    "gripper": "gripper command semantics not documented or channels missing",
+    "outcome": "no independent outcome label to compare the reward with",
+    "semantic": "no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated"
+  },
+  "findings_summary": {
+    "episodes_with_reject_or_repair_by_family": {},
+    "column_aliases": []
+  },
+  "real_synthetic": {
+    "real": 14,
+    "synthetic": 0,
+    "real_ratio": 1.0
+  },
+  "provenance": {
+    "source": {
+      "collection": "Open X-Embodiment (RLDS)",
+      "url": "https://storage.googleapis.com/gresearch/robotics/nyu_rot_dataset_converted_externally_to_rlds/0.1.0/",
+      "dataset": "nyu_rot_dataset_converted_externally_to_rlds",
+      "version": "0.1.0",
+      "download_bytes": 5594211,
+      "shards": [
+        {
+          "file": "nyu_rot_dataset_converted_externally_to_rlds-train.tfrecord-00000-of-00001",
+          "bytes": 5594211,
+          "sha256": "08bade6acbc55354427aeb30f54b6f62ec3c82e787fccdb2203c11f83bf769cf"
+        }
+      ],
+      "selection": "subset of shards chosen by file size to keep the total download < 300 MB; may be biased toward shorter episodes",
+      "why_not_huggingface": "huggingface.co blocked by this environment's egress policy (HTTP 403 on CONNECT)"
+    },
+    "robot_type": "xarm",
+    "fps": null,
+    "fps_source": "not stored in the RLDS files and not used",
+    "profile": {
+      "joint_idx": [],
+      "joint_units": "no joint angles recorded (end-effector state only)",
+      "gripper_state_idx": 6,
+      "action_interface": "ee_delta",
+      "ee_state_column": "observation.state",
+      "ee_state_idx": [
+        0,
+        1,
+        2
+      ],
+      "action_ee_idx": [
+        0,
+        1,
+        2
+      ],
+      "gripper_cmd_action_idx": 6,
+      "gripper_cmd_semantics": "not documented",
+      "limits": null
+    }
+  },
+  "checks": {
+    "engine": "ax-real-mode-0.1.0",
+    "families": [
+      "timing",
+      "boundaries",
+      "numeric",
+      "frames",
+      "joint_limits",
+      "motion",
+      "kinematics",
+      "action_state",
+      "gripper",
+      "duplicates",
+      "task",
+      "outcome",
+      "semantic"
+    ],
+    "z3_in_loop": false,
+    "tools": {
+      "python": "3.11.15",
+      "z3-solver": "5.1.0",
+      "numpy": "2.4.6",
+      "cryptography": "50.0.1",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "known_limitations": [
+    "Real data, but only a small subset (shards selected by size to stay under 300 MB).",
+    "Semantic checks (object type/size, support, contact, permanence, spatial relations, phase grammar, task success) were NOT run: no object state in dataset: object poses, object classes/dimensions, contact events and phase labels are not recorded, so type/size, support, contact, permanence, spatial, phase-grammar and task-success rules cannot be evaluated",
+    "No per-frame timestamps in the source, so timing checks (monotonicity, gaps, jitter) were not run.",
+    "Heuristic findings (robust-range outliers, assumed command semantics) are advisory only and do not affect verdicts; they are listed in results/real_data.json.",
+    "Joint-limit and speed checks use external datasheet limits where stated (not the dataset's own metadata); if the arm model differs, those findings may be wrong.",
+    "No Z3 query is made in real-data mode; all checks are numeric.",
+    "Accepted means none of the runnable checks found a defect; it does not mean the data is correct. Not a safety certification. Demo signing key."
+  ],
+  "content": {
+    "accepted_split_file": "results/accepted/real_nyu_rot.jsonl",
+    "episodes": 14,
+    "frames": 440,
+    "content_hash": "sha256:575d4de89fbaa8f3078c73253ff2ecdae5ba307921802c3f7a37fa919bfa02bd",
+    "hash_method": "sha256 over canonical JSON of sorted [episode_id, sha256(canonical episode JSON)]",
+    "episode_hashes": [
+      [
+        "nyu_rot/episode_000000",
+        "63e6c6131711bb3b67d179ce18e26c171344177e47962c886b3696e9847aaa10"
+      ],
+      [
+        "nyu_rot/episode_000001",
+        "8cde62b2dbbedf06e765cfc282c80fd72df507de80c6d6a6d36e9e01f33995a0"
+      ],
+      [
+        "nyu_rot/episode_000002",
+        "d04c0b87a185ab448d13deec9345f38a7189699d8885eedb68e33554eea32248"
+      ],
+      [
+        "nyu_rot/episode_000003",
+        "13b5d95b941d70fb34bc8e494fce7b7b61a6b688fc8d3a9162c5969aa8b490d1"
+      ],
+      [
+        "nyu_rot/episode_000004",
+        "b0be65678bb58974202f84580c441b7abb9f9e26ca454d4dd0eb776a7ed2f0ec"
+      ],
+      [
+        "nyu_rot/episode_000005",
+        "ae13dc7d6c71e9f19d320e14815e0855f7a9775e2660c1fce3a27bf1c6b5ca09"
+      ],
+      [
+        "nyu_rot/episode_000006",
+        "99c07c611da50cb1b7e49f176871009893c32d071fd67ea0f5d90efb55817a94"
+      ],
+      [
+        "nyu_rot/episode_000007",
+        "c9737c22cf9b1f2b0be2a0bdcbf8353b28b18b8c1c8017d5bb6e648b3890631f"
+      ],
+      [
+        "nyu_rot/episode_000008",
+        "75be38469997aafb6049ccb96e6c43326f66e0bb3e0b02042ceec42faaa57683"
+      ],
+      [
+        "nyu_rot/episode_000009",
+        "132dd42fa56c88eb9b88aac3365753d6e443e5b57e4dc782a3e6b386a7172088"
+      ],
+      [
+        "nyu_rot/episode_000010",
+        "e1a02f42611d508307fba8d5aa508731e3069c43552d7f77857b2fefdbe2c366"
+      ],
+      [
+        "nyu_rot/episode_000011",
+        "43b024b14966f220d8fb43fbd0fa8f02bb24cf86f651dba58fdb8a02bf427254"
+      ],
+      [
+        "nyu_rot/episode_000012",
+        "92299b1a36a547f4aa84cf111488d61925bd962f72f5debafd6eac81f796c893"
+      ],
+      [
+        "nyu_rot/episode_000013",
+        "548bdeb71b29d17495a051da7d629722973a9b6917ee1624bcde747514557304"
+      ]
+    ]
+  },
+  "signature": {
+    "alg": "Ed25519",
+    "key_id": "ed25519:581e68418d4a4255",
+    "signed": "canonical JSON of passport without 'signature'",
+    "public_key_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAP9KAzAbnzX0zyuksWR64QFmmUqkaOEsRl4ROVX4l9Vc=\n-----END PUBLIC KEY-----\n",
+    "value_b64": "bboUfJNJ63VgVx4UdskHyhxK1WtdOK/LCZeDXfZ/ICs++ZNx56cuGNvdRe0s+U5o8z3dW8BZwhrYmHQvPIH3Ag=="
+  }
+}

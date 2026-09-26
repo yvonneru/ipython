@@ -1,0 +1,1938 @@
+[
+  {
+    "episode_id": "v2_0000",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 8"
+    ],
+    "ms": 0.37507199976971606
+  },
+  {
+    "episode_id": "v2_0001",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5345689996829606
+  },
+  {
+    "episode_id": "v2_0002",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6025899992891937
+  },
+  {
+    "episode_id": "v2_0003",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4935650003972114
+  },
+  {
+    "episode_id": "v2_0004",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5555810002988437
+  },
+  {
+    "episode_id": "v2_0005",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6124069996076287
+  },
+  {
+    "episode_id": "v2_0006",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6089130001782905
+  },
+  {
+    "episode_id": "v2_0007",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4551600004560896
+  },
+  {
+    "episode_id": "v2_0008",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6231239995031501
+  },
+  {
+    "episode_id": "v2_0009",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5858120002812939
+  },
+  {
+    "episode_id": "v2_0010",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 14",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5917120006415644
+  },
+  {
+    "episode_id": "v2_0011",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5936799998380593
+  },
+  {
+    "episode_id": "v2_0012",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5626399997709086
+  },
+  {
+    "episode_id": "v2_0013",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5872459996680846
+  },
+  {
+    "episode_id": "v2_0014",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 35",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6083280004531844
+  },
+  {
+    "episode_id": "v2_0015",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5378379992180271
+  },
+  {
+    "episode_id": "v2_0016",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5903249993934878
+  },
+  {
+    "episode_id": "v2_0017",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5041300000812043
+  },
+  {
+    "episode_id": "v2_0018",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5715799998142757
+  },
+  {
+    "episode_id": "v2_0019",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5678249999618856
+  },
+  {
+    "episode_id": "v2_0020",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5796919995191274
+  },
+  {
+    "episode_id": "v2_0021",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 59"
+    ],
+    "ms": 0.40858200009097345
+  },
+  {
+    "episode_id": "v2_0022",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6403629995475058
+  },
+  {
+    "episode_id": "v2_0023",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5599719997917418
+  },
+  {
+    "episode_id": "v2_0024",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 41"
+    ],
+    "ms": 0.5275330004224088
+  },
+  {
+    "episode_id": "v2_0025",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49940899953071494
+  },
+  {
+    "episode_id": "v2_0026",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5981049998808885
+  },
+  {
+    "episode_id": "v2_0027",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5569300001297961
+  },
+  {
+    "episode_id": "v2_0028",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5716220002796035
+  },
+  {
+    "episode_id": "v2_0029",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6398449995685951
+  },
+  {
+    "episode_id": "v2_0030",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5464910000227974
+  },
+  {
+    "episode_id": "v2_0031",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5563499998970656
+  },
+  {
+    "episode_id": "v2_0032",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 125",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.615988999925321
+  },
+  {
+    "episode_id": "v2_0033",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5453689991554711
+  },
+  {
+    "episode_id": "v2_0034",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.577247999899555
+  },
+  {
+    "episode_id": "v2_0035",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5081360004624003
+  },
+  {
+    "episode_id": "v2_0036",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.554505999389221
+  },
+  {
+    "episode_id": "v2_0037",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5254289999356843
+  },
+  {
+    "episode_id": "v2_0038",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 63"
+    ],
+    "ms": 0.4713319995062193
+  },
+  {
+    "episode_id": "v2_0039",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5223919997661142
+  },
+  {
+    "episode_id": "v2_0040",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6833709994680248
+  },
+  {
+    "episode_id": "v2_0041",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5751290000262088
+  },
+  {
+    "episode_id": "v2_0042",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5094129992357921
+  },
+  {
+    "episode_id": "v2_0043",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5701359996237443
+  },
+  {
+    "episode_id": "v2_0044",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5221999999776017
+  },
+  {
+    "episode_id": "v2_0045",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5612069999187952
+  },
+  {
+    "episode_id": "v2_0046",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.8519190005245036
+  },
+  {
+    "episode_id": "v2_0047",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5747369996242924
+  },
+  {
+    "episode_id": "v2_0048",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5061669999122387
+  },
+  {
+    "episode_id": "v2_0049",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5048379998697783
+  },
+  {
+    "episode_id": "v2_0050",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5741080003645038
+  },
+  {
+    "episode_id": "v2_0051",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5367680005292641
+  },
+  {
+    "episode_id": "v2_0052",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5526679997274186
+  },
+  {
+    "episode_id": "v2_0053",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5560600002354477
+  },
+  {
+    "episode_id": "v2_0054",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6093400006648153
+  },
+  {
+    "episode_id": "v2_0055",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5106429998704698
+  },
+  {
+    "episode_id": "v2_0056",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.525551999999152
+  },
+  {
+    "episode_id": "v2_0057",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 148"
+    ],
+    "ms": 0.5693210005119909
+  },
+  {
+    "episode_id": "v2_0058",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5046379992563743
+  },
+  {
+    "episode_id": "v2_0059",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5722309997509001
+  },
+  {
+    "episode_id": "v2_0060",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6464449998020427
+  },
+  {
+    "episode_id": "v2_0061",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6723550004608114
+  },
+  {
+    "episode_id": "v2_0062",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6804410004406236
+  },
+  {
+    "episode_id": "v2_0063",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49203400067199254
+  },
+  {
+    "episode_id": "v2_0064",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 41",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5107379993205541
+  },
+  {
+    "episode_id": "v2_0065",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5425560002549901
+  },
+  {
+    "episode_id": "v2_0066",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5830069994772202
+  },
+  {
+    "episode_id": "v2_0067",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5252269993434311
+  },
+  {
+    "episode_id": "v2_0068",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6044539995855303
+  },
+  {
+    "episode_id": "v2_0069",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5633800001305644
+  },
+  {
+    "episode_id": "v2_0070",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5301139999573934
+  },
+  {
+    "episode_id": "v2_0071",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5924919996687095
+  },
+  {
+    "episode_id": "v2_0072",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5133849999765516
+  },
+  {
+    "episode_id": "v2_0073",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6047130000297329
+  },
+  {
+    "episode_id": "v2_0074",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5720339995605173
+  },
+  {
+    "episode_id": "v2_0075",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5054539997217944
+  },
+  {
+    "episode_id": "v2_0076",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5955990000074962
+  },
+  {
+    "episode_id": "v2_0077",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.53703800040239
+  },
+  {
+    "episode_id": "v2_0078",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 107"
+    ],
+    "ms": 0.45342399971559644
+  },
+  {
+    "episode_id": "v2_0079",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 164",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.561404000109178
+  },
+  {
+    "episode_id": "v2_0080",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6107319995862781
+  },
+  {
+    "episode_id": "v2_0081",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 20"
+    ],
+    "ms": 0.4121080000913935
+  },
+  {
+    "episode_id": "v2_0082",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5766049998783274
+  },
+  {
+    "episode_id": "v2_0083",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.7051989996398333
+  },
+  {
+    "episode_id": "v2_0084",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.60897000003024
+  },
+  {
+    "episode_id": "v2_0085",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6724639997628401
+  },
+  {
+    "episode_id": "v2_0086",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 161",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5252050004855846
+  },
+  {
+    "episode_id": "v2_0087",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 34",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5016730001443648
+  },
+  {
+    "episode_id": "v2_0088",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5320780001056846
+  },
+  {
+    "episode_id": "v2_0089",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 44"
+    ],
+    "ms": 0.4831529995499295
+  },
+  {
+    "episode_id": "v2_0090",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 172"
+    ],
+    "ms": 0.48467499982507434
+  },
+  {
+    "episode_id": "v2_0091",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6093069996495615
+  },
+  {
+    "episode_id": "v2_0092",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.569277999602491
+  },
+  {
+    "episode_id": "v2_0093",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5355510002118535
+  },
+  {
+    "episode_id": "v2_0094",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.570029999835242
+  },
+  {
+    "episode_id": "v2_0095",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5187960005059722
+  },
+  {
+    "episode_id": "v2_0096",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 12",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5784529994343757
+  },
+  {
+    "episode_id": "v2_0097",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5930070001340937
+  },
+  {
+    "episode_id": "v2_0098",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 83",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6127529995865189
+  },
+  {
+    "episode_id": "v2_0099",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49575599950912874
+  },
+  {
+    "episode_id": "v2_0100",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5550850000872742
+  },
+  {
+    "episode_id": "v2_0101",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5633639993902761
+  },
+  {
+    "episode_id": "v2_0102",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 8"
+    ],
+    "ms": 0.3956809996452648
+  },
+  {
+    "episode_id": "v2_0103",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.8003350003491505
+  },
+  {
+    "episode_id": "v2_0104",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5666170000040438
+  },
+  {
+    "episode_id": "v2_0105",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5380110005717142
+  },
+  {
+    "episode_id": "v2_0106",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5092949995741947
+  },
+  {
+    "episode_id": "v2_0107",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6057630007489934
+  },
+  {
+    "episode_id": "v2_0108",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6025780003255932
+  },
+  {
+    "episode_id": "v2_0109",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.56628600032127
+  },
+  {
+    "episode_id": "v2_0110",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5799250002382905
+  },
+  {
+    "episode_id": "v2_0111",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5559790006373078
+  },
+  {
+    "episode_id": "v2_0112",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5982900001981761
+  },
+  {
+    "episode_id": "v2_0113",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.584444999731204
+  },
+  {
+    "episode_id": "v2_0114",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5266930002107983
+  },
+  {
+    "episode_id": "v2_0115",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5132630003572558
+  },
+  {
+    "episode_id": "v2_0116",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 147"
+    ],
+    "ms": 0.5510020000656368
+  },
+  {
+    "episode_id": "v2_0117",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6036569993739249
+  },
+  {
+    "episode_id": "v2_0118",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6145759998616995
+  },
+  {
+    "episode_id": "v2_0119",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.605119999818271
+  },
+  {
+    "episode_id": "v2_0120",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5570450002778671
+  },
+  {
+    "episode_id": "v2_0121",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.44986600005358923
+  },
+  {
+    "episode_id": "v2_0122",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5468230001497432
+  },
+  {
+    "episode_id": "v2_0123",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 36"
+    ],
+    "ms": 0.5078679996586288
+  },
+  {
+    "episode_id": "v2_0124",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5910419995416305
+  },
+  {
+    "episode_id": "v2_0125",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5867800000487478
+  },
+  {
+    "episode_id": "v2_0126",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 147"
+    ],
+    "ms": 0.5828010007462581
+  },
+  {
+    "episode_id": "v2_0127",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5354850000003353
+  },
+  {
+    "episode_id": "v2_0128",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 94",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6093960000725929
+  },
+  {
+    "episode_id": "v2_0129",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5686790000254405
+  },
+  {
+    "episode_id": "v2_0130",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5430179999166285
+  },
+  {
+    "episode_id": "v2_0131",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49419399965699995
+  },
+  {
+    "episode_id": "v2_0132",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6642819998887717
+  },
+  {
+    "episode_id": "v2_0133",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 17"
+    ],
+    "ms": 0.6329249999907915
+  },
+  {
+    "episode_id": "v2_0134",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4269460005161818
+  },
+  {
+    "episode_id": "v2_0135",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.48369699925387977
+  },
+  {
+    "episode_id": "v2_0136",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 128",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5480559993884526
+  },
+  {
+    "episode_id": "v2_0137",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.603491999754624
+  },
+  {
+    "episode_id": "v2_0138",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 84",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5429620005088509
+  },
+  {
+    "episode_id": "v2_0139",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6121569995229947
+  },
+  {
+    "episode_id": "v2_0140",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5855789995621308
+  },
+  {
+    "episode_id": "v2_0141",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4974289995516301
+  },
+  {
+    "episode_id": "v2_0142",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5978580002192757
+  },
+  {
+    "episode_id": "v2_0143",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5091319999337429
+  },
+  {
+    "episode_id": "v2_0144",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5985770003462676
+  },
+  {
+    "episode_id": "v2_0145",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 167"
+    ],
+    "ms": 0.5185170002732775
+  },
+  {
+    "episode_id": "v2_0146",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6280799998421571
+  },
+  {
+    "episode_id": "v2_0147",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5702299995391513
+  },
+  {
+    "episode_id": "v2_0148",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 61"
+    ],
+    "ms": 0.5351959998733946
+  },
+  {
+    "episode_id": "v2_0149",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.574265000068408
+  },
+  {
+    "episode_id": "v2_0150",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.48122499993041856
+  },
+  {
+    "episode_id": "v2_0151",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5030579995946027
+  },
+  {
+    "episode_id": "v2_0152",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5409069999586791
+  },
+  {
+    "episode_id": "v2_0153",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5466089996843948
+  },
+  {
+    "episode_id": "v2_0154",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.64481200024602
+  },
+  {
+    "episode_id": "v2_0155",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 55"
+    ],
+    "ms": 0.578991000111273
+  },
+  {
+    "episode_id": "v2_0156",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5069890003142064
+  },
+  {
+    "episode_id": "v2_0157",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5800299995826208
+  },
+  {
+    "episode_id": "v2_0158",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6409650004570722
+  },
+  {
+    "episode_id": "v2_0159",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 131"
+    ],
+    "ms": 0.38051800038374495
+  },
+  {
+    "episode_id": "v2_0160",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6100000000515138
+  },
+  {
+    "episode_id": "v2_0161",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.600736999331275
+  },
+  {
+    "episode_id": "v2_0162",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5959949994576164
+  },
+  {
+    "episode_id": "v2_0163",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5871160001333919
+  },
+  {
+    "episode_id": "v2_0164",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5169380001461832
+  },
+  {
+    "episode_id": "v2_0165",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 24",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5909310002607526
+  },
+  {
+    "episode_id": "v2_0166",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5170250005903654
+  },
+  {
+    "episode_id": "v2_0167",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5594839994955692
+  },
+  {
+    "episode_id": "v2_0168",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 83",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5775879999418976
+  },
+  {
+    "episode_id": "v2_0169",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 131",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6315059999906225
+  },
+  {
+    "episode_id": "v2_0170",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5723439999201219
+  },
+  {
+    "episode_id": "v2_0171",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4995890003556269
+  },
+  {
+    "episode_id": "v2_0172",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6049000003258698
+  },
+  {
+    "episode_id": "v2_0173",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4927870004394208
+  },
+  {
+    "episode_id": "v2_0174",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5751830003646319
+  },
+  {
+    "episode_id": "v2_0175",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.572890000512416
+  },
+  {
+    "episode_id": "v2_0176",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5058939996160916
+  },
+  {
+    "episode_id": "v2_0177",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.525456999639573
+  },
+  {
+    "episode_id": "v2_0178",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5826379992868169
+  },
+  {
+    "episode_id": "v2_0179",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5372070008888841
+  },
+  {
+    "episode_id": "v2_0180",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5436060000647558
+  },
+  {
+    "episode_id": "v2_0181",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5913650002185022
+  },
+  {
+    "episode_id": "v2_0182",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6322790004560375
+  },
+  {
+    "episode_id": "v2_0183",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5881920005776919
+  },
+  {
+    "episode_id": "v2_0184",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4422570000315318
+  },
+  {
+    "episode_id": "v2_0185",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5842260006829747
+  },
+  {
+    "episode_id": "v2_0186",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5202669999562204
+  },
+  {
+    "episode_id": "v2_0187",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5895650001548347
+  },
+  {
+    "episode_id": "v2_0188",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6094800000937539
+  },
+  {
+    "episode_id": "v2_0189",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5352489997676457
+  },
+  {
+    "episode_id": "v2_0190",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 139"
+    ],
+    "ms": 0.5908119992454886
+  },
+  {
+    "episode_id": "v2_0191",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5082640000182437
+  },
+  {
+    "episode_id": "v2_0192",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5764679999629152
+  },
+  {
+    "episode_id": "v2_0193",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5313740002748091
+  },
+  {
+    "episode_id": "v2_0194",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5312539997248678
+  },
+  {
+    "episode_id": "v2_0195",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.48758899993117666
+  },
+  {
+    "episode_id": "v2_0196",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 111"
+    ],
+    "ms": 0.6289789998845663
+  },
+  {
+    "episode_id": "v2_0197",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5997790003675618
+  },
+  {
+    "episode_id": "v2_0198",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.519272000019555
+  },
+  {
+    "episode_id": "v2_0199",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 153"
+    ],
+    "ms": 0.5849030003446387
+  },
+  {
+    "episode_id": "v2_0200",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 132"
+    ],
+    "ms": 0.5275670000628452
+  },
+  {
+    "episode_id": "v2_0201",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5814329997519962
+  },
+  {
+    "episode_id": "v2_0202",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 78",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5273719998513116
+  },
+  {
+    "episode_id": "v2_0203",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 144"
+    ],
+    "ms": 0.46592299986514263
+  },
+  {
+    "episode_id": "v2_0204",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49729800048226025
+  },
+  {
+    "episode_id": "v2_0205",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 163"
+    ],
+    "ms": 0.6100399996284978
+  },
+  {
+    "episode_id": "v2_0206",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5700250003428664
+  },
+  {
+    "episode_id": "v2_0207",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5233539995970204
+  },
+  {
+    "episode_id": "v2_0208",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 78"
+    ],
+    "ms": 0.4417200007083011
+  },
+  {
+    "episode_id": "v2_0209",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5409539999163826
+  },
+  {
+    "episode_id": "v2_0210",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5913799996051239
+  },
+  {
+    "episode_id": "v2_0211",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5848020000485121
+  },
+  {
+    "episode_id": "v2_0212",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 132",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6147559997771168
+  },
+  {
+    "episode_id": "v2_0213",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5179069994483143
+  },
+  {
+    "episode_id": "v2_0214",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6002919999446021
+  },
+  {
+    "episode_id": "v2_0215",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5557589993259171
+  },
+  {
+    "episode_id": "v2_0216",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 76"
+    ],
+    "ms": 0.5073259999335278
+  },
+  {
+    "episode_id": "v2_0217",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6014559994582669
+  },
+  {
+    "episode_id": "v2_0218",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.7180479997259681
+  },
+  {
+    "episode_id": "v2_0219",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5066449994046707
+  },
+  {
+    "episode_id": "v2_0220",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 19"
+    ],
+    "ms": 0.36692100002255756
+  },
+  {
+    "episode_id": "v2_0221",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5771579999418464
+  },
+  {
+    "episode_id": "v2_0222",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5075519993624766
+  },
+  {
+    "episode_id": "v2_0223",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6035340002199518
+  },
+  {
+    "episode_id": "v2_0224",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5969780004306813
+  },
+  {
+    "episode_id": "v2_0225",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5877739995412412
+  },
+  {
+    "episode_id": "v2_0226",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 103"
+    ],
+    "ms": 0.4721450004581129
+  },
+  {
+    "episode_id": "v2_0227",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5189710000195191
+  },
+  {
+    "episode_id": "v2_0228",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5642599999191589
+  },
+  {
+    "episode_id": "v2_0229",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5111320006108144
+  },
+  {
+    "episode_id": "v2_0230",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6094370000937488
+  },
+  {
+    "episode_id": "v2_0231",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 76"
+    ],
+    "ms": 0.5280999994283775
+  },
+  {
+    "episode_id": "v2_0232",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6131589998403797
+  },
+  {
+    "episode_id": "v2_0233",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 48"
+    ],
+    "ms": 0.5122399998072069
+  },
+  {
+    "episode_id": "v2_0234",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 123"
+    ],
+    "ms": 0.45181099994806573
+  },
+  {
+    "episode_id": "v2_0235",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 87"
+    ],
+    "ms": 0.38924499949644087
+  },
+  {
+    "episode_id": "v2_0236",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5999209997753496
+  },
+  {
+    "episode_id": "v2_0237",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.550510999346443
+  },
+  {
+    "episode_id": "v2_0238",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 22",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.5755619995397865
+  },
+  {
+    "episode_id": "v2_0239",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5809220001538051
+  },
+  {
+    "episode_id": "v2_0240",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5859129996679258
+  },
+  {
+    "episode_id": "v2_0241",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 61",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6032510000295588
+  },
+  {
+    "episode_id": "v2_0242",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.517479000336607
+  },
+  {
+    "episode_id": "v2_0243",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5971179998596199
+  },
+  {
+    "episode_id": "v2_0244",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5913850000069942
+  },
+  {
+    "episode_id": "v2_0245",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5485110004883609
+  },
+  {
+    "episode_id": "v2_0246",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5638430002363748
+  },
+  {
+    "episode_id": "v2_0247",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.597264999669278
+  },
+  {
+    "episode_id": "v2_0248",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 36"
+    ],
+    "ms": 0.5810280008518021
+  },
+  {
+    "episode_id": "v2_0249",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4907359998469474
+  },
+  {
+    "episode_id": "v2_0250",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5881119996047346
+  },
+  {
+    "episode_id": "v2_0251",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.537994999831426
+  },
+  {
+    "episode_id": "v2_0252",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5199500001253909
+  },
+  {
+    "episode_id": "v2_0253",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5711920002795523
+  },
+  {
+    "episode_id": "v2_0254",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5846599997312296
+  },
+  {
+    "episode_id": "v2_0255",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5045780008003931
+  },
+  {
+    "episode_id": "v2_0256",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 123"
+    ],
+    "ms": 0.43711800026358105
+  },
+  {
+    "episode_id": "v2_0257",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5875309998373268
+  },
+  {
+    "episode_id": "v2_0258",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5208239999774378
+  },
+  {
+    "episode_id": "v2_0259",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 145"
+    ],
+    "ms": 0.461199999335804
+  },
+  {
+    "episode_id": "v2_0260",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5404749999797787
+  },
+  {
+    "episode_id": "v2_0261",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5585850003626547
+  },
+  {
+    "episode_id": "v2_0262",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6217669997568009
+  },
+  {
+    "episode_id": "v2_0263",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6070240006010863
+  },
+  {
+    "episode_id": "v2_0264",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.541445999260759
+  },
+  {
+    "episode_id": "v2_0265",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6003830003464827
+  },
+  {
+    "episode_id": "v2_0266",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6309620002866723
+  },
+  {
+    "episode_id": "v2_0267",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.49747600041882833
+  },
+  {
+    "episode_id": "v2_0268",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5598180005108588
+  },
+  {
+    "episode_id": "v2_0269",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6504190005216515
+  },
+  {
+    "episode_id": "v2_0270",
+    "verdict": "REJECT",
+    "issues": [
+      "obj:obj0 speed spike at frame 77"
+    ],
+    "ms": 0.5140789999131812
+  },
+  {
+    "episode_id": "v2_0271",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5511980007213424
+  },
+  {
+    "episode_id": "v2_0272",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5127539998284192
+  },
+  {
+    "episode_id": "v2_0273",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5570710000029067
+  },
+  {
+    "episode_id": "v2_0274",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6028079997122404
+  },
+  {
+    "episode_id": "v2_0275",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.580316000196035
+  },
+  {
+    "episode_id": "v2_0276",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.48854900069272844
+  },
+  {
+    "episode_id": "v2_0277",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 163"
+    ],
+    "ms": 0.46651699994981755
+  },
+  {
+    "episode_id": "v2_0278",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5086139999548323
+  },
+  {
+    "episode_id": "v2_0279",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5688420005753869
+  },
+  {
+    "episode_id": "v2_0280",
+    "verdict": "REJECT",
+    "issues": [
+      "non-monotonic timestamp at frame 142"
+    ],
+    "ms": 0.41346299985889345
+  },
+  {
+    "episode_id": "v2_0281",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5765280002378859
+  },
+  {
+    "episode_id": "v2_0282",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.507173000187322
+  },
+  {
+    "episode_id": "v2_0283",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.605758000347123
+  },
+  {
+    "episode_id": "v2_0284",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6214069999259664
+  },
+  {
+    "episode_id": "v2_0285",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.4966669994246331
+  },
+  {
+    "episode_id": "v2_0286",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5797529993287753
+  },
+  {
+    "episode_id": "v2_0287",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5858320000697859
+  },
+  {
+    "episode_id": "v2_0288",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.698939000358223
+  },
+  {
+    "episode_id": "v2_0289",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5608399997072411
+  },
+  {
+    "episode_id": "v2_0290",
+    "verdict": "REJECT",
+    "issues": [
+      "joint limit exceeded at frame 126",
+      "joint speed limit exceeded"
+    ],
+    "ms": 0.6342830001813127
+  },
+  {
+    "episode_id": "v2_0291",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5337550001058844
+  },
+  {
+    "episode_id": "v2_0292",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.488634999783244
+  },
+  {
+    "episode_id": "v2_0293",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5849360004503978
+  },
+  {
+    "episode_id": "v2_0294",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5150079996383283
+  },
+  {
+    "episode_id": "v2_0295",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.6052200005797204
+  },
+  {
+    "episode_id": "v2_0296",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5746839997300413
+  },
+  {
+    "episode_id": "v2_0297",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5878990004930529
+  },
+  {
+    "episode_id": "v2_0298",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5912679998800741
+  },
+  {
+    "episode_id": "v2_0299",
+    "verdict": "PASS",
+    "issues": [],
+    "ms": 0.5127869999341783
+  }
+]

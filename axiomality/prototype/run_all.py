@@ -44,6 +44,9 @@ def cli(name, script):
 
 
 def main():
+    if "--v2" in sys.argv:  # v2 (real data + noisy synthetic benchmark); v1 outputs are not touched
+        raise SystemExit(subprocess.run([sys.executable, str(ROOT / "run_v2.py"),
+                                         *[a for a in sys.argv[1:] if a != "--v2"]], cwd=ROOT).returncode)
     t0 = time.perf_counter()
     RESULTS_DIR.mkdir(exist_ok=True)
     rep = step("1. Knowledge kernel: rulebook self-check (Z3)", selfcheck)

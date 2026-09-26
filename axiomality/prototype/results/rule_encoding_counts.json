@@ -1,0 +1,83 @@
+{
+  "total_rules": 30,
+  "z3_encoded_in_selfcheck": 24,
+  "z3_decides_per_episode": 9,
+  "z3_selfcheck_only": 15,
+  "numeric_only": 6,
+  "numeric_only_rules": [
+    "R-CONT-03",
+    "R-KIN-01",
+    "R-PROV-01",
+    "R-SUP-02",
+    "R-TYPE-01",
+    "R-TYPE-03"
+  ],
+  "z3_per_episode_rules": [
+    "R-CONT-01",
+    "R-CONT-02",
+    "R-PHASE-01",
+    "R-PHASE-02",
+    "R-PHASE-03",
+    "R-PHASE-04",
+    "R-QTY-01",
+    "R-QTY-02",
+    "R-TYPE-02"
+  ],
+  "z3_selfcheck_only_rules": [
+    "R-GRIP-01",
+    "R-GRIP-02",
+    "R-JNT-01",
+    "R-JNT-02",
+    "R-PERM-01",
+    "R-PERM-02",
+    "R-PERM-03",
+    "R-PHASE-05",
+    "R-SPAT-01",
+    "R-SPAT-02",
+    "R-SUP-01",
+    "R-TASK-01",
+    "R-TIME-01",
+    "R-TIME-02",
+    "R-TYPE-04"
+  ],
+  "rulebook_kind_label_counts": {
+    "z3": 23,
+    "numeric": 7
+  },
+  "rulebook_kind_label_disagrees_with_selfcheck": [
+    "R-TIME-01"
+  ],
+  "note": "Per-episode, only the rules in z3_per_episode_rules are decided by a Z3 query. The other Z3-encoded rules are encoded symbolically for the rulebook self-check (consistency and independence on a bounded 14-frame 1-D abstraction) but are evaluated per episode with numpy against the same constants. In real-data mode no Z3 query is made at all.",
+  "scope": {
+    "R-PROV-01": "numeric_only",
+    "R-TIME-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-TIME-02": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-QTY-01": "z3_per_episode_decision+selfcheck",
+    "R-QTY-02": "z3_per_episode_decision+selfcheck",
+    "R-TYPE-01": "numeric_only",
+    "R-TYPE-02": "z3_per_episode_decision+selfcheck",
+    "R-TYPE-03": "numeric_only",
+    "R-TYPE-04": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-JNT-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-JNT-02": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-KIN-01": "numeric_only",
+    "R-GRIP-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-GRIP-02": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-CONT-01": "z3_per_episode_decision+selfcheck",
+    "R-CONT-02": "z3_per_episode_decision+selfcheck",
+    "R-CONT-03": "numeric_only",
+    "R-PERM-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-PERM-02": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-PERM-03": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-SUP-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-SUP-02": "numeric_only",
+    "R-SPAT-01": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-SPAT-02": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-PHASE-01": "z3_per_episode_decision+selfcheck",
+    "R-PHASE-02": "z3_per_episode_decision+selfcheck",
+    "R-PHASE-03": "z3_per_episode_decision+selfcheck",
+    "R-PHASE-04": "z3_per_episode_decision+selfcheck",
+    "R-PHASE-05": "z3_selfcheck_only (per-episode verdict computed numerically)",
+    "R-TASK-01": "z3_selfcheck_only (per-episode verdict computed numerically)"
+  }
+}

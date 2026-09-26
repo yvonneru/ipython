@@ -1,0 +1,1181 @@
+{
+  "dataset": "AX-DEMO-109 v2 injected held-out copy (SYNTHETIC, noisy)",
+  "episodes": 300,
+  "per_class_n": 20,
+  "variants": [
+    "mug_to_target",
+    "mug_next_to_laptop",
+    "fruit_from_B"
+  ],
+  "sensor_model": {
+    "joint_noise_deg": [
+      0.2,
+      0.5
+    ],
+    "object_pos_noise_m": 0.003,
+    "object_yaw_noise_rad": 0.01,
+    "gripper_width_noise_m": 0.0005,
+    "timestamp_jitter_s": 0.005,
+    "dropped_frame_prob": 0.3,
+    "tcp": "recorded TCP = FK(recorded noisy joints), as on real arms"
+  },
+  "engine_version": "ax-engine-0.1.0-prototype",
+  "class_docs": {
+    "a_wrong_label": "Object label replaced by another class from the company vocabulary (mug or laptop, whole episode).",
+    "b_impossible_relation": "Physically impossible relation: laptop box shifted into the mug (penetration 5-80 mm), laptop floating (+10-120 mm), laptop sunk into table (10-100 mm), or mug hovering 10-120 mm above the table after release (3-frame ramp).",
+    "c_phase_order": "Task-phase labels: swap two adjacent phase blocks, reverse all blocks, or relabel one block.",
+    "d_teleport": "Mug position jumps 0.03-0.60 m horizontally at one frame (glitch lasting 1-3 frames, or persistent).",
+    "e_timestamp_warp": "Three consecutive rows written out of order (rows carry their own timestamps) -> non-monotonic time.",
+    "f_joint_limit": "One joint pushed 0.02-0.40 rad beyond its declared limit by a smooth 5-21 frame bump.",
+    "g_gripper_contact_mismatch": "Gripper reported open while carrying (5-20 frames), contact_begin logged 8-30 frames early, or contact_end logged 5-15 frames late.",
+    "valid_failure": "NOT an error: episode re-simulated with the mug slipping out of the gripper during transport and falling ballistically (outcome=failure_slip). Must be KEPT."
+  },
+  "calibration": {
+    "split": "150 episodes (30 slips), disjoint seeds",
+    "seconds": 21.2,
+    "engine_overrides": {
+      "static_tol": 0.02384,
+      "comove_tol": 0.059606,
+      "pen_tol": 0.0125,
+      "support_tol": 0.023438,
+      "a_fragile": 10.0,
+      "dt_rel_tol": 0.3125,
+      "ballistic_az": [
+        -1.875,
+        -0.4
+      ],
+      "max_single_drops": 2,
+      "smooth_window": 5,
+      "event_snap_s": 0.016666666666666666,
+      "qd_margin": 1.953125
+    },
+    "engine_log": [
+      {
+        "iter": 0,
+        "false_rejects": 150,
+        "rules": {
+          "R-TIME-02": 146,
+          "R-PERM-02": 150,
+          "R-PERM-03": 150,
+          "R-SUP-01": 144,
+          "R-SUP-02": 140,
+          "R-JNT-02": 48,
+          "R-TYPE-03": 5,
+          "R-SPAT-01": 3
+        }
+      },
+      {
+        "iter": 1,
+        "false_rejects": 150,
+        "rules": {
+          "R-PERM-03": 149,
+          "R-PERM-02": 150,
+          "R-JNT-02": 11,
+          "R-SUP-01": 2
+        }
+      },
+      {
+        "iter": 2,
+        "false_rejects": 150,
+        "rules": {
+          "R-PERM-03": 145,
+          "R-PERM-02": 150,
+          "R-JNT-02": 1
+        }
+      },
+      {
+        "iter": 3,
+        "false_rejects": 150,
+        "rules": {
+          "R-PERM-03": 121,
+          "R-PERM-02": 150
+        }
+      },
+      {
+        "iter": 4,
+        "false_rejects": 150,
+        "rules": {
+          "R-PERM-03": 63,
+          "R-PERM-02": 150
+        }
+      },
+      {
+        "iter": 5,
+        "false_rejects": 127,
+        "rules": {
+          "R-PERM-02": 123,
+          "R-PERM-03": 20
+        }
+      },
+      {
+        "iter": 6,
+        "false_rejects": 17,
+        "rules": {
+          "R-PERM-02": 11,
+          "R-PERM-03": 6
+        }
+      },
+      {
+        "iter": 7,
+        "false_rejects": 1,
+        "rules": {
+          "R-PERM-03": 1
+        }
+      },
+      {
+        "iter": 8,
+        "false_rejects": 0,
+        "rules": {}
+      }
+    ],
+    "strong_tolerances": {
+      "static_tol": 0.02384,
+      "support_tol": 0.029298,
+      "comove_tol": 0.030518,
+      "pen_tol": 0.01,
+      "grip_open_tol": 0.005,
+      "grace_s": 0.5,
+      "qd_margin": 1.953125,
+      "max_single_drops": 2,
+      "target_slack": 0.0
+    },
+    "strong_log": [
+      {
+        "iter": 0,
+        "false_rejects": 150,
+        "codes": {
+          "S-COMOVE": 132,
+          "S-SPEED-static": 150,
+          "S-SUPPORT": 150,
+          "S-STRUCT-jointspeed": 48
+        }
+      },
+      {
+        "iter": 1,
+        "false_rejects": 150,
+        "codes": {
+          "S-COMOVE": 101,
+          "S-SPEED-static": 150,
+          "S-SUPPORT": 150,
+          "S-STRUCT-jointspeed": 11
+        }
+      },
+      {
+        "iter": 2,
+        "false_rejects": 150,
+        "codes": {
+          "S-SPEED-static": 150,
+          "S-COMOVE": 55,
+          "S-SUPPORT": 12,
+          "S-STRUCT-jointspeed": 1
+        }
+      },
+      {
+        "iter": 3,
+        "false_rejects": 150,
+        "codes": {
+          "S-SPEED-static": 150,
+          "S-COMOVE": 15
+        }
+      },
+      {
+        "iter": 4,
+        "false_rejects": 150,
+        "codes": {
+          "S-SPEED-static": 150,
+          "S-COMOVE": 3
+        }
+      },
+      {
+        "iter": 5,
+        "false_rejects": 123,
+        "codes": {
+          "S-SPEED-static": 123
+        }
+      },
+      {
+        "iter": 6,
+        "false_rejects": 10,
+        "codes": {
+          "S-SPEED-static": 10
+        }
+      },
+      {
+        "iter": 7,
+        "false_rejects": 0,
+        "codes": {}
+      }
+    ],
+    "structural_policy": {
+      "max_single_drops": 2,
+      "qd_margin": 1.953125
+    },
+    "structural_log": [
+      {
+        "iter": 0,
+        "false_rejects": 48,
+        "issues": {
+          "joint speed limit exceeded": 48
+        }
+      },
+      {
+        "iter": 1,
+        "false_rejects": 11,
+        "issues": {
+          "joint speed limit exceeded": 11
+        }
+      },
+      {
+        "iter": 2,
+        "false_rejects": 1,
+        "issues": {
+          "joint speed limit exceeded": 1
+        }
+      },
+      {
+        "iter": 3,
+        "false_rejects": 0,
+        "issues": {}
+      }
+    ]
+  },
+  "per_class": {
+    "a_wrong_label": {
+      "n": 20,
+      "engine_verdicts": {
+        "PASS": 9,
+        "REJECT": 11
+      },
+      "engine_recall": 0.55,
+      "strong_verdicts": {
+        "PASS": 9,
+        "REJECT": 11
+      },
+      "strong_recall": 0.55,
+      "structural_verdicts": {
+        "PASS": 20
+      },
+      "structural_recall": 0.0,
+      "engine_correct_action": 0.55,
+      "engine_rule_attribution": 0.55,
+      "engine_missed": [
+        {
+          "episode": "v2_0020",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj1",
+          "from": "mug",
+          "to": "vase"
+        },
+        {
+          "episode": "v2_0060",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0092",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj0",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0103",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj0",
+          "from": "mug",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0172",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0174",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0206",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj0",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0217",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0237",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj0",
+          "from": "mug",
+          "to": "vase"
+        }
+      ],
+      "strong_missed": [
+        {
+          "episode": "v2_0020",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj1",
+          "from": "mug",
+          "to": "vase"
+        },
+        {
+          "episode": "v2_0060",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0092",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj0",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0103",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj0",
+          "from": "mug",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0172",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "earphone"
+        },
+        {
+          "episode": "v2_0174",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0206",
+          "class": "a_wrong_label",
+          "variant": "fruit_from_B",
+          "object": "obj0",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0217",
+          "class": "a_wrong_label",
+          "variant": "mug_next_to_laptop",
+          "object": "obj2",
+          "from": "fruit",
+          "to": "mug"
+        },
+        {
+          "episode": "v2_0237",
+          "class": "a_wrong_label",
+          "variant": "mug_to_target",
+          "object": "obj0",
+          "from": "mug",
+          "to": "vase"
+        }
+      ],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "b_impossible_relation": {
+      "n": 20,
+      "engine_verdicts": {
+        "REJECT": 19,
+        "PASS": 1
+      },
+      "engine_recall": 0.95,
+      "strong_verdicts": {
+        "REJECT": 19,
+        "PASS": 1
+      },
+      "strong_recall": 0.95,
+      "structural_verdicts": {
+        "PASS": 20
+      },
+      "structural_recall": 0.0,
+      "engine_correct_action": 0.95,
+      "engine_rule_attribution": 0.95,
+      "engine_missed": [
+        {
+          "episode": "v2_0209",
+          "class": "b_impossible_relation",
+          "variant": "fruit_from_B",
+          "subtype": "manipulated_floating_after_release",
+          "raise_m": 0.0108,
+          "from_frame": 158
+        }
+      ],
+      "strong_missed": [
+        {
+          "episode": "v2_0209",
+          "class": "b_impossible_relation",
+          "variant": "fruit_from_B",
+          "subtype": "manipulated_floating_after_release",
+          "raise_m": 0.0108,
+          "from_frame": 158
+        }
+      ],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "c_phase_order": {
+      "n": 20,
+      "engine_verdicts": {
+        "REJECT": 20
+      },
+      "engine_recall": 1.0,
+      "strong_verdicts": {
+        "REJECT": 20
+      },
+      "strong_recall": 1.0,
+      "structural_verdicts": {
+        "PASS": 20
+      },
+      "structural_recall": 0.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": [],
+      "strong_missed": [],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "d_teleport": {
+      "n": 20,
+      "engine_verdicts": {
+        "REJECT": 19,
+        "PASS": 1
+      },
+      "engine_recall": 0.95,
+      "strong_verdicts": {
+        "REJECT": 19,
+        "PASS": 1
+      },
+      "strong_recall": 0.95,
+      "structural_verdicts": {
+        "REJECT": 18,
+        "PASS": 2
+      },
+      "structural_recall": 0.9,
+      "engine_correct_action": 0.95,
+      "engine_rule_attribution": 0.95,
+      "engine_missed": [
+        {
+          "episode": "v2_0239",
+          "class": "d_teleport",
+          "variant": "fruit_from_B",
+          "frame": 151,
+          "magnitude_m": 0.0338,
+          "mode": "persistent",
+          "frames": [
+            151,
+            177
+          ]
+        }
+      ],
+      "strong_missed": [
+        {
+          "episode": "v2_0239",
+          "class": "d_teleport",
+          "variant": "fruit_from_B",
+          "frame": 151,
+          "magnitude_m": 0.0338,
+          "mode": "persistent",
+          "frames": [
+            151,
+            177
+          ]
+        }
+      ],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "e_timestamp_warp": {
+      "n": 20,
+      "engine_verdicts": {
+        "REPAIR": 20
+      },
+      "engine_recall": 1.0,
+      "strong_verdicts": {
+        "REJECT": 20
+      },
+      "strong_recall": 1.0,
+      "structural_verdicts": {
+        "REJECT": 20
+      },
+      "structural_recall": 1.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": [],
+      "strong_missed": [],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "f_joint_limit": {
+      "n": 20,
+      "engine_verdicts": {
+        "REJECT": 20
+      },
+      "engine_recall": 1.0,
+      "strong_verdicts": {
+        "REJECT": 20
+      },
+      "strong_recall": 1.0,
+      "structural_verdicts": {
+        "REJECT": 20
+      },
+      "structural_recall": 1.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": [],
+      "strong_missed": [],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "g_gripper_contact_mismatch": {
+      "n": 20,
+      "engine_verdicts": {
+        "REJECT": 20
+      },
+      "engine_recall": 1.0,
+      "strong_verdicts": {
+        "REJECT": 20
+      },
+      "strong_recall": 1.0,
+      "structural_verdicts": {
+        "PASS": 20
+      },
+      "structural_recall": 0.0,
+      "engine_correct_action": 1.0,
+      "engine_rule_attribution": 1.0,
+      "engine_missed": [],
+      "strong_missed": [],
+      "engine_only": [],
+      "strong_only": []
+    },
+    "valid_failure": {
+      "n": 20,
+      "engine_verdicts": {
+        "PASS": 20
+      },
+      "engine_kept": 1.0,
+      "strong_verdicts": {
+        "PASS": 20
+      },
+      "strong_kept": 1.0,
+      "structural_verdicts": {
+        "PASS": 20
+      },
+      "structural_kept": 1.0
+    },
+    "clean": {
+      "n": 140,
+      "engine_verdicts": {
+        "PASS": 140
+      },
+      "engine_kept": 1.0,
+      "strong_verdicts": {
+        "PASS": 140
+      },
+      "strong_kept": 1.0,
+      "structural_verdicts": {
+        "PASS": 140
+      },
+      "structural_kept": 1.0
+    }
+  },
+  "overall": {
+    "engine": {
+      "precision": 1.0,
+      "recall": 0.9214285714285714,
+      "tp": 129,
+      "fp": 0,
+      "fn": 11,
+      "false_reject_rate_clean": 0.0,
+      "false_rejects_clean": "0/140",
+      "valid_failures_kept": "20/20",
+      "valid_failure_retention": 1.0,
+      "ms_per_episode": 14.267606636667551,
+      "classes_with_full_recall": 4,
+      "macro_recall": 0.9214285714285715
+    },
+    "strong": {
+      "precision": 1.0,
+      "recall": 0.9214285714285714,
+      "tp": 129,
+      "fp": 0,
+      "fn": 11,
+      "false_reject_rate_clean": 0.0,
+      "false_rejects_clean": "0/140",
+      "valid_failures_kept": "20/20",
+      "valid_failure_retention": 1.0,
+      "ms_per_episode": 1.4201509566646564,
+      "classes_with_full_recall": 4,
+      "macro_recall": 0.9214285714285715
+    },
+    "structural": {
+      "precision": 1.0,
+      "recall": 0.4142857142857143,
+      "tp": 58,
+      "fp": 0,
+      "fn": 82,
+      "false_reject_rate_clean": 0.0,
+      "false_rejects_clean": "0/140",
+      "valid_failures_kept": "20/20",
+      "valid_failure_retention": 1.0,
+      "ms_per_episode": 0.5603587966682728,
+      "classes_with_full_recall": 2,
+      "macro_recall": 0.41428571428571426
+    },
+    "engine_uncalibrated_v1_tolerances": {
+      "precision": 0.4666666666666667,
+      "recall": 1.0,
+      "tp": 140,
+      "fp": 160,
+      "fn": 0,
+      "false_reject_rate_clean": 1.0,
+      "false_rejects_clean": "140/140",
+      "valid_failures_kept": "0/20",
+      "valid_failure_retention": 0.0
+    },
+    "engine_v1_as_shipped": {
+      "precision": 0.4666666666666667,
+      "recall": 1.0,
+      "tp": 140,
+      "fp": 160,
+      "fn": 0,
+      "false_reject_rate_clean": 1.0,
+      "false_rejects_clean": "140/140",
+      "valid_failures_kept": "0/20",
+      "valid_failure_retention": 0.0
+    }
+  },
+  "engine_only_catches_by_rule": {},
+  "behaviour_checks": [
+    {
+      "case": "object poses missing",
+      "expected": "UNKNOWN",
+      "engine": "UNKNOWN",
+      "engine_reason": "R-PROV-01: cannot evaluate, missing frames.object_poses",
+      "strong": "REJECT",
+      "strong_issues": [
+        [
+          "S-STRUCT",
+          "missing frames.object_poses"
+        ]
+      ],
+      "ok": true
+    },
+    {
+      "case": "joint angles logged in degrees",
+      "expected": "REPAIR",
+      "engine": "REPAIR",
+      "engine_reason": "joint angles logged in degrees; converted to radians",
+      "strong": "REJECT",
+      "strong_issues": [
+        "S-STRUCT: joint limit exceeded at frame 0",
+        "S-STRUCT-jointspeed: joint speed limit exceeded"
+      ],
+      "ok": true
+    },
+    {
+      "case": "slip relabelled as success (phases relabelled too)",
+      "expected": "REJECT",
+      "engine": "REJECT",
+      "engine_reason": "Frame 109: phase sequence approach > grasp > transport > release (outcome success) violates the task grammar at segment 'release'; rule R-PHASE-03",
+      "strong": "REJECT",
+      "strong_issues": [
+        "S-PHASE: illegal phase sequence approach > grasp > transport > release for outcome success",
+        "S-OUTCOME: success but obj0 ends 192 mm from target, held=False"
+      ],
+      "ok": true
+    },
+    {
+      "case": "duplicate timestamp (not re-sortable)",
+      "expected": "REJECT",
+      "engine": "REJECT",
+      "engine_reason": "Frame 50: timestamp 1.6380s <= previous 1.6380s and rows cannot be re-sorted into a regular time base; rule R-TIME-01",
+      "strong": "REJECT",
+      "strong_issues": [
+        "S-STRUCT: non-monotonic timestamp at frame 50",
+        "S-SPEED: frame 50: obj0 faster than v_max"
+      ],
+      "ok": true
+    },
+    {
+      "case": "contact ends mid-transport, gripper still closed (cross-rule)",
+      "expected": "REJECT",
+      "engine": "REJECT",
+      "engine_reason": "Frame 104: obj0 unsupported (136 mm above support, no contact) but vertical accel -0.2 m/s^2 is not free fall; rule R-SUP-01",
+      "strong": "REJECT",
+      "strong_issues": [
+        "S-SUPPORT: frame 119: obj0 not held and 138 mm from the table top"
+      ],
+      "ok": true
+    }
+  ],
+  "v1_noise_free_with_strong_baseline": {
+    "strong_tolerances": {
+      "static_tol": 0.005,
+      "support_tol": 0.015,
+      "comove_tol": 0.01,
+      "pen_tol": 0.01,
+      "grip_open_tol": 0.005,
+      "grace_s": 0.5,
+      "qd_margin": 1.0,
+      "max_single_drops": 2,
+      "target_slack": 0.0
+    },
+    "calibration_log": [
+      {
+        "iter": 0,
+        "false_rejects": 0,
+        "codes": {}
+      }
+    ],
+    "per_class": {
+      "a_wrong_label": {
+        "n": 10,
+        "engine": 0.4,
+        "strong": 0.4,
+        "structural": 0.0
+      },
+      "b_impossible_relation": {
+        "n": 10,
+        "engine": 0.9,
+        "strong": 0.9,
+        "structural": 0.0
+      },
+      "c_phase_order": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 0.0
+      },
+      "d_teleport": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 0.8
+      },
+      "e_timestamp_warp": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 1.0
+      },
+      "f_joint_limit": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 1.0
+      },
+      "g_gripper_contact_mismatch": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 0.0
+      },
+      "valid_failure": {
+        "n": 10,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 1.0
+      },
+      "clean": {
+        "n": 120,
+        "engine": 1.0,
+        "strong": 1.0,
+        "structural": 1.0
+      }
+    },
+    "recall": {
+      "engine": 0.9,
+      "strong": 0.9,
+      "structural": 0.4
+    }
+  },
+  "sensitivity_sweep": {
+    "n_base_episodes": 12,
+    "curves": {
+      "laptop_sunk_mm": [
+        {
+          "mm": 5,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 10,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 15,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 20,
+          "engine": 0.08333333333333333,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 25,
+          "engine": 1.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 30,
+          "engine": 1.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 40,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        }
+      ],
+      "laptop_floating_mm": [
+        {
+          "mm": 5,
+          "engine": 0.0,
+          "strong": 0.08333333333333333,
+          "structural": 0.0
+        },
+        {
+          "mm": 10,
+          "engine": 1.0,
+          "strong": 0.9166666666666666,
+          "structural": 0.0
+        },
+        {
+          "mm": 15,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 20,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 25,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 30,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 40,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        }
+      ],
+      "persistent_teleport_mm": [
+        {
+          "mm": 10,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 20,
+          "engine": 0.08333333333333333,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 30,
+          "engine": 0.9166666666666666,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 40,
+          "engine": 1.0,
+          "strong": 0.4166666666666667,
+          "structural": 0.0
+        },
+        {
+          "mm": 60,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 80,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        }
+      ],
+      "floating_after_release_mm": [
+        {
+          "mm": 5,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 10,
+          "engine": 0.0,
+          "strong": 0.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 20,
+          "engine": 0.4166666666666667,
+          "strong": 0.16666666666666666,
+          "structural": 0.0
+        },
+        {
+          "mm": 30,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 40,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        }
+      ],
+      "interpenetration_mm": [
+        {
+          "mm": 5,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 10,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 15,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 20,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        },
+        {
+          "mm": 30,
+          "engine": 1.0,
+          "strong": 1.0,
+          "structural": 0.0
+        }
+      ]
+    }
+  },
+  "accepted_episodes": 191,
+  "repairs_byte_identical_to_original": "20/20",
+  "evaluation_only_known_undetected_in_accepted_split": {
+    "count": 11,
+    "episodes": [
+      {
+        "episode": "v2_0020",
+        "class": "a_wrong_label",
+        "variant": "fruit_from_B",
+        "object": "obj1",
+        "from": "mug",
+        "to": "vase"
+      },
+      {
+        "episode": "v2_0060",
+        "class": "a_wrong_label",
+        "variant": "mug_to_target",
+        "object": "obj2",
+        "from": "fruit",
+        "to": "earphone"
+      },
+      {
+        "episode": "v2_0092",
+        "class": "a_wrong_label",
+        "variant": "fruit_from_B",
+        "object": "obj0",
+        "from": "fruit",
+        "to": "mug"
+      },
+      {
+        "episode": "v2_0103",
+        "class": "a_wrong_label",
+        "variant": "mug_next_to_laptop",
+        "object": "obj0",
+        "from": "mug",
+        "to": "earphone"
+      },
+      {
+        "episode": "v2_0172",
+        "class": "a_wrong_label",
+        "variant": "mug_next_to_laptop",
+        "object": "obj2",
+        "from": "fruit",
+        "to": "earphone"
+      },
+      {
+        "episode": "v2_0174",
+        "class": "a_wrong_label",
+        "variant": "mug_to_target",
+        "object": "obj2",
+        "from": "fruit",
+        "to": "mug"
+      },
+      {
+        "episode": "v2_0206",
+        "class": "a_wrong_label",
+        "variant": "fruit_from_B",
+        "object": "obj0",
+        "from": "fruit",
+        "to": "mug"
+      },
+      {
+        "episode": "v2_0209",
+        "class": "b_impossible_relation",
+        "variant": "fruit_from_B",
+        "subtype": "manipulated_floating_after_release",
+        "raise_m": 0.0108,
+        "from_frame": 158
+      },
+      {
+        "episode": "v2_0217",
+        "class": "a_wrong_label",
+        "variant": "mug_next_to_laptop",
+        "object": "obj2",
+        "from": "fruit",
+        "to": "mug"
+      },
+      {
+        "episode": "v2_0237",
+        "class": "a_wrong_label",
+        "variant": "mug_to_target",
+        "object": "obj0",
+        "from": "mug",
+        "to": "vase"
+      },
+      {
+        "episode": "v2_0239",
+        "class": "d_teleport",
+        "variant": "fruit_from_B",
+        "frame": 151,
+        "magnitude_m": 0.0338,
+        "mode": "persistent",
+        "frames": [
+          151,
+          177
+        ]
+      }
+    ],
+    "repaired_injected_episodes_in_accepted_split": 20,
+    "repaired_note": "timestamp-warp episodes accepted in repaired form; see repairs_byte_identical_to_original",
+    "note": "Known only from the injection key. The passport cannot know this number and does not contain it."
+  },
+  "rule_encoding": {
+    "total_rules": 30,
+    "z3_encoded_in_selfcheck": 24,
+    "z3_decides_per_episode": 9,
+    "z3_selfcheck_only": 15,
+    "numeric_only": 6,
+    "numeric_only_rules": [
+      "R-CONT-03",
+      "R-KIN-01",
+      "R-PROV-01",
+      "R-SUP-02",
+      "R-TYPE-01",
+      "R-TYPE-03"
+    ],
+    "z3_per_episode_rules": [
+      "R-CONT-01",
+      "R-CONT-02",
+      "R-PHASE-01",
+      "R-PHASE-02",
+      "R-PHASE-03",
+      "R-PHASE-04",
+      "R-QTY-01",
+      "R-QTY-02",
+      "R-TYPE-02"
+    ],
+    "z3_selfcheck_only_rules": [
+      "R-GRIP-01",
+      "R-GRIP-02",
+      "R-JNT-01",
+      "R-JNT-02",
+      "R-PERM-01",
+      "R-PERM-02",
+      "R-PERM-03",
+      "R-PHASE-05",
+      "R-SPAT-01",
+      "R-SPAT-02",
+      "R-SUP-01",
+      "R-TASK-01",
+      "R-TIME-01",
+      "R-TIME-02",
+      "R-TYPE-04"
+    ],
+    "rulebook_kind_label_counts": {
+      "z3": 23,
+      "numeric": 7
+    },
+    "rulebook_kind_label_disagrees_with_selfcheck": [
+      "R-TIME-01"
+    ],
+    "note": "Per-episode, only the rules in z3_per_episode_rules are decided by a Z3 query. The other Z3-encoded rules are encoded symbolically for the rulebook self-check (consistency and independence on a bounded 14-frame 1-D abstraction) but are evaluated per episode with numpy against the same constants. In real-data mode no Z3 query is made at all."
+  },
+  "passport": {
+    "file": "passport_AX-DEMO-109-v2.json",
+    "content_hash": "sha256:020bdc9b32ffda3402c9da153220324cfc6ac960fcc0b900b64772c8590daf88"
+  }
+}

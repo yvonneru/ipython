@@ -1,0 +1,228 @@
+{
+  "rulebook_rules": 30,
+  "object_types": 7,
+  "phase_labels": 6,
+  "ground_facts": 83,
+  "type_layer": {
+    "result": "sat",
+    "witness_dims_hmax_hmin_height": {
+      "mug": [
+        0.07,
+        0.06,
+        0.07
+      ],
+      "laptop": [
+        0.28,
+        0.18,
+        0.01
+      ],
+      "keyboard": [
+        0.28,
+        0.09,
+        0.01
+      ],
+      "earphone": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "cap": [
+        0.18,
+        0.14,
+        0.06
+      ],
+      "vase": [
+        0.05,
+        0.05,
+        0.1
+      ],
+      "fruit": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "manip_mug": [
+        0.07,
+        0.06,
+        0.07
+      ]
+    }
+  },
+  "seed_scene_109": {
+    "result": "consistent",
+    "violations": [],
+    "notes": [
+      "mug bottom gap to table = -3.3 mm",
+      "laptop bottom gap to table = +13.3 mm",
+      "mug-laptop separation = 221.9 mm"
+    ]
+  },
+  "episode_layer": {
+    "frames": 14,
+    "instantiated_axioms": 408,
+    "success": {
+      "result": "sat",
+      "phase_sequence": [
+        "approach",
+        "grasp",
+        "transport",
+        "transport",
+        "place",
+        "release",
+        "release",
+        "release",
+        "release",
+        "release",
+        "release",
+        "release",
+        "release",
+        "release"
+      ],
+      "contact": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "object_x": [
+        0.0,
+        0.0,
+        0.0,
+        0.012,
+        0.035,
+        0.059,
+        0.083,
+        0.107,
+        0.131,
+        0.155,
+        0.178,
+        0.202,
+        0.226,
+        0.25
+      ]
+    },
+    "slip_failure": {
+      "result": "sat",
+      "phase_sequence": [
+        "approach",
+        "approach",
+        "transport",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort",
+        "abort"
+      ],
+      "contact": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "object_x": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "independence": {
+    "independent": [
+      "R-TIME-02",
+      "R-JNT-01",
+      "R-JNT-02",
+      "R-GRIP-01",
+      "R-GRIP-02",
+      "R-CONT-01",
+      "R-CONT-02",
+      "R-PERM-01",
+      "R-PERM-02",
+      "R-PERM-03",
+      "R-SUP-01",
+      "R-SPAT-01",
+      "R-PHASE-01",
+      "R-PHASE-02",
+      "R-PHASE-03",
+      "R-PHASE-04",
+      "R-PHASE-05",
+      "R-TASK-01"
+    ],
+    "implied_by_others": [
+      "R-TIME-01"
+    ]
+  },
+  "total_z3_assertions": 600,
+  "symbolically_encoded_rules": [
+    "R-CONT-01",
+    "R-CONT-02",
+    "R-GRIP-01",
+    "R-GRIP-02",
+    "R-JNT-01",
+    "R-JNT-02",
+    "R-PERM-01",
+    "R-PERM-02",
+    "R-PERM-03",
+    "R-PHASE-01",
+    "R-PHASE-02",
+    "R-PHASE-03",
+    "R-PHASE-04",
+    "R-PHASE-05",
+    "R-QTY-01",
+    "R-QTY-02",
+    "R-SPAT-01",
+    "R-SPAT-02",
+    "R-SUP-01",
+    "R-TASK-01",
+    "R-TIME-01",
+    "R-TIME-02",
+    "R-TYPE-02",
+    "R-TYPE-04"
+  ],
+  "numeric_only_rules": [
+    "R-CONT-03",
+    "R-KIN-01",
+    "R-PROV-01",
+    "R-SUP-02",
+    "R-TYPE-01",
+    "R-TYPE-03"
+  ],
+  "result": "SATISFIABLE (rulebook consistent)",
+  "seconds": 1.008
+}

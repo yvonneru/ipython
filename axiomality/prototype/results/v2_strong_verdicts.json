@@ -1,0 +1,2751 @@
+[
+  {
+    "episode_id": "v2_0000",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 8"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.548418000311358
+  },
+  {
+    "episode_id": "v2_0001",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5159619997575646
+  },
+  {
+    "episode_id": "v2_0002",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.786572000128217
+  },
+  {
+    "episode_id": "v2_0003",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.1911839992535533
+  },
+  {
+    "episode_id": "v2_0004",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3980350004203501
+  },
+  {
+    "episode_id": "v2_0005",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 117: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.4622040007452597
+  },
+  {
+    "episode_id": "v2_0006",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2236200000188546
+  },
+  {
+    "episode_id": "v2_0007",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3727550003750366
+  },
+  {
+    "episode_id": "v2_0008",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.392438999573642
+  },
+  {
+    "episode_id": "v2_0009",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4531650003846153
+  },
+  {
+    "episode_id": "v2_0010",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 14",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.5215439998428337
+  },
+  {
+    "episode_id": "v2_0011",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.583501000823162
+  },
+  {
+    "episode_id": "v2_0012",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and 41 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.3785640003334265
+  },
+  {
+    "episode_id": "v2_0013",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.258160999896063
+  },
+  {
+    "episode_id": "v2_0014",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 35",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.5936310001052334
+  },
+  {
+    "episode_id": "v2_0015",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj1 overlap by 73 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.594553999893833
+  },
+  {
+    "episode_id": "v2_0016",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4776790003452334
+  },
+  {
+    "episode_id": "v2_0017",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 105: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.5700799995101988
+  },
+  {
+    "episode_id": "v2_0018",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3374520003708312
+  },
+  {
+    "episode_id": "v2_0019",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.183623000542866
+  },
+  {
+    "episode_id": "v2_0020",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4781790005145012
+  },
+  {
+    "episode_id": "v2_0021",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 59"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.331921000200964
+  },
+  {
+    "episode_id": "v2_0022",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5748460000395426
+  },
+  {
+    "episode_id": "v2_0023",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3622469996334985
+  },
+  {
+    "episode_id": "v2_0024",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 41",
+      "S-SPEED: frame 41: obj0 faster than v_max",
+      "S-SPEED-static: frame 41: resting obj0 moved 298 mm"
+    ],
+    "codes": [
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.1912419995496748
+  },
+  {
+    "episode_id": "v2_0025",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3594540005215094
+  },
+  {
+    "episode_id": "v2_0026",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj2 not held and -79 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.4408570004889043
+  },
+  {
+    "episode_id": "v2_0027",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3665209999089711
+  },
+  {
+    "episode_id": "v2_0028",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 3: obj1 not held and -31 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.4222259997040965
+  },
+  {
+    "episode_id": "v2_0029",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4677930003017536
+  },
+  {
+    "episode_id": "v2_0030",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.469994999752089
+  },
+  {
+    "episode_id": "v2_0031",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.343896000435052
+  },
+  {
+    "episode_id": "v2_0032",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 125",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4568039996447624
+  },
+  {
+    "episode_id": "v2_0033",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3849970000592293
+  },
+  {
+    "episode_id": "v2_0034",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2748150002153125
+  },
+  {
+    "episode_id": "v2_0035",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 12: obj2 not held and -30 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.4140399998723296
+  },
+  {
+    "episode_id": "v2_0036",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj1 overlap by 52 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.4806770004724967
+  },
+  {
+    "episode_id": "v2_0037",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.237297999978182
+  },
+  {
+    "episode_id": "v2_0038",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 63"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.3223609994383878
+  },
+  {
+    "episode_id": "v2_0039",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2416560002748156
+  },
+  {
+    "episode_id": "v2_0040",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5187070002866676
+  },
+  {
+    "episode_id": "v2_0041",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4608410001528682
+  },
+  {
+    "episode_id": "v2_0042",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3578769994637696
+  },
+  {
+    "episode_id": "v2_0043",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4034320001883316
+  },
+  {
+    "episode_id": "v2_0044",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3373189995036228
+  },
+  {
+    "episode_id": "v2_0045",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3904399993407424
+  },
+  {
+    "episode_id": "v2_0046",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4852809999865713
+  },
+  {
+    "episode_id": "v2_0047",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4905059997545322
+  },
+  {
+    "episode_id": "v2_0048",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5107390008779475
+  },
+  {
+    "episode_id": "v2_0049",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4029799995114445
+  },
+  {
+    "episode_id": "v2_0050",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj2 'fruit' size 0.421x0.344x0.268 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.2810479993277113
+  },
+  {
+    "episode_id": "v2_0051",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3913960001445957
+  },
+  {
+    "episode_id": "v2_0052",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 185: obj0 not held and 82 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.5317329998651985
+  },
+  {
+    "episode_id": "v2_0053",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.320673999543942
+  },
+  {
+    "episode_id": "v2_0054",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4797530002397252
+  },
+  {
+    "episode_id": "v2_0055",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.236223999512731
+  },
+  {
+    "episode_id": "v2_0056",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2865229991803062
+  },
+  {
+    "episode_id": "v2_0057",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 148",
+      "S-SPEED: frame 148: obj0 faster than v_max",
+      "S-COMOVE: frame 148: held obj0 distance to TCP changed by 381 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.4149700000416487
+  },
+  {
+    "episode_id": "v2_0058",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.371988000755664
+  },
+  {
+    "episode_id": "v2_0059",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4154039999993984
+  },
+  {
+    "episode_id": "v2_0060",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.1962160006078193
+  },
+  {
+    "episode_id": "v2_0061",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.524643999800901
+  },
+  {
+    "episode_id": "v2_0062",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj2 'earphone' size 0.423x0.355x0.266 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.5298219996111584
+  },
+  {
+    "episode_id": "v2_0063",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > place > transport > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4485770007013343
+  },
+  {
+    "episode_id": "v2_0064",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 41",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.6569999997955165
+  },
+  {
+    "episode_id": "v2_0065",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5245759996105335
+  },
+  {
+    "episode_id": "v2_0066",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4120400001047528
+  },
+  {
+    "episode_id": "v2_0067",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3406219995886204
+  },
+  {
+    "episode_id": "v2_0068",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj0 'cap' size 0.083x0.082x0.081 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.6639369996482856
+  },
+  {
+    "episode_id": "v2_0069",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3609369998448528
+  },
+  {
+    "episode_id": "v2_0070",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5128539998841006
+  },
+  {
+    "episode_id": "v2_0071",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4929509998182766
+  },
+  {
+    "episode_id": "v2_0072",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 47: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.3572409998232615
+  },
+  {
+    "episode_id": "v2_0073",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5464389998669503
+  },
+  {
+    "episode_id": "v2_0074",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4315430007627583
+  },
+  {
+    "episode_id": "v2_0075",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.0961340003632358
+  },
+  {
+    "episode_id": "v2_0076",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 43: obj0 held but gripper open (cmd 0, width 0.140)",
+      "S-COMOVE: frame 48: held obj0 distance to TCP changed by 42 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-GRIP-open"
+    ],
+    "ms": 1.588244000231498
+  },
+  {
+    "episode_id": "v2_0077",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.442664999558474
+  },
+  {
+    "episode_id": "v2_0078",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 107"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.1630030003288994
+  },
+  {
+    "episode_id": "v2_0079",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 164",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.5299960004995228
+  },
+  {
+    "episode_id": "v2_0080",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.5135779995034682
+  },
+  {
+    "episode_id": "v2_0081",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 20"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.257398999769066
+  },
+  {
+    "episode_id": "v2_0082",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3013489997319994
+  },
+  {
+    "episode_id": "v2_0083",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.390420000461745
+  },
+  {
+    "episode_id": "v2_0084",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.348028000393242
+  },
+  {
+    "episode_id": "v2_0085",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3246709995655692
+  },
+  {
+    "episode_id": "v2_0086",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 161",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4108060004218714
+  },
+  {
+    "episode_id": "v2_0087",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 34",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4341679998324253
+  },
+  {
+    "episode_id": "v2_0088",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5186549999270937
+  },
+  {
+    "episode_id": "v2_0089",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 44"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.1347469999236637
+  },
+  {
+    "episode_id": "v2_0090",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 172"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.4351130002978607
+  },
+  {
+    "episode_id": "v2_0091",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.346031999673869
+  },
+  {
+    "episode_id": "v2_0092",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.430151000022306
+  },
+  {
+    "episode_id": "v2_0093",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and -54 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.7604529994059703
+  },
+  {
+    "episode_id": "v2_0094",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2184470006104675
+  },
+  {
+    "episode_id": "v2_0095",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5721069994469872
+  },
+  {
+    "episode_id": "v2_0096",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 12",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4418070004467154
+  },
+  {
+    "episode_id": "v2_0097",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj2 'cap' size 0.080x0.079x0.077 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.5030369995656656
+  },
+  {
+    "episode_id": "v2_0098",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 83",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.5430339999511489
+  },
+  {
+    "episode_id": "v2_0099",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4754500007256866
+  },
+  {
+    "episode_id": "v2_0100",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2810200005333172
+  },
+  {
+    "episode_id": "v2_0101",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4725320006618858
+  },
+  {
+    "episode_id": "v2_0102",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 8"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.2645189999602735
+  },
+  {
+    "episode_id": "v2_0103",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6850700003487873
+  },
+  {
+    "episode_id": "v2_0104",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6108879999592318
+  },
+  {
+    "episode_id": "v2_0105",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5293329997803085
+  },
+  {
+    "episode_id": "v2_0106",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5308040001400514
+  },
+  {
+    "episode_id": "v2_0107",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 158: obj0 held but gripper open (cmd 0, width 0.085)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.4784479999434552
+  },
+  {
+    "episode_id": "v2_0108",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 102: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.415284999893629
+  },
+  {
+    "episode_id": "v2_0109",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3610410005640006
+  },
+  {
+    "episode_id": "v2_0110",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5252439998221234
+  },
+  {
+    "episode_id": "v2_0111",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and 104 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.4052670003366075
+  },
+  {
+    "episode_id": "v2_0112",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 33: obj0 held but gripper open (cmd 0, width 0.140)",
+      "S-COMOVE: frame 41: held obj0 distance to TCP changed by 35 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-GRIP-open"
+    ],
+    "ms": 1.5519610005867435
+  },
+  {
+    "episode_id": "v2_0113",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3268140000946005
+  },
+  {
+    "episode_id": "v2_0114",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3766330002908944
+  },
+  {
+    "episode_id": "v2_0115",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3054609999016975
+  },
+  {
+    "episode_id": "v2_0116",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 147",
+      "S-SPEED: frame 147: obj0 faster than v_max",
+      "S-COMOVE: frame 147: held obj0 distance to TCP changed by 130 mm",
+      "S-OUTCOME: success but obj0 ends 138 mm from target, held=False"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.5319579997594701
+  },
+  {
+    "episode_id": "v2_0117",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3350139997783117
+  },
+  {
+    "episode_id": "v2_0118",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.511963000666583
+  },
+  {
+    "episode_id": "v2_0119",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > transport > place > transport for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4736089997313684
+  },
+  {
+    "episode_id": "v2_0120",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5284979999705683
+  },
+  {
+    "episode_id": "v2_0121",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.061076000041794
+  },
+  {
+    "episode_id": "v2_0122",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj0 'keyboard' size 0.082x0.079x0.078 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.4563069998985156
+  },
+  {
+    "episode_id": "v2_0123",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 36",
+      "S-SPEED: frame 36: obj0 faster than v_max",
+      "S-SPEED-static: frame 36: resting obj0 moved 402 mm",
+      "S-OUTCOME: success but obj0 ends 412 mm from target, held=False"
+    ],
+    "codes": [
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.3672800005224417
+  },
+  {
+    "episode_id": "v2_0124",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.470880999477231
+  },
+  {
+    "episode_id": "v2_0125",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2271819996385602
+  },
+  {
+    "episode_id": "v2_0126",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 147",
+      "S-SPEED: frame 147: obj0 faster than v_max",
+      "S-COMOVE: frame 147: held obj0 distance to TCP changed by 219 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.4513389996864134
+  },
+  {
+    "episode_id": "v2_0127",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > transport > grasp > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.5561549998892588
+  },
+  {
+    "episode_id": "v2_0128",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 94",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.3595249993159086
+  },
+  {
+    "episode_id": "v2_0129",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6294520000883495
+  },
+  {
+    "episode_id": "v2_0130",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.694029000645969
+  },
+  {
+    "episode_id": "v2_0131",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2179479999758769
+  },
+  {
+    "episode_id": "v2_0132",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4781589998165146
+  },
+  {
+    "episode_id": "v2_0133",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 17",
+      "S-SPEED: frame 17: obj0 faster than v_max",
+      "S-SPEED-static: frame 17: resting obj0 moved 522 mm"
+    ],
+    "codes": [
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.3262879992907983
+  },
+  {
+    "episode_id": "v2_0134",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 155: obj0 held but gripper open (cmd 0, width 0.082)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.444447999347176
+  },
+  {
+    "episode_id": "v2_0135",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2115879999328172
+  },
+  {
+    "episode_id": "v2_0136",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 128",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4857629994367016
+  },
+  {
+    "episode_id": "v2_0137",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.7382000005454756
+  },
+  {
+    "episode_id": "v2_0138",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 84",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4297520001491648
+  },
+  {
+    "episode_id": "v2_0139",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.1988140004177694
+  },
+  {
+    "episode_id": "v2_0140",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.532522000161407
+  },
+  {
+    "episode_id": "v2_0141",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3863270005458617
+  },
+  {
+    "episode_id": "v2_0142",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4573960006600828
+  },
+  {
+    "episode_id": "v2_0143",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.48026100032439
+  },
+  {
+    "episode_id": "v2_0144",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 89: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.3772730007985956
+  },
+  {
+    "episode_id": "v2_0145",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 167",
+      "S-SPEED: frame 167: obj0 faster than v_max",
+      "S-OUTCOME: success but obj0 ends 386 mm from target, held=False"
+    ],
+    "codes": [
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.5354159995695227
+  },
+  {
+    "episode_id": "v2_0146",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5118800001800992
+  },
+  {
+    "episode_id": "v2_0147",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 143: obj0 held but gripper open (cmd 0, width 0.127)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.3845779994881013
+  },
+  {
+    "episode_id": "v2_0148",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 61",
+      "S-SPEED: frame 61: obj0 faster than v_max",
+      "S-SPEED-static: frame 61: resting obj0 moved 527 mm"
+    ],
+    "codes": [
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.3632279997182195
+  },
+  {
+    "episode_id": "v2_0149",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > place > transport > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4095970000198577
+  },
+  {
+    "episode_id": "v2_0150",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3497069994627964
+  },
+  {
+    "episode_id": "v2_0151",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.163371999609808
+  },
+  {
+    "episode_id": "v2_0152",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 53: obj0 held but gripper open (cmd 0, width 0.140)",
+      "S-COMOVE: frame 59: held obj0 distance to TCP changed by 32 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-GRIP-open"
+    ],
+    "ms": 1.5230669996526558
+  },
+  {
+    "episode_id": "v2_0153",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2009299998680945
+  },
+  {
+    "episode_id": "v2_0154",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6306699999404373
+  },
+  {
+    "episode_id": "v2_0155",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 55",
+      "S-SPEED: frame 55: obj0 faster than v_max",
+      "S-SPEED-static: frame 55: resting obj0 moved 323 mm"
+    ],
+    "codes": [
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.4532430004692287
+  },
+  {
+    "episode_id": "v2_0156",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.28967399996327
+  },
+  {
+    "episode_id": "v2_0157",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 164: obj0 held but gripper open (cmd 0, width 0.126)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.396968999870296
+  },
+  {
+    "episode_id": "v2_0158",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > place > transport > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4443529998970916
+  },
+  {
+    "episode_id": "v2_0159",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 131"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.0682739994081203
+  },
+  {
+    "episode_id": "v2_0160",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6811989999041543
+  },
+  {
+    "episode_id": "v2_0161",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj1 'cap' size 0.144x0.123x0.125 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.5724750001027132
+  },
+  {
+    "episode_id": "v2_0162",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and -84 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.289904000259412
+  },
+  {
+    "episode_id": "v2_0163",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5424960001837462
+  },
+  {
+    "episode_id": "v2_0164",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4485050005532685
+  },
+  {
+    "episode_id": "v2_0165",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 24",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.3623320000988315
+  },
+  {
+    "episode_id": "v2_0166",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4627300006395672
+  },
+  {
+    "episode_id": "v2_0167",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.162311000371119
+  },
+  {
+    "episode_id": "v2_0168",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 83",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4468439994743676
+  },
+  {
+    "episode_id": "v2_0169",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 131",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.3668069996128906
+  },
+  {
+    "episode_id": "v2_0170",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4197370001056697
+  },
+  {
+    "episode_id": "v2_0171",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3106800006426056
+  },
+  {
+    "episode_id": "v2_0172",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.386507000461279
+  },
+  {
+    "episode_id": "v2_0173",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 144: obj0 held but gripper open (cmd 0, width 0.079)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.2884579991805367
+  },
+  {
+    "episode_id": "v2_0174",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6301039995596511
+  },
+  {
+    "episode_id": "v2_0175",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.85862000034831
+  },
+  {
+    "episode_id": "v2_0176",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3663680001627654
+  },
+  {
+    "episode_id": "v2_0177",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.438799000425206
+  },
+  {
+    "episode_id": "v2_0178",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > release > transport > place > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.462842000364617
+  },
+  {
+    "episode_id": "v2_0179",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj0 'keyboard' size 0.079x0.078x0.075 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.3264270000945544
+  },
+  {
+    "episode_id": "v2_0180",
+    "verdict": "REJECT",
+    "issues": [
+      "S-COMOVE: frame 87: held obj0 distance to TCP changed by 63 mm",
+      "S-OUTCOME: success but obj0 ends 92 mm from target, held=False"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-OUTCOME"
+    ],
+    "ms": 1.4335539999592584
+  },
+  {
+    "episode_id": "v2_0181",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3994870005262783
+  },
+  {
+    "episode_id": "v2_0182",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > transport > release > place for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.6067890001068008
+  },
+  {
+    "episode_id": "v2_0183",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 74: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.1922450003112317
+  },
+  {
+    "episode_id": "v2_0184",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4153470001474489
+  },
+  {
+    "episode_id": "v2_0185",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.3801570003124652
+  },
+  {
+    "episode_id": "v2_0186",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > transport > place > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.5909460007605958
+  },
+  {
+    "episode_id": "v2_0187",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.940777000527305
+  },
+  {
+    "episode_id": "v2_0188",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3744740008405643
+  },
+  {
+    "episode_id": "v2_0189",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2941330005560303
+  },
+  {
+    "episode_id": "v2_0190",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 139",
+      "S-SPEED: frame 139: obj0 faster than v_max",
+      "S-COMOVE: frame 139: held obj0 distance to TCP changed by 564 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.421992999894428
+  },
+  {
+    "episode_id": "v2_0191",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.40031800037832
+  },
+  {
+    "episode_id": "v2_0192",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj1 overlap by 79 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.4228790005290648
+  },
+  {
+    "episode_id": "v2_0193",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.384557000164932
+  },
+  {
+    "episode_id": "v2_0194",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2810770003852667
+  },
+  {
+    "episode_id": "v2_0195",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5285290000974783
+  },
+  {
+    "episode_id": "v2_0196",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 111",
+      "S-SPEED: frame 111: obj0 faster than v_max",
+      "S-COMOVE: frame 111: held obj0 distance to TCP changed by 405 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.3520890006475383
+  },
+  {
+    "episode_id": "v2_0197",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 168: obj0 not held and 40 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.412550999702944
+  },
+  {
+    "episode_id": "v2_0198",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.453546999982791
+  },
+  {
+    "episode_id": "v2_0199",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 153",
+      "S-SPEED: frame 153: obj0 faster than v_max",
+      "S-OUTCOME: success but obj0 ends 301 mm from target, held=False"
+    ],
+    "codes": [
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.3152159999663127
+  },
+  {
+    "episode_id": "v2_0200",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 132",
+      "S-SPEED: frame 132: obj0 faster than v_max",
+      "S-COMOVE: frame 132: held obj0 distance to TCP changed by 293 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.5770050003993674
+  },
+  {
+    "episode_id": "v2_0201",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj1 overlap by 82 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.19455099957122
+  },
+  {
+    "episode_id": "v2_0202",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 78",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4857610003673472
+  },
+  {
+    "episode_id": "v2_0203",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 144"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.3126679996275925
+  },
+  {
+    "episode_id": "v2_0204",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2312690005273907
+  },
+  {
+    "episode_id": "v2_0205",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 163",
+      "S-SPEED: frame 163: obj0 faster than v_max",
+      "S-COMOVE: frame 163: held obj0 distance to TCP changed by 364 mm",
+      "S-OUTCOME: success but obj0 ends 380 mm from target, held=False"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.6407720004281146
+  },
+  {
+    "episode_id": "v2_0206",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2037030001010862
+  },
+  {
+    "episode_id": "v2_0207",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3319250001586624
+  },
+  {
+    "episode_id": "v2_0208",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 78"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.2724660000458243
+  },
+  {
+    "episode_id": "v2_0209",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3097909995849477
+  },
+  {
+    "episode_id": "v2_0210",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3725039998462307
+  },
+  {
+    "episode_id": "v2_0211",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 39: obj0 held but gripper open (cmd 0, width 0.139)",
+      "S-COMOVE: frame 42: held obj0 distance to TCP changed by 31 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-GRIP-open"
+    ],
+    "ms": 1.515374000518932
+  },
+  {
+    "episode_id": "v2_0212",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 132",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.2882359997092863
+  },
+  {
+    "episode_id": "v2_0213",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3938750007582712
+  },
+  {
+    "episode_id": "v2_0214",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 161: obj0 held but gripper open (cmd 0, width 0.123)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.5184860003500944
+  },
+  {
+    "episode_id": "v2_0215",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2027459997625556
+  },
+  {
+    "episode_id": "v2_0216",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 76",
+      "S-SPEED: frame 76: obj0 faster than v_max",
+      "S-COMOVE: frame 76: held obj0 distance to TCP changed by 367 mm",
+      "S-OUTCOME: success but obj0 ends 378 mm from target, held=False"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-OUTCOME",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.5774230005263234
+  },
+  {
+    "episode_id": "v2_0217",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4262839995353715
+  },
+  {
+    "episode_id": "v2_0218",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4372289997481857
+  },
+  {
+    "episode_id": "v2_0219",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence grasp > approach > transport > place > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.2856820003435132
+  },
+  {
+    "episode_id": "v2_0220",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 19"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.414792999639758
+  },
+  {
+    "episode_id": "v2_0221",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj2 overlap by 51 mm",
+      "S-OVERLAP: frame 0: obj1 and obj2 overlap by 112 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.270030999876326
+  },
+  {
+    "episode_id": "v2_0222",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5044769997984986
+  },
+  {
+    "episode_id": "v2_0223",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2782060002791695
+  },
+  {
+    "episode_id": "v2_0224",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.456371999665862
+  },
+  {
+    "episode_id": "v2_0225",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2268230002518976
+  },
+  {
+    "episode_id": "v2_0226",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 103"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.3103640003464534
+  },
+  {
+    "episode_id": "v2_0227",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3020730002608616
+  },
+  {
+    "episode_id": "v2_0228",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and -40 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.4524759999403614
+  },
+  {
+    "episode_id": "v2_0229",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 105: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.2427490000845864
+  },
+  {
+    "episode_id": "v2_0230",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5232329997161287
+  },
+  {
+    "episode_id": "v2_0231",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 76",
+      "S-SPEED: frame 76: obj0 faster than v_max",
+      "S-COMOVE: frame 76: held obj0 distance to TCP changed by 462 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.4109389994700905
+  },
+  {
+    "episode_id": "v2_0232",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.6787860004114918
+  },
+  {
+    "episode_id": "v2_0233",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 48"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.7450590003136313
+  },
+  {
+    "episode_id": "v2_0234",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 123"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.1674510005832417
+  },
+  {
+    "episode_id": "v2_0235",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 87"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.2818140003219014
+  },
+  {
+    "episode_id": "v2_0236",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.382471000397345
+  },
+  {
+    "episode_id": "v2_0237",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4615599993703654
+  },
+  {
+    "episode_id": "v2_0238",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 22",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.3264560002426151
+  },
+  {
+    "episode_id": "v2_0239",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5135300000110874
+  },
+  {
+    "episode_id": "v2_0240",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4508399999613175
+  },
+  {
+    "episode_id": "v2_0241",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 61",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.273631000003661
+  },
+  {
+    "episode_id": "v2_0242",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.449355000659125
+  },
+  {
+    "episode_id": "v2_0243",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj1 'mug' size 0.410x0.349x0.265 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.3882459998058039
+  },
+  {
+    "episode_id": "v2_0244",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5313270005208324
+  },
+  {
+    "episode_id": "v2_0245",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj2 'fruit' size 0.422x0.349x0.269 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.4651589999630232
+  },
+  {
+    "episode_id": "v2_0246",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2516810002125567
+  },
+  {
+    "episode_id": "v2_0247",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.502731000073254
+  },
+  {
+    "episode_id": "v2_0248",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 36",
+      "S-SPEED: frame 36: obj0 faster than v_max",
+      "S-SPEED-static: frame 36: resting obj0 moved 591 mm"
+    ],
+    "codes": [
+      "S-SPEED",
+      "S-SPEED-static",
+      "S-STRUCT"
+    ],
+    "ms": 1.293637999879138
+  },
+  {
+    "episode_id": "v2_0249",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3533569999708561
+  },
+  {
+    "episode_id": "v2_0250",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.3278149999678135
+  },
+  {
+    "episode_id": "v2_0251",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 130: obj0 held but gripper open (cmd 0, width 0.140)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.4700209994771285
+  },
+  {
+    "episode_id": "v2_0252",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3487230007740436
+  },
+  {
+    "episode_id": "v2_0253",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj2 'keyboard' size 0.081x0.078x0.076 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.3623610002468922
+  },
+  {
+    "episode_id": "v2_0254",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > grasp > transport > place > grasp for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.380469000650919
+  },
+  {
+    "episode_id": "v2_0255",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3253090000944212
+  },
+  {
+    "episode_id": "v2_0256",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 123"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.4768150003874325
+  },
+  {
+    "episode_id": "v2_0257",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.2482749998525833
+  },
+  {
+    "episode_id": "v2_0258",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > transport > grasp > place > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.3770560008197208
+  },
+  {
+    "episode_id": "v2_0259",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 145"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.413064000189479
+  },
+  {
+    "episode_id": "v2_0260",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 155: obj0 held but gripper open (cmd 0, width 0.078)"
+    ],
+    "codes": [
+      "S-GRIP-open"
+    ],
+    "ms": 1.2378960000205552
+  },
+  {
+    "episode_id": "v2_0261",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3718270001845667
+  },
+  {
+    "episode_id": "v2_0262",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5835020003578393
+  },
+  {
+    "episode_id": "v2_0263",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3002989999222336
+  },
+  {
+    "episode_id": "v2_0264",
+    "verdict": "REJECT",
+    "issues": [
+      "S-GRIP-open: frame 29: obj0 held but gripper open (cmd 0, width 0.140)",
+      "S-COMOVE: frame 38: held obj0 distance to TCP changed by 40 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-GRIP-open"
+    ],
+    "ms": 1.4315150001493748
+  },
+  {
+    "episode_id": "v2_0265",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3263800001368509
+  },
+  {
+    "episode_id": "v2_0266",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.48158499996498
+  },
+  {
+    "episode_id": "v2_0267",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3788769992970629
+  },
+  {
+    "episode_id": "v2_0268",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.248219999979483
+  },
+  {
+    "episode_id": "v2_0269",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.5062620004755445
+  },
+  {
+    "episode_id": "v2_0270",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: obj:obj0 speed spike at frame 77",
+      "S-SPEED: frame 77: obj0 faster than v_max",
+      "S-COMOVE: frame 77: held obj0 distance to TCP changed by 244 mm"
+    ],
+    "codes": [
+      "S-COMOVE",
+      "S-SPEED",
+      "S-STRUCT"
+    ],
+    "ms": 1.1816189999080962
+  },
+  {
+    "episode_id": "v2_0271",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4707730006193742
+  },
+  {
+    "episode_id": "v2_0272",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.370392000353604
+  },
+  {
+    "episode_id": "v2_0273",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence approach > transport > grasp > place > release for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.4247279996197904
+  },
+  {
+    "episode_id": "v2_0274",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3701890002266737
+  },
+  {
+    "episode_id": "v2_0275",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2199350003356813
+  },
+  {
+    "episode_id": "v2_0276",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.449573000172677
+  },
+  {
+    "episode_id": "v2_0277",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 163"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.3511649995052721
+  },
+  {
+    "episode_id": "v2_0278",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2419390004652087
+  },
+  {
+    "episode_id": "v2_0279",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4548869994541747
+  },
+  {
+    "episode_id": "v2_0280",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: non-monotonic timestamp at frame 142"
+    ],
+    "codes": [
+      "S-STRUCT"
+    ],
+    "ms": 1.3530589994843467
+  },
+  {
+    "episode_id": "v2_0281",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4014899998073815
+  },
+  {
+    "episode_id": "v2_0282",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.7649339997660718
+  },
+  {
+    "episode_id": "v2_0283",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.251587999831827
+  },
+  {
+    "episode_id": "v2_0284",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.5423869999722228
+  },
+  {
+    "episode_id": "v2_0285",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.2814540004910668
+  },
+  {
+    "episode_id": "v2_0286",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.42661500012764
+  },
+  {
+    "episode_id": "v2_0287",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3441470000543632
+  },
+  {
+    "episode_id": "v2_0288",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.426491000529495
+  },
+  {
+    "episode_id": "v2_0289",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 160: obj0 not held and 79 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.541198999802873
+  },
+  {
+    "episode_id": "v2_0290",
+    "verdict": "REJECT",
+    "issues": [
+      "S-STRUCT: joint limit exceeded at frame 126",
+      "S-STRUCT-jointspeed: joint speed limit exceeded"
+    ],
+    "codes": [
+      "S-STRUCT",
+      "S-STRUCT-jointspeed"
+    ],
+    "ms": 1.4510239998344332
+  },
+  {
+    "episode_id": "v2_0291",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4300330003607087
+  },
+  {
+    "episode_id": "v2_0292",
+    "verdict": "REJECT",
+    "issues": [
+      "S-OVERLAP: frame 0: obj0 and obj1 overlap by 74 mm"
+    ],
+    "codes": [
+      "S-OVERLAP"
+    ],
+    "ms": 1.2104249999538297
+  },
+  {
+    "episode_id": "v2_0293",
+    "verdict": "REJECT",
+    "issues": [
+      "S-PHASE: illegal phase sequence release > place > transport > grasp > approach for outcome success"
+    ],
+    "codes": [
+      "S-PHASE"
+    ],
+    "ms": 1.8744499993772479
+  },
+  {
+    "episode_id": "v2_0294",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 163: obj0 not held and 57 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.2795399998140056
+  },
+  {
+    "episode_id": "v2_0295",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SIZE: obj0 'keyboard' size 0.142x0.121x0.126 outside class range"
+    ],
+    "codes": [
+      "S-SIZE"
+    ],
+    "ms": 1.414743000168528
+  },
+  {
+    "episode_id": "v2_0296",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.555011000164086
+  },
+  {
+    "episode_id": "v2_0297",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.3709800005017314
+  },
+  {
+    "episode_id": "v2_0298",
+    "verdict": "REJECT",
+    "issues": [
+      "S-SUPPORT: frame 0: obj1 not held and -80 mm from the table top"
+    ],
+    "codes": [
+      "S-SUPPORT"
+    ],
+    "ms": 1.2970890002179658
+  },
+  {
+    "episode_id": "v2_0299",
+    "verdict": "PASS",
+    "issues": [],
+    "codes": [],
+    "ms": 1.4543520001097932
+  }
+]
