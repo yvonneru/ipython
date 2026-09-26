@@ -157,3 +157,5 @@ Submitted by the PI on the Alliance portal [alliance.smapply.ca or CCDB — veri
 6. **Hardware claims** (H100/A100 lacking RT cores for Isaac Lab; L40S on Killarney; Vulkan for SAPIEN) come from reviewer knowledge and must be verified on the vendor and cluster pages.
 7. **Every count remains an assumption** (instances, seconds per instance, passes, splits, seeds, GPU-hours per run, storage).
 8. **Profile gaps** that propagate here: the second Synthese title, the thesis title, the ISO role wording, the HMS appointment details.
+
+2026-09-26: committee attribution corrected from SC 42 to SC 32 for ISO/IEC 21838 (see STRATEGY Addendum item 12).

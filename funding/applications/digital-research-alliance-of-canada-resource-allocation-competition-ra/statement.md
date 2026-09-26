@@ -22,7 +22,7 @@
 
 **6. What I will not do with the allocation.** I founded a company, AXIOMALITY, that works on robotics-data verification. No company work will run on this allocation or on any academic resource; the datasets I register for academically will not be used by the company; company workloads run on separately funded company accounts. I would like this stated in the application so that it is on record.
 
-**7. Why this matters beyond my own program.** The audit toolkit and the violation metric are reusable for any hierarchical annotation — CAD assemblies, building information models, part labels in medical imaging — and the ontology goes back to COLORE and to ISO/IEC JTC 1/SC 42. The allocation buys the first measurement of a data-quality problem that the whole field of robot learning has assumed away.
+**7. Why this matters beyond my own program.** The audit toolkit and the violation metric are reusable for any hierarchical annotation — CAD assemblies, building information models, part labels in medical imaging — and the ontology goes back to COLORE and to ISO/IEC JTC 1/SC 32. The allocation buys the first measurement of a data-quality problem that the whole field of robot learning has assumed away.
 
 — Yi
 
