@@ -36192,14 +36192,14 @@
   "85eb4c453b53": {
    "name": "Vector Distinguished Postdoctoral Fellowship (Spring 2027 cohort; Autumn 2027 cohort)",
    "funder": "Vector Institute for Artificial Intelligence",
-   "url": "https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/",
+   "url": "https://vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/",
    "country": "Canada",
    "type": "postdoc_fellowship",
    "deadline": "2027-02-28",
    "deadline_confidence": "high",
-   "amount": "Salary-supported fellowship (amount not published; Vector-funded stipend plus dedicated compute and research budget)",
-   "duration": "Typically 2 years",
-   "eligibility_summary": "Recent PhD in ML or related field; works primarily with one or two Vector Faculty Members/Affiliates at an Ontario institution as sponsor; no published citizenship rule (international applicants need a Canadian work permit). Twice-yearly review: applications and references complete by 28 Feb (Spring) or 31 Aug (Autumn).",
+   "amount": "Salary and benefits, amount not published on the program page; third-party job listings cited by the scout show roughly CAD 49-65k base - treat as unconfirmed; plus Vector compute and research environment",
+   "duration": "Typically 2 years (1-2 years, extendable to 3 per scout; not re-verified)",
+   "eligibility_summary": "Early-career researcher with a PhD doing fundamental ML/DL research or applications. Ru's PhD (March 2025) qualifies on timing. The fellowship is held with one or two Vector Faculty Members or Faculty Affiliates as sponsor; Grüninger is not known to hold Vector status, so a Vector-affiliated sponsor (U of T Robotics Institute / CS faculty) must be secured first. No citizenship rule reported; international hires need a work permit. Spring 2027 cohort start aligns with the planned spring-2027 return to Toronto.",
    "applicant_entity": "individual",
    "citizenship_requirement": "None published; work permit required for non-Canadians",
    "years_since_phd_limit": "Not published (recent PhD expected)",
@@ -36211,7 +36211,7 @@
     "Two or three reference letters submitted by the deadline",
     "Name of sponsoring Vector faculty"
    ],
-   "fit_score": 84,
+   "fit_score": 72,
    "fit_rationale": "Draft cover letter and research statement already exist for this exact call, and the program maps directly to O3 (ontology as inductive bias for part-aware manipulation policies) with Vector compute for SAPIEN experiments and O2 audit pipelines. Vector explicitly lists physical AI, robotics and safe/trustworthy AI as strategic priorities, which matches the audit/assurance framing.",
    "risks_and_flags": [
     "Sponsor must be a Vector faculty member/affiliate - Grüninger likely is not; identify a U of T Robotics Institute or ML faculty who is",
@@ -36220,17 +36220,62 @@
     "Reference letters must arrive by the deadline"
    ],
    "sources": [
-    "https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/",
+    "file:///home/user/ipython/funding/source_drafts/Vector_DPF_2027_cover_letter_and_research_statement.md",
+    "file:///tmp/claude-0/-home-user-ipython/5a01957d-63c9-5f0c-bfa3-9add7b486076/scratchpad/registry/verified_canada_ai_institutes_national_0.json",
     "https://careeraidhub.com/vector-distinguished-postdoctoral-fellow-at-vector-institute-canada/",
-    "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=4ed2be93-8bc5-40e2-915f-931884eac404&ccId=9200420850870_2&lang=en_CA&jobId=442841"
+    "https://vectorinstitute.ai/programs/postdoctoral-fellowship/",
+    "https://vectorinstitute.ai/programs/postgraduate-affiliates/",
+    "https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/",
+    "https://vectorinstitute.ai/research/",
+    "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=4ed2be93-8bc5-40e2-915f-931884eac404&ccId=9200420850870_2&lang=en_CA&jobId=442841",
+    "https://www1.communitech.ca/companies/vector-institute/jobs/53392529-vector-distinguished-postdoctoral-fellow",
+    "https://vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/"
    ],
    "cycle_note": "Rolling review twice per year (March and September). Autumn 2027 cohort deadline 2027-08-31 is the fallback if Spring 2027 is missed.",
    "category": "canada_ai_institutes_national",
-   "tier": null,
-   "verdict": "scouted",
+   "tier": "B",
+   "verdict": "corrected",
    "id": "85eb4c453b53",
    "slug": "vector-institute-distinguished-postdoctoral-fellowship-spring-2027",
-   "first_seen": "2026-09-25"
+   "first_seen": "2026-09-25",
+   "internal_or_referee_deadlines": "Complete application (one PDF: cover letter, CV, publications, research statement and THREE reference letters) must be received by 28 Feb 2027, 23:59 EST (confirmed). Hiring Committee reviews twice yearly (March and September) - the autumn fallback is the ~31 Aug 2027 intake. Sponsor (1-2 Vector faculty) to be confirmed by 15 Dec 2026; referees asked for 10 Feb 2027.",
+   "eligibility_flags": [
+    "Blocking: Vector faculty sponsor not identified (draft cover letter still reads '[Prof. name - Vector faculty affiliate]')",
+    "Confirm whether Grüninger appears on Vector's faculty member / affiliate list; if not, he can only be co-sponsor",
+    "Track record is KR/FOIS-heavy; Vector reviews on ML-venue output - frame O3 as the ML core",
+    "Citizenship UNKNOWN: confirm Vector sponsors work permits for non-Canadian fellows",
+    "Salary figure unconfirmed; may be lower than Schmidt/REPFP - check whether a DPF can be stacked with a U of T award",
+    "Three reference letters are required and must be bundled into the single application PDF (registry previously said 2-3)."
+   ],
+   "evidence": [
+    {
+     "claim": "Spring 2027 deadline",
+     "quote": "The complete application must be received by 28 February 2027 at 23:59 EST.",
+     "url": "https://vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/"
+    },
+    {
+     "claim": "Application package incl. three letters",
+     "quote": "Submit complete application as one PDF document including cover letter, CV, publications, research statement, and three reference letters.",
+     "url": "https://careeraidhub.com/vector-distinguished-postdoctoral-fellow-at-vector-institute-canada/"
+    },
+    {
+     "claim": "Sponsor structure and review cadence",
+     "quote": "Fellows work primarily with 1-2 faculty members while having access to collaborate with any of Vector's 45+ world-class faculty ... The Hiring Committee reviews applications twice yearly in March and September.",
+     "url": "https://vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/"
+    }
+   ],
+   "corrections": "Deadline 28 Feb 2027 23:59 EST CONFIRMED (confidence medium -> high). Corrections: three reference letters (not 2-3) inside a single PDF; programme URL moved to vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/. Sponsor rule confirmed in substance (work with 1-2 Vector faculty members); whether Grüninger is a Vector affiliate is still unresolved. Salary still not published in snippets.",
+   "next_actions": [
+    "By 15 Oct 2026: open the program page and confirm the Spring 2027 deadline (28 Feb 2027), whether references must arrive by the deadline, the number of letters (2 vs 3), salary, and sponsor rules.",
+    "By 15 Dec 2026: identify and secure a Vector Faculty Member/Affiliate sponsor - shortlist U of T Robotics Institute and CS faculty in robot learning / world models / neuro-symbolic methods from Vector's public faculty list; ask Grüninger for an introduction; send the two-page outline and the Vector research statement.",
+    "By 15 Dec 2026: confirm with Grüninger that he will act as co-sponsor and check whether he holds any Vector status.",
+    "By 31 Jan 2027: ask three referees (Grüninger, Harvard supervisor, external expert) for letters due 15 Feb 2027.",
+    "By 15 Feb 2027: finalize the single PDF (cover letter, CV, publication list, research statement) with the sponsor named; submit by 21 Feb 2027.",
+    "If citizenship is not Canadian/PR: ask Vector HR about work-permit sponsorship before applying."
+   ],
+   "estimated_prep_days": 12,
+   "last_checked": "2026-09-25",
+   "tier_rationale": " | Reconciled 2026-09-26: this is the record the Vector package is linked to; verified facts copied from the 2026-09-25 live re-check (28 Feb 2027 23:59 EST; three letters in one PDF; one or two Vector faculty sponsors required). Tier B because the sponsor must be secured first (STRATEGY: by 15 Jan 2027)."
   },
   "5c739f3a774a": {
    "name": "NIH Pathway to Independence Award (K99/R00) with NLM or NIBIB participation: ontology-based auditing of hierarchical part labels in medical imaging and biomedical datasets",

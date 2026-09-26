@@ -4,7 +4,7 @@ PRODID:-//funding-agents//deadlines//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:72a2c0e5fef9@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:DEADLINE: Branco Weiss Fellowship - Society in Science (2027 round) (The Branco Weiss Fellowship - Society in Science (administered by ETH Zurich))
 DESCRIPTION:Tier A | conf high | Maximum CHF 600,000 for up to five years (confirmed on the official eligibility page; the "CHF 100,000 per year" figure was a per-year approximation of the same cap) | https://brancoweissfellowship.org/
@@ -16,7 +16,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:b2539d70aa33@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261017
 SUMMARY:DEADLINE: Canada Postdoctoral Research Award (CPRA) - NSERC stream, 2026 competition (NSERC / CIHR / SSHRC (tri-agency, Canada Research Training Awards Suite))
 DESCRIPTION:Tier A | conf high | CAD 70,000 per year (confirmed) | https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program
@@ -28,7 +28,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ba66a23a8600@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261125
 SUMMARY:DEADLINE: NSERC Alliance International Collaboration grant (U of T x Harvard/US robotics group) (NSERC)
 DESCRIPTION:Tier B | conf high | Collaboration grants: up to CAD 100,000 per year for up to three years (ceiling confirmed; floor of CAD 20,000 not re-verified). Catalyst grants: general availability unconfirmed (programme was paused; only a G7 quantum-themed Catalyst call is visible). | https://nserc-crsng.canada.ca/en/funding-opportunity/alliance-international-collaboration-grants
@@ -40,7 +40,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:885668cd951e@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20270228
 SUMMARY:DEADLINE: Vector Institute compute (via Distinguished Postdoctoral Fellowship / faculty-affiliate sponsorship) (Vector Institute)
 DESCRIPTION:Tier A | conf high | In-kind: access to Vector's GPU cluster for Vector-affiliated researchers (fellows, postgraduate affiliates, faculty-affiliate group members); the DPF itself is a salaried two-year fellowship (Vector does not publish the stipend on the program page; ~CAD 90k+ is an unverified norm) | https://vectorinstitute.ai/programs/vector-postdoctoral-fellows/
@@ -52,7 +52,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:05e0b74e5858@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261016
 SUMMARY:DEADLINE: Stanford Science Fellows (2027 cohort) (Stanford University, Office of the Vice Provost and Dean of Research)
 DESCRIPTION:Tier B | conf medium | Stipend ~USD 98,000/yr (scout) plus research and professional-development funds; confirm on FAQ | https://stanfordsciencefellows.stanford.edu/
@@ -64,7 +64,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:eada2f9555ee@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261113
 SUMMARY:DEADLINE: Princeton Presidential Postdoctoral Research Fellows (2027 cohort) (Princeton University, Office of the Dean of the Faculty)
 DESCRIPTION:Tier B | conf low | Not published in any local record. Princeton postdoctoral salary scale (a second scout estimated approx. USD 70,000-80,000) plus benefits and research/travel funds; read the exact figure from the DOF page. | https://dof.princeton.edu/faculty-development-and-inclusion/talent-pathway-programs/presidential-postdoctoral-research-fellows
@@ -76,7 +76,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:79c07cb9f901@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261015
 SUMMARY:DEADLINE: Cornell Klarman Fellowships (College of Arts & Sciences postdoctoral fellowship) (Cornell University, College of Arts & Sciences)
 DESCRIPTION:Tier B | conf high | USD 80,000/yr stipend plus Cornell benefits and USD 12,000/yr research expenses (confirmed for the 2027 cycle) | https://as.cornell.edu/research/klarman-fellowships
@@ -88,7 +88,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:41e72ef79eca@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261005
 SUMMARY:DEADLINE: Eric and Wendy Schmidt AI in Science Postdoctoral Fellowship (U of T) (Schmidt Sciences via University of Toronto (administered by Data Sciences Institute / Acceleration Consortium))
 DESCRIPTION:Tier A | conf medium | CAD 85,000/yr salary + approx. CAD 11,000/yr benefits/levy (scout figure; not re-verified) plus AI training programme | https://datasciences.utoronto.ca/schmidt-fellows/
@@ -100,7 +100,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:d9c75d3acf90@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261001
 SUMMARY:DEADLINE: Kempner Institute Research Fellowship (2027 cohort) (Kempner Institute for the Study of Natural and Artificial Intelligence, Harvard University)
 DESCRIPTION:Tier B | conf medium | Salary plus research/travel funds, office space, Kempner compute and engineering support; exact 2027 salary figure not confirmed (scout's ~USD 100k is a third-party report) | https://kempnerinstitute.harvard.edu/kempner-institute-research-fellowship
@@ -112,7 +112,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ad5d3faa76b0@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261030
 SUMMARY:DEADLINE: Activate Fellowship 2027 (Boston / Berkeley / New York / Anywhere) (Activate Global)
 DESCRIPTION:Tier A | conf high | USD 100,000/yr living stipend for 2 years plus USD 100,000 R&D/company support, host-lab access, health benefits; equity-free | https://activate.org/apply
@@ -124,7 +124,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:e1dfb65e5146@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261103
 SUMMARY:DEADLINE: Digital Research Alliance of Canada - Resource Allocation Competition (RAC) 2027, Resources for Research Groups (RRG) stream, incl. AI compute (PAICE / Killarney) and Trillium GPU at SciNet (Digital Research Alliance of Canada (national systems hosted by SciNet/Compute Ontario, Vector-hosted Killarney, etc.))
 DESCRIPTION:Tier B | conf high | In-kind only: GPU allocations expressed in reference GPU units (RGU) on H100-class systems (Killarney, Trillium-GPU, Fir, Rorqual, Nibi), CPU core-years, storage and cloud; no cash. First-year RRG GPU requests without prior RAC history are routinely scaled back. | https://alliancecan.ca/en/services/advanced-research-computing/accessing-resources/resource-allocation-competition
@@ -135,8 +135,20 @@ DESCRIPTION:14 days to Digital Research Alliance of Canada - Resource Allocation
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:85eb4c453b53@funding-agents
+DTSTAMP:20260926T000000Z
+DTSTART;VALUE=DATE:20270228
+SUMMARY:DEADLINE: Vector Distinguished Postdoctoral Fellowship (Spring 2027 cohort; Autumn 2027 cohort) (Vector Institute for Artificial Intelligence)
+DESCRIPTION:Tier B | conf high | Salary and benefits, amount not published on the program page; third-party job listings cited by the scout show roughly CAD 49-65k base - treat as unconfirmed; plus Vector compute and research environment | https://vectorinstitute.ai/research-talent/research-opportunities/vector-postdoctoral-fellows/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:14 days to Vector Distinguished Postdoctoral Fellowship (Spring 2027 cohort; Autumn 2027 cohort)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:2ee36f1c16fd@funding-agents
-DTSTAMP:20260925T000000Z
+DTSTAMP:20260926T000000Z
 DTSTART;VALUE=DATE:20261101
 SUMMARY:DEADLINE: UC President's Postdoctoral Fellowship Program (PPFP) 2027-28 (University of California, Office of the President)
 DESCRIPTION:Tier B | conf medium | USD ~70,000-80,000 salary plus benefits and research/travel (confirm) | https://ppfp.ucop.edu/ppfp/

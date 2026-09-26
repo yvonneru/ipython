@@ -196,3 +196,28 @@ details ul {{ margin:6px 0 0 18px; padding:0; }} .acts li {{ color:var(--ink); }
 '''
 open(OUT, "w").write(page)
 print(f"wrote {OUT}: {len(rows)} A/B rows ({len(dated)} dated, {len(rolling)} rolling), {n_pkgs} packages, {len(page)//1024} KB")
+
+
+# ---- applications/INDEX.md: one line per package, sorted by deadline ----
+def _pkg_index():
+    lines = ["# Application packages", "", f"Generated {TODAY.isoformat()} by tools/build_dashboard.py. One directory per opportunity (or bundle); each README.md has the deadline table, eligibility status, checklist, criteria mapping, open [bracketed] items and, once critiqued, a Review log.", "",
+             "| Deadline | Days | Tier | Package | Funder | Reviewed |", "|---|---|---|---|---|---|"]
+    by_dir = {}
+    for e in reg["entries"].values():
+        for d in (e.get("slug"), e.get("bundle")):
+            if d in pkgs:
+                cur = by_dir.get(d)
+                if cur is None or (e.get("tier") or "Z") < (cur.get("tier") or "Z"): by_dir[d] = e
+    items = []
+    for d in sorted(pkgs):
+        e = by_dir.get(d, {})
+        dt = parse_date(e.get("deadline")) if e else None
+        reviewed = "yes" if "## Review log" in open(os.path.join(APPS, d, "README.md")).read() else "no" if os.path.exists(os.path.join(APPS, d, "README.md")) else "-"
+        items.append((dt or datetime.date(2999,1,1), d, e, dt, reviewed))
+    for _, d, e, dt, reviewed in sorted(items):
+        days = str((dt - TODAY).days) if dt else "rolling"
+        name = e.get("name", d) if not d.endswith("bundle") else d.replace("-", " ").capitalize()
+        lines.append(f"| {dt.isoformat() if dt else (e.get('deadline') or '')[:40]} | {days} | {e.get('tier','')} | [{name[:80]}]({d}/README.md) | {(e.get('funder') or '')[:60]} | {reviewed} |")
+    open(os.path.join(APPS, "INDEX.md"), "w").write("\n".join(lines) + "\n")
+    print(f"wrote {os.path.join(APPS, 'INDEX.md')}: {len(items)} packages")
+_pkg_index()
