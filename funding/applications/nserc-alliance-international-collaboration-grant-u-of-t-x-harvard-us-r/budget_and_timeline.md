@@ -1,6 +1,6 @@
 # Budget and timeline — Alliance International Collaboration grant
 
-Constraints (registry and Form 101 instructions): annual request up to CAD 100,000; duration up to three years; the international collaborator's own annual support for the joint work, converted to CAD, must be at least equal to the NSERC request and is stated in the budget justification. No Canadian cash match. All figures below are [bracketed] placeholders: no dollar amount in this file is confirmed except the CAD 100,000 ceiling and the registry's note that a postdoctoral salary of about CAD 70,000 plus benefits fits inside it.
+Constraints (registry and Form 101 instructions as read from search summaries on 2026-09-25; verify on the official page): annual request up to CAD 100,000; duration up to three years; the grant funds the Canadian component of a project newly funded by the international collaborator's national agency (award letter dated no earlier than 120 days before submission; copy of the international proposal and award letter attached); each side's budget must be at least 25% of the total project budget; the international team's annual support, converted to CAD, is stated in the budget justification. No Canadian cash match. All figures below are [bracketed] placeholders: no dollar amount in this file is confirmed except the CAD 100,000 ceiling and the registry's note that a postdoctoral salary of about CAD 70,000 plus benefits fits inside it — which means the postdoctoral line will take most of the ceiling. **The draft therefore funds the postdoc and one MASc student from the grant and lists PhD1 and the undergraduates as other support; a budget that promises a postdoc, a PhD, a MASc, two undergraduates, travel and compute out of CAD 100,000 would not be believed.**
 
 ## 1. Requested budget (CAD, per year)
 
@@ -8,16 +8,16 @@ Constraints (registry and Form 101 instructions): annual request up to CAD 100,0
 |---|---|---|---|---|
 | Postdoctoral fellow salary — Dr. Ru | [MIE scale] | [ ] | [ ] | Leads O1–O3 day to day; co-supervises graduate students; link to the Harvard team. Registry note: ~CAD 70,000 fits the ceiling but leaves little else |
 | Benefits on the postdoctoral salary | [U of T rate × salary] | [ ] | [ ] | Mandatory employer costs |
-| PhD student stipend (PhD1) | [ ] | [ ] | [ ] | Theme 1 articulation axioms; Theme 3 failure prediction; exchange visit to Harvard; net of departmental and external awards |
+| PhD student stipend (PhD1) | [other support] | [other support] | [other support] | Theme 1 articulation axioms; Theme 3 failure prediction; exchange visit; funded from [Prof. Grüninger's Discovery Grant / departmental award — confirm]; listed as other support, not requested |
 | MASc student stipend (MASc1) | [ ] | [ ] | — | Theme 1 translation definitions; Theme 2 audit tiers |
-| Undergraduate summer students (2 × 16 weeks) | [ ] | [ ] | [ ] | Data adapters (LeRobot, RLDS, ROS 2), audit runs; one position reserved for an equity-deserving-group applicant |
-| Travel — Toronto–Boston exchanges | [ ] | [ ] | [ ] | [4–8] weeks per graduate student per year in the Harvard group; Dr. Ru [two] short visits per year |
+| Undergraduate summer students (2 × 16 weeks) | [other support] | [other support] | [other support] | Data adapters (LeRobot, RLDS, ROS 2), audit runs; one position reserved for an equity-deserving-group applicant; funded from [NSERC USRA / MIE summer research program — confirm] |
+| Travel — Toronto–Boston exchanges | [ ] | [ ] | [ ] | [2–4] weeks per graduate student per year in the international team's group; Dr. Ru [two] short visits per year |
 | Travel — conferences | [ ] | [ ] | [ ] | Two presentations per year (one ML/robotics venue, one applied-ontology venue) |
 | Compute and storage | [ ] | [ ] | [ ] | GPU time for policy training beyond Vector / Digital Research Alliance allocations; storage for the merged corpus |
 | Dissemination and standards | [ ] | [ ] | [ ] | Open-access charges; one ISO/IEC JTC 1/SC 42 meeting per year for the PhD student or Dr. Ru |
 | **Total** | **≤ 100,000** | **≤ 100,000** | **≤ 100,000** | |
 
-Sizing rule: set the total to the lesser of CAD 100,000 and the collaborator's annual contribution in CAD. If the collaborator's committed support is below the salary line, either reduce the request to match (and fund the difference from [Prof. Grüninger's Discovery Grant / a CPRA award, if won]) or drop the graduate stipends. If both CPRA and this grant succeed, the postdoctoral salary line moves to CPRA and this budget shifts to graduate students, travel and compute [check NSERC rules on holding a CPRA alongside Alliance-funded stipend top-ups].
+Sizing rule: set the total to the lesser of CAD 100,000 and [the international team's annual support in CAD], and check that both sides are ≥ 25% of the total project budget. The lines must sum to the request. If the postdoctoral line leaves less than [amount] for the rest, move the MASc stipend to [Discovery Grant] support and keep travel and compute. If both CPRA and this grant succeed, the postdoctoral salary line moves to CPRA and this budget shifts to graduate students, travel and compute [check NSERC rules on holding a CPRA alongside Alliance-funded stipend top-ups].
 
 ## 2. International collaborator's contribution (stated in the budget justification, CAD)
 
@@ -27,7 +27,7 @@ Sizing rule: set the total to the lesser of CAD 100,000 and the collaborator's a
 | Robot platform / laboratory access | [ ] | [in-kind] |
 | Datasets and compute | [ ] | [ ] |
 | Hosting of visiting Toronto students | [ ] | [in-kind] |
-| **Total (must be ≥ NSERC request)** | [ ] | |
+| **Total (each side ≥ 25% of the total project budget; request ≤ this total)** | [ ] | [agency award letter dated no earlier than 120 days before submission] |
 
 Convert at [Bank of Canada rate on the date of the letter]; state the rate and date.
 
@@ -38,7 +38,7 @@ Convert at [Bank of Canada rate on the date of the letter]; state the rate and d
 - University of Toronto Robotics Institute: simulation environments and seminar community [confirm with co-applicant, if named].
 - Prof. Grüninger's Discovery Grant [confirm it is active and can co-fund graduate students].
 
-## 4. Milestone timeline (36 months from [1 April 2027])
+## 4. Milestone timeline (36 months from [1 June 2027 — STRATEGY §1.8 rule 3: May–June 2027 or later, never April])
 
 | Months | Toronto (Grüninger, Ru, PhD1, MASc1) | Harvard ([collaborator]) | Joint deliverable |
 |---|---|---|---|
@@ -52,7 +52,8 @@ Convert at [Bank of Canada rate on the date of the letter]; state the rate and d
 
 ## 5. Risks to the budget and schedule
 
-- Decision timing: if NSERC's decision arrives after [April 2027], Dr. Ru's appointment start slips or is bridged by [CPRA / departmental funds]; state the intended start as "on award" if the research office advises.
+- Decision timing: if NSERC's decision arrives after [June 2027], Dr. Ru's appointment start slips or is bridged by [CPRA / departmental funds]; state the intended start as "on award" if the research office advises.
+- The 120-day rule: the international team's award letter must post-date [28 July 2026] for a 25 November submission. If the collaborator's award comes later, target the next deadline ([February/March 2027 — confirm]) rather than force this one.
 - Collaborator funding below the ceiling: reduce request (see sizing rule).
-- Postdoctoral salary consumes most of the ceiling: the graduate student lines depend on [Discovery Grant] co-funding.
+- Postdoctoral salary consumes most of the ceiling: PhD1 and the undergraduates are other support; only the MASc stipend is requested, and it is the first line to drop.
 - Real-robot validation depends on the Harvard platform; the simulation results in SAPIEN stand on their own if access is delayed.
